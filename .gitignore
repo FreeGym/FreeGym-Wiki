@@ -1,0 +1,10 @@
+# User exclusions
+.agent/
+writing/
+
+# Common exclusions
+.DS_Store
+node_modules/
+__pycache__/
+*.log
+.env
