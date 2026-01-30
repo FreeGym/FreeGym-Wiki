@@ -16,13 +16,43 @@
 
 It's January 2026. The health and fitness community is exhausted.
 
-Not from training. From algorithm-driven science. From cherry-picked studies weaponized to sell supplements in 60-second Reels. From influencers who delete posts when proven wrong, leaving no trace of their misinformation.
+Not from training. From algorithm-driven science. From cherry-picked studies weaponized to sell supplements with no scientific backing in 60-second Reels. From influencers who delete posts when proven wrong, leaving no trace of their misinformation.
 
 So they're migrating to GitHub.
 
 Social media is built for engagement. A repository is built for accuracy and version control. The difference matters more than it sounds.
 
 Think of it as immutable truth with audit trails.
+
+---
+
+## What We're Fixing
+
+Social media health content is broken in ways that have become so normal we barely notice them anymore.
+
+**Fear-mongering disguised as education.** Seed oils will kill you. Sugar is poison. That ingredient you can't pronounce? Toxic. These claims spread because fear drives engagement, not because the evidence supports panic. A single rat study becomes "EXPOSED: What They Don't Want You to Know." The actual risk assessment, the dose-response relationship, the human relevance? Doesn't fit in a Reel.
+
+**Cherry-picked studies presented as settled science.** One study shows a correlation, and suddenly it's "PROVEN." The five other studies showing no effect? Never mentioned. The limitations section of the paper? Never read. Creators screenshot the abstract, ignore the methodology, and move on to the next post.
+
+**Contradictory advice with no way to reconcile it.** Keto is the answer. No, vegan is the answer. Actually, carnivore. Fasting is essential. Fasting is dangerous. Cardio kills gains. Cardio is mandatory. Every expert sounds confident, cites studies, and completely disagrees with the next expert. Regular people have no way to evaluate who's right.
+
+**Deleted history when proven wrong.** An influencer makes a claim. It gets debunked. The post disappears. Their profile looks like they've never been wrong about anything. There's no record, no correction, no accountability. The audience who believed the original claim never sees the retraction.
+
+**Proxies instead of proof.** Social media judges credibility by followers, blue checkmarks, and titles. "Certified coach." "Doctor." "Researcher." But credentials are proxies, not proof. A weekend certification doesn't make someone right. Neither does a PhD. What matters is whether the claim holds up to scrutiny. This repo puts the science first. Anyone can contribute if the evidence is solid. We're democratizing who gets to participate in the conversation by making capability and citation quality the only things that matter.
+
+**Financial incentives buried under "education."** The supplement they're recommending? Affiliate link. The diet they swear by? They sell a course on it. The ingredient they're attacking? Competitor to their sponsor. Disclosure requirements exist but enforcement doesn't.
+
+**Anecdotes treated as evidence.** "I did X and my Y improved, therefore X causes Y improvement." No control group. No accounting for other variables. No consideration of placebo effect. Personal experience is valid but it's not data, and the distinction gets erased.
+
+**Dangerous advice for serious conditions.** People with actual medical conditions get told to try unproven alternatives. Vaccine misinformation spreads. Cancer "cures" circulate. Mental health advice comes from everywhere. The algorithm doesn't distinguish between harmless fitness tips and potentially lethal medical guidance. This repo cares only about what the science says. Science doesn't respect authority bias, follower counts, or h-index. A claim is either supported by evidence or it isn't, regardless of who made it.
+
+**Unrealistic expectations presented as normal.** Physiques achieved with performance-enhancing drugs presented as "natural transformation." Photoshopped before-and-afters. Lighting tricks and pump timing sold as sustainable results. People compare themselves to illusions and feel like failures.
+
+**Exercise advice that causes injury.** Form cues that sound good but biomechanically don't make sense. "No pain no gain" mentality that ignores warning signals. One-size-fits-all programming that doesn't account for individual differences, injury history, or recovery capacity.
+
+**Nutrition claims that ignore context.** "This food is bad" without mentioning dose matters. "This diet is optimal" without mentioning it depends on the individual. Absolute statements about complex systems that don't have absolute answers.
+
+This repo exists because Brandolini's Law is real: the amount of energy needed to refute misinformation is an order of magnitude larger than what it takes to produce it. Social media optimizes for production. We're optimizing for refutation, documentation, and collaborative truth-finding.
 
 ---
 

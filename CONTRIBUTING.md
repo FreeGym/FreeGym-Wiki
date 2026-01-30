@@ -14,6 +14,42 @@ When your first PR gets merged, you're automatically added to [contributors.yaml
 
 ---
 
+## Step-by-Step: Submitting Your First Contribution
+
+If you've never contributed to a GitHub project before, here's exactly what to do.
+
+**1. Fork the repository**
+
+Click the "Fork" button in the top-right corner of [the repo page](https://github.com/FreeGym/FreeGym-Wiki). This creates your own copy under your GitHub account.
+
+**2. Make your changes**
+
+You can edit files directly on GitHub (click any file, then the pencil icon) or clone your fork locally if you prefer working on your computer.
+
+**3. Commit your changes**
+
+If editing on GitHub, scroll down and write a short description of what you changed. Click "Commit changes."
+
+If working locally, stage and commit your changes with Git, then push to your fork.
+
+**4. Open a Pull Request**
+
+Go back to the original FreeGym-Wiki repo. GitHub will show a banner saying you recently pushed to your fork. Click "Compare & pull request."
+
+Write a clear title and description. Explain what you changed and why. If you're adding citations, mention which studies you're referencing.
+
+**5. Wait for review**
+
+A maintainer will review your PR. They might approve it, request changes, or ask questions. This is normal. Respond to feedback, make adjustments if needed.
+
+**6. Get merged**
+
+Once approved, a maintainer merges your PR. Your changes are now part of the wiki. The bot automatically adds you to [contributors.yaml](contributors.yaml).
+
+That's it. You've contributed to open-source health knowledge.
+
+---
+
 ## What Counts as Valid Evidence
 
 Not all sources are equal. We use a hierarchy.
