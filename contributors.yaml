@@ -1,0 +1,37 @@
+# FreeGym Wiki Contributors
+#
+# This file tracks contributors and their trust status.
+# It's automatically updated when new contributors join,
+# but trust promotions require human approval.
+#
+# Status levels:
+#   - contributor: Has merged at least one PR
+#   - trusted: Vouched for by maintainers, can review others' work
+#   - maintainer: Can merge PRs and promote contributors
+#
+# The vouched_by field shows accountability - you can see
+# exactly who decided to trust someone.
+
+maintainers:
+  - github: abhi
+    name: Abhi
+    joined: 2026-01
+    specialty: [core, governance]
+
+trusted:
+  # Contributors promoted by maintainers
+  # Example:
+  # - github: username
+  #   name: Display Name
+  #   joined: 2026-01
+  #   specialty: [nutrition, supplements]
+  #   vouched_by: [abhi, other_maintainer]
+  #   note: "Strong track record on nutrition citations"
+
+contributors:
+  # Auto-populated when first PR merges
+  # Example:
+  # - github: newuser
+  #   joined: 2026-02
+  #   prs_merged: 1
+  #   folders_touched: [sleep]

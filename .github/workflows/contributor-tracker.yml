@@ -1,0 +1,90 @@
+# Contributor Tracker
+#
+# This workflow automatically tracks new contributors.
+# When someone's first PR is merged, they get added to contributors.yaml.
+#
+# What it does:
+# 1. Triggers when a PR is merged to main
+# 2. Checks if the author is already in contributors.yaml
+# 3. If not, adds them with their join date and folders touched
+# 4. Commits the update automatically
+#
+# What it doesn't do:
+# - Promote anyone to "trusted" (that requires human judgment)
+# - Vouch for anyone (maintainers do that manually)
+
+name: Track Contributors
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  track-contributor:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get PR author and changed files
+        id: pr-info
+        run: |
+          echo "author=${{ github.event.pull_request.user.login }}" >> $GITHUB_OUTPUT
+
+          # Get folders touched by this PR
+          folders=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | \
+            grep '/' | cut -d'/' -f1 | sort -u | tr '\n' ',' | sed 's/,$//')
+          echo "folders=$folders" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if contributor exists
+        id: check
+        run: |
+          author="${{ steps.pr-info.outputs.author }}"
+          if grep -q "github: $author" contributors.yaml; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Add new contributor
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          author="${{ steps.pr-info.outputs.author }}"
+          folders="${{ steps.pr-info.outputs.folders }}"
+          date=$(date +%Y-%m)
+
+          # Append to contributors section
+          cat >> contributors.yaml << EOF
+
+  - github: $author
+    joined: $date
+    prs_merged: 1
+    folders_touched: [$folders]
+EOF
+
+      - name: Update existing contributor PR count
+        if: steps.check.outputs.exists == 'true'
+        run: |
+          author="${{ steps.pr-info.outputs.author }}"
+          # This is a simplified version - a real implementation would
+          # parse YAML properly and increment the count
+          echo "Contributor $author already exists, PR count update would go here"
+
+      - name: Commit changes
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Contributor Tracker"
+          git add contributors.yaml
+          git commit -m "Add new contributor: ${{ steps.pr-info.outputs.author }}"
+          git push

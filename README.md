@@ -2,6 +2,14 @@
 
 > **"Your GitHub profile will matter more than Twitter, Instagram, and YouTube combined."**
 
+<p align="center">
+  <a href="https://github.com/FreeGym/FreeGym-Wiki/actions/workflows/link-checker.yml"><img src="https://img.shields.io/github/actions/workflow/status/FreeGym/FreeGym-Wiki/link-checker.yml?style=flat-square&label=links%20verified" alt="Link Status"></a>
+  <a href="https://github.com/FreeGym/FreeGym-Wiki/issues"><img src="https://img.shields.io/github/issues-raw/FreeGym/FreeGym-Wiki?style=flat-square&label=open%20debates" alt="Open Debates"></a>
+  <a href="https://github.com/FreeGym/FreeGym-Wiki/commits"><img src="https://img.shields.io/github/last-commit/FreeGym/FreeGym-Wiki?style=flat-square&label=last%20update" alt="Last Update"></a>
+  <a href="https://github.com/FreeGym/FreeGym-Wiki/graphs/contributors"><img src="https://img.shields.io/github/contributors/FreeGym/FreeGym-Wiki?style=flat-square&label=contributors" alt="Contributors"></a>
+  <a href="https://github.com/FreeGym/FreeGym-Wiki/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CC_BY--SA_4.0-lightgrey?style=flat-square" alt="License"></a>
+</p>
+
 ---
 
 ## The Premise
@@ -12,9 +20,9 @@ Not from training. From algorithm-driven science. From cherry-picked studies wea
 
 So they're migrating to GitHub.
 
-Social media is built for engagement. A repository is built for accuracy and version control. That's not a subtle difference. That's a fundamental shift in what "trusted health information" even means.
+Social media is built for engagement. A repository is built for accuracy and version control. The difference matters more than it sounds.
 
-This isn't a content platform. This is immutable truth with audit trails.
+Think of it as immutable truth with audit trails.
 
 ---
 
@@ -31,7 +39,7 @@ Jan 2024: Added warning regarding hair loss (Citation X)
 Mar 2025: REMOVED hair loss warning. New meta-analysis (Citation Y) debunks connection.
 ```
 
-That's not flip-flopping. That's updating the software of health advice based on new patches. The diff proves intellectual honesty. You can watch science correct itself in real time.
+Critics call it flip-flopping. Engineers call it updating the software based on new patches. The diff proves intellectual honesty. You can watch science correct itself in real time.
 
 **Issues replace comments.**
 
@@ -83,11 +91,11 @@ Now imagine one collaborative, peer-reviewed wiki article. It links to actual st
 
 ## Why Your GitHub Profile Will Matter
 
-In 2026, the most influential "Health Influencer" isn't a person. It's a repository.
+In 2026, the most influential "Health Influencer" is a repository, not a person.
 
-Your GitHub profile shows you contributed to truth. Not that you performed for an algorithm. Every commit is a receipt. Every pull request is peer review. Every issue resolved is misinformation corrected.
+Your GitHub profile shows you contributed to truth, not that you performed for an algorithm. Commits become receipts. Pull requests become peer review. Resolved issues become corrections in the public record.
 
-The fitness industry is drowning in noise. This is the signal.
+The fitness industry drowns in noise. A repo like this is pure signal.
 
 ---
 
