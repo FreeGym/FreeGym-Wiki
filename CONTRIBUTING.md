@@ -4,6 +4,24 @@ This document explains how to contribute, what counts as valid evidence, and how
 
 ---
 
+## Why Contribute
+
+Your contribution history becomes your credibility.
+
+On social media, anyone can call themselves a "nutrition expert" or "fitness coach." Here, your expertise is demonstrated, not declared. You either have a track record of accurate, well-cited contributions to the nutrition folder, or you don't. The history speaks for itself.
+
+Corrections build trust here instead of destroying it. In the influencer world, admitting you were wrong is brand suicide. You delete and pretend. Here, updating your position based on new evidence is visible in the commit history. That transparency signals intellectual honesty, which is rare and valuable in health content.
+
+You become associated with specific topics. If someone wants to know who actually understands sleep science, they can look at who has contributed the most reviewed and accepted content to the sleep folder. That's a different kind of authority than follower count. It's earned through work, not performance.
+
+Building authority on social media means playing the engagement game. Hot takes. Controversy. Fear-mongering gets views. Here, you build authority by being right and being helpful. No algorithm punishes you for being accurate but boring.
+
+A tweet disappears in hours. A contribution to this wiki is permanent, linkable, and citable. When someone asks "why should I trust you on this topic?" you can point to a body of work instead of a follower count.
+
+Most health creators are indistinguishable. Same content, same format, same engagement tactics. Contributing here signals you're different. You care about accuracy enough to participate in a peer-reviewed, version-controlled system. That matters to the people worth reaching.
+
+---
+
 ## How Contributions Work
 
 You contribute by opening a Pull Request. That's it.
