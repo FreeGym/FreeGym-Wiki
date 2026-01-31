@@ -115,18 +115,20 @@ def generate_card(
     unit = min(width, height)
     margin = unit * 0.06
     header_y = margin
-    footer_h = max(unit * 0.16, 80)
+
+    # Footer scales with card height for better proportions
+    footer_h = max(height * 0.14, 120)
     footer_y = height - footer_h
 
     # Logo placement - fill most of footer width
     if logo_uri and logo_w and logo_h:
         logo_aspect = logo_w / logo_h
-        # Use 75% of card width for logo
-        logo_w_final = width * 0.75
+        # Use 85% of card width for logo
+        logo_w_final = width * 0.85
         logo_h_final = logo_w_final / logo_aspect
         # If height exceeds footer, constrain by height
-        if logo_h_final > footer_h * 0.92:
-            logo_h_final = footer_h * 0.92
+        if logo_h_final > footer_h * 0.88:
+            logo_h_final = footer_h * 0.88
             logo_w_final = logo_h_final * logo_aspect
         logo_x = (width - logo_w_final) / 2
         logo_y = footer_y + (footer_h - logo_h_final) / 2
@@ -224,18 +226,28 @@ def generate_card(
     username_y = name_y + username_size * 1.45
     status_y = username_y + status_size * 1.45
 
-    stats_top = avatar_cy + avatar_r + unit * 0.08
+    # Calculate available space for stats section
+    stats_top = avatar_cy + avatar_r + unit * 0.06
+    stats_bottom = footer_y - unit * 0.04
+    stats_height = stats_bottom - stats_top
+
     left_x = margin
     right_x = width * 0.68  # Moved right to prevent topic overflow
 
-    row1_label_y = stats_top
-    label_value_gap = unit * 0.02
-    row1_value_y = row1_label_y + label_size + label_value_gap
+    # Distribute 3 stat rows evenly in the available space
+    label_value_gap = unit * 0.018
     topics_line_height = value_size * 0.92
-    topics_line_count = len(topics_lines)
-    row2_label_y = row1_value_y + (topics_line_height * topics_line_count) + unit * 0.04
+
+    # Each row needs: label + gap + value(s)
+    row_height = stats_height / 3.2
+
+    row1_label_y = stats_top + row_height * 0.15
+    row1_value_y = row1_label_y + label_size + label_value_gap
+
+    row2_label_y = stats_top + row_height * 1.1
     row2_value_y = row2_label_y + label_size + label_value_gap
-    row3_label_y = row2_value_y + value_size + unit * 0.04
+
+    row3_label_y = stats_top + row_height * 2.05
     row3_value_y = row3_label_y + label_size + label_value_gap
 
     active_markup = ''
