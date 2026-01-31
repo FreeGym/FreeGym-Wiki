@@ -320,7 +320,6 @@ def render_profile(profile):
       </div>
       <div class="profile-card-preview">
         <img src="{card_local}" alt="{esc(profile['name'])} card preview">
-        <a class="button primary" href="{card_local}" download="{esc(profile['github'])}-card.svg" style="margin-top: 1rem;">Download Card</a>
       </div>
     </section>
 
