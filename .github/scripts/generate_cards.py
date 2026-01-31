@@ -112,16 +112,16 @@ def generate_card(
     footer_h = max(unit * 0.16, 80)
     footer_y = height - footer_h
 
-    # Logo placement - constrain to fit within footer
+    # Logo placement - fill most of footer width
     if logo_uri and logo_w and logo_h:
-        max_logo_h = footer_h * 0.7  # Max 70% of footer height
         logo_aspect = logo_w / logo_h
-        logo_h_final = min(max_logo_h, footer_h * 0.6)
-        logo_w_final = logo_h_final * logo_aspect
-        # If width is too large, constrain by width instead
-        if logo_w_final > width * 0.4:
-            logo_w_final = width * 0.4
-            logo_h_final = logo_w_final / logo_aspect
+        # Use 60% of card width for logo
+        logo_w_final = width * 0.6
+        logo_h_final = logo_w_final / logo_aspect
+        # If height exceeds footer, constrain by height
+        if logo_h_final > footer_h * 0.85:
+            logo_h_final = footer_h * 0.85
+            logo_w_final = logo_h_final * logo_aspect
         logo_x = (width - logo_w_final) / 2
         logo_y = footer_y + (footer_h - logo_h_final) / 2
     else:
