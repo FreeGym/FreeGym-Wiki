@@ -12,8 +12,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
 LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
 CARD_SIZES = {
-    'default': (1200, 630),
-    'square': (1080, 1080),
+    'default': (1080, 1080),
+    'wide': (1200, 630),
     'portrait': (1080, 1350),
     'story': (1080, 1920),
 }
@@ -112,11 +112,16 @@ def generate_card(
     footer_h = max(unit * 0.16, 80)
     footer_y = height - footer_h
 
-    # Logo placement
+    # Logo placement - constrain to fit within footer
     if logo_uri and logo_w and logo_h:
-        logo_scale_w = width * 0.32
-        logo_w_final = min(logo_scale_w, width * 0.42)
-        logo_h_final = logo_w_final * (logo_h / logo_w)
+        max_logo_h = footer_h * 0.7  # Max 70% of footer height
+        logo_aspect = logo_w / logo_h
+        logo_h_final = min(max_logo_h, footer_h * 0.6)
+        logo_w_final = logo_h_final * logo_aspect
+        # If width is too large, constrain by width instead
+        if logo_w_final > width * 0.4:
+            logo_w_final = width * 0.4
+            logo_h_final = logo_w_final / logo_aspect
         logo_x = (width - logo_w_final) / 2
         logo_y = footer_y + (footer_h - logo_h_final) / 2
     else:

@@ -320,7 +320,6 @@ def render_profile(profile):
       </div>
       <div class="profile-card-preview">
         <img src="{card_local}" alt="{esc(profile['name'])} card preview">
-        <div class="card-link" style="margin-top: 0.75rem;">Shareable card: <a href="{card_url}">raw link</a></div>
       </div>
     </section>
 
