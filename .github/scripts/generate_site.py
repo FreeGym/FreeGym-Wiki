@@ -362,6 +362,8 @@ def copy_cards():
         CARDS_DEST.mkdir(parents=True, exist_ok=True)
         for card in CARDS_SRC.glob('*.svg'):
             shutil.copy2(card, CARDS_DEST / card.name)
+        for card in CARDS_SRC.glob('*.png'):
+            shutil.copy2(card, CARDS_DEST / card.name)
 
 
 def main():
