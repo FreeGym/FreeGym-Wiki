@@ -152,6 +152,7 @@ def render_profile_card(profile):
     return f'''
     <article class="profile-card reveal" data-profile data-name="{esc(profile['name'])}" data-handle="{esc(profile['github'])}" data-topics="{esc(topics_attr)}">
       <div class="card-top">
+        <img class="avatar" src="https://github.com/{esc(profile['github'])}.png?size=200" alt="{esc(profile['name'])} avatar">
         <div class="identity">
           <h3>{esc(profile['name'])}</h3>
           <p>@{esc(profile['github'])}</p>
@@ -161,6 +162,7 @@ def render_profile_card(profile):
       <div class="stats">
         <div class="stat"><span>Citations</span><strong>{profile['citations']}</strong></div>
         <div class="stat"><span>Contributions</span><strong>{contributions}</strong></div>
+        <div class="stat"><span>Commits</span><strong>{profile['commits']}</strong></div>
         <div class="stat"><span>Last Active</span><strong>{esc(profile['last_active'])}</strong></div>
       </div>
       <div class="topic-row">{render_topics(profile['topics'])}</div>
