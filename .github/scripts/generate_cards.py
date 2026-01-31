@@ -19,7 +19,8 @@ CARD_SIZES = {
 }
 
 ACTIVE_WINDOW_DAYS = 60
-USE_LOGO = os.getenv('USE_LOGO', '').lower() in ('1', 'true', 'yes')
+# Use the embedded logo by default; allow disabling via USE_LOGO=0/false.
+USE_LOGO = os.getenv('USE_LOGO', '1').lower() not in ('0', 'false', 'no')
 
 
 def get_png_size(path):
@@ -224,7 +225,7 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
 {active_markup}  <!-- Profile picture with circle clip -->
   <!-- Profile picture with circle clip -->
   <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="#111111" stroke="#E10600" stroke-width="{max(unit * 0.006, 3):.2f}"/>
-  <image x="{avatar_cx - avatar_r}" y="{avatar_cy - avatar_r}" width="{avatar_d}" height="{avatar_d}" clip-path="url(#avatar-clip)" xlink:href="{avatar_url}" preserveAspectRatio="xMidYMid slice"/>
+  <image x="{avatar_cx - avatar_r}" y="{avatar_cy - avatar_r}" width="{avatar_d}" height="{avatar_d}" clip-path="url(#avatar-clip)" href="{avatar_url}" xlink:href="{avatar_url}" preserveAspectRatio="xMidYMid slice"/>
 
   <!-- Badge symbol -->
   <circle cx="{avatar_cx + avatar_r * 0.65:.2f}" cy="{avatar_cy + avatar_r * 0.65:.2f}" r="{avatar_r * 0.32:.2f}" fill="{badge_color}" stroke="{badge_stroke}" stroke-width="{max(unit * 0.004, 2):.2f}"/>
@@ -261,7 +262,7 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <!-- FreeGym logo -->
 '''
     if logo_uri:
-        svg += f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
+        svg += f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
 '''
     else:
         svg += f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h * 0.62:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit * 0.08, 64):.2f}" font-weight="700">
