@@ -306,6 +306,7 @@ def render_profile(profile):
   <main class="page">
     <section class="profile-hero reveal">
       <div class="profile-panel">
+        <img class="avatar" src="https://github.com/{esc(profile['github'])}.png?size=200" alt="{esc(profile['name'])} avatar">
         <h1>{esc(profile['name'])}</h1>
         <div class="handle">@{esc(profile['github'])}</div>
         <div class="role-badge {role_class(profile['role'])}" style="margin-top: 0.75rem; display: inline-flex;">{role_badge(profile['role'])}</div>
