@@ -32,7 +32,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install pyyaml cairosvg
 
       - name: Generate cards
         run: python .github/scripts/generate_cards.py

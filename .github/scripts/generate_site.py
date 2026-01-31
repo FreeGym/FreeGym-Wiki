@@ -276,8 +276,8 @@ def render_profile(profile):
     contributions = profile['contribution_count']
     contributions_label = 'contribution' if contributions == 1 else 'contributions'
     profile_url = f"{SITE_BASE_URL}/contributors/{profile['github']}/"
-    card_url = f"{RAW_BASE}/cards/{profile['github']}-portrait.svg"
-    card_local = f"../../cards/{profile['github']}-portrait.svg"
+    card_url = f"{RAW_BASE}/cards/{profile['github']}-portrait.png"
+    card_local = f"../../cards/{profile['github']}-portrait.png"
 
     return f'''<!doctype html>
 <html lang="en">

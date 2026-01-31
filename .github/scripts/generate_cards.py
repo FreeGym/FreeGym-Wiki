@@ -8,6 +8,12 @@ import urllib.request
 from datetime import date
 import yaml
 
+try:
+    import cairosvg
+    HAS_CAIROSVG = True
+except ImportError:
+    HAS_CAIROSVG = False
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
 LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
@@ -115,12 +121,12 @@ def generate_card(
     # Logo placement - fill most of footer width
     if logo_uri and logo_w and logo_h:
         logo_aspect = logo_w / logo_h
-        # Use 60% of card width for logo
-        logo_w_final = width * 0.6
+        # Use 75% of card width for logo
+        logo_w_final = width * 0.75
         logo_h_final = logo_w_final / logo_aspect
         # If height exceeds footer, constrain by height
-        if logo_h_final > footer_h * 0.85:
-            logo_h_final = footer_h * 0.85
+        if logo_h_final > footer_h * 0.92:
+            logo_h_final = footer_h * 0.92
             logo_w_final = logo_h_final * logo_aspect
         logo_x = (width - logo_w_final) / 2
         logo_y = footer_y + (footer_h - logo_h_final) / 2
@@ -393,10 +399,20 @@ def main():
             )
 
             suffix = '' if size_label == 'default' else f'-{size_label}'
-            filepath = f"cards/{contrib['github']}{suffix}.svg"
-            with open(filepath, 'w', encoding='utf-8') as f:
+            svg_path = f"cards/{contrib['github']}{suffix}.svg"
+            png_path = f"cards/{contrib['github']}{suffix}.png"
+
+            with open(svg_path, 'w', encoding='utf-8') as f:
                 f.write(svg)
-            print(f"Generated {filepath}")
+            print(f"Generated {svg_path}")
+
+            # Also generate PNG version for easy downloading
+            if HAS_CAIROSVG:
+                try:
+                    cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=png_path, scale=2)
+                    print(f"Generated {png_path}")
+                except Exception as e:
+                    print(f"Warning: Could not generate PNG for {png_path}: {e}")
 
 
 if __name__ == '__main__':
