@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Why run this workflow?'
+        required: false
+        default: 'manual trigger'
 
 permissions:
   contents: read
