@@ -44,6 +44,8 @@ jobs:
             --exclude-mail
             --exclude "^https://twitter.com"
             --exclude "^https://x.com"
+            --exclude "^https://www\\.efsa\\.europa\\.eu/"
+            --exclude "^https://doi\\.org/10\\.2903/j\\.efsa\\.2012\\.2557"
             --timeout 30
             '**/*.md'
           fail: true

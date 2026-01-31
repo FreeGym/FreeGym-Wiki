@@ -45,7 +45,7 @@ The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 
 ## Practical interpretation
 
 - The RDA is an intake goal that corresponds to a very low risk of inadequacy for apparently healthy adults, not an optimal target for every outcome; it is not intended as a cut-point for assessing nutrient intakes of groups. ([Institute of Medicine, 2000](https://www.nationalacademies.org/read/9810/chapter/3); [Institute of Medicine, 2000 (Applications in Dietary Assessment)](https://www.nationalacademies.org/read/9956/chapter/3))
-- The adult RDA of 0.8 g/kg/day is the value listed in the DRI summary tables and sits close to the 0.83 g/kg/day estimates from nitrogen balance and EFSA. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32); [Rand et al., 2003](https://pubmed.ncbi.nlm.nih.gov/12499330/); [EFSA, 2012](https://www.efsa.europa.eu/en/efsajournal/pub/2557))
+- The adult RDA of 0.8 g/kg/day is the value listed in the DRI summary tables and sits close to the 0.83 g/kg/day estimates from nitrogen balance and EFSA. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32); [Rand et al., 2003](https://pubmed.ncbi.nlm.nih.gov/12499330/); [EFSA, 2012](https://doi.org/10.2903/j.efsa.2012.2557))
 - In older adults, evidence and expert consensus support higher intakes (around 1.0 to 1.2 g/kg/day), with even higher targets in some cases. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/); [Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
 
 ## References
