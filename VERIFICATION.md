@@ -216,7 +216,7 @@ Find your personalized badge code in [CONTRIBUTORS.md](CONTRIBUTORS.md) under "Y
 
 ## GitHub Pages Profiles (Future)
 
-A dedicated profile page for each contributor at `freegym.github.io/wiki/contributors/username`:
+A dedicated profile page for each contributor at `https://freegym.github.io/FreeGym-Wiki/contributors/username`:
 - Interactive profile with full contribution history
 - OpenGraph meta tags for rich link previews on social media
 - Embeddable anywhere

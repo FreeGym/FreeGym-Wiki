@@ -19,6 +19,7 @@ CARD_SIZES = {
 }
 
 ACTIVE_WINDOW_DAYS = 60
+USE_LOGO = os.getenv('USE_LOGO', '').lower() in ('1', 'true', 'yes')
 
 
 def get_png_size(path):
@@ -35,6 +36,8 @@ def get_png_size(path):
 
 def load_logo_data():
     """Load the FreeGym logo PNG as a data URI and return (uri, width, height)."""
+    if not USE_LOGO:
+        return None, None, None
     if not os.path.exists(LOGO_PATH):
         return None, None, None
     with open(LOGO_PATH, 'rb') as f:

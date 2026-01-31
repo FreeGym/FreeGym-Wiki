@@ -3,13 +3,6 @@ name: Deploy Profiles Site
 on:
   push:
     branches: [main]
-    paths:
-      - contributors.yaml
-      - cards/**
-      - site-src/**
-      - .github/scripts/generate_cards.py
-      - .github/scripts/generate_site.py
-      - .github/workflows/pages.yml
   workflow_dispatch:
 
 permissions:
