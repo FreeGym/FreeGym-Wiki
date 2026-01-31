@@ -28,7 +28,7 @@ maintainers:
     name: Abhinav
     joined: 2026-01
     specialty: [core, governance]
-    topics: [nutrition, core, governance]
+    topics: [nutrition]
     last_active: 2026-01
     contributions:
       - file: nutrition/protein-rda.md

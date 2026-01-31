@@ -20,6 +20,7 @@ CARDS_DEST = SITE_DIR / 'cards'
 REPO_URL = os.getenv('REPO_URL', 'https://github.com/FreeGym/FreeGym-Wiki')
 RAW_BASE = os.getenv('RAW_BASE', 'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main')
 SITE_BASE_URL = os.getenv('SITE_BASE_URL', 'https://freegym.github.io/FreeGym-Wiki').rstrip('/')
+BUILD_STAMP = datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S')
 
 TOPIC_LABELS = {
     'nutrition': 'Nutrition',
@@ -147,7 +148,6 @@ def role_class(role):
 def render_profile_card(profile):
     topics_attr = ','.join(profile['topics'])
     contributions = profile['contribution_count']
-    contributions_label = 'contribution' if contributions == 1 else 'contributions'
 
     return f'''
     <article class="profile-card reveal" data-profile data-name="{esc(profile['name'])}" data-handle="{esc(profile['github'])}" data-topics="{esc(topics_attr)}">
@@ -160,7 +160,7 @@ def render_profile_card(profile):
       </div>
       <div class="stats">
         <div class="stat"><span>Citations</span><strong>{profile['citations']}</strong></div>
-        <div class="stat"><span>Contributions</span><strong>{contributions} {contributions_label}</strong></div>
+        <div class="stat"><span>Contributions</span><strong>{contributions}</strong></div>
         <div class="stat"><span>Last Active</span><strong>{esc(profile['last_active'])}</strong></div>
       </div>
       <div class="topic-row">{render_topics(profile['topics'])}</div>
@@ -189,7 +189,7 @@ def render_index(profiles, topics, stats):
   <meta property="og:description" content="Verified contributors to the FreeGym Wiki and their evidence based track records.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{SITE_BASE_URL}/">
-  <meta property="og:image" content="{RAW_BASE}/cards/mutant1643.svg">
+  <meta property="og:image" content="{RAW_BASE}/cards/mutant1643.svg?v={BUILD_STAMP}">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -274,10 +274,9 @@ def render_contributions(contributions):
 
 def render_profile(profile):
     contributions = profile['contribution_count']
-    contributions_label = 'contribution' if contributions == 1 else 'contributions'
     profile_url = f"{SITE_BASE_URL}/contributors/{profile['github']}/"
-    card_url = f"{RAW_BASE}/cards/{profile['github']}-portrait.png"
-    card_local = f"../../cards/{profile['github']}-portrait.png"
+    card_url = f"{RAW_BASE}/cards/{profile['github']}-portrait.png?v={BUILD_STAMP}"
+    card_local = f"../../cards/{profile['github']}-portrait.png?v={BUILD_STAMP}"
 
     return f'''<!doctype html>
 <html lang="en">
@@ -313,7 +312,7 @@ def render_profile(profile):
         <div class="topic-row">{render_topics(profile['topics'])}</div>
         <div class="stats">
           <div class="stat"><span>Citations</span><strong>{profile['citations']}</strong></div>
-          <div class="stat"><span>Contributions</span><strong>{contributions} {contributions_label}</strong></div>
+          <div class="stat"><span>Contributions</span><strong>{contributions}</strong></div>
           <div class="stat"><span>Commits</span><strong>{profile['commits']}</strong></div>
           <div class="stat"><span>Last Active</span><strong>{esc(profile['last_active'])}</strong></div>
         </div>

@@ -3,6 +3,7 @@
 
 import base64
 import calendar
+import math
 import os
 import urllib.request
 from datetime import date
@@ -123,12 +124,12 @@ def generate_card(
     # Logo placement - fill most of footer width
     if logo_uri and logo_w and logo_h:
         logo_aspect = logo_w / logo_h
-        # Use 85% of card width for logo
-        logo_w_final = width * 0.85
+        # Use 92% of card width for logo
+        logo_w_final = width * 0.92
         logo_h_final = logo_w_final / logo_aspect
         # If height exceeds footer, constrain by height
-        if logo_h_final > footer_h * 0.88:
-            logo_h_final = footer_h * 0.88
+        if logo_h_final > footer_h * 0.95:
+            logo_h_final = footer_h * 0.95
             logo_w_final = logo_h_final * logo_aspect
         logo_x = (width - logo_w_final) / 2
         logo_y = footer_y + (footer_h - logo_h_final) / 2
@@ -140,12 +141,10 @@ def generate_card(
 
     # Badge symbol and color
     if badge_type == 'maintainer':
-        badge = '\u2605'
         badge_text = 'Maintainer'
         badge_color = '#E10600'
         badge_stroke = '#FFFFFF'
     else:
-        badge = '\u2713'
         badge_text = 'Verified Contributor'
         badge_color = '#E10600'
         badge_stroke = '#E10600'
@@ -168,40 +167,12 @@ def generate_card(
     if not topics_tokens:
         topics_tokens = ['No topics yet']
 
-    # Split topics into multiple lines to prevent overflow into right column.
-    # Calculate max chars based on available width before right column
-    max_left_width = width * 0.62  # Leave room before right column starts at 0.68
-    chars_per_pixel = 0.045  # Approximate for the value font size
-    max_line_chars = max(18, min(32, int(max_left_width * chars_per_pixel)))
-
-    combined_topics = ' / '.join(topics_tokens)
-    if len(combined_topics) <= max_line_chars or len(topics_tokens) == 1:
-        topics_lines = [combined_topics]
-    else:
-        # Split into multiple lines, one topic per line if needed
-        topics_lines = []
-        current_line = []
-        current_len = 0
-        for token in topics_tokens:
-            token_len = len(token) + (3 if current_line else 0)  # " / " separator
-            if current_len + token_len > max_line_chars and current_line:
-                topics_lines.append(' / '.join(current_line))
-                current_line = [token]
-                current_len = len(token)
-            else:
-                current_line.append(token)
-                current_len += token_len
-        if current_line:
-            topics_lines.append(' / '.join(current_line))
+    # Each topic on its own line for the left column
+    topics_lines = topics_tokens[:]
 
     # Format contributions as a simple count
     contributions_count = len(files) if files else 0
-    if contributions_count == 0:
-        contributions_display = 'No contributions yet'
-    elif contributions_count == 1:
-        contributions_display = '1 contribution'
-    else:
-        contributions_display = f'{contributions_count} contributions'
+    contributions_display = f'{contributions_count}'
 
     commits_value = commits if commits is not None else 0
     active_recent = is_active_recent(last_active)
@@ -220,6 +191,38 @@ def generate_card(
     avatar_cx = margin + avatar_r
     avatar_cy = header_y + avatar_r
 
+    badge_cx = avatar_cx + avatar_r * 0.65
+    badge_cy = avatar_cy + avatar_r * 0.65
+    badge_r = avatar_r * 0.32
+    badge_stroke_w = max(unit * 0.004, 2)
+
+    if badge_type == 'maintainer':
+        outer_r = badge_r * 0.55
+        inner_r = badge_r * 0.26
+        points = []
+        for i in range(10):
+            angle = math.radians(-90 + i * 36)
+            r = outer_r if i % 2 == 0 else inner_r
+            x = badge_cx + r * math.cos(angle)
+            y = badge_cy + r * math.sin(angle)
+            points.append(f"{x:.2f},{y:.2f}")
+        badge_symbol = (
+            f'<polygon points="{" ".join(points)}" fill="white"/>'
+        )
+    else:
+        check_size = badge_r * 0.9
+        x1 = badge_cx - check_size * 0.35
+        y1 = badge_cy + check_size * 0.05
+        x2 = badge_cx - check_size * 0.05
+        y2 = badge_cy + check_size * 0.3
+        x3 = badge_cx + check_size * 0.4
+        y3 = badge_cy - check_size * 0.35
+        badge_symbol = (
+            f'<polyline points="{x1:.2f},{y1:.2f} {x2:.2f},{y2:.2f} {x3:.2f},{y3:.2f}" '
+            f'fill="none" stroke="white" stroke-width="{badge_r * 0.14:.2f}" '
+            'stroke-linecap="round" stroke-linejoin="round"/>'
+        )
+
     # Text positions
     name_x = avatar_cx + avatar_r + margin * 0.6
     name_y = header_y + title_size
@@ -227,28 +230,35 @@ def generate_card(
     status_y = username_y + status_size * 1.45
 
     # Calculate available space for stats section
-    stats_top = avatar_cy + avatar_r + unit * 0.06
-    stats_bottom = footer_y - unit * 0.04
+    stats_top = avatar_cy + avatar_r + unit * 0.08
+    stats_bottom = footer_y - unit * 0.06
     stats_height = stats_bottom - stats_top
 
+    # Two-column layout: left for topics, right for stats
     left_x = margin
-    right_x = width * 0.68  # Moved right to prevent topic overflow
+    right_x = width * 0.55  # Right column starts at 55% width
 
-    # Distribute 3 stat rows evenly in the available space
-    label_value_gap = unit * 0.018
-    topics_line_height = value_size * 0.92
+    label_value_gap = unit * 0.025
+    topics_line_height = value_size * 1.3  # More breathing room between topics
 
-    # Each row needs: label + gap + value(s)
-    row_height = stats_height / 3.2
+    # Left column: Topics label at top, then topics listed vertically
+    topics_label_y = stats_top
+    topics_value_start_y = topics_label_y + label_size + label_value_gap
 
-    row1_label_y = stats_top + row_height * 0.15
-    row1_value_y = row1_label_y + label_size + label_value_gap
+    # Right column: 4 stats evenly distributed
+    right_row_height = stats_height / 4
 
-    row2_label_y = stats_top + row_height * 1.1
-    row2_value_y = row2_label_y + label_size + label_value_gap
+    right1_label_y = stats_top
+    right1_value_y = right1_label_y + label_size + label_value_gap
 
-    row3_label_y = stats_top + row_height * 2.05
-    row3_value_y = row3_label_y + label_size + label_value_gap
+    right2_label_y = stats_top + right_row_height
+    right2_value_y = right2_label_y + label_size + label_value_gap
+
+    right3_label_y = stats_top + right_row_height * 2
+    right3_value_y = right3_label_y + label_size + label_value_gap
+
+    right4_label_y = stats_top + right_row_height * 3
+    right4_value_y = right4_label_y + label_size + label_value_gap
 
     active_markup = ''
     if active_recent:
@@ -294,8 +304,8 @@ def generate_card(
   <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="none" stroke="#E10600" stroke-width="{max(unit * 0.006, 3):.2f}"/>
 
   <!-- Badge symbol -->
-  <circle cx="{avatar_cx + avatar_r * 0.65:.2f}" cy="{avatar_cy + avatar_r * 0.65:.2f}" r="{avatar_r * 0.32:.2f}" fill="{badge_color}" stroke="{badge_stroke}" stroke-width="{max(unit * 0.004, 2):.2f}"/>
-  <text x="{avatar_cx + avatar_r * 0.65:.2f}" y="{avatar_cy + avatar_r * 0.72:.2f}" text-anchor="middle" font-size="{avatar_r * 0.32:.2f}" fill="white">{badge}</text>
+  <circle cx="{badge_cx:.2f}" cy="{badge_cy:.2f}" r="{badge_r:.2f}" fill="{badge_color}" stroke="{badge_stroke}" stroke-width="{badge_stroke_w:.2f}"/>
+  {badge_symbol}
 
   <!-- Name and status -->
   <text x="{name_x:.2f}" y="{name_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{title_size:.2f}" font-weight="700" fill="white">{display_name or github}</text>
@@ -303,24 +313,24 @@ def generate_card(
   <text x="{name_x:.2f}" y="{status_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{status_size:.2f}" fill="#9b9b9b">FreeGym Wiki {badge_text}</text>
 
   <!-- Stats -->
-  <text x="{left_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">TOP TOPICS</text>
+  <text x="{left_x:.2f}" y="{topics_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">TOP TOPICS</text>
 '''
     # Render all topic lines
     for i, topic_line in enumerate(topics_lines):
-        line_y = row1_value_y + (topics_line_height * i)
+        line_y = topics_value_start_y + (topics_line_height * i)
         svg += f'''  <text x="{left_x:.2f}" y="{line_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topic_line}</text>
 '''
-    svg += f'''  <text x="{left_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
-  <text x="{left_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations}</text>
+    svg += f'''  <text x="{right_x:.2f}" y="{right1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">LAST ACTIVE</text>
+  <text x="{right_x:.2f}" y="{right1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{last_active}</text>
 
-  <text x="{right_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">LAST ACTIVE</text>
-  <text x="{right_x:.2f}" y="{row1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{last_active}</text>
+  <text x="{right_x:.2f}" y="{right2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
+  <text x="{right_x:.2f}" y="{right2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations}</text>
 
-  <text x="{left_x:.2f}" y="{row3_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="{left_x:.2f}" y="{row3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{contributions_display}</text>
+  <text x="{right_x:.2f}" y="{right3_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">COMMITS</text>
+  <text x="{right_x:.2f}" y="{right3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{commits_value}</text>
 
-  <text x="{right_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{micro_label_size:.2f}" fill="#7a7a7a">COMMITS</text>
-  <text x="{right_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size * 0.9:.2f}" fill="#cfcfcf">{commits_value}</text>
+  <text x="{right_x:.2f}" y="{right4_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CONTRIBUTIONS</text>
+  <text x="{right_x:.2f}" y="{right4_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{contributions_display}</text>
 
   <!-- Footer -->
   <rect x="0" y="{footer_y:.2f}" width="{width}" height="{footer_h:.2f}" rx="0" fill="#000000"/>
@@ -350,11 +360,13 @@ def main():
 
     # Maintainers
     for m in data.get('maintainers', []):
+        # Combine topics and specialty fields
+        topics = list(m.get('topics', []) or []) + list(m.get('specialty', []) or [])
         all_contributors.append({
             'github': m.get('github', ''),
             'name': m.get('name', m.get('github', '')),
             'type': 'maintainer',
-            'topics': m.get('topics', []) or m.get('specialty', []),
+            'topics': topics,
             'citations': m.get('total_citations', 0),
             'files': [c['file'] for c in m.get('contributions', [])],
             'last_active': m.get('last_active', '-'),
