@@ -10,6 +10,7 @@ import yaml
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
+LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
 CARD_SIZES = {
     'default': (1200, 630),
     'square': (1080, 1080),
@@ -18,6 +19,30 @@ CARD_SIZES = {
 }
 
 ACTIVE_WINDOW_DAYS = 60
+USE_LOGO = os.getenv('USE_LOGO', '1').lower() not in ('0', 'false', 'no')
+
+
+def get_png_size(path):
+    """Return (width, height) for a PNG image."""
+    with open(path, 'rb') as f:
+        signature = f.read(8)
+        if signature != b'\x89PNG\r\n\x1a\n':
+            raise ValueError('Not a PNG file')
+        f.seek(16)
+        width = int.from_bytes(f.read(4), 'big')
+        height = int.from_bytes(f.read(4), 'big')
+    return width, height
+
+
+def load_logo_data():
+    """Return (uri, width, height) for the FreeGym logo image."""
+    if not USE_LOGO or not os.path.exists(LOGO_PATH):
+        return None, None, None
+    width, height = get_png_size(LOGO_PATH)
+    with open(LOGO_PATH, 'rb') as f:
+        data = f.read()
+    b64 = base64.b64encode(data).decode('utf-8')
+    return f"data:image/png;base64,{b64}", width, height
 
 # Cache for fetched avatars to avoid re-downloading for different card sizes
 _avatar_cache = {}
@@ -65,14 +90,40 @@ def is_active_recent(last_active):
     return (date.today() - last_date).days <= ACTIVE_WINDOW_DAYS
 
 
-def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label, avatar_data_uri=None):
-    """Generate an SVG profile card with GitHub avatar."""
+def generate_card(
+    github,
+    display_name,
+    badge_type,
+    topics,
+    citations,
+    files,
+    last_active,
+    commits,
+    size_label,
+    avatar_data_uri=None,
+    logo_data=None,
+):
+    """Generate an SVG profile card with GitHub avatar and FreeGym logo."""
     width, height = CARD_SIZES[size_label]
+    logo_uri, logo_w, logo_h = logo_data if logo_data else (None, None, None)
     unit = min(width, height)
     margin = unit * 0.06
     header_y = margin
     footer_h = max(unit * 0.16, 80)
     footer_y = height - footer_h
+
+    # Logo placement
+    if logo_uri and logo_w and logo_h:
+        logo_scale_w = width * 0.32
+        logo_w_final = min(logo_scale_w, width * 0.42)
+        logo_h_final = logo_w_final * (logo_h / logo_w)
+        logo_x = (width - logo_w_final) / 2
+        logo_y = footer_y + (footer_h - logo_h_final) / 2
+    else:
+        logo_w_final = 0
+        logo_h_final = 0
+        logo_x = 0
+        logo_y = 0
 
     # Badge symbol and color
     if badge_type == 'maintainer':
@@ -240,6 +291,14 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <rect x="0" y="{footer_y:.2f}" width="{width}" height="{footer_h:.2f}" rx="0" fill="#000000"/>
   <rect x="0" y="{footer_y:.2f}" width="{width}" height="{max(unit * 0.01, 6):.2f}" fill="#1f1f1f"/>
 '''
+    if logo_uri:
+        svg += f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
+'''
+    else:
+        svg += f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h * 0.62:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit * 0.08, 64):.2f}" font-weight="700">
+    <tspan fill="white">FREE</tspan><tspan fill="#E10600">GYM</tspan>
+  </text>
+'''
     svg += '</svg>'
     return svg
 
@@ -249,6 +308,8 @@ def main():
 
     with open('contributors.yaml', 'r') as f:
         data = yaml.safe_load(f)
+
+    logo_data = load_logo_data()
 
     all_contributors = []
 
@@ -311,6 +372,7 @@ def main():
                 commits=contrib['commits'],
                 size_label=size_label,
                 avatar_data_uri=avatar_data_uri,
+                logo_data=logo_data,
             )
 
             suffix = '' if size_label == 'default' else f'-{size_label}'
