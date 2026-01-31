@@ -6,7 +6,7 @@ on:
     paths:
       - contributors.yaml
       - cards/**
-      - site/**
+      - site-src/**
       - .github/scripts/generate_cards.py
       - .github/scripts/generate_site.py
       - .github/workflows/pages.yml
