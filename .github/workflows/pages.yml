@@ -1,0 +1,55 @@
+name: Deploy Profiles Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - contributors.yaml
+      - cards/**
+      - site/**
+      - .github/scripts/generate_cards.py
+      - .github/scripts/generate_site.py
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Generate cards
+        run: python .github/scripts/generate_cards.py
+
+      - name: Generate site
+        run: python .github/scripts/generate_site.py
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

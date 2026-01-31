@@ -88,20 +88,47 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
         badge_color = '#E10600'
         badge_stroke = '#E10600'
 
-    # Format topics
-    topics_str = ' \u00b7 '.join(topics) if topics else 'No topics yet'
-    if len(topics_str) > 60:
-        topics_str = topics_str[:57] + '...'
+    # Format topics as broad categories (folder-derived, human-readable)
+    topic_labels = {
+        'nutrition': 'Nutrition',
+        'exercise': 'Fitness',
+        'sleep': 'Sleep',
+        'mental-health': 'Mental Health',
+        'supplements': 'Supplements',
+        'recovery': 'Recovery',
+        'biomechanics': 'Biomechanics',
+    }
+    display_topics = [topic_labels.get(t, t.replace('-', ' ').title()) for t in (topics or [])]
+    top_topics = display_topics[:3] if display_topics else []
+    topics_tokens = top_topics[:] if top_topics else []
+    if display_topics and len(display_topics) > 3:
+        topics_tokens.append(f'+{len(display_topics) - len(top_topics)} more')
+    if not topics_tokens:
+        topics_tokens = ['No topics yet']
 
-    # Format files
-    if files:
-        files_display = ', '.join(f.split('/')[-1] for f in files[:3])
-        if len(files) > 3:
-            files_display += f' +{len(files) - 3} more'
+    # Split topics into up to two lines to keep the layout readable.
+    max_line_chars = max(28, min(48, int(32 * (unit / 630))))
+    combined_topics = ' / '.join(topics_tokens)
+    if len(combined_topics) <= max_line_chars or len(topics_tokens) == 1:
+        topics_lines = [combined_topics]
     else:
-        files_display = 'No files yet'
-    if len(files_display) > 60:
-        files_display = files_display[:57] + '...'
+        best_split = None
+        for i in range(1, len(topics_tokens)):
+            line1 = ' / '.join(topics_tokens[:i])
+            line2 = ' / '.join(topics_tokens[i:])
+            score = max(len(line1), len(line2))
+            if best_split is None or score < best_split[0]:
+                best_split = (score, line1, line2)
+        topics_lines = [best_split[1], best_split[2]]
+
+    # Format contributions as a simple count
+    contributions_count = len(files) if files else 0
+    if contributions_count == 0:
+        contributions_display = 'No contributions yet'
+    elif contributions_count == 1:
+        contributions_display = '1 contribution'
+    else:
+        contributions_display = f'{contributions_count} contributions'
 
     commits_value = commits if commits is not None else 0
     active_recent = is_active_recent(last_active)
@@ -134,11 +161,14 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
     right_x = width * 0.58
 
     row1_label_y = stats_top
-    row1_value_y = row1_label_y + label_size + unit * 0.012
-    row2_label_y = row1_value_y + value_size + unit * 0.04
-    row2_value_y = row2_label_y + label_size + unit * 0.012
+    label_value_gap = unit * 0.02
+    row1_value_y = row1_label_y + label_size + label_value_gap
+    topics_line_height = value_size * 0.92
+    topics_line_count = len(topics_lines)
+    row2_label_y = row1_value_y + (topics_line_height * topics_line_count) + unit * 0.04
+    row2_value_y = row2_label_y + label_size + label_value_gap
     row3_label_y = row2_value_y + value_size + unit * 0.04
-    row3_value_y = row3_label_y + label_size + unit * 0.012
+    row3_value_y = row3_label_y + label_size + label_value_gap
 
     # Logo placement
     if logo_uri and logo_w and logo_h:
@@ -203,17 +233,20 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <text x="{name_x:.2f}" y="{status_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{status_size:.2f}" fill="#9b9b9b">FreeGym Wiki {badge_text}</text>
 
   <!-- Stats -->
-  <text x="{left_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">TOPICS</text>
-  <text x="{left_x:.2f}" y="{row1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topics_str}</text>
-
-  <text x="{left_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
+  <text x="{left_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">TOP TOPICS</text>
+  <text x="{left_x:.2f}" y="{row1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topics_lines[0]}</text>
+'''
+    if len(topics_lines) > 1:
+        svg += f'''  <text x="{left_x:.2f}" y="{row1_value_y + topics_line_height:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topics_lines[1]}</text>
+'''
+    svg += f'''  <text x="{left_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
   <text x="{left_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations}</text>
 
   <text x="{right_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">LAST ACTIVE</text>
   <text x="{right_x:.2f}" y="{row1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{last_active}</text>
 
   <text x="{left_x:.2f}" y="{row3_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="{left_x:.2f}" y="{row3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{files_display}</text>
+  <text x="{left_x:.2f}" y="{row3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{contributions_display}</text>
 
   <text x="{right_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{micro_label_size:.2f}" fill="#7a7a7a">COMMITS</text>
   <text x="{right_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size * 0.9:.2f}" fill="#cfcfcf">{commits_value}</text>

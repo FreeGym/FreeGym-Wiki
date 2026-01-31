@@ -9,6 +9,7 @@ Evidence-based information on dietary topics.
 | Topic | Status |
 |-------|--------|
 | [Protein](protein.md) | Seeking contributors |
+| [Protein RDA](protein-rda.md) | Needs review |
 
 ---
 

@@ -10,6 +10,8 @@ This page addresses the most debated questions about dietary protein.
 
 The RDA says 0.8g per kg of body weight. The fitness community says 1g per pound (2.2g/kg) or more. Some longevity researchers suggest less.
 
+For a detailed breakdown of what the RDA is, how it is calculated, and where debates start, see [Protein RDA](protein-rda.md).
+
 **Competing claims:**
 
 1. The RDA (0.8g/kg) is sufficient for everyone, including athletes

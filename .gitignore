@@ -1,6 +1,7 @@
 # User exclusions
 .agent/
 writing/
+site/
 
 # Common exclusions
 .DS_Store
