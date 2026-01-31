@@ -42,16 +42,32 @@ jobs:
       - name: Generate site
         run: python .github/scripts/generate_site.py
 
+      - name: Detect Pages enablement
+        id: pages
+        run: |
+          if [ "${{ github.event.repository.has_pages }}" = "true" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pages disabled notice
+        if: steps.pages.outputs.enabled != 'true'
+        run: echo "GitHub Pages is not enabled for this repo; skipping deploy. Enable Pages -> Source: GitHub Actions."
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        if: steps.pages.outputs.enabled == 'true'
         with:
           enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        if: steps.pages.outputs.enabled == 'true'
         with:
           path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        if: steps.pages.outputs.enabled == 'true'
