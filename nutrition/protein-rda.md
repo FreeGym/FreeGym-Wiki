@@ -28,7 +28,7 @@ A meta-analysis of nitrogen balance studies estimated an EAR of 0.65 g/kg/day an
 
 The DRI summary tables list the adult protein RDA as 0.8 g/kg/day, expressed per reference body weight. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32))
 
-The European Food Safety Authority reports similar values: an average requirement of 0.66 g/kg/day and a population reference intake of 0.83 g/kg/day for healthy adults. Its population reference intake is EFSA's RDA-equivalent. ([EFSA, 2012](https://www.efsa.europa.eu/en/efsajournal/pub/2557))
+The European Food Safety Authority reports similar values: an average requirement of 0.66 g/kg/day and a population reference intake of 0.83 g/kg/day for healthy adults. Its population reference intake is EFSA's RDA-equivalent. ([EFSA, 2012](https://doi.org/10.2903/j.efsa.2012.2557))
 
 ## Limits and open debates
 
@@ -54,7 +54,7 @@ The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 
 - Institute of Medicine. Dietary Reference Intakes: Applications in Dietary Assessment. National Academies Press; 2000. DOI: 10.17226/9956.
 - Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. National Academies Press; 2005. DOI: 10.17226/10490.
 - Rand WM, Pellett PL, Young VR. Meta-analysis of nitrogen balance studies for estimating protein requirements in healthy adults. Am J Clin Nutr. 2003;77(1):109-127. DOI: 10.1093/ajcn/77.1.109. PMID: 12499330.
-- EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on Dietary Reference Values for protein. EFSA Journal. 2012;10(2):2557. DOI: 10.2903/j.efsa.2012.2557.
+- EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on Dietary Reference Values for protein. EFSA Journal. 2012;10(2):2557. DOI: 10.2903/j.efsa.2012.2557. (https://doi.org/10.2903/j.efsa.2012.2557)
 - Wolfe RR, Cifelli AM, Kostas G, Kim IY. Optimizing Protein Intake in Adults: Interpretation and Application of the Recommended Dietary Allowance Compared with the Acceptable Macronutrient Distribution Range. Adv Nutr. 2017;8(2):266-275. DOI: 10.3945/an.116.013821. PMID: 28298271.
 - Rafii M, Chapman K, Elango R, Campbell WW, Ball RO, Pencharz PB, Courtney-Martin G. Dietary Protein Requirement of Men >65 Years Old Determined by the Indicator Amino Acid Oxidation Technique Is Higher than the Current Estimated Average Requirement. J Nutr. 2015;146(4):681-687. DOI: 10.3945/jn.115.225631. PMID: 26962173.
 - Bauer J, Biolo G, Cederholm T, Cesari M, Cruz-Jentoft AJ, Morley JE, Phillips S, Sieber C, Stehle P, Teta D, Visvanathan R, Volpi E, Boirie Y. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. J Am Med Dir Assoc. 2013;14(8):542-559. DOI: 10.1016/j.jamda.2013.05.021. PMID: 23867520.
