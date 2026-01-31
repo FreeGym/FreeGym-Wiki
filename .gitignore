@@ -1,6 +1,7 @@
 # User exclusions
 .agent/
 writing/
+!Writing/FreeGym Logo.png
 Writing/drafts/
 site/
 
