@@ -10,6 +10,10 @@ import yaml
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
 LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
+LOGO_URL = os.getenv(
+    'LOGO_URL',
+    'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/Writing/FreeGym%20Logo.png'
+)
 
 CARD_SIZES = {
     'default': (1200, 630),
@@ -36,15 +40,17 @@ def get_png_size(path):
 
 
 def load_logo_data():
-    """Load the FreeGym logo PNG as a data URI and return (uri, width, height)."""
+    """Return (uri, width, height) for the FreeGym logo image."""
     if not USE_LOGO:
         return None, None, None
     if not os.path.exists(LOGO_PATH):
         return None, None, None
+    width, height = get_png_size(LOGO_PATH)
+    if LOGO_URL:
+        return LOGO_URL, width, height
     with open(LOGO_PATH, 'rb') as f:
         data = f.read()
     b64 = base64.b64encode(data).decode('ascii')
-    width, height = get_png_size(LOGO_PATH)
     return f"data:image/png;base64,{b64}", width, height
 
 
