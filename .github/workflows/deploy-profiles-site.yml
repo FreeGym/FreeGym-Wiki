@@ -51,13 +51,11 @@ jobs:
 
       - name: Pages disabled notice
         if: steps.pages.outputs.enabled != 'true'
-        run: echo "GitHub Pages is not enabled for this repo; skipping deploy. Enable Pages -> Source: GitHub Actions."
+        run: echo "GitHub Pages is not enabled for this repo; skipping deploy. Enable Pages then set Source to GitHub Actions."
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
         if: steps.pages.outputs.enabled == 'true'
-        with:
-          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
