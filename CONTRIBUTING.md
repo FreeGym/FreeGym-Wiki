@@ -152,6 +152,13 @@ This means promotions are transparent. Anyone can see who vouched for whom and w
 
 We value quality over quantity. Ten well-cited paragraphs matter more than a hundred sloppy ones.
 
+**What counts as substantive (for verification):**
+
+- Adds new claims backed by Tier 1–2 evidence
+- Major edit with **≥3 citations** or **≥20 substantive lines**
+- Corrects an existing claim with stronger evidence or clearer limitations
+- **Does not count:** formatting, wording tweaks, or link fixes only
+
 ---
 
 ## Challenging Existing Content

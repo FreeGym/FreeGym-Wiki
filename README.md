@@ -14,7 +14,7 @@
 
 ## The Premise
 
-It's January 2026. The health and fitness community is exhausted.
+It's January 2026. Anyone trying to find trustworthy health information is exhausted.
 
 Not from training. From algorithm-driven science. From cherry-picked studies weaponized to sell supplements with no scientific backing in 60-second Reels. From influencers who delete posts when proven wrong, leaving no trace of their misinformation.
 
@@ -38,7 +38,7 @@ Social media health content is broken in ways that have become so normal we bare
 
 **Deleted history when proven wrong.** An influencer makes a claim. It gets debunked. The post disappears. Their profile looks like they've never been wrong about anything. There's no record, no correction, no accountability. The audience who believed the original claim never sees the retraction.
 
-**Proxies instead of proof.** Social media judges credibility by followers, blue checkmarks, and titles. "Certified coach." "Doctor." "Researcher." But credentials are proxies, not proof. A weekend certification doesn't make someone right. Neither does a PhD. What matters is whether the claim holds up to scrutiny. This repo puts the science first. Anyone can contribute if the evidence is solid. We're democratizing who gets to participate in the conversation by making capability and citation quality the only things that matter.
+**Proxies instead of proof.** Social media judges credibility by followers, blue checkmarks, and titles. "Certified coach." "Doctor." "Researcher." But credentials are proxies, not proof. A weekend certification doesn't make someone right. Neither does a PhD. What matters is whether the claim holds up to scrutiny. This repo puts the science first. Anyone can contribute if the evidence is solid. We remove credential-based gatekeeping, not evidence-based standards.
 
 **Financial incentives buried under "education."** The supplement they're recommending? Affiliate link. The diet they swear by? They sell a course on it. The ingredient they're attacking? Competitor to their sponsor. Disclosure requirements exist but enforcement doesn't.
 
@@ -125,7 +125,30 @@ In 2026, the most influential "Health Influencer" is a repository, not a person.
 
 Your GitHub profile shows you contributed to truth, not that you performed for an algorithm. Commits become receipts. Pull requests become peer review. Resolved issues become corrections in the public record.
 
-The fitness industry drowns in noise. A repo like this is pure signal.
+Health, fitness, and medicine drown in noise. A repo like this is pure signal.
+
+---
+
+## Verification and FreeGym
+
+This repository powers the verification system for [FreeGym](https://freegym.ai/), a health and fitness social network.
+
+**Red Checkmark**: Contributors who have merged substantive, evidence-based content earn verification. This checkmark appears on their FreeGym profile, linked directly to their contribution history here.
+
+**Topic Badges**: Contribute to specific domains (nutrition, exercise, sleep) and earn badges showing where you've demonstrated knowledge through actual work.
+
+**Maintainer Star**: Those who review and maintain quality standards get a star designation instead of a checkmark.
+
+The key difference from other verification systems: you can't buy it, you can't claim it, you can only earn it through auditable contributions. When someone sees your red checkmark on FreeGym, they can click through and see exactly what you contributed.
+
+See [VERIFICATION.md](VERIFICATION.md) for the full rules.
+
+---
+
+## Automation and Internals
+
+If you want to audit or extend the verification system, start here:
+[docs/automation.md](docs/automation.md)
 
 ---
 

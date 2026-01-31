@@ -1,17 +1,19 @@
 # Contributor Tracker
 #
-# This workflow automatically tracks new contributors.
-# When someone's first PR is merged, they get added to contributors.yaml.
+# This workflow automatically tracks contributors and their verification status.
+# When someone's PR is merged, it updates contributors.yaml with:
+# - Contributor info (join date, checkmark status, topics)
+# - Detailed contributions (files, citation counts)
+# - Aggregated stats (total citations)
 #
-# What it does:
-# 1. Triggers when a PR is merged to main
-# 2. Checks if the author is already in contributors.yaml
-# 3. If not, adds them with their join date and folders touched
-# 4. Commits the update automatically
+# Verification logic:
+# - Maintainers add the "substantive" label to PRs that count toward verification
+# - A PR without this label is tracked but doesn't earn the checkmark
+# - This keeps human judgment in the verification process
 #
-# What it doesn't do:
-# - Promote anyone to "trusted" (that requires human judgment)
-# - Vouch for anyone (maintainers do that manually)
+# Citation counting:
+# - Counts patterns like [Author, Year](url), PMID:, DOI:, pubmed.ncbi links
+# - Only counts additions (+ lines in diff), not removals
 
 name: Track Contributors
 
@@ -34,57 +36,430 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get PR author and changed files
-        id: pr-info
-        run: |
-          echo "author=${{ github.event.pull_request.user.login }}" >> $GITHUB_OUTPUT
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-          # Get folders touched by this PR
-          folders=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | \
-            grep '/' | cut -d'/' -f1 | sort -u | tr '\n' ',' | sed 's/,$//')
-          echo "folders=$folders" >> $GITHUB_OUTPUT
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Get PR info and analyze contributions
+        id: analyze
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check if contributor exists
-        id: check
         run: |
-          author="${{ steps.pr-info.outputs.author }}"
-          if grep -q "github: $author" contributors.yaml; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-          fi
+          python << 'PYTHON_SCRIPT'
+          import subprocess
+          import json
+          import re
+          import os
 
-      - name: Add new contributor
-        if: steps.check.outputs.exists == 'false'
+          # Get PR info from environment
+          pr_number = ${{ github.event.pull_request.number }}
+          author = "${{ github.event.pull_request.user.login }}"
+          labels_json = '${{ toJson(github.event.pull_request.labels.*.name) }}'
+          labels = json.loads(labels_json)
+          is_substantive = "substantive" in labels
+
+          # Get list of files changed
+          result = subprocess.run(
+              ["gh", "pr", "diff", str(pr_number), "--name-only"],
+              capture_output=True, text=True
+          )
+          all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
+
+          # Filter to content markdown files only
+          content_folders = ['nutrition', 'exercise', 'sleep', 'mental-health', 'supplements', 'recovery']
+          content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
+
+          # Get the full diff to analyze citations
+          result = subprocess.run(
+              ["gh", "pr", "diff", str(pr_number)],
+              capture_output=True, text=True
+          )
+          full_diff = result.stdout
+
+          # Citation patterns to look for
+          citation_patterns = [
+              r'\[.*?\]\(https?://pubmed\.ncbi\.nlm\.nih\.gov/\d+',  # PubMed links
+              r'\[.*?\]\(https?://doi\.org/',                        # DOI links
+              r'PMID:\s*\d+',                                        # PMID references
+              r'DOI:\s*10\.\d+',                                     # DOI references
+              r'\([A-Z][a-z]+(?:\s+(?:et\s+al\.?|&|and)\s+[A-Z][a-z]+)?,?\s*\d{4}\)',  # (Author, Year) or (Author et al., Year)
+          ]
+
+          # Analyze each content file
+          contributions = []
+          total_citations = 0
+
+          for filepath in content_files:
+              # Check if file was created or edited
+              result = subprocess.run(
+                  ["git", "log", "--oneline", "--follow", "--", filepath],
+                  capture_output=True, text=True
+              )
+              commit_count = len(result.stdout.strip().split('\n')) if result.stdout.strip() else 0
+
+              # If this is the first commit for this file, it was created
+              file_type = "created" if commit_count <= 1 else "edit"
+
+              # Get just the additions for this file from the diff
+              in_file = False
+              file_additions = []
+              for line in full_diff.split('\n'):
+                  if line.startswith('diff --git'):
+                      in_file = filepath in line
+                  elif in_file and line.startswith('+') and not line.startswith('+++'):
+                      file_additions.append(line[1:])  # Remove the + prefix
+
+              # Count citations in additions
+              additions_text = '\n'.join(file_additions)
+              citations_added = 0
+              for pattern in citation_patterns:
+                  matches = re.findall(pattern, additions_text, re.IGNORECASE)
+                  citations_added += len(matches)
+
+              # Determine if this is a major edit (significant citations or new content)
+              if file_type == "edit" and (citations_added >= 3 or len(file_additions) >= 20):
+                  file_type = "major_edit"
+
+              contributions.append({
+                  'file': filepath,
+                  'type': file_type,
+                  'citations_added': citations_added
+              })
+              total_citations += citations_added
+
+          # Get topics from folders
+          all_topics = list(set(f.split('/')[0] for f in content_files if '/' in f))
+          topics = all_topics if is_substantive else []
+
+          # Count commits in this PR
+          result = subprocess.run(
+              ["gh", "pr", "view", str(pr_number), "--json", "commits", "--jq", ".commits | length"],
+              capture_output=True, text=True
+          )
+          commits_in_pr = int(result.stdout.strip()) if result.stdout.strip().isdigit() else 1
+
+          # Output results
+          output = {
+              'author': author,
+              'pr_number': pr_number,
+              'is_substantive': is_substantive,
+              'topics': topics,
+              'contributions': contributions,
+              'total_citations': total_citations,
+              'commits': commits_in_pr
+          }
+
+          # Write to file for next step
+          with open('pr_analysis.json', 'w') as f:
+              json.dump(output, f)
+
+          print(f"Author: {author}")
+          print(f"Substantive: {is_substantive}")
+          print(f"Topics: {topics}")
+          print(f"Files: {len(contributions)}")
+          print(f"Citations: {total_citations}")
+          print(f"Commits: {commits_in_pr}")
+
+          PYTHON_SCRIPT
+
+      - name: Update contributors.yaml
         run: |
-          author="${{ steps.pr-info.outputs.author }}"
-          folders="${{ steps.pr-info.outputs.folders }}"
-          date=$(date +%Y-%m)
+          python << 'PYTHON_SCRIPT'
+          import yaml
+          import json
+          from datetime import datetime
 
-          # Append to contributors section
-          cat >> contributors.yaml << EOF
+          # Load analysis results
+          with open('pr_analysis.json', 'r') as f:
+              analysis = json.load(f)
 
-  - github: $author
-    joined: $date
-    prs_merged: 1
-    folders_touched: [$folders]
-EOF
+          author = analysis['author']
+          pr_number = analysis['pr_number']
+          is_substantive = analysis['is_substantive']
+          topics = analysis['topics']
+          contributions = analysis['contributions']
+          total_citations = analysis['total_citations']
+          commits = analysis.get('commits', 1)
+          current_month = datetime.now().strftime("%Y-%m")
 
-      - name: Update existing contributor PR count
-        if: steps.check.outputs.exists == 'true'
+          # Load contributors.yaml
+          with open('contributors.yaml', 'r') as f:
+              data = yaml.safe_load(f)
+
+          # Helper to update a contributor record
+          def update_contributor(contributor, is_new=False):
+              contributor['last_active'] = current_month
+
+              # Update topics
+              existing_topics = contributor.get('topics', [])
+              contributor['topics'] = list(set(existing_topics + topics))
+
+              # Update contributions list
+              existing_contributions = contributor.get('contributions', [])
+              for contrib in contributions:
+                  contrib['pr'] = pr_number
+                  existing_contributions.append(contrib)
+              contributor['contributions'] = existing_contributions
+
+              # Update total citations
+              contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
+
+              # Update commits count
+              contributor['commits'] = contributor.get('commits', 0) + commits
+
+              return contributor
+
+          # Check if author is a maintainer
+          maintainer_names = [m['github'] for m in data.get('maintainers', [])]
+          trusted_names = [t['github'] for t in data.get('trusted', []) if isinstance(t, dict)]
+
+          if author in maintainer_names:
+              for m in data['maintainers']:
+                  if m['github'] == author:
+                      update_contributor(m)
+              print(f"Updated maintainer {author}")
+
+          elif author in trusted_names:
+              for t in data['trusted']:
+                  if isinstance(t, dict) and t['github'] == author:
+                      update_contributor(t)
+                      t['prs_merged'] = t.get('prs_merged', 0) + 1
+                      if is_substantive:
+                          t['substantive_prs'] = t.get('substantive_prs', 0) + 1
+              print(f"Updated trusted contributor {author}")
+
+          else:
+              # Handle regular contributors
+              contributors = data.get('contributors', [])
+              if contributors is None:
+                  contributors = []
+                  data['contributors'] = contributors
+
+              # Find existing contributor
+              contributor = None
+              for c in contributors:
+                  if isinstance(c, dict) and c.get('github') == author:
+                      contributor = c
+                      break
+
+              if contributor:
+                  update_contributor(contributor)
+                  contributor['prs_merged'] = contributor.get('prs_merged', 0) + 1
+
+                  if is_substantive:
+                      contributor['substantive_prs'] = contributor.get('substantive_prs', 0) + 1
+                      if not contributor.get('checkmark'):
+                          contributor['checkmark'] = True
+                          contributor['checkmark_pr'] = pr_number
+                          print(f"Granted checkmark to {author}")
+
+                  print(f"Updated contributor {author}")
+
+              else:
+                  # New contributor
+                  new_contributor = {
+                      'github': author,
+                      'joined': current_month,
+                      'checkmark': is_substantive,
+                      'topics': topics,
+                      'last_active': current_month,
+                      'prs_merged': 1,
+                      'substantive_prs': 1 if is_substantive else 0,
+                      'contributions': [dict(c, pr=pr_number) for c in contributions],
+                      'total_citations': total_citations,
+                      'commits': commits
+                  }
+                  if is_substantive:
+                      new_contributor['checkmark_pr'] = pr_number
+
+                  contributors.append(new_contributor)
+                  print(f"Added new contributor {author}" + (" with checkmark" if is_substantive else ""))
+
+          # Write updated yaml
+          with open('contributors.yaml', 'w') as f:
+              yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+
+          PYTHON_SCRIPT
+
+      - name: Generate CONTRIBUTORS.md
         run: |
-          author="${{ steps.pr-info.outputs.author }}"
-          # This is a simplified version - a real implementation would
-          # parse YAML properly and increment the count
-          echo "Contributor $author already exists, PR count update would go here"
+          python << 'PYTHON_SCRIPT'
+          import yaml
+          import urllib.parse
+
+          with open('contributors.yaml', 'r') as f:
+              data = yaml.safe_load(f)
+
+          md = []
+          all_verified = []  # Collect all verified for badge section
+
+          md.append("# Contributors\n")
+          md.append("This file is auto-generated from [contributors.yaml](contributors.yaml). Do not edit directly.\n")
+          md.append("---\n")
+
+          # Maintainers section
+          md.append("## Maintainers\n")
+          md.append("| | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |")
+          md.append("|---|------|-----------|---------------|-----------|---------|-------------|------|")
+
+          for m in data.get('maintainers', []):
+              github = m.get('github', '')
+              name = m.get('name', github)
+              specialty = ' '.join(f"`{s}`" for s in m.get('specialty', []))
+              contributions = m.get('contributions', [])
+              contrib_links = ', '.join(f"[{c['file'].split('/')[-1]}]({c['file']})" for c in contributions[:3])
+              if len(contributions) > 3:
+                  contrib_links += f" +{len(contributions) - 3} more"
+              if not contrib_links:
+                  contrib_links = "-"
+              total_citations = m.get('total_citations', 0)
+              total_commits = m.get('commits', 0)
+              last_active = m.get('last_active', '-')
+              topics = m.get('topics', [])
+              md.append(f"| <a id=\"{github}\"></a>⭐ | [@{github}](https://github.com/{github}) | {specialty} | {contrib_links} | {total_citations} | {total_commits} | {last_active} | [View](cards/{github}.svg) |")
+              all_verified.append({'github': github, 'type': 'maintainer', 'citations': total_citations, 'commits': total_commits, 'topics': topics})
+
+          md.append("")
+
+          # Trusted section
+          trusted = [t for t in data.get('trusted', []) if isinstance(t, dict)]
+          if trusted:
+              md.append("---\n")
+              md.append("## Trusted Contributors\n")
+              md.append("| | Name | Topics | Contributions | Citations | Commits | Last Active | Card |")
+              md.append("|---|------|--------|---------------|-----------|---------|-------------|------|")
+
+              for t in trusted:
+                  github = t.get('github', '')
+                  name = t.get('name', github)
+                  topics = t.get('topics', [])
+                  topics_str = ' '.join(f"`{top}`" for top in topics)
+                  contributions = t.get('contributions', [])
+                  contrib_links = ', '.join(f"[{c['file'].split('/')[-1]}]({c['file']})" for c in contributions[:3])
+                  if len(contributions) > 3:
+                      contrib_links += f" +{len(contributions) - 3} more"
+                  total_citations = t.get('total_citations', 0)
+                  total_commits = t.get('commits', 0)
+                  last_active = t.get('last_active', '-')
+                  md.append(f"| <a id=\"{github}\"></a>✓ | [@{github}](https://github.com/{github}) | {topics_str} | {contrib_links} | {total_citations} | {total_commits} | {last_active} | [View](cards/{github}.svg) |")
+                  all_verified.append({'github': github, 'type': 'trusted', 'citations': total_citations, 'commits': total_commits, 'topics': topics})
+
+              md.append("")
+
+          # Verified contributors
+          contributors = [c for c in data.get('contributors', []) if isinstance(c, dict)]
+          verified = [c for c in contributors if c.get('checkmark')]
+          unverified = [c for c in contributors if not c.get('checkmark')]
+
+          if verified:
+              md.append("---\n")
+              md.append("## Verified Contributors\n")
+              md.append("| | Name | Topics | Contributions | Citations | Commits | Last Active | Card |")
+              md.append("|---|------|--------|---------------|-----------|---------|-------------|------|")
+
+              for c in verified:
+                  github = c.get('github', '')
+                  topics = c.get('topics', [])
+                  topics_str = ' '.join(f"`{top}`" for top in topics)
+                  contributions = c.get('contributions', [])
+                  contrib_links = ', '.join(f"[{cont['file'].split('/')[-1]}]({cont['file']})" for cont in contributions[:3])
+                  if len(contributions) > 3:
+                      contrib_links += f" +{len(contributions) - 3} more"
+                  if not contrib_links:
+                      contrib_links = f"[View PRs](https://github.com/FreeGym/FreeGym-Wiki/pulls?q=author:{github})"
+                  total_citations = c.get('total_citations', 0)
+                  total_commits = c.get('commits', 0)
+                  last_active = c.get('last_active', '-')
+                  md.append(f"| <a id=\"{github}\"></a>✓ | [@{github}](https://github.com/{github}) | {topics_str} | {contrib_links} | {total_citations} | {total_commits} | {last_active} | [View](cards/{github}.svg) |")
+                  all_verified.append({'github': github, 'type': 'contributor', 'citations': total_citations, 'commits': total_commits, 'topics': topics})
+
+              md.append("")
+
+          # Unverified contributors
+          if unverified:
+              md.append("---\n")
+              md.append("## Contributors\n")
+              md.append("These contributors have merged PRs but haven't yet earned verification.\n")
+              md.append("| Name | Last Active | PRs |")
+              md.append("|------|-------------|-----|")
+
+              for c in unverified:
+                  github = c.get('github', '')
+                  last_active = c.get('last_active', '-')
+                  prs = c.get('prs_merged', 0)
+                  md.append(f"| <a id=\"{github}\"></a>[@{github}](https://github.com/{github}) | {last_active} | [{prs} PRs](https://github.com/FreeGym/FreeGym-Wiki/pulls?q=author:{github}) |")
+
+              md.append("")
+
+          md.append("---\n")
+          md.append("**Want to get verified?** See [VERIFICATION.md](VERIFICATION.md) for how to earn the checkmark.\n")
+
+          # Badge section for verified contributors
+          if all_verified:
+              md.append("---\n")
+              md.append("## Your Badges\n")
+              md.append("Copy these to your GitHub profile README to show your verification status.\n")
+
+              for v in all_verified:
+                  github = v['github']
+                  citations = v['citations']
+                  topics = v['topics']
+                  vtype = v['type']
+
+                  md.append(f"\n### @{github}\n")
+                  md.append("```markdown")
+
+                  # Main verification badge
+                  profile_url = f"https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#{github}"
+                  if vtype == 'maintainer':
+                      badge_label = "FreeGym_Wiki-⭐_Maintainer"
+                      badge_color = "gold"
+                  else:
+                      badge_label = "FreeGym_Wiki-✓_Verified"
+                      badge_color = "red"
+
+                  md.append(f"[![FreeGym Verified](https://img.shields.io/badge/{urllib.parse.quote(badge_label, safe='')}-{badge_color})]({profile_url})")
+
+                  # Citations badge
+                  if citations > 0:
+                      md.append(f"[![Citations](https://img.shields.io/badge/Citations-{citations}-blue)]({profile_url})")
+
+                  # Topic badges
+                  for topic in topics:
+                      topic_encoded = urllib.parse.quote(topic, safe='')
+                      md.append(f"[![{topic}](https://img.shields.io/badge/Topic-{topic_encoded}-green)]({profile_url})")
+
+                  md.append("```\n")
+
+                  # Shareable card
+                  md.append("**Shareable Card:**\n")
+                  md.append(f"![Profile Card](https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/{github}.svg)\n")
+                  md.append(f"Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/{github}.svg`\n")
+
+          with open('CONTRIBUTORS.md', 'w') as f:
+              f.write('\n'.join(md))
+
+          print("Generated CONTRIBUTORS.md")
+
+          PYTHON_SCRIPT
+
+      - name: Generate SVG profile cards
+        run: python .github/scripts/generate_cards.py
 
       - name: Commit changes
-        if: steps.check.outputs.exists == 'false'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Contributor Tracker"
-          git add contributors.yaml
-          git commit -m "Add new contributor: ${{ steps.pr-info.outputs.author }}"
-          git push
+          git add contributors.yaml CONTRIBUTORS.md cards/
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            author="${{ github.event.pull_request.user.login }}"
+            git commit -m "Update contributors: $author (PR #${{ github.event.pull_request.number }})"
+            git push
+          fi

@@ -1,37 +1,75 @@
 # FreeGym Wiki Contributors
 #
-# This file tracks contributors and their trust status.
+# This file tracks contributors, their trust status, and verification.
 # It's automatically updated when new contributors join,
-# but trust promotions require human approval.
+# but trust promotions and verification require human approval.
 #
-# Status levels:
+# Trust levels:
 #   - contributor: Has merged at least one PR
 #   - trusted: Vouched for by maintainers, can review others' work
-#   - maintainer: Can merge PRs and promote contributors
+#   - maintainer: Can merge PRs and promote contributors (star designation)
+#
+# Verification:
+#   - checkmark: Earned by one substantive merged PR (see VERIFICATION.md)
+#   - topics: Badges earned by contributing to specific folders
+#   - last_active: Date of most recent contribution
+#
+# Contribution tracking:
+#   - contributions: List of files contributed with citation counts
+#   - total_citations: Sum of all citations added across contributions
+#   - commits: Number of commits (low weight - easily gamed)
 #
 # The vouched_by field shows accountability - you can see
 # exactly who decided to trust someone.
 
 maintainers:
-  - github: abhi
-    name: Abhi
+  # Maintainers get the star designation instead of checkmark
+  - github: mutant1643
+    name: Abhinav
     joined: 2026-01
     specialty: [core, governance]
+    topics: []
+    last_active: 2026-01
+    contributions: []
+    total_citations: 0
+    commits: 0
 
 trusted:
   # Contributors promoted by maintainers
+  # They keep their checkmark and topic badges
   # Example:
   # - github: username
   #   name: Display Name
   #   joined: 2026-01
-  #   specialty: [nutrition, supplements]
-  #   vouched_by: [abhi, other_maintainer]
+  #   checkmark: true
+  #   topics: [nutrition, supplements]
+  #   last_active: 2026-01
+  #   vouched_by: [mutant1643]
   #   note: "Strong track record on nutrition citations"
+  #   contributions:
+  #     - file: nutrition/protein.md
+  #       type: created
+  #       citations_added: 8
+  #       pr: 15
+  #   total_citations: 8
+  #   commits: 12
 
 contributors:
   # Auto-populated when first PR merges
+  # Checkmark granted when first substantive PR is merged
   # Example:
   # - github: newuser
   #   joined: 2026-02
+  #   checkmark: true
+  #   checkmark_pr: 42
+  #   topics: [sleep]
+  #   last_active: 2026-02
   #   prs_merged: 1
-  #   folders_touched: [sleep]
+  #   substantive_prs: 1
+  #   contributions:
+  #     - file: sleep/circadian-rhythm.md
+  #       type: created           # created | major_edit | edit
+  #       citations_added: 5
+  #       pr: 42
+  #   total_citations: 5
+  #   commits: 3
