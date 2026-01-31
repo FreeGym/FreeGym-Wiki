@@ -12,9 +12,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
 LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
 CARD_SIZES = {
-    'default': (1080, 1080),
+    'default': (1080, 1350),
     'wide': (1200, 630),
-    'portrait': (1080, 1350),
+    'square': (1080, 1080),
     'story': (1080, 1920),
 }
 
@@ -160,20 +160,31 @@ def generate_card(
     if not topics_tokens:
         topics_tokens = ['No topics yet']
 
-    # Split topics into up to two lines to keep the layout readable.
-    max_line_chars = max(28, min(48, int(32 * (unit / 630))))
+    # Split topics into multiple lines to prevent overflow into right column.
+    # Calculate max chars based on available width before right column
+    max_left_width = width * 0.62  # Leave room before right column starts at 0.68
+    chars_per_pixel = 0.045  # Approximate for the value font size
+    max_line_chars = max(18, min(32, int(max_left_width * chars_per_pixel)))
+
     combined_topics = ' / '.join(topics_tokens)
     if len(combined_topics) <= max_line_chars or len(topics_tokens) == 1:
         topics_lines = [combined_topics]
     else:
-        best_split = None
-        for i in range(1, len(topics_tokens)):
-            line1 = ' / '.join(topics_tokens[:i])
-            line2 = ' / '.join(topics_tokens[i:])
-            score = max(len(line1), len(line2))
-            if best_split is None or score < best_split[0]:
-                best_split = (score, line1, line2)
-        topics_lines = [best_split[1], best_split[2]]
+        # Split into multiple lines, one topic per line if needed
+        topics_lines = []
+        current_line = []
+        current_len = 0
+        for token in topics_tokens:
+            token_len = len(token) + (3 if current_line else 0)  # " / " separator
+            if current_len + token_len > max_line_chars and current_line:
+                topics_lines.append(' / '.join(current_line))
+                current_line = [token]
+                current_len = len(token)
+            else:
+                current_line.append(token)
+                current_len += token_len
+        if current_line:
+            topics_lines.append(' / '.join(current_line))
 
     # Format contributions as a simple count
     contributions_count = len(files) if files else 0
@@ -209,7 +220,7 @@ def generate_card(
 
     stats_top = avatar_cy + avatar_r + unit * 0.08
     left_x = margin
-    right_x = width * 0.58
+    right_x = width * 0.68  # Moved right to prevent topic overflow
 
     row1_label_y = stats_top
     label_value_gap = unit * 0.02
@@ -275,10 +286,11 @@ def generate_card(
 
   <!-- Stats -->
   <text x="{left_x:.2f}" y="{row1_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">TOP TOPICS</text>
-  <text x="{left_x:.2f}" y="{row1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topics_lines[0]}</text>
 '''
-    if len(topics_lines) > 1:
-        svg += f'''  <text x="{left_x:.2f}" y="{row1_value_y + topics_line_height:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topics_lines[1]}</text>
+    # Render all topic lines
+    for i, topic_line in enumerate(topics_lines):
+        line_y = row1_value_y + (topics_line_height * i)
+        svg += f'''  <text x="{left_x:.2f}" y="{line_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{topic_line}</text>
 '''
     svg += f'''  <text x="{left_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
   <text x="{left_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations}</text>
