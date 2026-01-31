@@ -12,9 +12,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
 LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
 CARD_SIZES = {
-    'default': (1080, 1350),
+    'default': (1080, 1080),
     'wide': (1200, 630),
-    'square': (1080, 1080),
+    'portrait': (1080, 1350),
     'story': (1080, 1920),
 }
 
