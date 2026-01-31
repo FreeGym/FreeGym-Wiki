@@ -8,9 +8,6 @@
       <stop offset="0%" style="stop-color:#E10600;stop-opacity:0.2" />
       <stop offset="100%" style="stop-color:#E10600;stop-opacity:0" />
     </radialGradient>
-    <clipPath id="avatar-clip">
-      <circle cx="100.8" cy="100.8" r="59.0"/>
-    </clipPath>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
     </filter>
@@ -23,10 +20,8 @@
 
   <circle cx="1162.20" cy="43.80" r="6.00" fill="#2ecc71"/>
   <text x="1149.00" y="52.70" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14.90" fill="#b7e3c6">ACTIVE</text>
-  <!-- Profile picture with circle clip -->
-  <!-- Profile picture with circle clip -->
+  <!-- Avatar placeholder (no photo) -->
   <circle cx="100.8" cy="100.8" r="63.0" fill="#111111" stroke="#E10600" stroke-width="3.78"/>
-  <image x="37.8" y="37.8" width="126.0" height="126.0" clip-path="url(#avatar-clip)" href="https://github.com/mutant1643.png?size=160" xlink:href="https://github.com/mutant1643.png?size=160" preserveAspectRatio="xMidYMid slice"/>
 
   <!-- Badge symbol -->
   <circle cx="141.75" cy="141.75" r="20.16" fill="#E10600" stroke="#FFFFFF" stroke-width="2.52"/>
@@ -52,10 +47,7 @@
   <text x="696.00" y="296.98" font-family="system-ui, -apple-system, sans-serif" font-size="12.90" fill="#7a7a7a">COMMITS</text>
   <text x="696.00" y="328.48" font-family="system-ui, -apple-system, sans-serif" font-size="25.51" fill="#cfcfcf">20</text>
 
-  <!-- Footer with FreeGym logo -->
+  <!-- Footer -->
   <rect x="0" y="529.20" width="1200" height="100.80" rx="0" fill="#000000"/>
   <rect x="0" y="529.20" width="1200" height="6.30" fill="#1f1f1f"/>
-
-  <!-- FreeGym logo -->
-  <image x="408.00" y="482.34" width="384.00" height="194.52" href="https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/Writing/FreeGym%20Logo.png" xlink:href="https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/Writing/FreeGym%20Logo.png" preserveAspectRatio="xMidYMid meet"/>
 </svg>

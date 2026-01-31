@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Generate SVG profile cards for verified contributors."""
 
-import base64
 import calendar
 import os
 from datetime import date
@@ -9,12 +8,6 @@ import yaml
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
-LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
-LOGO_URL = os.getenv(
-    'LOGO_URL',
-    'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/Writing/FreeGym%20Logo.png'
-)
-
 CARD_SIZES = {
     'default': (1200, 630),
     'square': (1080, 1080),
@@ -23,35 +16,6 @@ CARD_SIZES = {
 }
 
 ACTIVE_WINDOW_DAYS = 60
-# Use the embedded logo by default; allow disabling via USE_LOGO=0/false.
-USE_LOGO = os.getenv('USE_LOGO', '1').lower() not in ('0', 'false', 'no')
-
-
-def get_png_size(path):
-    """Return (width, height) for a PNG image."""
-    with open(path, 'rb') as f:
-        signature = f.read(8)
-        if signature != b'\x89PNG\r\n\x1a\n':
-            raise ValueError('Not a PNG file')
-        f.seek(16)
-        width = int.from_bytes(f.read(4), 'big')
-        height = int.from_bytes(f.read(4), 'big')
-    return width, height
-
-
-def load_logo_data():
-    """Return (uri, width, height) for the FreeGym logo image."""
-    if not USE_LOGO:
-        return None, None, None
-    if not os.path.exists(LOGO_PATH):
-        return None, None, None
-    width, height = get_png_size(LOGO_PATH)
-    if LOGO_URL:
-        return LOGO_URL, width, height
-    with open(LOGO_PATH, 'rb') as f:
-        data = f.read()
-    b64 = base64.b64encode(data).decode('ascii')
-    return f"data:image/png;base64,{b64}", width, height
 
 
 def parse_last_active(value):
@@ -76,10 +40,9 @@ def is_active_recent(last_active):
     return (date.today() - last_date).days <= ACTIVE_WINDOW_DAYS
 
 
-def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label, logo_data):
-    """Generate an SVG profile card with logo and profile picture."""
+def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label):
+    """Generate an SVG profile card without embedded images."""
     width, height = CARD_SIZES[size_label]
-    logo_uri, logo_w, logo_h = logo_data
     unit = min(width, height)
     margin = unit * 0.06
     header_y = margin
@@ -143,9 +106,6 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
     commits_value = commits if commits is not None else 0
     active_recent = is_active_recent(last_active)
 
-    # GitHub avatar URL
-    avatar_url = f"https://github.com/{github}.png?size=160"
-
     # Type sizes
     title_size = min(unit * 0.07, 72)
     username_size = title_size * 0.52
@@ -180,19 +140,6 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
     row3_label_y = row2_value_y + value_size + unit * 0.04
     row3_value_y = row3_label_y + label_size + label_value_gap
 
-    # Logo placement
-    if logo_uri and logo_w and logo_h:
-        logo_scale_w = width * 0.32
-        logo_w_final = min(logo_scale_w, width * 0.42)
-        logo_h_final = logo_w_final * (logo_h / logo_w)
-        logo_x = (width - logo_w_final) / 2
-        logo_y = footer_y + (footer_h - logo_h_final) / 2
-    else:
-        logo_w_final = 0
-        logo_h_final = 0
-        logo_x = 0
-        logo_y = 0
-
     active_markup = ''
     if active_recent:
         active_dot_r = max(unit * 0.008, 6)
@@ -215,9 +162,6 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
       <stop offset="0%" style="stop-color:#E10600;stop-opacity:0.2" />
       <stop offset="100%" style="stop-color:#E10600;stop-opacity:0" />
     </radialGradient>
-    <clipPath id="avatar-clip">
-      <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r - 4}"/>
-    </clipPath>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
     </filter>
@@ -228,10 +172,8 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#glow)"/>
   <rect width="{width}" height="{max(unit * 0.01, 6):.2f}" fill="#E10600"/>
 
-{active_markup}  <!-- Profile picture with circle clip -->
-  <!-- Profile picture with circle clip -->
+{active_markup}  <!-- Avatar placeholder (no photo) -->
   <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="#111111" stroke="#E10600" stroke-width="{max(unit * 0.006, 3):.2f}"/>
-  <image x="{avatar_cx - avatar_r}" y="{avatar_cy - avatar_r}" width="{avatar_d}" height="{avatar_d}" clip-path="url(#avatar-clip)" href="{avatar_url}" xlink:href="{avatar_url}" preserveAspectRatio="xMidYMid slice"/>
 
   <!-- Badge symbol -->
   <circle cx="{avatar_cx + avatar_r * 0.65:.2f}" cy="{avatar_cy + avatar_r * 0.65:.2f}" r="{avatar_r * 0.32:.2f}" fill="{badge_color}" stroke="{badge_stroke}" stroke-width="{max(unit * 0.004, 2):.2f}"/>
@@ -261,19 +203,9 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <text x="{right_x:.2f}" y="{row2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{micro_label_size:.2f}" fill="#7a7a7a">COMMITS</text>
   <text x="{right_x:.2f}" y="{row2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size * 0.9:.2f}" fill="#cfcfcf">{commits_value}</text>
 
-  <!-- Footer with FreeGym logo -->
+  <!-- Footer -->
   <rect x="0" y="{footer_y:.2f}" width="{width}" height="{footer_h:.2f}" rx="0" fill="#000000"/>
   <rect x="0" y="{footer_y:.2f}" width="{width}" height="{max(unit * 0.01, 6):.2f}" fill="#1f1f1f"/>
-
-  <!-- FreeGym logo -->
-'''
-    if logo_uri:
-        svg += f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
-'''
-    else:
-        svg += f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h * 0.62:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit * 0.08, 64):.2f}" font-weight="700">
-    <tspan fill="white">FREE</tspan><tspan fill="#E10600">GYM</tspan>
-  </text>
 '''
     svg += '</svg>'
     return svg
@@ -284,8 +216,6 @@ def main():
 
     with open('contributors.yaml', 'r') as f:
         data = yaml.safe_load(f)
-
-    logo_data = load_logo_data()
 
     all_contributors = []
 
@@ -344,7 +274,6 @@ def main():
                 last_active=contrib['last_active'],
                 commits=contrib['commits'],
                 size_label=size_label,
-                logo_data=logo_data,
             )
 
             suffix = '' if size_label == 'default' else f'-{size_label}'
