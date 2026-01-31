@@ -41,7 +41,7 @@ def is_active_recent(last_active):
 
 
 def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label):
-    """Generate an SVG profile card without embedded images."""
+    """Generate an SVG profile card with GitHub avatar."""
     width, height = CARD_SIZES[size_label]
     unit = min(width, height)
     margin = unit * 0.06
@@ -152,6 +152,8 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <text x="{active_text_x:.2f}" y="{active_text_y:.2f}" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="{active_text_size:.2f}" fill="#b7e3c6">ACTIVE</text>
 '''
 
+    avatar_url = f"https://github.com/{github}.png?size=200"
+
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -165,6 +167,9 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
     </filter>
+    <clipPath id="avatar-clip">
+      <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}"/>
+    </clipPath>
   </defs>
 
   <!-- Card background -->
@@ -172,8 +177,10 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#glow)"/>
   <rect width="{width}" height="{max(unit * 0.01, 6):.2f}" fill="#E10600"/>
 
-{active_markup}  <!-- Avatar placeholder (no photo) -->
-  <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="#111111" stroke="#E10600" stroke-width="{max(unit * 0.006, 3):.2f}"/>
+{active_markup}  <!-- Avatar -->
+  <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="#111111"/>
+  <image x="{avatar_cx - avatar_r}" y="{avatar_cy - avatar_r}" width="{avatar_d}" height="{avatar_d}" href="{avatar_url}" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}" fill="none" stroke="#E10600" stroke-width="{max(unit * 0.006, 3):.2f}"/>
 
   <!-- Badge symbol -->
   <circle cx="{avatar_cx + avatar_r * 0.65:.2f}" cy="{avatar_cy + avatar_r * 0.65:.2f}" r="{avatar_r * 0.32:.2f}" fill="{badge_color}" stroke="{badge_stroke}" stroke-width="{max(unit * 0.004, 2):.2f}"/>
