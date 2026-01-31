@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Generate SVG profile cards for verified contributors."""
 
+import base64
 import calendar
 import os
+import urllib.request
 from datetime import date
 import yaml
 
@@ -16,6 +18,29 @@ CARD_SIZES = {
 }
 
 ACTIVE_WINDOW_DAYS = 60
+
+# Cache for fetched avatars to avoid re-downloading for different card sizes
+_avatar_cache = {}
+
+
+def fetch_avatar_base64(github_username):
+    """Fetch GitHub avatar and return as base64 data URI."""
+    if github_username in _avatar_cache:
+        return _avatar_cache[github_username]
+
+    url = f"https://github.com/{github_username}.png?size=200"
+    try:
+        with urllib.request.urlopen(url, timeout=10) as response:
+            image_data = response.read()
+            content_type = response.headers.get('Content-Type', 'image/png')
+            b64 = base64.b64encode(image_data).decode('utf-8')
+            data_uri = f"data:{content_type};base64,{b64}"
+            _avatar_cache[github_username] = data_uri
+            return data_uri
+    except Exception as e:
+        print(f"Warning: Could not fetch avatar for {github_username}: {e}")
+        _avatar_cache[github_username] = None
+        return None
 
 
 def parse_last_active(value):
@@ -40,7 +65,7 @@ def is_active_recent(last_active):
     return (date.today() - last_date).days <= ACTIVE_WINDOW_DAYS
 
 
-def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label):
+def generate_card(github, display_name, badge_type, topics, citations, files, last_active, commits, size_label, avatar_data_uri=None):
     """Generate an SVG profile card with GitHub avatar."""
     width, height = CARD_SIZES[size_label]
     unit = min(width, height)
@@ -152,7 +177,8 @@ def generate_card(github, display_name, badge_type, topics, citations, files, la
   <text x="{active_text_x:.2f}" y="{active_text_y:.2f}" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="{active_text_size:.2f}" fill="#b7e3c6">ACTIVE</text>
 '''
 
-    avatar_url = f"https://github.com/{github}.png?size=200"
+    # Use base64 data URI if provided, otherwise fall back to external URL
+    avatar_url = avatar_data_uri if avatar_data_uri else f"https://github.com/{github}.png?size=200"
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
@@ -270,6 +296,9 @@ def main():
             })
 
     for contrib in all_contributors:
+        # Fetch avatar once per contributor (cached for all card sizes)
+        avatar_data_uri = fetch_avatar_base64(contrib['github'])
+
         for size_label in CARD_SIZES:
             svg = generate_card(
                 github=contrib['github'],
@@ -281,6 +310,7 @@ def main():
                 last_active=contrib['last_active'],
                 commits=contrib['commits'],
                 size_label=size_label,
+                avatar_data_uri=avatar_data_uri,
             )
 
             suffix = '' if size_label == 'default' else f'-{size_label}'
