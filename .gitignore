@@ -1,6 +1,7 @@
 # User exclusions
 .agent/
 writing/
+Writing/drafts/
 site/
 
 # Common exclusions
