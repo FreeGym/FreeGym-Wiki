@@ -207,30 +207,30 @@ jobs:
           author = analysis['author']
           pr_number = analysis['pr_number']
           is_substantive = analysis['is_substantive']
-          topics = analysis['topics']
-          contributions = analysis['contributions']
+          topics = analysis.get('topics') or []
+          contributions = analysis.get('contributions') or []
           total_citations = analysis['total_citations']
           commits = analysis.get('commits', 1)
           current_month = datetime.now().strftime("%Y-%m")
 
           # Load contributors.yaml
           with open('contributors.yaml', 'r') as f:
-              data = yaml.safe_load(f)
+              data = yaml.safe_load(f) or {}
 
           # Helper to update a contributor record
           def update_contributor(contributor, is_new=False):
               contributor['last_active'] = current_month
 
-              # Update topics
-              existing_topics = contributor.get('topics', [])
-              contributor['topics'] = list(set(existing_topics + topics))
+          # Update topics
+          existing_topics = contributor.get('topics') or []
+          contributor['topics'] = list(set(existing_topics + topics))
 
-              # Update contributions list
-              existing_contributions = contributor.get('contributions', [])
-              for contrib in contributions:
-                  contrib['pr'] = pr_number
-                  existing_contributions.append(contrib)
-              contributor['contributions'] = existing_contributions
+          # Update contributions list
+          existing_contributions = contributor.get('contributions') or []
+          for contrib in contributions:
+              contrib['pr'] = pr_number
+              existing_contributions.append(contrib)
+          contributor['contributions'] = existing_contributions
 
               # Update total citations
               contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
@@ -241,18 +241,22 @@ jobs:
               return contributor
 
           # Check if author is a maintainer
-          maintainer_names = [m['github'] for m in data.get('maintainers', [])]
-          trusted_names = [t['github'] for t in data.get('trusted', []) if isinstance(t, dict)]
+          maintainers = data.get('maintainers') or []
+          trusted = data.get('trusted') or []
+          data['maintainers'] = maintainers
+          data['trusted'] = trusted
+          maintainer_names = [m['github'] for m in maintainers if isinstance(m, dict)]
+          trusted_names = [t['github'] for t in trusted if isinstance(t, dict)]
 
           if author in maintainer_names:
-              for m in data['maintainers']:
-                  if m['github'] == author:
+              for m in maintainers:
+                  if isinstance(m, dict) and m.get('github') == author:
                       update_contributor(m)
               print(f"Updated maintainer {author}")
 
           elif author in trusted_names:
-              for t in data['trusted']:
-                  if isinstance(t, dict) and t['github'] == author:
+              for t in trusted:
+                  if isinstance(t, dict) and t.get('github') == author:
                       update_contributor(t)
                       t['prs_merged'] = t.get('prs_merged', 0) + 1
                       if is_substantive:
@@ -261,10 +265,8 @@ jobs:
 
           else:
               # Handle regular contributors
-              contributors = data.get('contributors', [])
-              if contributors is None:
-                  contributors = []
-                  data['contributors'] = contributors
+              contributors = data.get('contributors') or []
+              data['contributors'] = contributors
 
               # Find existing contributor
               contributor = None
@@ -319,10 +321,13 @@ jobs:
           import urllib.parse
 
           with open('contributors.yaml', 'r') as f:
-              data = yaml.safe_load(f)
+              data = yaml.safe_load(f) or {}
 
           md = []
           all_verified = []  # Collect all verified for badge section
+          maintainers = data.get('maintainers') or []
+          trusted_entries = data.get('trusted') or []
+          contributors_entries = data.get('contributors') or []
 
           md.append("# Contributors\n")
           md.append("This file is auto-generated from [contributors.yaml](contributors.yaml). Do not edit directly.\n")
@@ -333,7 +338,7 @@ jobs:
           md.append("| | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |")
           md.append("|---|------|-----------|---------------|-----------|---------|-------------|------|")
 
-          for m in data.get('maintainers', []):
+          for m in maintainers:
               github = m.get('github', '')
               name = m.get('name', github)
               specialty = ' '.join(f"`{s}`" for s in m.get('specialty', []))
@@ -353,7 +358,7 @@ jobs:
           md.append("")
 
           # Trusted section
-          trusted = [t for t in data.get('trusted', []) if isinstance(t, dict)]
+          trusted = [t for t in trusted_entries if isinstance(t, dict)]
           if trusted:
               md.append("---\n")
               md.append("## Trusted Contributors\n")
@@ -378,7 +383,7 @@ jobs:
               md.append("")
 
           # Verified contributors
-          contributors = [c for c in data.get('contributors', []) if isinstance(c, dict)]
+          contributors = [c for c in contributors_entries if isinstance(c, dict)]
           verified = [c for c in contributors if c.get('checkmark')]
           unverified = [c for c in contributors if not c.get('checkmark')]
 
