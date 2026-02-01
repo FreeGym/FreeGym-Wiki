@@ -21,14 +21,20 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to process (required for manual runs)'
+        required: true
 
 jobs:
   track-contributor:
-    if: github.event.pull_request.merged == true
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
+      pull-requests: read
 
     steps:
       - name: Checkout repository
@@ -48,6 +54,10 @@ jobs:
         id: analyze
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER_INPUT: ${{ inputs.pr_number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          LABELS_JSON: ${{ toJson(github.event.pull_request.labels.*.name) }}
         run: |
           python << 'PYTHON_SCRIPT'
           import subprocess
@@ -56,10 +66,27 @@ jobs:
           import os
 
           # Get PR info from environment
-          pr_number = ${{ github.event.pull_request.number }}
-          author = "${{ github.event.pull_request.user.login }}"
-          labels_json = '${{ toJson(github.event.pull_request.labels.*.name) }}'
-          labels = json.loads(labels_json)
+          pr_number_raw = os.environ.get("PR_NUMBER") or os.environ.get("PR_NUMBER_INPUT") or ""
+          if not pr_number_raw:
+              raise SystemExit("PR number not provided. Use workflow_dispatch input pr_number.")
+          pr_number = int(pr_number_raw)
+          author = os.environ.get("PR_AUTHOR", "")
+          labels_json = os.environ.get("LABELS_JSON", "[]")
+          try:
+              labels = json.loads(labels_json) if labels_json else []
+          except json.JSONDecodeError:
+              labels = []
+          if not author or not labels:
+              result = subprocess.run(
+                  ["gh", "pr", "view", str(pr_number), "--json", "author,labels"],
+                  capture_output=True, text=True
+              )
+              if result.returncode == 0 and result.stdout.strip():
+                  info = json.loads(result.stdout)
+                  if not author:
+                      author = (info.get("author") or {}).get("login", "")
+                  if not labels:
+                      labels = [l.get("name") for l in info.get("labels", []) if l.get("name")]
           is_substantive = "substantive" in labels
 
           # Get list of files changed
