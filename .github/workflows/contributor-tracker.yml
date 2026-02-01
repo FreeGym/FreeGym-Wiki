@@ -205,13 +205,13 @@ jobs:
               existing_contributions.append(contrib)
           contributor['contributions'] = existing_contributions
 
-              # Update total citations
-              contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
+          # Update total citations
+          contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
 
-              # Update commits count
-              contributor['commits'] = contributor.get('commits', 0) + commits
+          # Update commits count
+          contributor['commits'] = contributor.get('commits', 0) + commits
 
-              return contributor
+          return contributor
 
           # Check if author is a maintainer
           maintainers = data.get('maintainers') or []
