@@ -20,6 +20,16 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 ---
 
+## Contributors
+
+These contributors have merged PRs but haven't yet earned verification.
+
+| Name | Last Active | PRs |
+|------|-------------|-----|
+| <a id="github-actions[bot]"></a>[@github-actions[bot]](https://github.com/github-actions[bot]) | 2026-02 | [1 PRs](https://github.com/FreeGym/FreeGym-Wiki/pulls?q=author:github-actions[bot]) |
+
+---
+
 **Want to get verified?** See [VERIFICATION.md](VERIFICATION.md) for how to earn the checkmark.
 
 ---
