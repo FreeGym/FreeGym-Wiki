@@ -8,7 +8,15 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `core` `governance` | - | 0 | 0 | 2026-01 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `core` `governance` | [protein-rda.md](nutrition/protein-rda.md), [protein.md](nutrition/protein.md), [README.md](nutrition/README.md) | 8 | 20 | 2026-01 | [View](cards/mutant1643.svg) |
+
+---
+
+## Verified Contributors
+
+| | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
+|---|------|--------|---------------|-----------|---------|-------------|------|
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/protein-rda.md) | 3 | 1 | 2026-02 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -20,10 +28,13 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 Copy these to your GitHub profile README to show your verification status.
 
+
 ### @mutant1643
 
 ```markdown
-[![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-⭐_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![Citations](https://img.shields.io/badge/Citations-8-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 ```
 
 **Shareable Card:**
@@ -31,3 +42,18 @@ Copy these to your GitHub profile README to show your verification status.
 ![Profile Card](https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/mutant1643.svg)
 
 Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/mutant1643.svg`
+
+
+### @FreeGym
+
+```markdown
+[![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+```
+
+**Shareable Card:**
+
+![Profile Card](https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/FreeGym.svg)
+
+Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/FreeGym.svg`
