@@ -208,7 +208,7 @@ def render_index(profiles, topics, stats):
     <section class="hero reveal">
       <div>
         <div class="eyebrow">Verification directory</div>
-        <h1>Every checkmark is a public receipt.</h1>
+        <h1>This repo exists so health claims are backed by sources, not followers or algorithms.</h1>
         <p>These profiles summarize evidence based contributions to the FreeGym Wiki. No follower counts, no credentials, just the work.</p>
         <div class="hero-actions">
           <a class="button primary" href="{REPO_URL}">View repo</a>

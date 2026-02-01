@@ -1,3 +1,5 @@
+Live site: https://freegym.github.io/FreeGym-Wiki/
+
 # FreeGym Wiki
 
 > **"Your GitHub profile will matter more than Twitter, Instagram, and YouTube combined."**
