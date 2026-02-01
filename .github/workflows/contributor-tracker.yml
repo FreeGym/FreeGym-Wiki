@@ -221,24 +221,24 @@ jobs:
           def update_contributor(contributor, is_new=False):
               contributor['last_active'] = current_month
 
-          # Update topics
-          existing_topics = contributor.get('topics') or []
-          contributor['topics'] = list(set(existing_topics + topics))
+              # Update topics
+              existing_topics = contributor.get('topics') or []
+              contributor['topics'] = list(set(existing_topics + topics))
 
-          # Update contributions list
-          existing_contributions = contributor.get('contributions') or []
-          for contrib in contributions:
-              contrib['pr'] = pr_number
-              existing_contributions.append(contrib)
-          contributor['contributions'] = existing_contributions
+              # Update contributions list
+              existing_contributions = contributor.get('contributions') or []
+              for contrib in contributions:
+                  contrib['pr'] = pr_number
+                  existing_contributions.append(contrib)
+              contributor['contributions'] = existing_contributions
 
-          # Update total citations
-          contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
+              # Update total citations
+              contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
 
-          # Update commits count
-          contributor['commits'] = contributor.get('commits', 0) + commits
+              # Update commits count
+              contributor['commits'] = contributor.get('commits', 0) + commits
 
-          return contributor
+              return contributor
 
           # Check if author is a maintainer
           maintainers = data.get('maintainers') or []
