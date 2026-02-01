@@ -38,7 +38,7 @@ The same review notes limitations in how the RDA is derived and applied, which i
 
 ## Older adults and higher estimates
 
-An indicator amino acid oxidation (IAAO) study in men over 65 estimated a mean requirement of 0.94 g/kg/day and an RDA-like value of 1.24 g/kg/day. IAAO estimates requirements by tracking how oxidation of a labeled amino acid changes as intake rises. The authors noted that current recommendations for older men may be underestimated. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/))
+An indicator amino acid oxidation (IAAO) study in men over 65 estimated a mean requirement of 0.94 g/kg/day and an RDA-like value of 1.24 g/kg/day. IAAO estimates requirements by tracking how oxidation of a labeled amino acid changes as intake rises. The authors noted that current recommendations for older men may be underestimated. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/)) More recently, an umbrella review/meta-analysis comparing methods found IAAO-derived protein requirements average ~30% higher than nitrogen balance-derived estimates, and a commissioned systematic review for potential future DRI updates judged the evidence (2000-May 2024) insufficient/inconclusive to set definitive new requirement values. (https://pubmed.ncbi.nlm.nih.gov/40914512/)
 
 The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 to help maintain or regain lean mass and function, with higher intakes suggested for those who are active. The same paper notes that older people with severe kidney disease (e.g., eGFR <30 mL/min/1.73 m²) who are not on dialysis may need to limit protein intake. ([Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
 
