@@ -38,3 +38,13 @@ contributors:
   total_citations: 3
   commits: 1
   checkmark_pr: 29
+- github: github-actions[bot]
+  joined: 2026-02
+  checkmark: false
+  topics: []
+  last_active: 2026-02
+  prs_merged: 1
+  substantive_prs: 0
+  contributions: []
+  total_citations: 0
+  commits: 1
