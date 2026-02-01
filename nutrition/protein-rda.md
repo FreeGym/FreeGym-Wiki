@@ -42,6 +42,13 @@ An indicator amino acid oxidation (IAAO) study in men over 65 estimated a mean r
 
 The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 to help maintain or regain lean mass and function, with higher intakes suggested for those who are active. The same paper notes that older people with severe kidney disease (e.g., eGFR <30 mL/min/1.73 m²) who are not on dialysis may need to limit protein intake. ([Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
 
+## Quick reference values (adults)
+
+- DRI protein RDA: 0.8 g/kg/day. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32))
+- Nitrogen balance meta-analysis: EAR 0.65 g/kg/day; 97.5th percentile 0.83 g/kg/day. ([Rand et al., 2003](https://pubmed.ncbi.nlm.nih.gov/12499330/))
+- EFSA: average requirement 0.66 g/kg/day; population reference intake 0.83 g/kg/day. ([EFSA, 2012](https://doi.org/10.2903/j.efsa.2012.2557))
+- IAAO in men >65: mean requirement 0.94 g/kg/day; RDA-like 1.24 g/kg/day. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/))
+
 ## Practical interpretation
 
 - The RDA is an intake goal that corresponds to a very low risk of inadequacy for apparently healthy adults, not an optimal target for every outcome; it is not intended as a cut-point for assessing nutrient intakes of groups. ([Institute of Medicine, 2000](https://www.nationalacademies.org/read/9810/chapter/3); [Institute of Medicine, 2000 (Applications in Dietary Assessment)](https://www.nationalacademies.org/read/9956/chapter/3))
