@@ -24,7 +24,7 @@ Most health creators are indistinguishable. Same content, same format, same enga
 
 ## How Contributions Work
 
-You contribute by opening a Pull Request. That's it.
+You contribute by opening a Pull Request. The `main` branch is protected, so direct pushes will be rejected. All changes must go through a PR.
 
 Find something wrong? Open a PR with the fix. Have evidence to add? Open a PR. Disagree with a claim? Open an Issue first, discuss it, then open a PR if the community agrees.
 
