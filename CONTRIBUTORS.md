@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/protein-rda.md) | 3 | 1 | 2026-02 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/protein-rda.md) | 3 | 2 | 2026-02 | [View](cards/FreeGym.svg) |
 
 ---
 
