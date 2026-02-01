@@ -8,7 +8,17 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `core` `governance` | - | 0 | 0 | 2026-01 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `core` `governance` | [protein-rda.md](nutrition/protein-rda.md), [protein.md](nutrition/protein.md), [README.md](nutrition/README.md) | 8 | 20 | 2026-01 | [View](cards/mutant1643.svg) |
+
+---
+
+## Contributors
+
+These contributors have merged PRs but haven't yet earned verification.
+
+| Name | Last Active | PRs |
+|------|-------------|-----|
+| <a id="FreeGym"></a>[@FreeGym](https://github.com/FreeGym) | 2026-02 | [1 PRs](https://github.com/FreeGym/FreeGym-Wiki/pulls?q=author:FreeGym) |
 
 ---
 
@@ -20,10 +30,13 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 Copy these to your GitHub profile README to show your verification status.
 
+
 ### @mutant1643
 
 ```markdown
-[![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-⭐_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![Citations](https://img.shields.io/badge/Citations-8-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 ```
 
 **Shareable Card:**
