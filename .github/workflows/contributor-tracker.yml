@@ -48,6 +48,9 @@ jobs:
         id: analyze
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          LABELS_JSON: ${{ toJson(github.event.pull_request.labels.*.name) }}
         run: |
           python << 'PYTHON_SCRIPT'
           import subprocess
@@ -56,10 +59,13 @@ jobs:
           import os
 
           # Get PR info from environment
-          pr_number = ${{ github.event.pull_request.number }}
-          author = "${{ github.event.pull_request.user.login }}"
-          labels_json = '${{ toJson(github.event.pull_request.labels.*.name) }}'
-          labels = json.loads(labels_json)
+          pr_number = int(os.environ.get("PR_NUMBER", "0"))
+          author = os.environ.get("PR_AUTHOR", "")
+          labels_json = os.environ.get("LABELS_JSON", "[]")
+          try:
+              labels = json.loads(labels_json) if labels_json else []
+          except json.JSONDecodeError:
+              labels = []
           is_substantive = "substantive" in labels
 
           # Get list of files changed
