@@ -506,9 +506,9 @@ jobs:
             author="${{ github.event.pull_request.user.login }}"
           fi
 
-          # Create a unique branch for this update
-          branch_name="contributor-update/pr-${pr_number}"
-          git checkout -b "$branch_name"
+          # Use a single rolling branch to avoid branch sprawl
+          branch_name="contributor-update/auto"
+          git checkout -B "$branch_name"
 
           git commit -m "Update contributors: $author (PR #${pr_number})"
 
@@ -516,7 +516,7 @@ jobs:
           git push origin "$branch_name" --force
 
           # Check if a PR already exists for this branch
-          existing_pr=$(gh pr list --head "$branch_name" --json number --jq '.[0].number' 2>/dev/null || echo "")
+          existing_pr=$(gh pr list --head "$branch_name" --state open --json number --jq '.[0].number' 2>/dev/null || echo "")
 
           if [ -n "$existing_pr" ]; then
             echo "PR #$existing_pr already exists for this branch, updated."
