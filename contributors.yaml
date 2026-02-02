@@ -7,7 +7,7 @@ maintainers:
   - governance
   topics:
   - nutrition
-  last_active: 2026-01
+  last_active: 2026-02
   contributions:
   - file: nutrition/protein-rda.md
     type: created
@@ -18,8 +18,12 @@ maintainers:
   - file: nutrition/README.md
     type: edit
     citations_added: 0
-  total_citations: 8
-  commits: 20
+  - file: nutrition/protein-timing.md
+    type: created
+    citations_added: 9
+    pr: 49
+  total_citations: 17
+  commits: 21
 trusted: []
 contributors:
 - github: FreeGym

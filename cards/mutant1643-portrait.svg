@@ -43,16 +43,16 @@
   <text x="64.80" y="481.40" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Core</text>
   <text x="64.80" y="538.60" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Governance</text>
   <text x="594.00" y="367.20" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">LAST ACTIVE</text>
-  <text x="594.00" y="424.20" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">2026-01</text>
+  <text x="594.00" y="424.20" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">2026-02</text>
 
   <text x="594.00" y="549.45" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">CITATIONS</text>
-  <text x="594.00" y="606.45" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">8</text>
+  <text x="594.00" y="606.45" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">17</text>
 
   <text x="594.00" y="731.70" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">COMMITS</text>
-  <text x="594.00" y="788.70" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">20</text>
+  <text x="594.00" y="788.70" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">21</text>
 
   <text x="594.00" y="913.95" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="594.00" y="970.95" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">3</text>
+  <text x="594.00" y="970.95" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">4</text>
 
   <!-- Footer -->
   <rect x="0" y="1161.00" width="1080" height="189.00" rx="0" fill="#000000"/>
