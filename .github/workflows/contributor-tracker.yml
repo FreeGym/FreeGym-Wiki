@@ -209,6 +209,8 @@ jobs:
           PYTHON_SCRIPT
 
       - name: Update contributors.yaml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python << 'PYTHON_SCRIPT'
           import yaml
