@@ -52,6 +52,19 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
+      - name: Use accumulated contributors.yaml if available
+        run: |
+          # If contributor-update/auto exists, use its contributors.yaml
+          # to preserve accumulated updates from previous unmerged runs.
+          # Without this, each force-push would overwrite previous updates.
+          if git fetch origin contributor-update/auto 2>/dev/null; then
+            git checkout origin/contributor-update/auto -- contributors.yaml 2>/dev/null && \
+              echo "Using accumulated contributors.yaml from contributor-update/auto" || \
+              echo "Branch exists but contributors.yaml checkout failed, using main"
+          else
+            echo "No existing contributor-update/auto branch, starting from main"
+          fi
+
       - name: Get PR info and analyze contributions
         id: analyze
         env:
