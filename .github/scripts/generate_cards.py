@@ -17,7 +17,7 @@ except ImportError:
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(BASE_DIR, os.pardir, os.pardir))
-LOGO_PATH = os.path.join(REPO_ROOT, 'Writing', 'FreeGym Logo.png')
+LOGO_PATH = os.path.join(REPO_ROOT, 'assets', 'FreeGym Logo.png')
 CARD_SIZES = {
     'default': (1080, 1080),
     'wide': (1200, 630),
