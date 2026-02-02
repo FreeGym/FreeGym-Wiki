@@ -213,6 +213,7 @@ jobs:
           python << 'PYTHON_SCRIPT'
           import yaml
           import json
+          import subprocess
           from datetime import datetime
 
           # Load analysis results
@@ -227,6 +228,23 @@ jobs:
           total_citations = analysis['total_citations']
           commits = analysis.get('commits', 1)
           current_month = datetime.now().strftime("%Y-%m")
+
+          def get_absolute_commit_count(github_username):
+              """Get total commit count for a user from the GitHub search API.
+              Returns an absolute number, not incremental, so stale base
+              values can never propagate."""
+              try:
+                  result = subprocess.run(
+                      ["gh", "api", "search/commits",
+                       "-f", f"q=author:{github_username} repo:FreeGym/FreeGym-Wiki",
+                       "--jq", ".total_count"],
+                      capture_output=True, text=True, timeout=30
+                  )
+                  if result.returncode == 0 and result.stdout.strip().isdigit():
+                      return int(result.stdout.strip())
+              except Exception:
+                  pass
+              return None
 
           # Load contributors.yaml
           with open('contributors.yaml', 'r') as f:
@@ -247,11 +265,21 @@ jobs:
                   existing_contributions.append(contrib)
               contributor['contributions'] = existing_contributions
 
-              # Update total citations
-              contributor['total_citations'] = contributor.get('total_citations', 0) + total_citations
+              # Recalculate total_citations from contributions list (idempotent)
+              contributor['total_citations'] = sum(
+                  c.get('citations_added', 0) for c in contributor.get('contributions', [])
+              )
 
-              # Update commits count
-              contributor['commits'] = contributor.get('commits', 0) + commits
+              # Use absolute commit count from GitHub API instead of
+              # incrementing.  This prevents stale base values (e.g. from
+              # the accumulated branch) from propagating.
+              github_user = contributor.get('github', author)
+              abs_commits = get_absolute_commit_count(github_user)
+              if abs_commits is not None:
+                  contributor['commits'] = abs_commits
+              else:
+                  # Fallback: increment (less accurate but better than nothing)
+                  contributor['commits'] = contributor.get('commits', 0) + commits
 
               return contributor
 
@@ -305,6 +333,7 @@ jobs:
 
               else:
                   # New contributor
+                  abs_commits = get_absolute_commit_count(author)
                   new_contributor = {
                       'github': author,
                       'joined': current_month,
@@ -315,7 +344,7 @@ jobs:
                       'substantive_prs': 1 if is_substantive else 0,
                       'contributions': [dict(c, pr=pr_number) for c in contributions],
                       'total_citations': total_citations,
-                      'commits': commits
+                      'commits': abs_commits if abs_commits is not None else commits
                   }
                   if is_substantive:
                       new_contributor['checkmark_pr'] = pr_number
