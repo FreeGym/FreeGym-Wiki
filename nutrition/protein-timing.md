@@ -85,18 +85,19 @@ Think protein opportunities across the day rather than a single post-workout bot
 
 ## References
 
-* The effect of protein timing on muscle strength and hypertrophy: a meta-analysis. *J Int Soc Sports Nutr.* 2013;10:53. DOI: 10.1186/1550-2783-10-53. ([PMC][4])
-* The Role of Protein Intake and its Timing on Body Composition and Muscle Function in Healthy Adults: a systematic review and meta-analysis of RCTs. *J Nutr.* 2020;150:1443–1460. DOI: 10.1093/jn/nxaa049. ([ScienceDirect][5])
-* Does Protein Ingestion Timing Affect Exercise-Induced Adaptations? A systematic review with meta-analysis (before vs after). *Nutrients.* 2025;17(13):2070. PMID: 40647175. ([PMC][6])
-* A systematic review, meta-analysis and meta-regression of protein supplementation on resistance training–induced gains. *Br J Sports Med.* 2018;52:376–384. DOI: 10.1136/bjsports-2017-097608. ([PubMed][13])
-* International Society of Sports Nutrition Position Stand: protein and exercise. *J Int Soc Sports Nutr.* 2017;14:20. DOI: 10.1186/s12970-017-0177-8. ([PubMed][2])
-* Timing of amino acid-carbohydrate ingestion alters anabolic response of muscle to resistance exercise. *Am J Physiol Endocrinol Metab.* 2001;281:E197–E206. DOI: 10.1152/ajpendo.2001.281.2.E197. ([PubMed][3])
-* Enhanced amino acid sensitivity of myofibrillar protein synthesis persists for up to 24 h after resistance exercise in young men. *J Nutr.* 2011. ([ScienceDirect][1])
-* Timing and distribution of protein ingestion during prolonged recovery alters myofibrillar protein synthesis. *J Physiol.* 2013. ([PubMed][9])
-* Dietary protein distribution positively influences 24-h muscle protein synthesis in healthy adults. *J Nutr.* 2014. ([PubMed][10])
-* Protein supplementation before and after exercise does not further augment skeletal muscle hypertrophy after resistance training in elderly men. *Am J Clin Nutr.* 2009. PMID: 19106243. ([PubMed][7])
-* Protein timing has no effect on lean mass, strength and functional capacity gains in postmenopausal women: randomized trial. *Clin Nutr.* 2020. DOI: 10.1016/j.clnu.2019.01.008. ([ScienceDirect][8])
-* Evenly Distributed Protein Intake over 3 Meals Augments Resistance Exercise–Induced Muscle Hypertrophy in Healthy Young Men. *J Nutr.* 2020;150(7):1845–1851. DOI: 10.1093/jn/nxaa101. ([ScienceDirect][12])
+* Burd NA, West DWD, Moore DR, et al. Enhanced amino acid sensitivity of myofibrillar protein synthesis persists for up to 24 h after resistance exercise in young men. *J Nutr.* 2011;141(4):568-573. DOI: 10.3945/jn.110.135038. PMID: 21289204. ([ScienceDirect][1])
+* Jäger R, Kerksick CM, Campbell BI, et al. International Society of Sports Nutrition Position Stand: protein and exercise. *J Int Soc Sports Nutr.* 2017;14:20. DOI: 10.1186/s12970-017-0177-8. PMID: 28642676. ([PubMed][2])
+* Tipton KD, Rasmussen BB, Miller SL, et al. Timing of amino acid-carbohydrate ingestion alters anabolic response of muscle to resistance exercise. *Am J Physiol Endocrinol Metab.* 2001;281(2):E197-E206. DOI: 10.1152/ajpendo.2001.281.2.E197. PMID: 11440894. ([PubMed][3])
+* Schoenfeld BJ, Aragon AA, Krieger JW. The effect of protein timing on muscle strength and hypertrophy: a meta-analysis. *J Int Soc Sports Nutr.* 2013;10:53. DOI: 10.1186/1550-2783-10-53. PMID: 24299050. ([PMC][4])
+* Wirth J, Hillesheim E, Brennan L. The Role of Protein Intake and its Timing on Body Composition and Muscle Function in Healthy Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. *J Nutr.* 2020;150(6):1443-1460. DOI: 10.1093/jn/nxaa049. PMID: 32232404. ([ScienceDirect][5])
+* Casuso RA, Goossens L. Does Protein Ingestion Timing Affect Exercise-Induced Adaptations? A Systematic Review with Meta-Analysis. *Nutrients.* 2025;17(13):2070. DOI: 10.3390/nu17132070. PMID: 40647175. ([PMC][6])
+* Verdijk LB, Jonkers RAM, Gleeson BG, et al. Protein supplementation before and after exercise does not further augment skeletal muscle hypertrophy after resistance training in elderly men. *Am J Clin Nutr.* 2009;89(2):608-616. DOI: 10.3945/ajcn.2008.26626. PMID: 19106243. ([PubMed][7])
+* de Branco FMS, Carneiro MAS, Rossato LT, et al. Protein timing has no effect on lean mass, strength and functional capacity gains induced by resistance exercise in postmenopausal women: A randomized clinical trial. *Clin Nutr.* 2020;39(1):57-66. DOI: 10.1016/j.clnu.2019.01.008. PMID: 30691866. ([ScienceDirect][8])
+* Areta JL, Burke LM, Ross ML, et al. Timing and distribution of protein ingestion during prolonged recovery from resistance exercise alters myofibrillar protein synthesis. *J Physiol.* 2013;591(9):2319-2331. DOI: 10.1113/jphysiol.2012.244897. PMID: 23459753. ([PubMed][9])
+* Mamerow MM, Mettler JA, English KL, et al. Dietary protein distribution positively influences 24-h muscle protein synthesis in healthy adults. *J Nutr.* 2014;144(6):876-880. DOI: 10.3945/jn.113.185280. PMID: 24477298. ([PubMed][10])
+* Hudson JL, Kim JE, Paddon-Jones D, Campbell WW. Within-day protein distribution does not influence body composition responses during weight loss in resistance-training adults who are overweight. *Am J Clin Nutr.* 2017;106(5):1190-1196. DOI: 10.3945/ajcn.117.158246. PMID: 28903957. ([ScienceDirect][11])
+* Yasuda J, Tomita T, Arimitsu T, Fujita S. Evenly Distributed Protein Intake over 3 Meals Augments Resistance Exercise-Induced Muscle Hypertrophy in Healthy Young Men. *J Nutr.* 2020;150(7):1845-1851. DOI: 10.1093/jn/nxaa101. PMID: 32321161. ([ScienceDirect][12])
+* Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. *Br J Sports Med.* 2018;52(6):376-384. DOI: 10.1136/bjsports-2017-097608. PMID: 28698222. ([PubMed][13])
 
 [1]: https://www.sciencedirect.com/science/article/pii/S0022316622025561 "Enhanced Amino Acid Sensitivity of Myofibrillar Protein Synthesis Persists for up to 24 h after Resistance Exercise in Young Men - ScienceDirect"
 [2]: https://pubmed.ncbi.nlm.nih.gov/28642676/ "International Society of Sports Nutrition Position Stand: protein and exercise - PubMed"

@@ -38,7 +38,7 @@ The same review notes limitations in how the RDA is derived and applied, which i
 
 ## Older adults and higher estimates
 
-An indicator amino acid oxidation (IAAO) study in men over 65 estimated a mean requirement of 0.94 g/kg/day and an RDA-like value of 1.24 g/kg/day. IAAO estimates requirements by tracking how oxidation of a labeled amino acid changes as intake rises. The authors noted that current recommendations for older men may be underestimated. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/)) More recently, an umbrella review/meta-analysis comparing methods found IAAO-derived protein requirements average ~30% higher than nitrogen balance-derived estimates, and a commissioned systematic review for potential future DRI updates judged the evidence (2000-May 2024) insufficient/inconclusive to set definitive new requirement values. ([Tagawa et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40914512/))
+An indicator amino acid oxidation (IAAO) study in men over 65 estimated a mean requirement of 0.94 g/kg/day and an RDA-like value of 1.24 g/kg/day. IAAO estimates requirements by tracking how oxidation of a labeled amino acid changes as intake rises. The authors noted that current recommendations for older men may be underestimated. ([Rafii et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26962173/)) More recently, an umbrella review/meta-analysis comparing methods found IAAO-derived protein requirements 27 to 36 percent higher than nitrogen balance-derived estimates (36 percent in non-athletes, 27 percent in athletes). ([Tagawa et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40914512/))
 
 The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 to help maintain or regain lean mass and function, with higher intakes suggested for those who are active. The same paper notes that older people with severe kidney disease (e.g., eGFR <30 mL/min/1.73 m²) who are not on dialysis may need to limit protein intake. ([Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
 
@@ -47,13 +47,13 @@ The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 
 - DRI protein RDA: 0.8 g/kg/day. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32))
 - Nitrogen balance meta-analysis: EAR 0.65 g/kg/day; 97.5th percentile 0.83 g/kg/day. ([Rand et al., 2003](https://pubmed.ncbi.nlm.nih.gov/12499330/))
 - EFSA: average requirement 0.66 g/kg/day; population reference intake 0.83 g/kg/day. ([EFSA, 2012](https://doi.org/10.2903/j.efsa.2012.2557))
-- IAAO in men >65: mean requirement 0.94 g/kg/day; RDA-like 1.24 g/kg/day. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/))
+- IAAO in men >65: mean requirement 0.94 g/kg/day; RDA-like 1.24 g/kg/day. ([Rafii et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26962173/))
 
 ## Practical interpretation
 
 - The RDA is an intake goal that corresponds to a very low risk of inadequacy for apparently healthy adults, not an optimal target for every outcome; it is not intended as a cut-point for assessing nutrient intakes of groups. ([Institute of Medicine, 2000](https://www.nationalacademies.org/read/9810/chapter/3); [Institute of Medicine, 2000 (Applications in Dietary Assessment)](https://www.nationalacademies.org/read/9956/chapter/3))
 - The adult RDA of 0.8 g/kg/day is the value listed in the DRI summary tables and sits close to the 0.83 g/kg/day estimates from nitrogen balance and EFSA. ([Institute of Medicine, 2005](https://nap.nationalacademies.org/read/10490/chapter/32); [Rand et al., 2003](https://pubmed.ncbi.nlm.nih.gov/12499330/); [EFSA, 2012](https://doi.org/10.2903/j.efsa.2012.2557))
-- In older adults, evidence and expert consensus support higher intakes (around 1.0 to 1.2 g/kg/day), with even higher targets in some cases. ([Rafii et al., 2015](https://pubmed.ncbi.nlm.nih.gov/26962173/); [Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
+- In older adults, evidence and expert consensus support higher intakes (around 1.0 to 1.2 g/kg/day), with even higher targets in some cases. ([Rafii et al., 2016](https://pubmed.ncbi.nlm.nih.gov/26962173/); [Bauer et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/))
 
 ## References
 
@@ -64,5 +64,5 @@ The PROT-AGE Study Group recommends 1.0 to 1.2 g/kg/day for many adults over 65 
 - EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on Dietary Reference Values for protein. EFSA Journal. 2012;10(2):2557. DOI: 10.2903/j.efsa.2012.2557. (https://doi.org/10.2903/j.efsa.2012.2557)
 - Wolfe RR, Cifelli AM, Kostas G, Kim IY. Optimizing Protein Intake in Adults: Interpretation and Application of the Recommended Dietary Allowance Compared with the Acceptable Macronutrient Distribution Range. Adv Nutr. 2017;8(2):266-275. DOI: 10.3945/an.116.013821. PMID: 28298271.
 - Tagawa R, Watanabe D, Inoue Y, Takaragawa M, Jin Q, Ito K, Yamazaki K, Sanbongi C, Hatamoto Y, Miyachi M. Comparison of Protein Requirements Based on the Nitrogen Balance and Indicator Amino Acid Oxidation Methods: An Umbrella Review and Meta-analysis. J Nutr. 2025;155(11):3877-3885. DOI: 10.1016/j.tjnut.2025.08.036. PMID: 40914512.
-- Rafii M, Chapman K, Elango R, Campbell WW, Ball RO, Pencharz PB, Courtney-Martin G. Dietary Protein Requirement of Men >65 Years Old Determined by the Indicator Amino Acid Oxidation Technique Is Higher than the Current Estimated Average Requirement. J Nutr. 2015;146(4):681-687. DOI: 10.3945/jn.115.225631. PMID: 26962173.
+- Rafii M, Chapman K, Elango R, Campbell WW, Ball RO, Pencharz PB, Courtney-Martin G. Dietary Protein Requirement of Men >65 Years Old Determined by the Indicator Amino Acid Oxidation Technique Is Higher than the Current Estimated Average Requirement. J Nutr. 2016;146(4):681-687. DOI: 10.3945/jn.115.225631. PMID: 26962173.
 - Bauer J, Biolo G, Cederholm T, Cesari M, Cruz-Jentoft AJ, Morley JE, Phillips S, Sieber C, Stehle P, Teta D, Visvanathan R, Volpi E, Boirie Y. Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group. J Am Med Dir Assoc. 2013;14(8):542-559. DOI: 10.1016/j.jamda.2013.05.021. PMID: 23867520.
