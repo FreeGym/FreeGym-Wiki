@@ -360,8 +360,7 @@ def main():
 
     # Maintainers
     for m in data.get('maintainers', []):
-        # Combine topics and specialty fields
-        topics = list(m.get('topics', []) or []) + list(m.get('specialty', []) or [])
+        topics = list(m.get('topics', []) or [])
         all_contributors.append({
             'github': m.get('github', ''),
             'name': m.get('name', m.get('github', '')),

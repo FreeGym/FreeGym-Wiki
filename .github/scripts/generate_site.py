@@ -30,8 +30,6 @@ TOPIC_LABELS = {
     'supplements': 'Supplements',
     'recovery': 'Recovery',
     'biomechanics': 'Biomechanics',
-    'core': 'Core',
-    'governance': 'Governance',
 }
 
 TOPIC_ORDER = [
@@ -42,8 +40,6 @@ TOPIC_ORDER = [
     'supplements',
     'recovery',
     'biomechanics',
-    'core',
-    'governance',
 ]
 
 
@@ -67,7 +63,7 @@ def collect_profiles(data):
     def add_profile(entry, role):
         github = entry.get('github', '')
         name = entry.get('name') or github
-        topics = entry.get('topics', []) or entry.get('specialty', []) or []
+        topics = entry.get('topics', []) or []
         contributions = entry.get('contributions', []) or []
         citations = entry.get('total_citations', 0)
         commits = entry.get('commits', 0)
