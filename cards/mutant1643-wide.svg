@@ -40,19 +40,17 @@
   <!-- Stats -->
   <text x="37.80" y="214.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">TOP TOPICS</text>
   <text x="37.80" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Nutrition</text>
-  <text x="37.80" y="285.71" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Core</text>
-  <text x="37.80" y="322.56" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Governance</text>
   <text x="660.00" y="214.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">LAST ACTIVE</text>
   <text x="660.00" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">2026-02</text>
 
   <text x="660.00" y="278.70" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">CITATIONS</text>
-  <text x="660.00" y="313.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">31</text>
+  <text x="660.00" y="313.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">141</text>
 
   <text x="660.00" y="343.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">COMMITS</text>
-  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">27</text>
+  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">30</text>
 
   <text x="660.00" y="407.70" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="660.00" y="442.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">5</text>
+  <text x="660.00" y="442.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">9</text>
 
   <!-- Footer -->
   <rect x="0" y="510.00" width="1200" height="120.00" rx="0" fill="#000000"/>

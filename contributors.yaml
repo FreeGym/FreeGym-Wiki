@@ -23,8 +23,24 @@ maintainers:
     type: created
     citations_added: 14
     pr: 58
-  total_citations: 31
-  commits: 27
+  - file: nutrition/animal-vs-plant-protein.md
+    type: major_edit
+    citations_added: 6
+    pr: 65
+  - file: nutrition/protein-rda.md
+    type: major_edit
+    citations_added: 7
+    pr: 65
+  - file: nutrition/protein-timing.md
+    type: major_edit
+    citations_added: 26
+    pr: 65
+  - file: nutrition/can-you-eat-too-much-protein.md
+    type: created
+    citations_added: 71
+    pr: 66
+  total_citations: 141
+  commits: 30
 trusted: []
 contributors:
 - github: FreeGym
