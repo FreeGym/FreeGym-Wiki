@@ -52,6 +52,12 @@ jobs:
             --exclude "^https://www\\.sciencedirect\\.com"
             --exclude "^https://www\\.mdpi\\.com"
             --exclude "^https://academic\\.oup\\.com"
+            --exclude "^https://doi\\.org/10\\.3390/"
+            --exclude "^https://doi\\.org/10\\.1093/"
+            --exclude "^https://doi\\.org/10\\.14814/"
+            --exclude "^https://doi\\.org/10\\.1113/"
+            --exclude "^https://doi\\.org/10\\.1073/"
+            --exclude "^https://doi\\.org/10\\.1152/"
             --exclude "^https://github\\.com/github-actions\\[bot\\]"
             --timeout 30
             '**/*.md'
