@@ -122,15 +122,6 @@ jobs:
           )
           full_diff = result.stdout
 
-          # Citation patterns to look for
-          citation_patterns = [
-              r'\[.*?\]\(https?://pubmed\.ncbi\.nlm\.nih\.gov/\d+',  # PubMed links
-              r'\[.*?\]\(https?://doi\.org/',                        # DOI links
-              r'PMID:\s*\d+',                                        # PMID references
-              r'DOI:\s*10\.\d+',                                     # DOI references
-              r'\([A-Z][a-z]+(?:\s+(?:et\s+al\.?|&|and)\s+[A-Z][a-z]+)?,?\s*\d{4}\)',  # (Author, Year) or (Author et al., Year)
-          ]
-
           # Analyze each content file
           contributions = []
           total_citations = 0
@@ -155,12 +146,19 @@ jobs:
                   elif in_file and line.startswith('+') and not line.startswith('+++'):
                       file_additions.append(line[1:])  # Remove the + prefix
 
-              # Count citations in additions
+              # Count unique citation URLs in additions
+              # Policy: Only linked citations count (no link = no credit)
+              # Each unique DOI/PubMed URL counts once, regardless of how many times it's mentioned
               additions_text = '\n'.join(file_additions)
-              citations_added = 0
-              for pattern in citation_patterns:
-                  matches = re.findall(pattern, additions_text, re.IGNORECASE)
-                  citations_added += len(matches)
+
+              # Extract unique DOI URLs
+              doi_urls = set(re.findall(r'https?://doi\.org/[^\s\)]+', additions_text, re.IGNORECASE))
+
+              # Extract unique PubMed URLs
+              pubmed_urls = set(re.findall(r'https?://pubmed\.ncbi\.nlm\.nih\.gov/\d+', additions_text, re.IGNORECASE))
+
+              # Count unique citations
+              citations_added = len(doi_urls) + len(pubmed_urls)
 
               # Determine if this is a major edit (significant citations or new content)
               if file_type == "edit" and (citations_added >= 3 or len(file_additions) >= 20):
