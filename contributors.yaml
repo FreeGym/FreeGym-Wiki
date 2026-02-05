@@ -39,8 +39,12 @@ maintainers:
     type: created
     citations_added: 71
     pr: 66
-  total_citations: 141
-  commits: 31
+  - file: nutrition/protein-supplements-vs-whole-food.md
+    type: created
+    citations_added: 81
+    pr: 70
+  total_citations: 222
+  commits: 32
 trusted: []
 contributors:
 - github: FreeGym
