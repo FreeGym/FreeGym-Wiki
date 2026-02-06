@@ -43,8 +43,12 @@ maintainers:
     type: created
     citations_added: 18
     pr: 70
-  total_citations: 43
-  commits: 36
+  - file: nutrition/can-you-eat-too-much-protein.md
+    type: major_edit
+    citations_added: 5
+    pr: 82
+  total_citations: 48
+  commits: 37
 trusted: []
 contributors:
 - github: FreeGym
