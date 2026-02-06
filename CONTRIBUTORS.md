@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein-rda.md](nutrition/protein-rda.md), [protein.md](nutrition/protein.md), [README.md](nutrition/README.md) +7 more | 43 | 36 | 2026-02 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein-rda.md](nutrition/protein-rda.md), [protein.md](nutrition/protein.md), [README.md](nutrition/README.md) +8 more | 48 | 37 | 2026-02 | [View](cards/mutant1643.svg) |
 
 ---
 
@@ -43,7 +43,7 @@ Copy these to your GitHub profile README to show your verification status.
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
-[![Citations](https://img.shields.io/badge/Citations-43-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![Citations](https://img.shields.io/badge/Citations-48-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 ```
 
