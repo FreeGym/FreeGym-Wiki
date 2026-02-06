@@ -8,7 +8,7 @@ maintainers:
   contributions:
   - file: nutrition/protein-rda.md
     type: created
-    citations_added: 8
+    citations_added: 3
   - file: nutrition/protein.md
     type: edit
     citations_added: 0
@@ -17,37 +17,33 @@ maintainers:
     citations_added: 0
   - file: nutrition/protein-timing.md
     type: created
-    citations_added: 9
+    citations_added: 6
     pr: 49
   - file: nutrition/animal-vs-plant-protein.md
     type: created
-    citations_added: 14
+    citations_added: 0
     pr: 58
   - file: nutrition/animal-vs-plant-protein.md
     type: major_edit
-    citations_added: 6
+    citations_added: 0
     pr: 65
   - file: nutrition/protein-rda.md
     type: major_edit
-    citations_added: 7
+    citations_added: 3
     pr: 65
   - file: nutrition/protein-timing.md
     type: major_edit
-    citations_added: 26
+    citations_added: 0
     pr: 65
   - file: nutrition/can-you-eat-too-much-protein.md
     type: created
-    citations_added: 71
+    citations_added: 13
     pr: 66
-  - file: nutrition/protein-supplements-vs-whole-food.md
-    type: created
-    citations_added: 81
-    pr: 70
   - file: nutrition/protein-supplements-vs-whole-food.md
     type: created
     citations_added: 18
     pr: 70
-  total_citations: 240
+  total_citations: 43
   commits: 35
 trusted: []
 contributors:
