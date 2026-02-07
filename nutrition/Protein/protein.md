@@ -111,4 +111,4 @@ Branched-chain amino acids were heavily marketed for muscle building. Now many s
 
 Pick a section. Find the relevant meta-analyses, systematic reviews, or high-quality RCTs. Summarize what the evidence shows, including limitations.
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for citation standards.
+See [CONTRIBUTING.md](../../CONTRIBUTING.md) for citation standards.

@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein-rda.md](nutrition/protein-rda.md), [protein.md](nutrition/protein.md), [README.md](nutrition/README.md) +16 more | 48 | 39 | 2026-02 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein-rda.md](nutrition/Protein/protein-rda.md), [protein.md](nutrition/Protein/protein.md), [README.md](nutrition/README.md) +16 more | 48 | 39 | 2026-02 | [View](cards/mutant1643.svg) |
 
 ---
 
@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/protein-rda.md) | 3 | 2 | 2026-02 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 2 | 2026-02 | [View](cards/FreeGym.svg) |
 
 ---
 

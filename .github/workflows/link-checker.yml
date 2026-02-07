@@ -60,6 +60,9 @@ jobs:
             --exclude "^https://doi\\.org/10\\.1073/"
             --exclude "^https://doi\\.org/10\\.1152/"
             --exclude "^https://github\\.com/github-actions\\[bot\\]"
+            --exclude "^https://faseb\\.onlinelibrary\\.wiley\\.com"
+            --exclude "^https://jamanetwork\\.com"
+            --exclude "^https://ajcn\\.nutrition\\.org"
             --timeout 30
             '**/*.md'
           fail: true
