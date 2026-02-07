@@ -83,8 +83,12 @@ maintainers:
     type: edit
     citations_added: 0
     pr: 90
-  total_citations: 48
-  commits: 41
+  - file: nutrition/Protein/bcaa.md
+    type: created
+    citations_added: 10
+    pr: 92
+  total_citations: 58
+  commits: 42
 trusted: []
 contributors:
 - github: FreeGym
