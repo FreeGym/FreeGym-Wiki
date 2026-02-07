@@ -6,88 +6,31 @@ maintainers:
   - nutrition
   last_active: 2026-02
   contributions:
-  - file: nutrition/Protein/protein-rda.md
-    type: created
-    citations_added: 3
   - file: nutrition/Protein/protein.md
-    type: edit
-    citations_added: 0
-  - file: nutrition/README.md
-    type: edit
-    citations_added: 0
-  - file: nutrition/Protein/protein-timing.md
-    type: created
-    citations_added: 6
-    pr: 49
-  - file: nutrition/Protein/animal-vs-plant-protein.md
     type: created
     citations_added: 0
-    pr: 58
-  - file: nutrition/Protein/animal-vs-plant-protein.md
-    type: major_edit
-    citations_added: 0
-    pr: 65
   - file: nutrition/Protein/protein-rda.md
-    type: major_edit
-    citations_added: 3
-    pr: 65
+    type: created
+    citations_added: 8
   - file: nutrition/Protein/protein-timing.md
-    type: major_edit
-    citations_added: 0
-    pr: 65
+    type: created
+    citations_added: 13
+  - file: nutrition/Protein/animal-vs-plant-protein.md
+    type: created
+    citations_added: 9
   - file: nutrition/Protein/can-you-eat-too-much-protein.md
     type: created
     citations_added: 13
-    pr: 66
   - file: nutrition/Protein/protein-supplements-vs-whole-food.md
     type: created
     citations_added: 18
-    pr: 70
-  - file: nutrition/Protein/can-you-eat-too-much-protein.md
-    type: major_edit
-    citations_added: 5
-    pr: 82
-  - file: nutrition/Protein/animal-vs-plant-protein.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/can-you-eat-too-much-protein.md
-    type: edit
-    citations_added: 0
-    pr: 87
   - file: nutrition/Protein/protein-needs-by-population.md
     type: created
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/protein-rda.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/protein-supplements-vs-whole-food.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/protein-timing.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/protein.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/README.md
-    type: edit
-    citations_added: 0
-    pr: 87
-  - file: nutrition/Protein/protein.md
-    type: edit
-    citations_added: 0
-    pr: 90
+    citations_added: 13
   - file: nutrition/Protein/bcaa.md
     type: created
     citations_added: 10
-    pr: 92
-  total_citations: 58
+  total_citations: 84
   commits: 45
 trusted: []
 contributors:
