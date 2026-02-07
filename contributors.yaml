@@ -6,44 +6,44 @@ maintainers:
   - nutrition
   last_active: 2026-02
   contributions:
-  - file: nutrition/protein-rda.md
+  - file: nutrition/Protein/protein-rda.md
     type: created
     citations_added: 3
-  - file: nutrition/protein.md
+  - file: nutrition/Protein/protein.md
     type: edit
     citations_added: 0
   - file: nutrition/README.md
     type: edit
     citations_added: 0
-  - file: nutrition/protein-timing.md
+  - file: nutrition/Protein/protein-timing.md
     type: created
     citations_added: 6
     pr: 49
-  - file: nutrition/animal-vs-plant-protein.md
+  - file: nutrition/Protein/animal-vs-plant-protein.md
     type: created
     citations_added: 0
     pr: 58
-  - file: nutrition/animal-vs-plant-protein.md
+  - file: nutrition/Protein/animal-vs-plant-protein.md
     type: major_edit
     citations_added: 0
     pr: 65
-  - file: nutrition/protein-rda.md
+  - file: nutrition/Protein/protein-rda.md
     type: major_edit
     citations_added: 3
     pr: 65
-  - file: nutrition/protein-timing.md
+  - file: nutrition/Protein/protein-timing.md
     type: major_edit
     citations_added: 0
     pr: 65
-  - file: nutrition/can-you-eat-too-much-protein.md
+  - file: nutrition/Protein/can-you-eat-too-much-protein.md
     type: created
     citations_added: 13
     pr: 66
-  - file: nutrition/protein-supplements-vs-whole-food.md
+  - file: nutrition/Protein/protein-supplements-vs-whole-food.md
     type: created
     citations_added: 18
     pr: 70
-  - file: nutrition/can-you-eat-too-much-protein.md
+  - file: nutrition/Protein/can-you-eat-too-much-protein.md
     type: major_edit
     citations_added: 5
     pr: 82
@@ -60,7 +60,7 @@ contributors:
   prs_merged: 2
   substantive_prs: 1
   contributions:
-  - file: nutrition/protein-rda.md
+  - file: nutrition/Protein/protein-rda.md
     type: major_edit
     citations_added: 3
     pr: 29
