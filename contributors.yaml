@@ -47,8 +47,40 @@ maintainers:
     type: major_edit
     citations_added: 5
     pr: 82
+  - file: nutrition/Protein/animal-vs-plant-protein.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/can-you-eat-too-much-protein.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/protein-needs-by-population.md
+    type: created
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/protein-rda.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/protein-supplements-vs-whole-food.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/protein-timing.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/Protein/protein.md
+    type: edit
+    citations_added: 0
+    pr: 87
+  - file: nutrition/README.md
+    type: edit
+    citations_added: 0
+    pr: 87
   total_citations: 48
-  commits: 38
+  commits: 39
 trusted: []
 contributors:
 - github: FreeGym
