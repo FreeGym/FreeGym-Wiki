@@ -79,8 +79,12 @@ maintainers:
     type: edit
     citations_added: 0
     pr: 87
+  - file: nutrition/Protein/protein.md
+    type: edit
+    citations_added: 0
+    pr: 90
   total_citations: 48
-  commits: 39
+  commits: 41
 trusted: []
 contributors:
 - github: FreeGym
