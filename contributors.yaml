@@ -30,8 +30,16 @@ maintainers:
   - file: nutrition/Protein/bcaa.md
     type: created
     citations_added: 10
-  total_citations: 84
-  commits: 46
+  - file: nutrition/Carbohydrates/carbohydrates.md
+    type: created
+    citations_added: 0
+    pr: 102
+  - file: nutrition/Carbohydrates/do-carbs-make-you-fat.md
+    type: created
+    citations_added: 10
+    pr: 102
+  total_citations: 94
+  commits: 47
 trusted: []
 contributors:
 - github: FreeGym
