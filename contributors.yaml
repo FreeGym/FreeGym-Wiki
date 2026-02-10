@@ -38,8 +38,12 @@ maintainers:
     type: created
     citations_added: 10
     pr: 102
-  total_citations: 94
-  commits: 47
+  - file: nutrition/Carbohydrates/how-many-carbs-do-you-actually-need.md
+    type: created
+    citations_added: 10
+    pr: 104
+  total_citations: 104
+  commits: 48
 trusted: []
 contributors:
 - github: FreeGym
