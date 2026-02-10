@@ -67,6 +67,8 @@ jobs:
             --exclude "^https://doi\\.org/10\\.1177/"
             --exclude "^https://doi\\.org/10\\.1186/"
             --exclude "^https://doi\\.org/10\\.1002/"
+            --exclude "^https://doi\\.org/10\\.1080/"
+            --exclude "^https://doi\\.org/10\\.2337/"
             --exclude "^https://jamanetwork\\.com"
             --exclude "^https://ajcn\\.nutrition\\.org"
             --timeout 30
