@@ -71,6 +71,9 @@ jobs:
             --exclude "^https://doi\\.org/10\\.2337/"
             --exclude "^https://jamanetwork\\.com"
             --exclude "^https://ajcn\\.nutrition\\.org"
+            --exclude "^https://www\\.nejm\\.org"
+            --exclude "^https://www\\.ahajournals\\.org"
+            --exclude "^https://www\\.cochranelibrary\\.com"
             --timeout 30
             '**/*.md'
           fail: true
