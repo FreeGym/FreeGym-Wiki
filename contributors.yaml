@@ -42,8 +42,16 @@ maintainers:
     type: created
     citations_added: 10
     pr: 104
-  total_citations: 104
-  commits: 49
+  - file: nutrition/Carbohydrates/is-keto-safe-long-term.md
+    type: created
+    citations_added: 0
+    pr: 109
+  - file: nutrition/Carbohydrates/is-low-carb-better-for-weight-loss.md
+    type: created
+    citations_added: 8
+    pr: 109
+  total_citations: 112
+  commits: 50
 trusted: []
 contributors:
 - github: FreeGym
