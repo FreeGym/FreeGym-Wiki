@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +10 more | 112 | 50 | 2026-02 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +10 more | 112 | 51 | 2026-02 | [View](cards/mutant1643.svg) |
 
 ---
 
