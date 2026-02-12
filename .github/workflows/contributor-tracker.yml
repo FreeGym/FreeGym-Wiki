@@ -157,8 +157,41 @@ jobs:
               # Extract unique PubMed URLs
               pubmed_urls = set(re.findall(r'https?://pubmed\.ncbi\.nlm\.nih\.gov/\d+', additions_text, re.IGNORECASE))
 
+              # Extract unique PubMed Central URLs
+              pmc_urls = set(re.findall(r'https?://pmc\.ncbi\.nlm\.nih\.gov/articles/[^\s\)]+', additions_text, re.IGNORECASE))
+
+              # Extract publisher URLs (major scientific publishers)
+              publisher_patterns = [
+                  r'https?://(?:www\.)?sciencedirect\.com/science/article/[^\s\)]+',
+                  r'https?://(?:www\.)?(?:link\.)?springer\.com/article/[^\s\)]+',
+                  r'https?://(?:www\.)?nature\.com/articles/[^\s\)]+',
+                  r'https?://(?:www\.)?nejm\.org/doi/[^\s\)]+',
+                  r'https?://jamanetwork\.com/journals/[^\s\)]+',
+                  r'https?://(?:www\.)?mdpi\.com/[^\s\)]+',
+                  r'https?://(?:www\.)?cochranelibrary\.com/[^\s\)]+',
+                  r'https?://(?:www\.)?(?:www\.)?cochrane\.org/[^\s\)]+',
+                  r'https?://(?:www\.)?ahajournals\.org/doi/[^\s\)]+',
+                  r'https?://(?:www\.)?bmj\.com/content/[^\s\)]+',
+                  r'https?://academic\.oup\.com/[^\s\)]+',
+                  r'https?://(?:onlinelibrary|faseb)\.wiley\.com/doi/[^\s\)]+',
+                  r'https?://journals\.sagepub\.com/doi/[^\s\)]+',
+                  r'https?://(?:www\.)?tandfonline\.com/doi/[^\s\)]+',
+                  r'https?://ajcn\.nutrition\.org/[^\s\)]+',
+                  r'https?://(?:www\.)?frontiersin\.org/[^\s\)]+',
+                  r'https?://(?:www\.)?nationalacademies\.org/read/[^\s\)]+',
+                  r'https?://nap\.nationalacademies\.org/read/[^\s\)]+',
+                  r'https?://journals\.plos\.org/[^\s\)]+',
+                  r'https?://bjsm\.bmj\.com/content/[^\s\)]+',
+                  r'https?://(?:www\.)?e-epih\.org/journal/[^\s\)]+',
+                  r'https?://research\.birmingham\.ac\.uk/[^\s\)]+',
+              ]
+
+              publisher_urls = set()
+              for pattern in publisher_patterns:
+                  publisher_urls.update(re.findall(pattern, additions_text, re.IGNORECASE))
+
               # Count unique citations
-              citations_added = len(doi_urls) + len(pubmed_urls)
+              citations_added = len(doi_urls) + len(pubmed_urls) + len(pmc_urls) + len(publisher_urls)
 
               # Determine if this is a major edit (significant citations or new content)
               if file_type == "edit" and (citations_added >= 3 or len(file_additions) >= 20):
