@@ -50,8 +50,12 @@ maintainers:
     type: created
     citations_added: 8
     pr: 109
-  total_citations: 126
-  commits: 56
+  - file: nutrition/Carbohydrates/do-you-need-carbs-to-build-muscle.md
+    type: created
+    citations_added: 15
+    pr: 121
+  total_citations: 141
+  commits: 57
 trusted: []
 contributors:
 - github: FreeGym
