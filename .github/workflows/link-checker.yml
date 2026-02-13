@@ -55,6 +55,7 @@ jobs:
             --exclude "^https://academic\\.oup\\.com"
             --exclude "^https://doi\\.org/10\\.3390/"
             --exclude "^https://doi\\.org/10\\.1093/"
+            --exclude "^https://doi\\.org/10\\.1210/"
             --exclude "^https://doi\\.org/10\\.14814/"
             --exclude "^https://doi\\.org/10\\.1113/"
             --exclude "^https://doi\\.org/10\\.1073/"
