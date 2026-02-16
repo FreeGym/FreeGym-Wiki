@@ -66,8 +66,12 @@ maintainers:
     type: major_edit
     citations_added: 10
     pr: 126
-  total_citations: 177
-  commits: 60
+  - file: nutrition/Carbohydrates/does-carb-timing-matter.md
+    type: major_edit
+    citations_added: 4
+    pr: 129
+  total_citations: 181
+  commits: 61
 trusted: []
 contributors:
 - github: FreeGym
