@@ -54,8 +54,20 @@ maintainers:
     type: created
     citations_added: 15
     pr: 121
-  total_citations: 141
-  commits: 58
+  - file: nutrition/Carbohydrates/does-carb-timing-matter.md
+    type: created
+    citations_added: 8
+    pr: 126
+  - file: nutrition/Carbohydrates/is-sugar-really-that-bad.md
+    type: created
+    citations_added: 18
+    pr: 126
+  - file: nutrition/Carbohydrates/is-the-sugar-in-fruit-different.md
+    type: major_edit
+    citations_added: 10
+    pr: 126
+  total_citations: 177
+  commits: 60
 trusted: []
 contributors:
 - github: FreeGym
