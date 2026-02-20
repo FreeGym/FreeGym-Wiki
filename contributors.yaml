@@ -70,8 +70,20 @@ maintainers:
     type: major_edit
     citations_added: 4
     pr: 129
-  total_citations: 181
-  commits: 61
+  - file: nutrition/Carbohydrates/are-whole-grains-actually-better.md
+    type: created
+    citations_added: 10
+    pr: 131
+  - file: nutrition/Carbohydrates/do-carbs-cause-inflammation.md
+    type: created
+    citations_added: 12
+    pr: 131
+  - file: nutrition/Carbohydrates/does-glycemic-index-matter.md
+    type: created
+    citations_added: 12
+    pr: 131
+  total_citations: 215
+  commits: 62
 trusted: []
 contributors:
 - github: FreeGym
