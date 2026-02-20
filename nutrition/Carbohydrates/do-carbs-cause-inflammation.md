@@ -1,6 +1,6 @@
 # Do Carbs Cause Inflammation?
 
-“Carbs” are not a single exposure. In research on low-grade systemic inflammation, carbohydrates are usually studied as **food sources** (e.g., sugar-sweetened beverages vs fruit) and **quality** (e.g., refined grains vs whole grains), because those distinctions change the observed effects on biomarkers like **C-reactive protein (CRP)**, **IL-6**, and **TNF-α**. ([AJCN][1])
+“Carbs” are not a single exposure. In research on low-grade systemic inflammation, carbohydrates are usually studied as **food sources** (e.g., sugar-sweetened beverages vs fruit) and **quality** (e.g., refined grains vs whole grains), because those distinctions change the observed effects on biomarkers like **C-reactive protein (CRP)**, **IL-6**, and **TNF-α**. ([ResearchGate][1])
 
 Across higher-level evidence syntheses (systematic reviews/meta-analyses of controlled trials plus cohort data), the strongest takeaway is that **carbohydrate quality and food matrix matter more than “carbs” in the abstract**: some carb sources show signals consistent with *higher* inflammation, while others are neutral or modestly *anti-inflammatory*. ([MDPI][2])
 
@@ -48,15 +48,15 @@ Observational findings can’t prove causality on their own, but the direction m
 
 ### Systematic review perspective: observational signals are stronger than intervention signals
 
-A systematic review spanning both observational and intervention studies found that **higher-quality carbohydrate markers** (lower GI/GL, higher fiber, whole grains) were often associated with lower hsCRP/IL-6 in observational work, but **intervention evidence was less consistent**, and the authors note that observational benefits (especially for fiber and whole grains) may reflect confounding. ([AJCN][1])
+A systematic review spanning both observational and intervention studies found that **higher-quality carbohydrate markers** (lower GI/GL, higher fiber, whole grains) were often associated with lower hsCRP/IL-6 in observational work, but **intervention evidence was less consistent**, and the authors note that observational benefits (especially for fiber and whole grains) may reflect confounding. ([ResearchGate][1])
 
-This is an important limiter: “fiber-rich carbs are anti-inflammatory” is directionally supported, but the magnitude and reliability in trials depend on **population**, **baseline inflammation**, and **the specific intervention**. ([AJCN][1])
+This is an important limiter: “fiber-rich carbs are anti-inflammatory” is directionally supported, but the magnitude and reliability in trials depend on **population**, **baseline inflammation**, and **the specific intervention**. ([ResearchGate][1])
 
 ## Glycemic response: does GI/GL drive inflammation?
 
-The mechanistic hypothesis is that repeated high postprandial glucose excursions could contribute to oxidative stress and inflammatory signaling, but the human interventional literature has been mixed. ([AJCN][1])
+The mechanistic hypothesis is that repeated high postprandial glucose excursions could contribute to oxidative stress and inflammatory signaling, but the human interventional literature has been mixed. ([ResearchGate][1])
 
-In the systematic review of carbohydrate quality and inflammation, only a **minority** of low-GI/GL interventions showed statistically significant anti-inflammatory effects, with several others showing only trends or subgroup effects. ([AJCN][1])
+In the systematic review of carbohydrate quality and inflammation, only a **minority** of low-GI/GL interventions showed statistically significant anti-inflammatory effects, with several others showing only trends or subgroup effects. ([ResearchGate][1])
 
 A controlled feeding crossover study (isocaloric, macronutrient-matched) is a good example of that nuance: overall effects were **largely null**, but among participants with **higher body fat mass**, the low-glycemic-load diet reduced **CRP** (with only modest/variable changes in other markers). ([ScienceDirect][5])
 
@@ -75,25 +75,25 @@ If you zoom out to “carb quantity” approaches, a 2025 systematic review/meta
 * **Whole grains vs refined grains (RCT meta-analysis):** whole grains improved CRP (SMD **-0.22**, 95% CI -0.44 to -0.00). ([ScienceDirect][3])
 * **Refined vs whole grain (observational):** higher whole grains linked to **lower hs-CRP**, higher refined grains linked to **higher hs-CRP**; fiber may partly explain the association. ([Nature][4])
 * **Fructose-containing sugars by food source (controlled-feeding meta-analysis):** **mixed sources including SSBs** show the clearest signal toward **higher CRP** (especially in energy-matched substitution designs), while most other sources are neutral and some show decreases depending on energy control (sometimes based on few trials). ([MDPI][2])
-* **GI/GL as an “inflammation lever”:** interventional evidence is mixed, with effects often limited to subgroups or specific interventions rather than a uniform “low GI = anti-inflammatory” rule. ([AJCN][1])
+* **GI/GL as an “inflammation lever”:** interventional evidence is mixed, with effects often limited to subgroups or specific interventions rather than a uniform “low GI = anti-inflammatory” rule. ([ResearchGate][1])
 
 ## Practical interpretation
 
 * If you’re trying to reduce chronic low-grade inflammation markers, the evidence supports targeting **carbohydrate quality**: replacing **refined grains** with **whole grains** is supported by RCT meta-analysis effects on CRP and consistent observational associations with hs-CRP. ([ScienceDirect][3])
 * For “sugar,” the best controlled evidence suggests that **SSB-including patterns** are the clearest concern for CRP, whereas sugars embedded in other matrices (e.g., fruit/juice/soy in specific designs) are often neutral and sometimes favorable, so “sugar” is not a single inflammatory exposure. ([MDPI][2])
-* Low GI/GL can be reasonable as part of an overall high-quality pattern, but the evidence does not support GI/GL as a universally reliable standalone anti-inflammatory strategy across populations. ([AJCN][1])
+* Low GI/GL can be reasonable as part of an overall high-quality pattern, but the evidence does not support GI/GL as a universally reliable standalone anti-inflammatory strategy across populations. ([ResearchGate][1])
 
 ## References
 
 * Qi X, Chiavaroli L, Lee D, et al. Effect of Important Food Sources of Fructose-Containing Sugars on Inflammatory Biomarkers: A Systematic Review and Meta-Analysis of Controlled Feeding Trials. *Nutrients*. 2022;14(19):3986. DOI: 10.3390/nu14193986. ([MDPI][2])
 * Marshall S, Petocz P, Duve E, et al. The Effect of Replacing Refined Grains with Whole Grains on Cardiovascular Risk Factors: A Systematic Review and Meta-Analysis of Randomized Controlled Trials with GRADE Clinical Recommendation. *J Acad Nutr Diet*. 2020;120(11):1859-1883.e31. DOI: 10.1016/j.jand.2020.06.021. ([ScienceDirect][3])
 * Taskinen RE, Hantunen S, Tuomainen T-P, Virtanen JK. The associations between whole grain and refined grain intakes and serum C-reactive protein. *Eur J Clin Nutr*. 2022;76(4):544-550. DOI: 10.1038/s41430-021-00996-1. ([Nature][4])
-* Buyken AE, Goletzke J, Joslowski G, et al. Association between carbohydrate quality and inflammatory markers: systematic review of observational and interventional studies. *Am J Clin Nutr*. 2014;99(4):813-833. DOI: 10.3945/ajcn.113.074252. ([AJCN][1])
+* Buyken AE, Goletzke J, Joslowski G, et al. Association between carbohydrate quality and inflammatory markers: systematic review of observational and interventional studies. *Am J Clin Nutr*. 2014;99(4):813-833. DOI: 10.3945/ajcn.113.074252. ([ResearchGate][1])
 * Milajerdi A, Saneei P, Larijani B, Esmaillzadeh A. The effect of dietary glycemic index and glycemic load on inflammatory biomarkers: a systematic review and meta-analysis of randomized clinical trials. *Am J Clin Nutr*. 2018;107(4):593-606. DOI: 10.1093/ajcn/nqx042. ([ScienceDirect][6])
 * Neuhouser ML, et al. A low-glycemic load diet reduces serum C-reactive protein and modestly increases adiponectin in overweight and obese adults. *J Nutr*. 2012;142(2):369-374. DOI: 10.3945/jn.111.149807. ([ScienceDirect][5])
 * Khodarahmi M, Seyedhosseini H, Askari G. Effect of Low-Carbohydrate Diets on C-Reactive Protein Level in Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. *Food Sci Nutr*. 2025;13(7):e70566. DOI: 10.1002/fsn3.70566. ([Wiley Online Library][7])
 
-[1]: https://doi.org/10.3945/ajcn.113.074252 "Buyken et al. 2014 – Association between carbohydrate quality and inflammatory markers"
+[1]: https://www.researchgate.net/publication/260269805_Association_between_carbohydrate_quality_and_inflammatory_markers_Systematic_review_of_observational_and_interventional_studies "https://www.researchgate.net/publication/260269805_Association_between_carbohydrate_quality_and_inflammatory_markers_Systematic_review_of_observational_and_interventional_studies"
 [2]: https://www.mdpi.com/2072-6643/14/19/3986 "https://www.mdpi.com/2072-6643/14/19/3986"
 [3]: https://www.sciencedirect.com/science/article/abs/pii/S221226722030650X "https://www.sciencedirect.com/science/article/abs/pii/S221226722030650X"
 [4]: https://www.nature.com/articles/s41430-021-00996-1 "https://www.nature.com/articles/s41430-021-00996-1"
