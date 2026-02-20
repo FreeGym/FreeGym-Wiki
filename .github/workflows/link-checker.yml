@@ -79,6 +79,9 @@ jobs:
             --exclude "^https://www\\.nejm\\.org"
             --exclude "^https://www\\.ahajournals\\.org"
             --exclude "^https://www\\.cochranelibrary\\.com"
+            --exclude "^https://www\\.researchgate\\.net"
+            --exclude "^https://doi\\.org/10\\.1123/"
+            --exclude "^https://doi\\.org/10\\.3945/"
             --timeout 30
             '**/*.md'
           fail: true
