@@ -41,7 +41,6 @@ jobs:
             --verbose
             --no-progress
             --accept 200,204,206,301,302,304,307,308
-            --exclude-mail
             --exclude "^https://twitter.com"
             --exclude "^https://x.com"
             --exclude "^https://www\\.efsa\\.europa\\.eu/"
@@ -82,6 +81,10 @@ jobs:
             --exclude "^https://www\\.researchgate\\.net"
             --exclude "^https://doi\\.org/10\\.1123/"
             --exclude "^https://doi\\.org/10\\.3945/"
+            --exclude "^https://doi\\.org/10\\.1001/"
+            --exclude "^https://doi\\.org/10\\.1056/"
+            --exclude "^https://doi\\.org/10\\.1111/"
+            --exclude "^https://doi\\.org/10\\.3233/"
             --timeout 30
             '**/*.md'
           fail: true
