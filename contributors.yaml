@@ -82,8 +82,24 @@ maintainers:
     type: created
     citations_added: 12
     pr: 131
-  total_citations: 215
-  commits: 64
+  - file: nutrition/Carbohydrates/are-carbs-bad-for-your-brain.md
+    type: created
+    citations_added: 17
+    pr: 137
+  - file: nutrition/Carbohydrates/does-carb-cycling-work.md
+    type: created
+    citations_added: 18
+    pr: 137
+  - file: nutrition/Fat/does-dietary-fat-make-you-fat.md
+    type: created
+    citations_added: 9
+    pr: 137
+  - file: nutrition/Fat/fat.md
+    type: created
+    citations_added: 0
+    pr: 137
+  total_citations: 259
+  commits: 65
 trusted: []
 contributors:
 - github: FreeGym
