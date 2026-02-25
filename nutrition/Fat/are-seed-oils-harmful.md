@@ -1,0 +1,149 @@
+# Are Seed Oils Harmful?
+
+“Seed oils” (e.g., soybean, canola/rapeseed, sunflower, corn) are major sources of the omega‑6 polyunsaturated fat **linoleic acid (LA)**, and LA is an essential fatty acid that is a major contributor to dietary omega‑6 intake in many settings. ([Whelan & Fritsche, 2013](https://www.sciencedirect.com/science/article/pii/S2161831322011188); [Mousavi et al., 2021](https://diabetesjournals.org/care/article/44/9/2173/138865/Dietary-Intake-of-Linoleic-Acid-Its-Concentrations)) ([Diabetes Journals](https://diabetesjournals.org/care/article/44/9/2173/138865/Dietary-Intake-of-Linoleic-Acid-Its-Concentrations "https://diabetesjournals.org/care/article/44/9/2173/138865/Dietary-Intake-of-Linoleic-Acid-Its-Concentrations"))
+
+A core biological concern is that LA can be converted to **arachidonic acid (AA)** and then to **eicosanoids**, which include pro‑inflammatory signaling molecules (among others), leading to the hypothesis that higher LA intake could raise systemic inflammation and drive chronic disease. ([Rett & Whelan, 2011](https://link.springer.com/article/10.1186/1743-7075-8-36); [Johnson & Fritsche, 2012](https://www.sciencedirect.com/science/article/pii/S2212267212004649)) ([Springer Nature Link](https://link.springer.com/article/10.1186/1743-7075-8-36 "https://link.springer.com/article/10.1186/1743-7075-8-36"))
+
+However, when you look at **human randomized controlled trials (RCTs)** and **systematic reviews/meta-analyses**, increasing LA intake does **not** reliably increase common circulating inflammatory markers _overall_, and higher LA exposure is generally associated with _neutral to favorable_ cardiometabolic outcomes in prospective human studies. ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h); [Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236); [Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908); [Li et al., 2020](https://www.sciencedirect.com/science/article/pii/S000291652200778X)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+
+## What “seed oils” are and are not
+
+In this overview, health effects are discussed in terms used in the cited literature—**(1) linoleic acid intake**, **(2) omega‑6 PUFA intake**, or **(3) biomarkers of LA/AA in blood or tissue** (e.g., [Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236); [Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908))—rather than treating “seed oils” as a single unified exposure. ([AHA Journals](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236 "https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236"))
+
+Dietary LA exposure often reflects both the oils themselves and the broader dietary contexts where LA-rich oils are used—especially processed/manufactured foods and fried foods—making it difficult to isolate “the oil” from the overall dietary pattern. ([Whelan & Fritsche, 2013](https://www.sciencedirect.com/science/article/pii/S2161831322011188); [Sayón‑Orea et al., 2015](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6)) ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2161831322011188 "https://www.sciencedirect.com/science/article/pii/S2161831322011188"))
+
+## Claim: “Seed oils are high in omega‑6 linoleic acid, which drives inflammation”
+
+### What controlled trials show for inflammatory markers
+
+A systematic review of RCTs in healthy people found **little evidence** that higher dietary LA increases common inflammatory markers, with the few isolated findings largely limited to certain eicosanoid measures rather than broad systemic inflammation. ([Johnson & Fritsche, 2012](https://www.sciencedirect.com/science/article/pii/S2212267212004649)) ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2212267212004649 "https://www.sciencedirect.com/science/article/pii/S2212267212004649"))
+
+A later systematic review and meta-analysis of RCTs (30 trials; 1,377 participants) concluded that increasing dietary LA **does not significantly change blood concentrations of inflammatory markers overall** (covering cytokines/acute phase reactants/adhesion molecules across trials), though the **extent** of LA change may matter for CRP in some analyses. ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+
+### The “it becomes arachidonic acid” concern
+
+A key mechanistic concern is that more LA would raise tissue AA and therefore raise pro‑inflammatory potential, but a systematic review found that **modifying dietary LA does not significantly change AA levels in plasma/serum or erythrocytes** in adults consuming Western-type diets. ([Rett & Whelan, 2011](https://link.springer.com/article/10.1186/1743-7075-8-36)) ([Springer Nature Link](https://link.springer.com/article/10.1186/1743-7075-8-36 "https://link.springer.com/article/10.1186/1743-7075-8-36"))
+
+Taken together, the best available synthesis of human RCT evidence does **not** support the claim that LA meaningfully raises _common_ systemic inflammation markers in typical adult populations studied. ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h); [Johnson & Fritsche, 2012](https://www.sciencedirect.com/science/article/pii/S2212267212004649)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+
+## Claim: “Seed oils increase chronic disease risk”
+
+### Coronary heart disease and cardiovascular events
+
+A systematic review and meta-analysis of prospective cohort studies reported that higher dietary LA intake is **inversely associated with coronary heart disease (CHD) risk** in a dose–response manner. ([Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236)) ([AHA Journals](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236 "https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236"))
+
+An individual-level pooled analysis across 30 prospective cohorts found that higher in vivo levels of LA (circulating/tissue biomarkers) were associated with **lower risks of total cardiovascular disease, cardiovascular mortality, and ischemic stroke**, and **nonsignificantly** with lower CHD risk. ([Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908)) ([AHA Journals](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908 "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908"))
+
+A systematic review and meta-analysis of randomized controlled trials found that increasing polyunsaturated fat in place of saturated fat reduces CHD events in RCTs. ([Mozaffarian et al., 2010](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252)) ([PLOS](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252 "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252"))
+
+### Mortality outcomes
+
+A meta-analysis of prospective cohort studies reported that higher LA exposure (assessed via dietary intake or biomarkers) is associated with a **modestly lower risk of all-cause mortality and cardiovascular mortality**. ([Li et al., 2020](https://www.sciencedirect.com/science/article/pii/S000291652200778X)) ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S000291652200778X "https://www.sciencedirect.com/science/article/pii/S000291652200778X"))
+
+### Limits and open debates in the outcomes literature
+
+Not all syntheses of omega‑6 interventions show broad reductions in hard outcomes: a Cochrane review concluded there was **no clear evidence** that increasing omega‑6 fats reduces cardiovascular outcomes other than myocardial infarction (MI), where a **possible** reduction was suggested (low-quality evidence; estimate compatible with little or no effect). ([Hooper et al., 2018](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract)) ([Cochrane Library](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract"))
+
+Recovered-data analyses of older trials have also challenged a simplified “LA lowers cholesterol → fewer deaths” narrative; for example, one BMJ recovered-data analysis concluded that replacing saturated fat with LA lowered serum cholesterol but did **not** support reductions in CHD death or all-cause mortality in that evidence base. ([Ramsden et al., 2016](https://www.bmj.com/content/353/bmj.i1246)) ([BMJ](https://www.bmj.com/content/353/bmj.i1246 "https://www.bmj.com/content/353/bmj.i1246"))
+
+So the outcomes evidence is best summarized as: **prospective observational evidence for LA is generally favorable**, while **trial evidence is mixed and historically complicated**, depending on which trials and definitions of “omega‑6/PUFA” are included and how interventions were implemented. ([Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236); [Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908); [Hooper et al., 2018](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract); [Ramsden et al., 2016](https://www.bmj.com/content/353/bmj.i1246)) ([AHA Journals](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236 "https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236"))
+
+## Claim: “Seed oils are unstable and dangerous for cooking because they form oxidation products”
+
+### Oxidation chemistry and frying conditions
+
+During frying simulations, oils can generate lipid oxidation products including aldehydes, and an experimental study reported substantially lower “food-penetrative” toxic aldehydes from a monounsaturate-rich oil compared with PUFA-rich oils during laboratory-simulated shallow-frying episodes (and with repeated deep-frying use), supporting the idea that fatty-acid composition affects aldehyde formation during high-heat use. ([Moumtaz et al., 2019](https://www.nature.com/articles/s41598-019-39767-1)) ([Nature](https://www.nature.com/articles/s41598-019-39767-1 "https://www.nature.com/articles/s41598-019-39767-1"))
+
+### Human studies on eating heated oils
+
+In obese participants, an RCT in _Food Chemistry_ found that oils heated at frying temperature that contained phenolic compounds (natural or added) could **reduce postprandial oxidative stress** compared with sunflower oil, suggesting that antioxidant content can modify postprandial responses in that setting. ([Pérez-Herrera et al., 2013](https://www.sciencedirect.com/science/article/abs/pii/S0308814612019164)) ([ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0308814612019164 "https://www.sciencedirect.com/science/article/abs/pii/S0308814612019164"))
+
+A related randomized crossover study reported that adding antioxidants to frying oil reduced postprandial oxidative stress and inflammatory response signals in the tested setting. ([Rangel‑Zuñiga et al., 2014](https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201400401)) ([Wiley Online Library](https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201400401 "https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201400401"))
+
+### What epidemiology says about fried foods
+
+A systematic review focused on cooking with vegetable oils concluded that the idea that frying is _generally_ associated with higher CVD risk is **not consistently supported by available evidence**, while suggesting that high fried-food consumption is probably more consistently related to weight gain (and that oil type may modify associations). ([Sayón‑Orea et al., 2015](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6)) ([Cambridge University Press & Assessment](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6 "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6"))
+
+A meta-analysis of observational studies found fried-food consumption was associated with increased CVD risk with a reported dose–response relation, while the pooled association with all-cause mortality was not significant in that analysis. ([Qin et al., 2021](https://heart.bmj.com/content/107/19/1567)) ([Heart](https://heart.bmj.com/content/107/19/1567 "https://heart.bmj.com/content/107/19/1567"))
+
+A separate meta-analysis reported fried-food consumption was associated with increased risk of overweight/obesity and hypertension, while not showing an association with type 2 diabetes in the pooled results (with substantial heterogeneity noted). ([Qin et al., 2022](https://www.tandfonline.com/doi/full/10.1080/10408398.2021.1906626)) ([Taylor & Francis Online](https://www.tandfonline.com/doi/full/10.1080/10408398.2021.1906626 "https://www.tandfonline.com/doi/full/10.1080/10408398.2021.1906626"))
+
+Overall, oxidation concerns are **best characterized** for **high-heat, repeated-use frying scenarios** (where oxidation products can rise), while long-term human outcome attribution to “seed oils themselves” remains difficult because fried-food intake is strongly intertwined with calorie density and broader dietary patterns. ([Moumtaz et al., 2019](https://www.nature.com/articles/s41598-019-39767-1); [Qin et al., 2021](https://heart.bmj.com/content/107/19/1567); [Sayón‑Orea et al., 2015](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6)) ([Nature](https://www.nature.com/articles/s41598-019-39767-1 "https://www.nature.com/articles/s41598-019-39767-1"))
+
+## Claim: “The real problem is ultra-processed food, not the oils”
+
+This claim has direct human evidence because UPFs have been studied directly as a category in randomized trials and large-scale evidence syntheses. ([Hall et al., 2019](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7); [Lane et al., 2024](https://www.bmj.com/content/384/bmj-2023-077310))
+
+In an inpatient randomized crossover trial, participants eating an ultra-processed diet consumed more calories ad libitum and gained weight compared with an unprocessed diet, despite diets being designed to match presented calories, energy density, macronutrients, sugar, sodium, and fiber. ([Hall et al., 2019](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7)) ([Cell](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7 "https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7"))
+
+An umbrella review of epidemiological meta-analyses reported that greater UPF exposure is associated with higher risk of adverse health outcomes, especially cardiometabolic, common mental disorder, and mortality outcomes. ([Lane et al., 2024](https://www.bmj.com/content/384/bmj-2023-077310)) ([BMJ](https://www.bmj.com/content/384/bmj-2023-077310 "https://www.bmj.com/content/384/bmj-2023-077310"))
+
+Because LA-rich vegetable oils are common ingredients in manufactured foods in some food systems, it is plausible (as an inference) that a portion of the online “seed oil signal” reflects **UPF-heavy dietary patterns** rather than LA-driven inflammation. ([Whelan & Fritsche, 2013](https://www.sciencedirect.com/science/article/pii/S2161831322011188); [Lane et al., 2024](https://www.bmj.com/content/384/bmj-2023-077310)) ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2161831322011188 "https://www.sciencedirect.com/science/article/pii/S2161831322011188"))
+
+This inference is also consistent with LA showing neutral inflammatory-marker effects overall in RCT meta-analyses and generally favorable associations in cohort/biomarker studies. ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h); [Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236); [Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908); [Li et al., 2020](https://www.sciencedirect.com/science/article/pii/S000291652200778X)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+
+## Quick reference values
+
+- **Inflammatory markers (RCT evidence):** Increasing dietary LA does not significantly change circulating inflammatory markers overall in RCT meta-analyses (though the extent of LA change may influence CRP in some analyses). ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h); [Johnson & Fritsche, 2012](https://www.sciencedirect.com/science/article/pii/S2212267212004649)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+    
+- **Tissue arachidonic acid:** Modifying dietary LA does not significantly raise AA levels in plasma/serum or erythrocytes in adults consuming Western-type diets (systematic review). ([Rett & Whelan, 2011](https://link.springer.com/article/10.1186/1743-7075-8-36)) ([Springer Nature Link](https://link.springer.com/article/10.1186/1743-7075-8-36 "https://link.springer.com/article/10.1186/1743-7075-8-36"))
+    
+- **CHD (prospective cohorts):** Higher dietary LA is inversely associated with CHD risk (dose–response meta-analysis). ([Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236)) ([AHA Journals](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236 "https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236"))
+    
+- **CVD + mortality (biomarkers):** Higher LA biomarkers are associated with lower total CVD and cardiovascular mortality in pooled cohort analyses (and nonsignificantly with lower CHD risk). ([Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908)) ([AHA Journals](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908 "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908"))
+    
+- **Heating/frying chemistry:** PUFA-rich oils can generate more aldehydic oxidation products during frying simulations than monounsaturate-rich oils. ([Moumtaz et al., 2019](https://www.nature.com/articles/s41598-019-39767-1)) ([Nature](https://www.nature.com/articles/s41598-019-39767-1 "https://www.nature.com/articles/s41598-019-39767-1"))
+    
+- **UPFs (experimental):** Ultra-processed diets increased ad libitum intake and weight gain vs unprocessed diets in an inpatient crossover RCT. ([Hall et al., 2019](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7)) ([Cell](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7 "https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7"))
+    
+
+## Practical interpretation
+
+- **If “seed oils” replace saturated fats** (rather than adding extra calories), the overall human evidence base is more consistent with **neutral-to-beneficial cardiovascular risk patterns** than with harm. ([Mozaffarian et al., 2010](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252); [Farvid et al., 2014](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236); [Marklund et al., 2019](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908)) ([PLOS](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252 "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252"))
+    
+- **For inflammation fears:** The best syntheses of RCTs do not support the idea that LA meaningfully increases common systemic inflammatory markers overall in healthy people. ([Su et al., 2017](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h); [Johnson & Fritsche, 2012](https://www.sciencedirect.com/science/article/pii/S2212267212004649)) ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+    
+- **For cooking:** The more evidence-grounded concern is **frequent deep-fried food intake** and **high-heat/repeatedly heated oil conditions** (oxidation products + calorie density), not “seed oils used normally” as a single isolated toxin. ([Moumtaz et al., 2019](https://www.nature.com/articles/s41598-019-39767-1); [Qin et al., 2021](https://heart.bmj.com/content/107/19/1567); [Sayón‑Orea et al., 2015](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6)) ([Nature](https://www.nature.com/articles/s41598-019-39767-1 "https://www.nature.com/articles/s41598-019-39767-1"))
+    
+- **If you’re trying to reduce risk in the real world:** Evidence supports focusing first on minimizing ultra-processed dietary patterns, because UPFs show both experimental and large-scale synthesis evidence of harm. ([Hall et al., 2019](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7); [Lane et al., 2024](https://www.bmj.com/content/384/bmj-2023-077310)) ([Cell](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7 "https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7"))
+    
+
+## References
+
+- Mousavi SM, Jalilpiran Y, Karimi E, et al. Dietary intake of linoleic acid, its concentrations and the risk of type 2 diabetes: a systematic review and dose-response meta-analysis of prospective cohort studies. _Diabetes Care._ 2021;44(9):2173–2181. DOI: 10.2337/dc21-0438. ([Diabetes Journals](https://diabetesjournals.org/care/article/44/9/2173/138865/Dietary-Intake-of-Linoleic-Acid-Its-Concentrations "https://diabetesjournals.org/care/article/44/9/2173/138865/Dietary-Intake-of-Linoleic-Acid-Its-Concentrations"))
+    
+- Whelan J, Fritsche K. Linoleic acid. _Adv Nutr._ 2013;4(3):311–312. DOI: 10.3945/an.113.003772. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2161831322011188 "https://www.sciencedirect.com/science/article/pii/S2161831322011188"))
+    
+- Su H, Liu R, Chang M, Huang J, Wang X. Dietary linoleic acid intake and blood inflammatory markers: a systematic review and meta-analysis of randomized controlled trials. _Food & Function._ 2017;8:3091–3103. DOI: 10.1039/C7FO00433H. ([RSC Publishing](https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h "https://pubs.rsc.org/en/content/articlehtml/2017/fo/c7fo00433h"))
+    
+- Johnson GH, Fritsche K. Effect of dietary linoleic acid on markers of inflammation in healthy persons: a systematic review of randomized controlled trials. _J Acad Nutr Diet._ 2012;112(7):1029–1041.e15. DOI: 10.1016/j.jand.2012.03.029. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2212267212004649 "https://www.sciencedirect.com/science/article/pii/S2212267212004649"))
+    
+- Rett BS, Whelan J. Increasing dietary linoleic acid does not increase tissue arachidonic acid content in adults consuming Western-type diets: a systematic review. _Nutr Metab (Lond)._ 2011;8:36. DOI: 10.1186/1743-7075-8-36. ([Springer Nature Link](https://link.springer.com/article/10.1186/1743-7075-8-36 "https://link.springer.com/article/10.1186/1743-7075-8-36"))
+    
+- Farvid MS, Ding M, Pan A, et al. Dietary linoleic acid and risk of coronary heart disease: a systematic review and meta-analysis of prospective cohort studies. _Circulation._ 2014;130(18):1568–1578. DOI: 10.1161/CIRCULATIONAHA.114.010236. ([AHA Journals](https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236 "https://www.ahajournals.org/doi/10.1161/circulationaha.114.010236"))
+    
+- Marklund M, Wu JHY, Imamura F, et al. Biomarkers of dietary omega-6 fatty acids and incident cardiovascular disease and mortality: an individual-level pooled analysis of 30 cohort studies. _Circulation._ 2019. DOI: 10.1161/CIRCULATIONAHA.118.038908. ([AHA Journals](https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908 "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.118.038908"))
+    
+- Li J, Guasch-Ferré M, Li Y, Hu FB. Dietary intake and biomarkers of linoleic acid and mortality: systematic review and meta-analysis of prospective cohort studies. _Am J Clin Nutr._ 2020;112(1):150–167. DOI: 10.1093/ajcn/nqz349. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S000291652200778X "https://www.sciencedirect.com/science/article/pii/S000291652200778X"))
+    
+- Mozaffarian D, Micha R, Wallace S. Effects on coronary heart disease of increasing polyunsaturated fat in place of saturated fat: a systematic review and meta-analysis of randomized controlled trials. _PLOS Med._ 2010;7(3):e1000252. DOI: 10.1371/journal.pmed.1000252. ([PLOS](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252 "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252"))
+    
+- Hooper L, et al. Omega‑6 fats for the primary and secondary prevention of cardiovascular disease. _Cochrane Database Syst Rev._ 2018. DOI: 10.1002/14651858.CD011094.pub3. ([Cochrane Library](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011094.pub3/abstract"))
+    
+- Ramsden CE, et al. Re-evaluation of the traditional diet-heart hypothesis: analysis of recovered data from Minnesota Coronary Experiment (1968–73). _BMJ._ 2016;353:i1246. DOI: 10.1136/bmj.i1246. ([BMJ](https://www.bmj.com/content/353/bmj.i1246 "https://www.bmj.com/content/353/bmj.i1246"))
+    
+- Moumtaz S, et al. Toxic aldehyde generation in and food uptake from culinary oils during frying practices: peroxidative resistance of a monounsaturate-rich algae oil. _Sci Rep._ 2019;9:4125. DOI: 10.1038/s41598-019-39767-1. ([Nature](https://www.nature.com/articles/s41598-019-39767-1 "https://www.nature.com/articles/s41598-019-39767-1"))
+    
+- Pérez-Herrera A, et al. The antioxidants in oils heated at frying temperature, whether natural or added, could protect against postprandial oxidative stress in obese people. _Food Chem._ 2013;138(4):2250–2259. DOI: 10.1016/j.foodchem.2012.12.023. ([ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0308814612019164 "https://www.sciencedirect.com/science/article/abs/pii/S0308814612019164"))
+    
+- Rangel‑Zuñiga OA, et al. Effect of frying oils on the postprandial endoplasmic reticulum stress in obese people. _Mol Nutr Food Res._ 2014;58(11):2239–2242. DOI: 10.1002/mnfr.201400401. ([Wiley Online Library](https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201400401 "https://onlinelibrary.wiley.com/doi/abs/10.1002/mnfr.201400401"))
+    
+- Sayón‑Orea C, Carlos S, Martínez‑González MA. Does cooking with vegetable oils increase the risk of chronic diseases?: a systematic review. _Br J Nutr._ 2015;113(Suppl 2):S36–S48. DOI: 10.1017/S0007114514002931. ([Cambridge University Press & Assessment](https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6 "https://www.cambridge.org/core/journals/british-journal-of-nutrition/article/does-cooking-with-vegetable-oils-increase-the-risk-of-chronic-diseases-a-systematic-review/AF44097B0E9C4FF9BD44F1D55CD353D6"))
+    
+- Qin P, et al. Fried-food consumption and risk of cardiovascular disease and all-cause mortality: a meta-analysis of observational studies. _Heart._ 2021;107(19):1567–1575. DOI: 10.1136/heartjnl-2020-317883. ([Heart](https://heart.bmj.com/content/107/19/1567 "https://heart.bmj.com/content/107/19/1567"))
+    
+- Qin P, et al. Fried-food consumption and risk of overweight/obesity, type 2 diabetes mellitus, and hypertension in adults: a meta-analysis of observational studies. _Crit Rev Food Sci Nutr._ 2022;62(24):6809–6820 (Epub 2021 Apr 7). DOI: 10.1080/10408398.2021.1906626. ([Taylor & Francis Online](https://www.tandfonline.com/doi/full/10.1080/10408398.2021.1906626 "https://www.tandfonline.com/doi/full/10.1080/10408398.2021.1906626"))
+    
+- Hall KD, et al. Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake. _Cell Metab._ 2019;30(1):67–77.e3. DOI: 10.1016/j.cmet.2019.05.008. ([Cell](https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7 "https://www.cell.com/cell-metabolism/fulltext/S1550-4131%2819%2930248-7"))
+    
+- Lane MM, et al. Ultra-processed food exposure and adverse health outcomes: umbrella review of epidemiological meta-analyses. _BMJ._ 2024;384:e077310. DOI: 10.1136/bmj-2023-077310. ([BMJ](https://www.bmj.com/content/384/bmj-2023-077310 "https://www.bmj.com/content/384/bmj-2023-077310"))
