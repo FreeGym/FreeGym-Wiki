@@ -98,8 +98,16 @@ maintainers:
     type: created
     citations_added: 0
     pr: 137
-  total_citations: 259
-  commits: 66
+  - file: nutrition/Fat/are-seed-oils-harmful.md
+    type: created
+    citations_added: 28
+    pr: 142
+  - file: nutrition/Fat/is-saturated-fat-bad-for-your-heart.md
+    type: created
+    citations_added: 16
+    pr: 142
+  total_citations: 303
+  commits: 70
 trusted: []
 contributors:
 - github: FreeGym
