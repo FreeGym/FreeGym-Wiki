@@ -69,7 +69,7 @@ Within the Mozaffarian meta-analysis, the authors cite pooled individual-level c
 
 This aligns with the broader interpretation that “total saturated fat” is an incomplete exposure unless replacement nutrient (and food source) is specified. ([Mozaffarian et al., 2010] ([PLOS](https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252 "https://journals.plos.org/plosmedicine/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000252")); [Hooper et al., 2020] ([cochrane.org](https://www.cochrane.org/evidence/CD011737_effect-cutting-down-saturated-fat-we-eat-our-risk-heart-disease "https://www.cochrane.org/evidence/CD011737_effect-cutting-down-saturated-fat-we-eat-our-risk-heart-disease")))
 
-A large cohort analysis in _JACC_ likewise concluded that unsaturated fats (especially PUFA) and/or higher-quality carbohydrates can be used to replace saturated fats to reduce CHD risk. ([Li et al., 2015] ([JACC](https://www.jacc.org/doi/10.1016/j.jacc.2015.07.055 "https://www.jacc.org/doi/10.1016/j.jacc.2015.07.055")))
+A large cohort analysis in _JACC_ likewise concluded that unsaturated fats (especially PUFA) and/or higher-quality carbohydrates can be used to replace saturated fats to reduce CHD risk. ([Li et al., 2015] ([JACC](https://doi.org/10.1016/j.jacc.2015.07.055 "https://doi.org/10.1016/j.jacc.2015.07.055")))
 
 ## LDL particle number and subtypes: why “raises LDL” is incomplete
 
@@ -133,4 +133,4 @@ This heterogeneity is one reason broad claims about “saturated fat” can fail
     
 - de Souza RJ, et al. _Intake of saturated and trans unsaturated fatty acids and risk of all cause mortality, cardiovascular disease, and type 2 diabetes: systematic review and meta-analysis of observational studies._ BMJ. 2015;351:h3978. DOI: 10.1136/bmj.h3978. ([BMJ](https://www.bmj.com/content/351/bmj.h3978 "https://www.bmj.com/content/351/bmj.h3978"))
     
-- Li Y, et al. _Saturated Fats Compared With Unsaturated Fats and Sources of Carbohydrates in Relation to Risk of Coronary Heart Disease._ J Am Coll Cardiol. 2015. DOI: 10.1016/j.jacc.2015.07.055. ([JACC](https://www.jacc.org/doi/10.1016/j.jacc.2015.07.055 "https://www.jacc.org/doi/10.1016/j.jacc.2015.07.055"))
+- Li Y, et al. _Saturated Fats Compared With Unsaturated Fats and Sources of Carbohydrates in Relation to Risk of Coronary Heart Disease._ J Am Coll Cardiol. 2015. DOI: 10.1016/j.jacc.2015.07.055. ([JACC](https://doi.org/10.1016/j.jacc.2015.07.055 "https://doi.org/10.1016/j.jacc.2015.07.055"))
