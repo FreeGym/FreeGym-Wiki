@@ -124,7 +124,7 @@ contributors:
   topics:
   - nutrition
   last_active: 2026-03
-  prs_merged: 3
+  prs_merged: 4
   substantive_prs: 2
   contributions:
   - file: nutrition/Protein/protein-rda.md
@@ -160,7 +160,7 @@ contributors:
     citations_added: 9
     pr: 147
   total_citations: 111
-  commits: 3
+  commits: 4
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02
