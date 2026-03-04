@@ -123,16 +123,44 @@ contributors:
   checkmark: true
   topics:
   - nutrition
-  last_active: 2026-02
-  prs_merged: 2
-  substantive_prs: 1
+  last_active: 2026-03
+  prs_merged: 3
+  substantive_prs: 2
   contributions:
   - file: nutrition/Protein/protein-rda.md
     type: major_edit
     citations_added: 3
     pr: 29
-  total_citations: 3
-  commits: 2
+  - file: nutrition/Fat/are-omega-3-supplements-worth-it.md
+    type: created
+    citations_added: 10
+    pr: 147
+  - file: nutrition/Fat/are-trans-fats-the-only-bad-fat.md
+    type: created
+    citations_added: 18
+    pr: 147
+  - file: nutrition/Fat/coconut-oil-and-cardiovascular-health.md
+    type: created
+    citations_added: 14
+    pr: 147
+  - file: nutrition/Fat/dietary-cholesterol-and-blood-cholesterol.md
+    type: created
+    citations_added: 22
+    pr: 147
+  - file: nutrition/Fat/does-fat-timining-matter.md
+    type: created
+    citations_added: 21
+    pr: 147
+  - file: nutrition/Fat/how-much-fat-do-you-actually-need.md
+    type: created
+    citations_added: 14
+    pr: 147
+  - file: nutrition/Fat/is-low-fat-or-high-fat-better-for-weight-loss.md
+    type: created
+    citations_added: 9
+    pr: 147
+  total_citations: 111
+  commits: 3
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02
