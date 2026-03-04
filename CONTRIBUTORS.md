@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md), [are-omega-3-supplements-worth-it.md](nutrition/Fat/are-omega-3-supplements-worth-it.md), [are-trans-fats-the-only-bad-fat.md](nutrition/Fat/are-trans-fats-the-only-bad-fat.md) +5 more | 111 | 3 | 2026-03 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md), [are-omega-3-supplements-worth-it.md](nutrition/Fat/are-omega-3-supplements-worth-it.md), [are-trans-fats-the-only-bad-fat.md](nutrition/Fat/are-trans-fats-the-only-bad-fat.md) +5 more | 111 | 4 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
