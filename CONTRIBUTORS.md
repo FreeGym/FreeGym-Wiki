@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 2 | 2026-02 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md), [are-omega-3-supplements-worth-it.md](nutrition/Fat/are-omega-3-supplements-worth-it.md), [are-trans-fats-the-only-bad-fat.md](nutrition/Fat/are-trans-fats-the-only-bad-fat.md) +5 more | 111 | 3 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -58,7 +58,7 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
-[![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![Citations](https://img.shields.io/badge/Citations-111-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 ```
 
