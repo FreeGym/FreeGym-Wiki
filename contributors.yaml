@@ -4,7 +4,9 @@ maintainers:
   joined: 2026-01
   topics:
   - nutrition
-  last_active: 2026-02
+  - exercise-physiology
+  - pharmacology
+  last_active: 2026-03
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -114,26 +116,9 @@ maintainers:
     type: edit
     citations_added: 2
     pr: 145
-  total_citations: 334
-  commits: 71
-trusted: []
-contributors:
-- github: FreeGym
-  joined: 2026-02
-  checkmark: true
-  topics:
-  - nutrition
-  last_active: 2026-03
-  prs_merged: 4
-  substantive_prs: 2
-  contributions:
-  - file: nutrition/Protein/protein-rda.md
-    type: major_edit
-    citations_added: 3
-    pr: 29
   - file: nutrition/Fat/are-omega-3-supplements-worth-it.md
     type: created
-    citations_added: 10
+    citations_added: 12
     pr: 147
   - file: nutrition/Fat/are-trans-fats-the-only-bad-fat.md
     type: created
@@ -145,7 +130,7 @@ contributors:
     pr: 147
   - file: nutrition/Fat/dietary-cholesterol-and-blood-cholesterol.md
     type: created
-    citations_added: 22
+    citations_added: 20
     pr: 147
   - file: nutrition/Fat/does-fat-timining-matter.md
     type: created
@@ -153,14 +138,39 @@ contributors:
     pr: 147
   - file: nutrition/Fat/how-much-fat-do-you-actually-need.md
     type: created
-    citations_added: 14
+    citations_added: 15
     pr: 147
   - file: nutrition/Fat/is-low-fat-or-high-fat-better-for-weight-loss.md
     type: created
-    citations_added: 9
+    citations_added: 10
     pr: 147
-  total_citations: 111
-  commits: 4
+  - file: exercise-physiology/cardiorespiratory-fitness/cardiorespiratory-fitness.md
+    type: created
+    citations_added: 0
+    pr: 147
+  - file: pharmacology/GLP-1/glp-1.md
+    type: created
+    citations_added: 0
+    pr: 147
+  total_citations: 444
+  commits: 71
+trusted: []
+contributors:
+- github: FreeGym
+  joined: 2026-02
+  checkmark: true
+  topics:
+  - nutrition
+  last_active: 2026-02
+  prs_merged: 2
+  substantive_prs: 1
+  contributions:
+  - file: nutrition/Protein/protein-rda.md
+    type: major_edit
+    citations_added: 3
+    pr: 29
+  total_citations: 3
+  commits: 2
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02
