@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +26 more | 334 | 71 | 2026-02 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +35 more | 444 | 71 | 2026-03 | [View](cards/mutant1643.svg) |
 
 ---
 
@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md), [are-omega-3-supplements-worth-it.md](nutrition/Fat/are-omega-3-supplements-worth-it.md), [are-trans-fats-the-only-bad-fat.md](nutrition/Fat/are-trans-fats-the-only-bad-fat.md) +5 more | 111 | 4 | 2026-03 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 3 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -43,8 +43,10 @@ Copy these to your GitHub profile README to show your verification status.
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
-[![Citations](https://img.shields.io/badge/Citations-334-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![Citations](https://img.shields.io/badge/Citations-444-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![exercise-physiology](https://img.shields.io/badge/Topic-exercise-physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![pharmacology](https://img.shields.io/badge/Topic-pharmacology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 ```
 
 **Shareable Card:**
@@ -58,7 +60,7 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
-[![Citations](https://img.shields.io/badge/Citations-111-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 ```
 
