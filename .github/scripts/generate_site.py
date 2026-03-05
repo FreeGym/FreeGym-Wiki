@@ -30,6 +30,7 @@ TOPIC_LABELS = {
     'supplements': 'Supplements',
     'recovery': 'Recovery',
     'biomechanics': 'Biomechanics',
+    'heart-health': 'Heart Health',
 }
 
 TOPIC_ORDER = [
@@ -40,6 +41,7 @@ TOPIC_ORDER = [
     'supplements',
     'recovery',
     'biomechanics',
+    'heart-health',
 ]
 
 
