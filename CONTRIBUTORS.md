@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 3 | 2026-03 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 5 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -47,6 +47,7 @@ Copy these to your GitHub profile README to show your verification status.
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![exercise-physiology](https://img.shields.io/badge/Topic-exercise-physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![pharmacology](https://img.shields.io/badge/Topic-pharmacology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![heart-health](https://img.shields.io/badge/Topic-heart-health-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 ```
 
 **Shareable Card:**
