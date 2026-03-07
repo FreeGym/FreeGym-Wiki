@@ -34,7 +34,7 @@ They’re most evidence-based as “critical” when you need **rapid recovery**
 
 A randomized controlled trial in trained men tested different within-day carbohydrate strategies alongside a standardized program combining resistance training and high-intensity interval training, including a “sleep-low” approach (no carbohydrates after evening training) versus approaches distributing carbohydrates around training (with differing evening carbohydrate glycemic index). Over 4 weeks, **body composition and multiple fitness outcomes improved similarly across groups, with no meaningful differences between carbohydrate timing/type strategies**. ([DOI][2])
 
-This doesn’t prove timing never matters (it’s one context, one population, and one intervention duration), but it does directly challenge the strong claim that **you must** put carbs before or after workouts to see training-related improvements—at least in a scenario where overall diet and training are otherwise adequate. ([DOI][2])
+This doesn’t prove timing never matters (it’s one context, one population, and one intervention duration), but it does directly challenge the strong claim that **you must** put carbs before or after workouts to see training-related improvements -at least in a scenario where overall diet and training are otherwise adequate. ([DOI][2])
 
 Putting the two bodies of evidence together:
 
@@ -81,7 +81,7 @@ So: **night carbs aren’t automatically “fat,” but they are more likely to 
 
 If your goal is **glycemic control**, front-loading carbohydrates earlier is biologically and empirically plausible: multiple randomized crossover studies/meta-analyses show better postprandial glucose responses earlier vs later. ([ResearchGate][3])
 
-However, a longer-duration RCT in type 2 diabetes found that an “early time-restricted carb” approach was feasible and effective for weight/glucose management but **not superior** to a conventional, energy-matched Mediterranean-style diet—suggesting that, over weeks, the incremental benefit of carb timing (beyond energy/macronutrient prescription and adherence) may be modest in at least some populations. ([ZORA][6])
+However, a longer-duration RCT in type 2 diabetes found that an “early time-restricted carb” approach was feasible and effective for weight/glucose management but **not superior** to a conventional, energy-matched Mediterranean-style diet -suggesting that, over weeks, the incremental benefit of carb timing (beyond energy/macronutrient prescription and adherence) may be modest in at least some populations. ([ZORA][6])
 
 ## Quick reference
 
@@ -97,7 +97,7 @@ However, a longer-duration RCT in type 2 diabetes found that an “early time-re
 * If you train **once per day** and your main goals are general fitness or fat loss, prioritize **total intake and adherence**; timing is a secondary dial that you can set based on preference, appetite, and schedule. ([DOI][2])
 * If you train **multiple times per day** or need peak performance again soon, treat post-exercise carbohydrate as part of your recovery plan, with an emphasis on **regular intake during the first hours**. ([Springer Link][1])
 * If you have **prediabetes/type 2 diabetes** (or clearly worse evening glucose), consider shifting larger carbohydrate loads earlier and/or avoiding **large carb-heavy dinners**, since glycemic responses are commonly worse later in the day and some RCT data show harm in impaired glucose tolerance. ([Nature][4])
-* If a “no carbs at night” rule improves your appetite control and adherence, it may still be a useful personal strategy—but the strongest evidence-based rationale is typically **glycemic**, not “night carbs inherently become fat.” ([ResearchGate][3])
+* If a “no carbs at night” rule improves your appetite control and adherence, it may still be a useful personal strategy -but the strongest evidence-based rationale is typically **glycemic**, not “night carbs inherently become fat.” ([ResearchGate][3])
 
 ## References
 

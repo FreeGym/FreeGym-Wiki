@@ -38,7 +38,7 @@ Some women have clockwork cycles. Others vary by days or weeks. Doctors say "irr
 
 ## Does Your Period Actually Sync with Other Women?
 
-Roommates, close friends, coworkers—many women report their cycles aligning. But is menstrual synchrony real science or confirmation bias?
+Roommates, close friends, coworkers - many women report their cycles aligning. But is menstrual synchrony real science or confirmation bias?
 
 **Competing claims:**
 

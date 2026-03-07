@@ -1,18 +1,18 @@
 # Is Sugar Really That Bad?
 
-Whether sugar is “uniquely harmful” **for body weight and cardiometabolic outcomes** depends strongly on **(1) dose**, **(2) whether it adds extra energy**, and **(3) the food form (especially liquids)**—because these factors change what controlled trials and epidemiology actually show. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576))
+Whether sugar is “uniquely harmful” **for body weight and cardiometabolic outcomes** depends strongly on **(1) dose**, **(2) whether it adds extra energy**, and **(3) the food form (especially liquids)** -because these factors change what controlled trials and epidemiology actually show. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576))
 
 **Separately (and with high confidence):** “free sugars” have a clear causal role in **dental caries**, and this harm is not reducible to energy balance alone. ([WHO, 2025](https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries))
 
-The strongest and most consistent signal across study designs is not “all sugar,” but **sugar that’s easiest to overconsume and often incompletely compensated for**—particularly **sugar-sweetened beverages (SSBs)**—which track with weight gain and cardiometabolic outcomes in both trials and cohorts. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576); [Pacheco et al., 2024](https://doi.org/10.1016/j.ajcnut.2024.01.001); [DiMeglio & Mattes, 2000](https://doi.org/10.1038/sj.ijo.0801229); [Houchins et al., 2012](https://doi.org/10.1038/oby.2011.192))
+The strongest and most consistent signal across study designs is not “all sugar,” but **sugar that’s easiest to overconsume and often incompletely compensated for** -particularly **sugar-sweetened beverages (SSBs)** -which track with weight gain and cardiometabolic outcomes in both trials and cohorts. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576); [Pacheco et al., 2024](https://doi.org/10.1016/j.ajcnut.2024.01.001); [DiMeglio & Mattes, 2000](https://doi.org/10.1038/sj.ijo.0801229); [Houchins et al., 2012](https://doi.org/10.1038/oby.2011.192))
 
 ## What “sugar” means in this debate
 
-In human nutrition research, “sugars” typically refers to simple carbohydrates such as **glucose**, **fructose**, and **sucrose** (glucose + fructose), and—depending on the question—sometimes focuses on **fructose-containing sugars** (fructose alone or fructose paired with glucose, as in sucrose and many formulations of sweeteners). ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Choo et al., 2018](https://doi.org/10.1136/bmj.k4644))
+In human nutrition research, “sugars” typically refers to simple carbohydrates such as **glucose**, **fructose**, and **sucrose** (glucose + fructose), and -depending on the question -sometimes focuses on **fructose-containing sugars** (fructose alone or fructose paired with glucose, as in sucrose and many formulations of sweeteners). ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Choo et al., 2018](https://doi.org/10.1136/bmj.k4644))
 
 “Added” or “free” sugars are category labels intended to separate **sugars added during processing/preparation** (and certain low-fiber sugar sources) from **intrinsic sugars within intact foods**, but in practice many studies operationalize this by comparing **food sources** (SSBs vs fruit vs mixed sources) rather than by chemistry alone. ([Choo et al., 2018](https://doi.org/10.1136/bmj.k4644); [Lee et al., 2022](https://doi.org/10.3390/nu14142846))
 
-## Claim 1: “Sugar is toxic—fructose damages the liver and drives metabolic disease”
+## Claim 1: “Sugar is toxic -fructose damages the liver and drives metabolic disease”
 
 ### What mechanistic human trials show
 
@@ -34,9 +34,9 @@ A separate systematic review/meta-analysis examining fructose, HFCS, and sucrose
 
 A more recent systematic review/meta-analysis focusing on **food sources** and **energy control** concluded that effects on MASLD/NAFLD-related markers depend on both, with the strongest concern centered on **SSBs providing excess energy** rather than "fructose everywhere." ([Lee et al., 2022](https://doi.org/10.3390/nu14142846))
 
-**What this does and does not support:** the evidence supports that fructose can drive liver-related changes **in certain conditions**, but the broad claim “fructose is toxic” overreaches what controlled human evidence supports—because much of the measurable harm appears when sugars **add calories**, especially in beverage form. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Chung et al., 2014](https://doi.org/10.3945/ajcn.114.086314); [Lee et al., 2022](https://doi.org/10.3390/nu14142846))
+**What this does and does not support:** the evidence supports that fructose can drive liver-related changes **in certain conditions**, but the broad claim “fructose is toxic” overreaches what controlled human evidence supports -because much of the measurable harm appears when sugars **add calories**, especially in beverage form. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Chung et al., 2014](https://doi.org/10.3945/ajcn.114.086314); [Lee et al., 2022](https://doi.org/10.3390/nu14142846))
 
-## Claim 2: “Sugar is just calories—moderation is fine”
+## Claim 2: “Sugar is just calories -moderation is fine”
 
 The cleanest evidence for the “just calories” framing comes from **weight-change** data in randomized trials and from meta-analytic comparisons of **isoenergetic substitution vs ad libitum addition/removal**.
 
@@ -44,9 +44,9 @@ A systematic review/meta-analysis of RCTs and cohorts found that increasing diet
 
 That doesn’t prove sugar is *never* uniquely harmful, but it does mean the claim “sugar is harmful no matter what” conflicts with a body of controlled evidence showing that **calorie control changes the direction and size of effects**. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8))
 
-So “just calories” is an oversimplification, but “uniquely toxic regardless of calories” is also an oversimplification—the controlled trial literature repeatedly finds that **energy balance is a primary lever**. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8))
+So “just calories” is an oversimplification, but “uniquely toxic regardless of calories” is also an oversimplification -the controlled trial literature repeatedly finds that **energy balance is a primary lever**. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8))
 
-## Claim 3: “Sugar is addictive—moderation is impossible”
+## Claim 3: “Sugar is addictive -moderation is impossible”
 
 ### What “addiction” evidence in humans actually looks like
 
@@ -62,7 +62,7 @@ Where the evidence is stronger is in the literature on **“food addiction” sc
 
 A systematic review of food addiction as measured by the Yale Food Addiction Scale concluded that the construct is still debated and overlaps with established eating-disorder phenomena such as binge eating disorder, even though it can capture meaningful impairment in some individuals. ([Penzenstadler et al., 2019](https://doi.org/10.2174/1570159X16666181108093520))
 
-A separate systematic review concluded that the evidence supports food addiction as a unique construct consistent with substance use disorder criteria, and that certain foods—particularly processed foods with added sweeteners and fats—demonstrate the greatest addictive potential. ([Gordon et al., 2018](https://doi.org/10.3390/nu10040477))
+A separate systematic review concluded that the evidence supports food addiction as a unique construct consistent with substance use disorder criteria, and that certain foods -particularly processed foods with added sweeteners and fats -demonstrate the greatest addictive potential. ([Gordon et al., 2018](https://doi.org/10.3390/nu10040477))
 
 A systematic review/meta-analysis of the **prevalence** of food addiction (YFAS-based) further supports that an addiction-like eating phenotype exists in a subset of people, but it does not isolate sugar as the causal agent. ([Pursey et al., 2014](https://doi.org/10.3390/nu6104552))
 
@@ -86,7 +86,7 @@ A large prospective analysis in two US cohorts reported that higher SSB intake w
 
 A systematic review/meta-analysis likewise reported higher SSB consumption associated with higher type 2 diabetes incidence, often quantified per serving/day; it also reported positive associations for **fruit juice** and **artificially sweetened beverages** in the included prospective evidence (with the usual observational caveats). ([Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576))
 
-These findings are observational (so causality is always debated), but the pattern is consistent enough—across cohorts and aligned with trial evidence on body weight—that SSBs remain the “highest-yield” sugar target in most evidence syntheses. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576); [Pacheco et al., 2024](https://doi.org/10.1016/j.ajcnut.2024.01.001))
+These findings are observational (so causality is always debated), but the pattern is consistent enough -across cohorts and aligned with trial evidence on body weight -that SSBs remain the “highest-yield” sugar target in most evidence syntheses. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576); [Pacheco et al., 2024](https://doi.org/10.1016/j.ajcnut.2024.01.001))
 
 ## Limits and open debates
 
@@ -108,16 +108,16 @@ The "addiction" framing remains controversial because human evidence often suppo
 ## Practical interpretation
 
 * If you want a high-confidence “sugar lever,” **reducing sugar-sweetened beverages** is the most consistently supported target across RCT syntheses and cohort evidence. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576); [Pacheco et al., 2024](https://doi.org/10.1016/j.ajcnut.2024.01.001))
-* The best-supported version of “sugar is toxic” is narrower: **fructose-containing sugars can worsen liver-related markers in hypercaloric, high-dose contexts**, but **isocaloric substitution usually does not**—so energy surplus is often the main driver in the controlled evidence. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Chung et al., 2014](https://doi.org/10.3945/ajcn.114.086314); [Lee et al., 2022](https://doi.org/10.3390/nu14142846))
+* The best-supported version of “sugar is toxic” is narrower: **fructose-containing sugars can worsen liver-related markers in hypercaloric, high-dose contexts**, but **isocaloric substitution usually does not** -so energy surplus is often the main driver in the controlled evidence. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8); [Chung et al., 2014](https://doi.org/10.3945/ajcn.114.086314); [Lee et al., 2022](https://doi.org/10.3390/nu14142846))
 * The strongest evidence-based distinction is less “fructose vs glucose” and more **beverage sugar vs intact-food patterns**, since fruit intake patterns are associated with *lower*, not higher, diabetes risk. ([Choo et al., 2018](https://doi.org/10.1136/bmj.k4644); [Li et al., 2014](https://doi.org/10.1136/bmjopen-2014-005497); [Imamura et al., 2015](https://doi.org/10.1136/bmj.h3576))
-* If you experience "can't stop" eating patterns, the evidence supports taking that seriously as a clinical/behavioral phenotype—but it does **not** justify concluding that sugar is a universally addictive substance in the same sense as drugs of abuse. ([Penzenstadler et al., 2019](https://doi.org/10.2174/1570159X16666181108093520); [Markus et al., 2017](https://doi.org/10.1016/j.appet.2017.03.024))
+* If you experience "can't stop" eating patterns, the evidence supports taking that seriously as a clinical/behavioral phenotype -but it does **not** justify concluding that sugar is a universally addictive substance in the same sense as drugs of abuse. ([Penzenstadler et al., 2019](https://doi.org/10.2174/1570159X16666181108093520); [Markus et al., 2017](https://doi.org/10.1016/j.appet.2017.03.024))
 * For oral health, “free sugars” are a distinct high-confidence concern: limiting free sugars reduces dental caries risk even when body weight is not the endpoint of interest. ([WHO, 2025](https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries))
 
 ## References
 
 * Stanhope KL, et al. Consuming fructose-sweetened, not glucose-sweetened, beverages increases visceral adiposity and lipids and decreases insulin sensitivity in overweight/obese humans. *J Clin Invest.* 2009. DOI: 10.1172/JCI37385. ([Stanhope et al., 2009](https://doi.org/10.1172/JCI37385))
 * Geidl-Flueck B, et al. Fructose- and sucrose- but not glucose-sweetened beverages promote hepatic de novo lipogenesis: A randomized controlled trial. *J Hepatol.* 2021. DOI: 10.1016/j.jhep.2021.02.027. ([Geidl-Flueck et al., 2021](https://doi.org/10.1016/j.jhep.2021.02.027))
-* Chiu S, et al. Effect of fructose on markers of non-alcoholic fatty liver disease (NAFLD): a systematic review and meta-analysis of controlled feeding trials. *Eur J Clin Nutr.* 2014;68:416–423. DOI: 10.1038/ejcn.2014.8. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8)) [Note: NAFLD has since been renamed to MASLD—Metabolic dysfunction-Associated Steatotic Liver Disease.]
+* Chiu S, et al. Effect of fructose on markers of non-alcoholic fatty liver disease (NAFLD): a systematic review and meta-analysis of controlled feeding trials. *Eur J Clin Nutr.* 2014;68:416–423. DOI: 10.1038/ejcn.2014.8. ([Chiu et al., 2014](https://doi.org/10.1038/ejcn.2014.8)) [Note: NAFLD has since been renamed to MASLD -Metabolic dysfunction-Associated Steatotic Liver Disease.]
 * Chung M, et al. Fructose, high-fructose corn syrup, sucrose, and nonalcoholic fatty liver disease or indexes of liver health: a systematic review and meta-analysis. *Am J Clin Nutr.* 2014;100(3):833–849. DOI: 10.3945/ajcn.114.086314. ([Chung et al., 2014](https://doi.org/10.3945/ajcn.114.086314))
 * Lee D, et al. Important Food Sources of Fructose-Containing Sugars and Non-Alcoholic Fatty Liver Disease: a systematic review and meta-analysis of controlled trials. *Nutrients.* 2022;14(14):2846. DOI: 10.3390/nu14142846. ([Lee et al., 2022](https://doi.org/10.3390/nu14142846))
 * Te Morenga L, et al. Dietary sugars and body weight: systematic review and meta-analyses of randomised controlled trials and cohort studies. *BMJ.* 2013;346:e7492. DOI: 10.1136/bmj.e7492. ([Te Morenga et al., 2013](https://doi.org/10.1136/bmj.e7492))

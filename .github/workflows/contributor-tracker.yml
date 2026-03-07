@@ -112,7 +112,7 @@ jobs:
           all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
 
           # Filter to content markdown files only
-          content_folders = ['nutrition', 'exercise', 'sleep', 'mental-health', 'supplements', 'recovery']
+          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'pharmacology', 'layman-version']
           content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
 
           # Get the full diff to analyze citations
@@ -171,7 +171,7 @@ jobs:
                   r'https?://(?:www\.)?cochranelibrary\.com/[^\s\)]+',
                   r'https?://(?:www\.)?(?:www\.)?cochrane\.org/[^\s\)]+',
                   r'https?://(?:www\.)?ahajournals\.org/doi/[^\s\)]+',
-                  r'https?://(?:www\.)?bmj\.com/content/[^\s\)]+',
+                  r'https?://(?:[a-zA-Z0-9-]+\.)?bmj\.com/content/[^\s\)]+',
                   r'https?://academic\.oup\.com/[^\s\)]+',
                   r'https?://(?:onlinelibrary|faseb)\.wiley\.com/doi/[^\s\)]+',
                   r'https?://journals\.sagepub\.com/doi/[^\s\)]+',
@@ -181,9 +181,10 @@ jobs:
                   r'https?://(?:www\.)?nationalacademies\.org/read/[^\s\)]+',
                   r'https?://nap\.nationalacademies\.org/read/[^\s\)]+',
                   r'https?://journals\.plos\.org/[^\s\)]+',
-                  r'https?://bjsm\.bmj\.com/content/[^\s\)]+',
                   r'https?://(?:www\.)?e-epih\.org/journal/[^\s\)]+',
                   r'https?://research\.birmingham\.ac\.uk/[^\s\)]+',
+                  r'https?://(?:www\.)?cambridge\.org/core/journals/[^\s\)]+',
+                  r'https?://pubs\.rsc\.org/en/content/articlehtml/[^\s\)]+',
               ]
 
               publisher_urls = set()
