@@ -31,6 +31,7 @@ TOPIC_LABELS = {
     'recovery': 'Recovery',
     'biomechanics': 'Biomechanics',
     'heart-health': 'Heart Health',
+    'Womens-Health': "Women's Health",
 }
 
 TOPIC_ORDER = [
