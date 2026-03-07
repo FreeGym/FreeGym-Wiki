@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +35 more | 444 | 71 | 2026-03 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) |  | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +55 more | 494 | 71 | 2026-03 | [View](cards/mutant1643.svg) |
 
 ---
 
@@ -16,7 +16,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `exercise-physiology` `Womens-Health` `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md), [womens-health.md](Womens-Health/womens-health.md), [cardiorespiratory-fitness.md](exercise-physiology/cardiorespiratory-fitness/cardiorespiratory-fitness.md) +18 more | 53 | 8 | 2026-03 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `exercise-physiology` `Womens-Health` `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 10 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -43,7 +43,7 @@ Copy these to your GitHub profile README to show your verification status.
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
-[![Citations](https://img.shields.io/badge/Citations-444-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
+[![Citations](https://img.shields.io/badge/Citations-494-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![exercise-physiology](https://img.shields.io/badge/Topic-exercise-physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
 [![pharmacology](https://img.shields.io/badge/Topic-pharmacology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#mutant1643)
@@ -61,7 +61,7 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
-[![Citations](https://img.shields.io/badge/Citations-53-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![exercise-physiology](https://img.shields.io/badge/Topic-exercise-physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Womens-Health](https://img.shields.io/badge/Topic-Womens-Health-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
