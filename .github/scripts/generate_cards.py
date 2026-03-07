@@ -159,6 +159,7 @@ def generate_card(
         'recovery': 'Recovery',
         'biomechanics': 'Biomechanics',
         'heart-health': 'Heart Health',
+        'Womens-Health': "Women's Health",
     }
     display_topics = [topic_labels.get(t, t.replace('-', ' ').title()) for t in (topics or [])]
     top_topics = display_topics[:10] if display_topics else []
