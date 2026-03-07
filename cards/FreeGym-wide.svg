@@ -39,9 +39,9 @@
 
   <!-- Stats -->
   <text x="37.80" y="214.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">TOP TOPICS</text>
-  <text x="37.80" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Nutrition</text>
+  <text x="37.80" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Exercise Physiology</text>
   <text x="37.80" y="285.71" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Womens Health</text>
-  <text x="37.80" y="322.56" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Exercise Physiology</text>
+  <text x="37.80" y="322.56" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Nutrition</text>
   <text x="660.00" y="214.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">LAST ACTIVE</text>
   <text x="660.00" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">2026-03</text>
 
@@ -49,7 +49,7 @@
   <text x="660.00" y="313.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">53</text>
 
   <text x="660.00" y="343.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">COMMITS</text>
-  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">7</text>
+  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">8</text>
 
   <text x="660.00" y="407.70" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">CONTRIBUTIONS</text>
   <text x="660.00" y="442.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">21</text>
