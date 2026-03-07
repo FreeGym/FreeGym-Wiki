@@ -132,10 +132,10 @@ Monteyne AJ, Coelho MOC, Murton AJ, et al. Vegan and Omnivorous High Protein Die
 
 Domić J, Pinckaers PJM, Grootswagers P, et al. A Well-Balanced Vegan Diet Does not Compromise Daily Mixed Muscle Protein Synthesis Rates when Compared with an Omnivorous Diet in Active Older Adults: A Randomized Controlled Cross-Over Trial. **The Journal of Nutrition**. 2025;155(4):1141–1150. DOI: 10.1016/j.tjnut.2024.12.019. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S002231662401246X "https://www.sciencedirect.com/science/article/pii/S002231662401246X"))
 
-Zhao S, Xu Y, Li J, Ning Z. The Effect of Plant-Based Protein Ingestion on Athletic Ability in Healthy People—A Bayesian Meta-Analysis with Systematic Review of Randomized Controlled Trials. **Nutrients**. 2024;16(16):2748. DOI: 10.3390/nu16162748. ([MDPI](https://www.mdpi.com/2072-6643/16/16/2748 "https://www.mdpi.com/2072-6643/16/16/2748"))
+Zhao S, Xu Y, Li J, Ning Z. The Effect of Plant-Based Protein Ingestion on Athletic Ability in Healthy People -A Bayesian Meta-Analysis with Systematic Review of Randomized Controlled Trials. **Nutrients**. 2024;16(16):2748. DOI: 10.3390/nu16162748. ([MDPI](https://www.mdpi.com/2072-6643/16/16/2748 "https://www.mdpi.com/2072-6643/16/16/2748"))
 
 Bakaloudi DR, Halloran A, Rippin HL, et al. Intake and adequacy of the vegan diet. A systematic review of the evidence. **Clinical Nutrition**. 2021;40(5):3503–3521. DOI: 10.1016/j.clnu.2020.11.035. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0261561420306567 "https://www.sciencedirect.com/science/article/pii/S0261561420306567"))
 
-Mariotti F, Gardner CD. Dietary Protein and Amino Acids in Vegetarian Diets—A Review. **Nutrients**. 2019;11(11):2661. DOI: 10.3390/nu11112661. ([MDPI](https://www.mdpi.com/2072-6643/11/11/2661 "https://www.mdpi.com/2072-6643/11/11/2661"))
+Mariotti F, Gardner CD. Dietary Protein and Amino Acids in Vegetarian Diets -A Review. **Nutrients**. 2019;11(11):2661. DOI: 10.3390/nu11112661. ([MDPI](https://www.mdpi.com/2072-6643/11/11/2661 "https://www.mdpi.com/2072-6643/11/11/2661"))
 
 López‑Moreno M, Viviani Rossi E, López‑Gil JF, Marrero‑Fernández P, Roldán‑Ruiz A, Bertotti G. Are Plant-Based Diets Detrimental to Muscular Strength? A Systematic Review and Meta-Analysis of Randomized Controlled Trials. **Sports Medicine Open**. 2025;11(1):62. DOI: 10.1186/s40798-025-00852-7. PMID: 40455307. ([Springer Link](https://link.springer.com/article/10.1186/s40798-025-00852-7 "https://link.springer.com/article/10.1186/s40798-025-00852-7"))

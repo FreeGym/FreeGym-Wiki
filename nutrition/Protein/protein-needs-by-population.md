@@ -33,7 +33,7 @@ Evidence in clinically relevant subgroups points the same direction: in older ad
 ### But: higher protein alone doesn’t reliably add lean mass in all older populations
 
 In a randomized clinical trial of functionally limited older men, increasing protein intake to **~1.3 g/kg/day** did **not** increase lean body mass or improve physical function compared with **~0.8 g/kg/day**. ([JAMA Network][7])
-(Their trial did report some favorable body-composition changes—e.g., fat mass reduction—despite no LBM gain.) ([JAMA Network][7])
+(Their trial did report some favorable body-composition changes -e.g., fat mass reduction -despite no LBM gain.) ([JAMA Network][7])
 
 ### Observational evidence is consistent with “low intake ↔ sarcopenia,” but causality is limited
 
@@ -103,7 +103,7 @@ A systematic review/meta-analysis of RCTs found that protein supplementation dur
 
 * **Older adults:** The best-supported strategy for improving lean mass/function is pairing **adequate-to-higher protein** with **resistance training**, rather than relying on protein alone. ([ScienceDirect][5])
 * **Dieting athletes:** If the priority is lean-mass retention in a meaningful deficit, controlled trials support moving from ~1.0–1.2 g/kg/day toward **~1.6–2.4 g/kg/day**, with particularly strong RCT support for **~2.3–2.4 g/kg/day** in aggressive deficit + training contexts. ([University of Birmingham][9])
-* **Endurance vs strength:** IAAO-derived estimates suggest endurance athletes on heavy days may need **~1.8 g/kg/day**, and strength athletes in the IAAO bodybuilding study reached an upper-95%-CI “recommended” intake around **~2.2 g/kg/day**—so the practical difference is often less about “endurance needs less” and more about **training load, day type, and energy availability**. ([PLOS][12])
+* **Endurance vs strength:** IAAO-derived estimates suggest endurance athletes on heavy days may need **~1.8 g/kg/day**, and strength athletes in the IAAO bodybuilding study reached an upper-95%-CI “recommended” intake around **~2.2 g/kg/day** -so the practical difference is often less about “endurance needs less” and more about **training load, day type, and energy availability**. ([PLOS][12])
 
 ## References
 

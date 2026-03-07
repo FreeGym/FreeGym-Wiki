@@ -38,7 +38,7 @@ Much of the mortality literature uses estimated fitness (METs from treadmill pro
 
 ## Does Increasing VO₂ Max Cause Health Benefits, or Is It Just a Marker?
 
-People who are fitter live longer—but is fitness causing the benefit, or just reflecting underlying health?
+People who are fitter live longer, but is fitness causing the benefit, or just reflecting underlying health?
 
 **Competing claims:**
 
@@ -293,7 +293,7 @@ A common explanation for endurance benefits.
 
 ## VO₂ Max and Metabolic Health: Diabetes, NAFLD, Obesity
 
-Exercise improves glycemic control—but how tightly is that tied to VO₂ max?
+Exercise improves glycemic control, but how tightly is that tied to VO₂ max?
 
 **Competing claims:**
 
