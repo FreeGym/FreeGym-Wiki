@@ -153,25 +153,6 @@ maintainers:
     type: created
     citations_added: 0
     pr: 147
-  total_citations: 444
-  commits: 71
-trusted: []
-contributors:
-- github: FreeGym
-  joined: 2026-02
-  checkmark: true
-  topics:
-  - exercise-physiology
-  - Womens-Health
-  - nutrition
-  last_active: 2026-03
-  prs_merged: 7
-  substantive_prs: 3
-  contributions:
-  - file: nutrition/Protein/protein-rda.md
-    type: major_edit
-    citations_added: 3
-    pr: 29
   - file: Womens-Health/womens-health.md
     type: edit
     citations_added: 0
@@ -252,7 +233,26 @@ contributors:
     type: created
     citations_added: 0
     pr: 157
-  total_citations: 53
+  total_citations: 494
+  commits: 71
+trusted: []
+contributors:
+- github: FreeGym
+  joined: 2026-02
+  checkmark: true
+  topics:
+  - exercise-physiology
+  - Womens-Health
+  - nutrition
+  last_active: 2026-03
+  prs_merged: 7
+  substantive_prs: 3
+  contributions:
+  - file: nutrition/Protein/protein-rda.md
+    type: major_edit
+    citations_added: 3
+    pr: 29
+  total_citations: 3
   commits: 8
   checkmark_pr: 29
 - github: github-actions[bot]
