@@ -60,6 +60,7 @@ jobs:
             --exclude "^https://doi\\.org/10\\.1073/"
             --exclude "^https://doi\\.org/10\\.1152/"
             --exclude "^https://github\\.com/github-actions\\[bot\\]"
+            --exclude "^https://github\\.com/FreeGym/FreeGym-Wiki"
             --exclude "^https://faseb\\.onlinelibrary\\.wiley\\.com"
             --exclude "^https://onlinelibrary\\.wiley\\.com"
             --exclude "^https://journals\\.sagepub\\.com"
