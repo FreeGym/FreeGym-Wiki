@@ -22,32 +22,56 @@ RAW_BASE = os.getenv('RAW_BASE', 'https://raw.githubusercontent.com/FreeGym/Free
 SITE_BASE_URL = os.getenv('SITE_BASE_URL', 'https://freegym.github.io/FreeGym-Wiki').rstrip('/')
 BUILD_STAMP = datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S')
 
+TOPIC_ALIASES = {
+    'heart-health': 'cardiology',
+}
 TOPIC_LABELS = {
     'nutrition': 'Nutrition',
+    'exercise-physiology': 'Exercise Physiology',
+    'pharmacology': 'Pharmacology',
     'exercise': 'Fitness',
     'sleep': 'Sleep',
     'mental-health': 'Mental Health',
     'supplements': 'Supplements',
     'recovery': 'Recovery',
     'biomechanics': 'Biomechanics',
-    'heart-health': 'Heart Health',
+    'cardiology': 'Cardiology',
     'Womens-Health': "Women's Health",
 }
 
 TOPIC_ORDER = [
     'nutrition',
+    'exercise-physiology',
+    'pharmacology',
+    'cardiology',
+    'Womens-Health',
     'exercise',
     'sleep',
     'mental-health',
     'supplements',
     'recovery',
     'biomechanics',
-    'heart-health',
 ]
 
 
+def normalize_topic(topic):
+    return TOPIC_ALIASES.get(topic, topic)
+
+
+def normalize_topics(topics):
+    normalized = []
+    seen = set()
+    for topic in topics or []:
+        canonical = normalize_topic(topic)
+        if canonical and canonical not in seen:
+            seen.add(canonical)
+            normalized.append(canonical)
+    return normalized
+
+
 def label_topic(topic):
-    return TOPIC_LABELS.get(topic, topic.replace('-', ' ').title())
+    canonical = normalize_topic(topic)
+    return TOPIC_LABELS.get(canonical, canonical.replace('-', ' ').title())
 
 
 def esc(value):
@@ -66,7 +90,7 @@ def collect_profiles(data):
     def add_profile(entry, role):
         github = entry.get('github', '')
         name = entry.get('name') or github
-        topics = entry.get('topics', []) or []
+        topics = normalize_topics(entry.get('topics', []) or [])
         contributions = entry.get('contributions', []) or []
         citations = entry.get('total_citations', 0)
         commits = entry.get('commits', 0)

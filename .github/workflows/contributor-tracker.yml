@@ -50,7 +50,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install pyyaml cairosvg
 
       - name: Use accumulated contributors.yaml if available
         run: |
@@ -112,7 +112,7 @@ jobs:
           all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
 
           # Filter to content markdown files only
-          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'pharmacology', 'layman-version']
+          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version']
           content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
 
           # Get the full diff to analyze citations
@@ -205,8 +205,19 @@ jobs:
               })
               total_citations += citations_added
 
-          # Get topics from folders
-          all_topics = list(set(f.split('/')[0] for f in content_files if '/' in f))
+          # Get topics from folders using canonical topic keys
+          topic_aliases = {
+              "heart-health": "cardiology"
+          }
+          all_topics = []
+          seen_topics = set()
+          for filepath in content_files:
+              if '/' not in filepath:
+                  continue
+              topic = topic_aliases.get(filepath.split('/', 1)[0], filepath.split('/', 1)[0])
+              if topic not in seen_topics:
+                  seen_topics.add(topic)
+                  all_topics.append(topic)
           topics = all_topics if is_substantive else []
 
           # Count commits in this PR
@@ -266,6 +277,19 @@ jobs:
           total_citations = analysis['total_citations']
           commits = analysis.get('commits', 1)
           current_month = datetime.now().strftime("%Y-%m")
+          topic_aliases = {
+              'heart-health': 'cardiology'
+          }
+
+          def normalize_topics(values):
+              normalized = []
+              seen = set()
+              for value in values or []:
+                  canonical = topic_aliases.get(value, value)
+                  if canonical and canonical not in seen:
+                      seen.add(canonical)
+                      normalized.append(canonical)
+              return normalized
 
           def get_absolute_commit_count(github_username):
               """Get total commit count for a user from the GitHub search API.
@@ -288,13 +312,18 @@ jobs:
           with open('contributors.yaml', 'r') as f:
               data = yaml.safe_load(f) or {}
 
+          for section_name in ('maintainers', 'trusted', 'contributors'):
+              for entry in data.get(section_name, []) or []:
+                  if isinstance(entry, dict):
+                      entry['topics'] = normalize_topics(entry.get('topics') or [])
+
           # Helper to update a contributor record
           def update_contributor(contributor, is_new=False):
               contributor['last_active'] = current_month
 
               # Update topics
               existing_topics = contributor.get('topics') or []
-              contributor['topics'] = list(set(existing_topics + topics))
+              contributor['topics'] = normalize_topics(existing_topics + topics)
 
               # Update contributions list
               existing_contributions = contributor.get('contributions') or []
@@ -405,6 +434,16 @@ jobs:
           with open('contributors.yaml', 'r') as f:
               data = yaml.safe_load(f) or {}
 
+          topic_labels = {
+              'heart-health': 'Cardiology',
+              'cardiology': 'Cardiology',
+              'Womens-Health': "Women's Health",
+              'exercise-physiology': 'Exercise Physiology',
+          }
+
+          def label_topic(topic):
+              return topic_labels.get(topic, topic.replace('-', ' ').title())
+
           md = []
           all_verified = []  # Collect all verified for badge section
           maintainers = data.get('maintainers') or []
@@ -417,13 +456,14 @@ jobs:
 
           # Maintainers section
           md.append("## Maintainers\n")
-          md.append("| | Name | Specialty | Contributions | Citations | Commits | Last Active | Card |")
+          md.append("| | Name | Topics | Contributions | Citations | Commits | Last Active | Card |")
           md.append("|---|------|-----------|---------------|-----------|---------|-------------|------|")
 
           for m in maintainers:
               github = m.get('github', '')
               name = m.get('name', github)
-              specialty = ' '.join(f"`{s}`" for s in m.get('specialty', []))
+              topics = m.get('topics', [])
+              topics_str = ' '.join(f"`{label_topic(topic)}`" for topic in topics)
               contributions = m.get('contributions', [])
               contrib_links = ', '.join(f"[{c['file'].split('/')[-1]}]({c['file']})" for c in contributions[:3])
               if len(contributions) > 3:
@@ -433,8 +473,7 @@ jobs:
               total_citations = m.get('total_citations', 0)
               total_commits = m.get('commits', 0)
               last_active = m.get('last_active', '-')
-              topics = m.get('topics', [])
-              md.append(f"| <a id=\"{github}\"></a>⭐ | [@{github}](https://github.com/{github}) | {specialty} | {contrib_links} | {total_citations} | {total_commits} | {last_active} | [View](cards/{github}.svg) |")
+              md.append(f"| <a id=\"{github}\"></a>⭐ | [@{github}](https://github.com/{github}) | {topics_str} | {contrib_links} | {total_citations} | {total_commits} | {last_active} | [View](cards/{github}.svg) |")
               all_verified.append({'github': github, 'type': 'maintainer', 'citations': total_citations, 'commits': total_commits, 'topics': topics})
 
           md.append("")
@@ -451,7 +490,7 @@ jobs:
                   github = t.get('github', '')
                   name = t.get('name', github)
                   topics = t.get('topics', [])
-                  topics_str = ' '.join(f"`{top}`" for top in topics)
+                  topics_str = ' '.join(f"`{label_topic(top)}`" for top in topics)
                   contributions = t.get('contributions', [])
                   contrib_links = ', '.join(f"[{c['file'].split('/')[-1]}]({c['file']})" for c in contributions[:3])
                   if len(contributions) > 3:
@@ -478,7 +517,7 @@ jobs:
               for c in verified:
                   github = c.get('github', '')
                   topics = c.get('topics', [])
-                  topics_str = ' '.join(f"`{top}`" for top in topics)
+                  topics_str = ' '.join(f"`{label_topic(top)}`" for top in topics)
                   contributions = c.get('contributions', [])
                   contrib_links = ', '.join(f"[{cont['file'].split('/')[-1]}]({cont['file']})" for cont in contributions[:3])
                   if len(contributions) > 3:
@@ -544,8 +583,9 @@ jobs:
 
                   # Topic badges
                   for topic in topics:
-                      topic_encoded = urllib.parse.quote(topic, safe='')
-                      md.append(f"[![{topic}](https://img.shields.io/badge/Topic-{topic_encoded}-green)]({profile_url})")
+                      topic_label = label_topic(topic)
+                      topic_encoded = urllib.parse.quote(topic_label, safe='')
+                      md.append(f"[![{topic_label}](https://img.shields.io/badge/Topic-{topic_encoded}-green)]({profile_url})")
 
                   md.append("```\n")
 
