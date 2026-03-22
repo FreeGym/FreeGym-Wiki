@@ -233,8 +233,76 @@ maintainers:
     type: created
     citations_added: 0
     pr: 157
-  total_citations: 494
-  commits: 71
+  - file: cardiology/heart-health.md
+    type: edit
+    citations_added: 0
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/cadio-kills-gains-vs-aerobic-base-improves-everything.md
+    type: created
+    citations_added: 16
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/central-vs-peripheral-limits.md
+    type: created
+    citations_added: 38
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/do-you-need-vo2max-testing-for-training-zones.md
+    type: created
+    citations_added: 30
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/does-body-weight-penalize-vo2max.md
+    type: created
+    citations_added: 20
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/does-increasing-vo2max-cause-health-benefits.md
+    type: created
+    citations_added: 21
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/hiit-safety.md
+    type: created
+    citations_added: 25
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/how-much-vo2max-is-enough-for-healthspan.md
+    type: created
+    citations_added: 14
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2-max-and-other-predictors.md
+    type: created
+    citations_added: 19
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2-max-trainability.md
+    type: created
+    citations_added: 51
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2max-and-strength-training.md
+    type: created
+    citations_added: 40
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2max-vs-CRF-vs-METs.md
+    type: created
+    citations_added: 47
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/wearable-vo2max-estimates.md
+    type: created
+    citations_added: 25
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/what-is-the-best-way-to-measure-vo2max.md
+    type: created
+    citations_added: 24
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/whats-the-best-training-to-increase-vo2max.md
+    type: created
+    citations_added: 32
+    pr: 172
+  - file: exercise-physiology/cardiorespiratory-fitness/zone2-physiological-reality-or-internet-meme.md
+    type: created
+    citations_added: 24
+    pr: 172
+  - file: pharmacology/GLP-1/glp-1.md
+    type: major_edit
+    citations_added: 0
+    pr: 172
+  total_citations: 920
+  commits: 73
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
