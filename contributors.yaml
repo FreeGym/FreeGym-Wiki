@@ -274,11 +274,11 @@ contributors:
   joined: 2026-02
   checkmark: true
   topics:
+  - nutrition
   - Womens-Health
   - exercise-physiology
-  - nutrition
   last_active: 2026-03
-  prs_merged: 9
+  prs_merged: 10
   substantive_prs: 3
   contributions:
   - file: nutrition/Protein/protein-rda.md
@@ -286,7 +286,7 @@ contributors:
     citations_added: 3
     pr: 29
   total_citations: 3
-  commits: 11
+  commits: 12
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02

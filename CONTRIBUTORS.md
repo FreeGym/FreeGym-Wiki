@@ -17,7 +17,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `Womens-Health` `exercise-physiology` `nutrition` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 11 | 2026-03 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `nutrition` `Womens-Health` `exercise-physiology` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 12 | 2026-03 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -78,9 +78,9 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Womens-Health](https://img.shields.io/badge/Topic-Womens-Health-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![exercise-physiology](https://img.shields.io/badge/Topic-exercise-physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
-[![nutrition](https://img.shields.io/badge/Topic-nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 ```
 
 **Shareable Card:**
