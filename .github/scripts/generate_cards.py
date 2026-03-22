@@ -27,6 +27,20 @@ CARD_SIZES = {
 
 ACTIVE_WINDOW_DAYS = 60
 USE_LOGO = os.getenv('USE_LOGO', '1').lower() not in ('0', 'false', 'no')
+TOPIC_ALIASES = {
+    'heart-health': 'cardiology',
+}
+TOPIC_LABELS = {
+    'nutrition': 'Nutrition',
+    'exercise': 'Fitness',
+    'sleep': 'Sleep',
+    'mental-health': 'Mental Health',
+    'supplements': 'Supplements',
+    'recovery': 'Recovery',
+    'biomechanics': 'Biomechanics',
+    'cardiology': 'Cardiology',
+    'Womens-Health': "Women's Health",
+}
 
 
 def get_png_size(path):
@@ -97,6 +111,18 @@ def is_active_recent(last_active):
     return (date.today() - last_date).days <= ACTIVE_WINDOW_DAYS
 
 
+def normalize_topics(topics):
+    """Return canonical topic keys without duplicates, preserving order."""
+    normalized = []
+    seen = set()
+    for topic in topics or []:
+        canonical = TOPIC_ALIASES.get(topic, topic)
+        if canonical and canonical not in seen:
+            seen.add(canonical)
+            normalized.append(canonical)
+    return normalized
+
+
 def generate_card(
     github,
     display_name,
@@ -150,18 +176,7 @@ def generate_card(
         badge_stroke = '#E10600'
 
     # Format topics as broad categories (folder-derived, human-readable)
-    topic_labels = {
-        'nutrition': 'Nutrition',
-        'exercise': 'Fitness',
-        'sleep': 'Sleep',
-        'mental-health': 'Mental Health',
-        'supplements': 'Supplements',
-        'recovery': 'Recovery',
-        'biomechanics': 'Biomechanics',
-        'heart-health': 'Heart Health',
-        'Womens-Health': "Women's Health",
-    }
-    display_topics = [topic_labels.get(t, t.replace('-', ' ').title()) for t in (topics or [])]
+    display_topics = [TOPIC_LABELS.get(t, t.replace('-', ' ').title()) for t in normalize_topics(topics)]
     top_topics = display_topics[:10] if display_topics else []
     topics_tokens = top_topics[:] if top_topics else []
     if display_topics and len(display_topics) > 10:
@@ -362,7 +377,7 @@ def main():
 
     # Maintainers
     for m in data.get('maintainers', []):
-        topics = list(m.get('topics', []) or [])
+        topics = normalize_topics(list(m.get('topics', []) or []))
         all_contributors.append({
             'github': m.get('github', ''),
             'name': m.get('name', m.get('github', '')),
@@ -382,7 +397,7 @@ def main():
                 'github': t.get('github', ''),
                 'name': t.get('name', t.get('github', '')),
                 'type': 'trusted',
-                'topics': t.get('topics', []),
+                'topics': normalize_topics(t.get('topics', [])),
                 'citations': t.get('total_citations', 0),
                 'files': [c['file'] for c in t.get('contributions', [])],
                 'last_active': t.get('last_active', '-'),
@@ -397,7 +412,7 @@ def main():
                 'github': c.get('github', ''),
                 'name': c.get('github', ''),
                 'type': 'contributor',
-                'topics': c.get('topics', []),
+                'topics': normalize_topics(c.get('topics', [])),
                 'citations': c.get('total_citations', 0),
                 'files': [cont['file'] for cont in c.get('contributions', [])],
                 'last_active': c.get('last_active', '-'),

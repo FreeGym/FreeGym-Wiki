@@ -58,6 +58,8 @@ jobs:
             --exclude "^https://www\\.ahajournals\\.org"
             --exclude "^https://www\\.cochranelibrary\\.com"
             --exclude "^https://www\\.researchgate\\.net"
+            --exclude "^https://(?:www\\.)?link\\.springer\\.com"
+            --exclude "^https://findresearcher\\.sdu\\.dk"
             --exclude "^https://pubmed\\.ncbi\\.nlm\\.nih\\.gov"
             --exclude "^https://pmc\\.ncbi\\.nlm\\.nih\\.gov"
             --exclude "^https://www\\.efsa\\.europa\\.eu/"

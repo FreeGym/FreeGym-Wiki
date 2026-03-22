@@ -1,0 +1,99 @@
+# Do You Need VO₂ Max Testing for Training Zones?
+
+A VO₂ max number alone is not usually necessary if the main goal is to set actionable training zones, although the strongest direct evidence is that VO₂ max alone is a weak anchor for zone setting rather than that VO₂ max testing never adds value. The stronger evidence favors anchors tied to physiological thresholds, ventilatory thresholds, lactate thresholds, and in some settings critical power or critical speed, because they align more closely with the intensity domains coaches are trying to target in daily training. A lab cardiopulmonary exercise test can still be useful when it includes both VO₂ max and thresholds, but the studies cited here speak more directly to the value of thresholds for zone setting than to the stand-alone value of the VO₂ max number. ([Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/); [Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/); [Benítez-Muñoz et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12173951/))
+
+## What VO₂ max testing does and does not tell you
+
+VO₂ max describes the highest rate at which oxygen can be taken up and used during maximal exercise. It is an upper-limit variable, but a fixed percentage of VO₂ max does not reliably identify where easy work becomes heavy work or where heavy work becomes severe work. In a 2020 review, Jamnick et al. concluded that prescribing intensity from fixed percentages of maximal anchors such as VO₂ max or HRmax has little merit for eliciting domain-specific physiological responses. The same review judged threshold-based anchors to be more defensible, especially LT1/GET/VT for the moderate-heavy boundary and critical power/speed for the heavy-severe boundary. ([Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/))
+
+A VO₂ max test becomes more useful when it is part of a broader cardiopulmonary exercise test that also identifies thresholds. In a 2025 cross-sectional study of 1,691 participants, Benítez-Muñoz et al. found that the %VO₂ max at which VT1 and VT2 occurred was very poorly correlated with VO₂ max itself and more closely related to VO₂ at VT1 and VO₂ at VT2. That supports using VO₂ max as contextual information alongside thresholds rather than as a stand-alone zone anchor. The authors declared no conflicts of interest and reported academic/public grant support rather than commercial sponsorship. ([Benítez-Muñoz et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12173951/))
+
+## Why thresholds are usually more actionable for zone setting
+
+Thresholds are usually more actionable because they map to changes in physiological behavior, not just to a percentage of a ceiling value. Mann et al. noted that people exercising at the same %VO₂ max or %HRmax can fall on different sides of aerobic and anaerobic thresholds, which means the same nominal “zone” can correspond to meaningfully different metabolic stress across individuals. Jamnick et al. reached a similar conclusion and argued that threshold-based anchors are better aligned with moderate, heavy, and severe intensity domains than fixed percentages of maximal variables. ([Mann et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23620244/); [Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/))
+
+That theoretical advantage is supported by acute comparison data. In a 2023 study, Meyler et al. compared sessions prescribed from physiological thresholds with sessions prescribed from maximum-based anchors. All participants completed the heavy-intensity threshold-based session, but only 30% completed the traditionally prescribed version; all participants completed the threshold-based HIIT session, but only 20% completed the traditional version. In the HIIT condition, blood-lactate and W′ depletion responses were also less variable with threshold-based prescription. The authors declared no conflicting interests. ([Meyler et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36710454/))
+
+A 2022 critical review by Lehtonen et al. reached a similar practical conclusion: lactate, ventilatory, and critical-power thresholds can improve cardiorespiratory-fitness responses compared with homogeneous prescriptions, but lab-based threshold assessment is harder to scale for the general population. The same review argued that accessible self-assessed tools should be part of the solution rather than treating lab testing as the only route to individualization. The authors reported no competing interests. ([Lehtonen et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35722045/))
+
+## Why %HRmax and %VO₂ max zones are often too imprecise
+
+The clearest problem with zones based on HRmax or VO₂ max is individual spread. In Iannetta et al., lactate threshold occurred anywhere from 45% to 74% of VO₂ max and 60% to 90% of HRmax, while maximal lactate steady state occurred anywhere from 69% to 96% of VO₂ max and 75% to 97% of HRmax. When thresholds occur across ranges that wide, a fixed percentage cannot reliably place different athletes into the same physiological domain. ([Iannetta et al., 2020](https://pubmed.ncbi.nlm.nih.gov/31479001/))
+
+The same pattern appears in larger datasets. Benítez-Muñoz et al. found substantial heterogeneity in the percentages of VO₂ max, HRmax, and maximal power at which VT1 and VT2 occur, even after stratifying by sex and aerobic-fitness level. Their conclusion was that the conventional practice of setting intensity from a fixed percentage of maximum may not effectively standardize intensity. The authors declared no conflicts of interest. ([Benítez-Muñoz et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12173951/))
+
+This is one reason generic heart-rate zones based on max HR are weak when precision matters. They are simple, but they are not very individual. Mann et al. also noted that threshold-based methods have practical downsides, more testing burden, possible lactate sampling, and greater day-to-day variation than HRmax or VO₂ max, so “more accurate” does not mean effortless. ([Mann et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23620244/))
+
+## What the comparative training studies show
+
+A high-level direct comparison is a 2025 systematic review with meta-analysis of individual participant data by Meyler et al., covering 1,544 people across 42 studies. In controlled studies, prescribing exercise relative to physiological thresholds produced larger mean gains in VO₂ max than traditional anchors (4.1 vs 1.8 mL/kg/min) and a much higher proportion of participants exceeding a prespecified minimum important difference (64% vs 16%). The review reported no funding and no conflicts of interest. This is strong evidence that threshold-based prescription is not only theoretically cleaner, but often produces better cardiorespiratory-fitness outcomes than traditional anchors in the studied settings. ([Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+
+The RCTs point in the same direction, with an important caveat: several were done in sedentary or physically inactive adults rather than trained endurance athletes. ([Wolpern et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4491229/); [Martini et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8997390/); [Kirton et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9459763/)) In Wolpern et al. (2015), a threshold-based prescription using VT1/VT2 improved VO₂ max more than %HRR and produced 100% responders versus 41.7% in the HRR group. This trial was funded by the American Council on Exercise (ACE), which the authors said had no role in study design, data collection, analysis, or manuscript preparation. Because the intervention used ACE’s own three-zone model, that funding relationship should be kept in mind when interpreting the result. ([Wolpern et al., 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4491229/))
+
+In a 2022 randomized trial in physically inactive adults, Martini et al. found that individualized prescription produced more likely responders for VT2 improvement than standardized prescription (79% vs 47%). That study reported no external funding and no conflicts of interest. In a related 2022 RCT, Kirton et al. found that ventilatory-threshold-based prescription improved the Fitness-Fatness Index more than a comparable HRR-based protocol; that paper also reported no conflicts of interest. ([Martini et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8997390/); [Kirton et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9459763/))
+
+Taken together, the intervention evidence supports a fairly specific conclusion: threshold-based prescription often beats generic percentage-based prescription when the goal is to standardize physiological strain and improve training response. What it does not prove is that every recreational athlete needs a lab test, because non-lab options for individualization also exist. ([Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+
+## Can RPE and field methods be enough?
+
+For many non-elite athletes, they can be a practical alternative. A 2022 review by Bok et al. concluded that the Talk Test and RPE are valid for identifying both the ventilatory threshold and the respiratory compensation threshold, and that they can be used to elicit exercise within the moderate, heavy, and severe domains. This supports a practical middle position: if lab access is limited, subjective tools are not merely guesswork. ([Bok et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35507232/))
+
+A small 2023 intervention study in handcycling also found no meaningful differences in physiological training intensity between RPE-guided and power-guided sessions over four weeks, suggesting that perceptual regulation can work in practice in that setting when participants are taught to use it. ([Hutchinson et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10460742/))
+
+The limit is that the evidence here is weaker than the evidence against generic %HRmax or %VO₂ max zones. The current literature supports RPE and similar field methods as pragmatic alternatives, but the cited studies do not directly show that lab testing adds minimal value for all non-elite athletes. That is an inference from the available reviews, meta-analysis, and trials rather than a single definitive study. ([Bok et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35507232/); [Hutchinson et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10460742/); [Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+
+## Limits and open debates
+
+Thresholds are not a perfect answer. Mann et al. pointed out that threshold determination from a single incremental test can require verification and may show more day-to-day variation than HRmax or VO₂ max. Jamnick et al. also noted that acute physiological matching does not automatically guarantee superior long-term adaptations, which is why intervention studies matter. The newer intervention evidence has generally moved in the same direction as the physiology-based argument, but the trained-athlete literature is still thinner than the inactive-adult literature. ([Mann et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23620244/); [Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/))
+
+Direct adherence evidence is also limited. The 2023 Meyler experiment showed much better completion of difficult sessions when intensity was anchored to thresholds, but most comparative studies and the 2025 meta-analysis focused on VO₂ max, VT2, or related fitness outcomes rather than adherence as a primary endpoint. ([Meyler et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36710454/); [Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+
+## Quick reference findings
+
+- Fixed %VO₂ max and %HRmax are poor zone anchors for matching physiological domains across individuals. ([Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/); [Mann et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23620244/))
+    
+- In one direct physiological comparison, lactate threshold occurred at 45% to 74% of VO₂ max and 60% to 90% of HRmax; maximal lactate steady state occurred at 69% to 96% of VO₂ max and 75% to 97% of HRmax. ([Iannetta et al., 2020](https://pubmed.ncbi.nlm.nih.gov/31479001/))
+    
+- In a 2025 IPD meta-analysis, threshold-based prescription produced larger VO₂ max gains than traditional anchors in controlled studies (4.1 vs 1.8 mL/kg/min) and more participants exceeding a minimum important difference (64% vs 16%). ([Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+    
+- In physically inactive adults, individualized threshold-based prescription increased the likelihood of improving VT2 compared with standardized prescription (79% vs 47%). ([Martini et al., 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8997390/))
+    
+- RPE and the Talk Test can help approximate threshold boundaries well enough to guide moderate, heavy, and severe training in many practical settings. ([Bok et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35507232/))
+    
+
+## Practical interpretation
+
+- You probably do not need a VO₂ max number alone to set useful training zones. Thresholds are usually more actionable for everyday training decisions. ([Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/))
+    
+- If you pay for lab testing, the strongest case is for a test that gives you VT1/VT2 or lactate thresholds alongside VO₂ max, not only VO₂ max. ([Jamnick et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32729096/); [Benítez-Muñoz et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12173951/))
+    
+- Generic HR zones based on max HR are the weakest option when precision matters, because athletes hit thresholds at widely different percentages of HRmax. ([Iannetta et al., 2020](https://pubmed.ncbi.nlm.nih.gov/31479001/); [Mann et al., 2013](https://pubmed.ncbi.nlm.nih.gov/23620244/))
+    
+- For many recreational athletes, well-calibrated RPE plus field metrics such as pace or power can be a reasonable alternative to lab testing, but the evidence is stronger for “better than generic %HRmax” than for “lab testing never adds value.” ([Bok et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35507232/); [Hutchinson et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10460742/); [Meyler et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39538060/))
+    
+
+## References
+
+- Jamnick NA, Pettitt RW, Granata C, Pyne DB, Bishop DJ. [_An Examination and Critique of Current Methods to Determine Exercise Intensity_](https://pubmed.ncbi.nlm.nih.gov/32729096/). _Sports Med._ 2020;50(10):1729-1756. DOI: [10.1007/s40279-020-01322-8](https://doi.org/10.1007/s40279-020-01322-8). PMID: [32729096](https://pubmed.ncbi.nlm.nih.gov/32729096/).
+    
+- Mann T, Lamberts RP, Lambert MI. [_Methods of Prescribing Relative Exercise Intensity: Physiological and Practical Considerations_](https://pubmed.ncbi.nlm.nih.gov/23620244/). _Sports Med._ 2013;43(7):613-625. DOI: [10.1007/s40279-013-0045-x](https://doi.org/10.1007/s40279-013-0045-x). PMID: [23620244](https://pubmed.ncbi.nlm.nih.gov/23620244/).
+    
+- Iannetta D, Inglis EC, Mattu AT, et al. [_A Critical Evaluation of Current Methods for Exercise Prescription in Women and Men_](https://pubmed.ncbi.nlm.nih.gov/31479001/). _Med Sci Sports Exerc._ 2020;52(2):466-473. DOI: [10.1249/MSS.0000000000002147](https://doi.org/10.1249/MSS.0000000000002147). PMID: [31479001](https://pubmed.ncbi.nlm.nih.gov/31479001/).
+    
+- Meyler SJR, Swinton PA, Bottoms L, et al. [_Changes in Cardiorespiratory Fitness Following Exercise Training Prescribed Relative to Traditional Intensity Anchors and Physiological Thresholds: A Systematic Review with Meta-analysis of Individual Participant Data_](https://pubmed.ncbi.nlm.nih.gov/39538060/). _Sports Med._ 2025;55(2):301-323. DOI: [10.1007/s40279-024-02125-x](https://doi.org/10.1007/s40279-024-02125-x). PMID: [39538060](https://pubmed.ncbi.nlm.nih.gov/39538060/).
+    
+- Meyler S, Bottoms L, Wellsted D, Muniz-Pumares D. [_Variability in Exercise Tolerance and Physiological Responses to Exercise Prescribed Relative to Physiological Thresholds and to Maximum Oxygen Uptake_](https://pubmed.ncbi.nlm.nih.gov/36710454/). _Exp Physiol._ 2023;108(4):581-594. DOI: [10.1113/EP090878](https://doi.org/10.1113/EP090878). PMID: [36710454](https://pubmed.ncbi.nlm.nih.gov/36710454/). PMCID: [PMC10103872](https://pmc.ncbi.nlm.nih.gov/articles/PMC10103872/).
+    
+- Benítez-Muñoz JA, Alcocer-Ayuga M, Cupeiro R, et al. [_Ventilatory Thresholds Differences According to Aerobic Fitness Level in 1450 Males and 241 Females on Cycle-Ergometer: A Cross-Sectional Study_](https://pubmed.ncbi.nlm.nih.gov/40528561/). _Eur J Sport Sci._ 2025;25(7):e12323. DOI: [10.1002/ejsc.12323](https://doi.org/10.1002/ejsc.12323). PMID: [40528561](https://pubmed.ncbi.nlm.nih.gov/40528561/). PMCID: [PMC12173951](https://pmc.ncbi.nlm.nih.gov/articles/PMC12173951/).
+    
+- Lehtonen E, Gagnon D, Eklund D, Kaseva K, Peltonen JE. [_Hierarchical Framework to Improve Individualised Exercise Prescription in Adults: A Critical Review_](https://pubmed.ncbi.nlm.nih.gov/35722045/). _BMJ Open Sport Exerc Med._ 2022;8(2):e001339. DOI: [10.1136/bmjsem-2022-001339](https://doi.org/10.1136/bmjsem-2022-001339). PMID: [35722045](https://pubmed.ncbi.nlm.nih.gov/35722045/).
+    
+- Wolpern AE, Burgos DJ, Janot JM, Dalleck LC. [_Is a Threshold-Based Model a Superior Method to the Relative Percent Concept for Establishing Individual Exercise Intensity? A Randomized Controlled Trial_](https://pmc.ncbi.nlm.nih.gov/articles/PMC4491229/). _BMC Sports Sci Med Rehabil._ 2015;7:16. DOI: [10.1186/s13102-015-0011-z](https://doi.org/10.1186/s13102-015-0011-z). PMID: [26146564](https://pubmed.ncbi.nlm.nih.gov/26146564/). PMCID: [PMC4491229](https://pmc.ncbi.nlm.nih.gov/articles/PMC4491229/).
+    
+- Martini AD, Dalleck LC, Mejuto G, Larwood T, Weatherwax RM, Ramos JS. [_Changes in the Second Ventilatory Threshold Following Individualised versus Standardised Exercise Prescription among Physically Inactive Adults: A Randomised Trial_](https://pmc.ncbi.nlm.nih.gov/articles/PMC8997390/). _Int J Environ Res Public Health._ 2022;19(7):3962. DOI: [10.3390/ijerph19073962](https://doi.org/10.3390/ijerph19073962). PMID: [35409646](https://pubmed.ncbi.nlm.nih.gov/35409646/). PMCID: [PMC8997390](https://pmc.ncbi.nlm.nih.gov/articles/PMC8997390/).
+    
+- Kirton MJ, Burnley MT, Ramos JS, Weatherwax RM, Dalleck LC. [_The Effects of Standardised versus Individualised Aerobic Exercise Prescription on Fitness-Fatness Index in Sedentary Adults: A Randomised Controlled Trial_](https://pmc.ncbi.nlm.nih.gov/articles/PMC9459763/). _J Sports Sci Med._ 2022;21(3):347-355. DOI: [10.52082/jssm.2022.347](https://doi.org/10.52082/jssm.2022.347). PMID: [36157386](https://pubmed.ncbi.nlm.nih.gov/36157386/). PMCID: [PMC9459763](https://pmc.ncbi.nlm.nih.gov/articles/PMC9459763/).
+    
+- Bok D, Rakovac M, Foster C. [_An Examination and Critique of Subjective Methods to Determine Exercise Intensity: The Talk Test, Feeling Scale, and Rating of Perceived Exertion_](https://pubmed.ncbi.nlm.nih.gov/35507232/). _Sports Med._ 2022;52(9):2085-2109. DOI: [10.1007/s40279-022-01690-3](https://doi.org/10.1007/s40279-022-01690-3). PMID: [35507232](https://pubmed.ncbi.nlm.nih.gov/35507232/).
+    
+- Hutchinson MJ, Paulson TAW, Leicht CA, et al. [_Oxygen Uptake and Heart Rate Responses to 4 Weeks of RPE-Guided Handcycle Training_](https://pmc.ncbi.nlm.nih.gov/articles/PMC10460742/). _Eur J Appl Physiol._ 2023;123(9):1965-1973. DOI: [10.1007/s00421-023-05210-7](https://doi.org/10.1007/s00421-023-05210-7). PMID: [37119361](https://pubmed.ncbi.nlm.nih.gov/37119361/). PMCID: [PMC10460742](https://pmc.ncbi.nlm.nih.gov/articles/PMC10460742/).
