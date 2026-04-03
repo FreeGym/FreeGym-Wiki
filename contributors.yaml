@@ -345,8 +345,12 @@ maintainers:
     type: edit
     citations_added: 2
     pr: 180
-  total_citations: 1113
-  commits: 76
+  - file: nutrition/Carbohydrates/does-carb-cycling-work.md
+    type: edit
+    citations_added: 2
+    pr: 182
+  total_citations: 1115
+  commits: 77
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
