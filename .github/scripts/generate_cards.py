@@ -43,6 +43,14 @@ TOPIC_LABELS = {
 }
 
 
+def format_number(value):
+    """Format integers with thousands separators for display."""
+    try:
+        return f"{int(value):,}"
+    except (TypeError, ValueError):
+        return str(value)
+
+
 def get_png_size(path):
     """Return (width, height) for a PNG image."""
     with open(path, 'rb') as f:
@@ -189,9 +197,11 @@ def generate_card(
 
     # Format contributions as a simple count
     contributions_count = len(files) if files else 0
-    contributions_display = f'{contributions_count}'
+    contributions_display = format_number(contributions_count)
 
     commits_value = commits if commits is not None else 0
+    citations_display = format_number(citations if citations is not None else 0)
+    commits_display = format_number(commits_value)
     active_recent = is_active_recent(last_active)
 
     # Type sizes
@@ -341,10 +351,10 @@ def generate_card(
   <text x="{right_x:.2f}" y="{right1_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{last_active}</text>
 
   <text x="{right_x:.2f}" y="{right2_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CITATIONS</text>
-  <text x="{right_x:.2f}" y="{right2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations}</text>
+  <text x="{right_x:.2f}" y="{right2_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{citations_display}</text>
 
   <text x="{right_x:.2f}" y="{right3_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">COMMITS</text>
-  <text x="{right_x:.2f}" y="{right3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{commits_value}</text>
+  <text x="{right_x:.2f}" y="{right3_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{commits_display}</text>
 
   <text x="{right_x:.2f}" y="{right4_label_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" fill="#8a8a8a">CONTRIBUTIONS</text>
   <text x="{right_x:.2f}" y="{right4_value_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{value_size:.2f}" fill="white">{contributions_display}</text>
