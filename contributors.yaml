@@ -341,8 +341,12 @@ maintainers:
     type: created
     citations_added: 28
     pr: 174
-  total_citations: 1111
-  commits: 75
+  - file: nutrition/Carbohydrates/does-carb-timing-matter.md
+    type: edit
+    citations_added: 2
+    pr: 180
+  total_citations: 1113
+  commits: 76
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
