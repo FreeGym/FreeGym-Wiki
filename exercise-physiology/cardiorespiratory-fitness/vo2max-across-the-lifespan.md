@@ -1,0 +1,116 @@
+# VO₂ Max Across the Lifespan: Kids, Adults, Older Adults
+
+Fitness trajectories differ with age. In childhood and adolescence, cardiorespiratory fitness usually rises with growth and maturation. In adulthood it begins to decline, and longitudinal cohorts show that the decline is not linear: it accelerates after midlife and becomes steeper in later decades. Training does not stop aging, but it can raise current fitness and, in some settings, materially reduce how fast aerobic capacity is lost. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/2361923/ "https://pubmed.ncbi.nlm.nih.gov/2361923/"))
+
+## What VO₂ max reflects and what it does not
+
+VO₂ max or peak VO₂ is the standard laboratory measure of cardiorespiratory fitness. It is highly informative, but it is not the whole story for physical function. In older adults, lower-extremity function, falls risk, and independence also depend on strength, muscle quality, balance, and task-specific performance, which is why aerobic capacity alone does not fully explain who functions well day to day. Some of the longitudinal studies below report direct VO₂ max or peak VO₂, while others report closely related cardiorespiratory-fitness measures such as treadmill performance or maximal power output. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38033420/ "https://pubmed.ncbi.nlm.nih.gov/38033420/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/30703272/ "https://pubmed.ncbi.nlm.nih.gov/30703272/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"))
+
+## Childhood and adolescence
+
+In youth, the usual pattern is not early decline but growth-related increase. A 10-year longitudinal study following children into adolescence found that cardiorespiratory fitness rose in both sexes up to about age 15, with boys exceeding girls by adolescence and with tracking from childhood into adolescence in the low-to-moderate range. Methodological reviews of longitudinal youth data also show that these trajectories are strongly shaped by growth and fat-free mass, and that simple body-mass scaling can make development look flatter or more negative than it really is. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/"); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/"))
+
+Children and adolescents are also trainable. A 2024 meta-analysis of 80 studies found that supervised, structured exercise improved cardiorespiratory fitness by about 5.4 to 8.5 percent, with gains seen from aerobic activities, sports, and HIIT. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/39639233/ "https://pubmed.ncbi.nlm.nih.gov/39639233/"))
+
+## Adulthood and the age-related decline
+
+Once adulthood is established, the direction changes. In the Aerobics Center Longitudinal Study, cardiorespiratory fitness declined nonlinearly and accelerated after age 45; higher BMI and smoking were associated with lower fitness, while self-reported physical activity was associated with higher fitness across the adult lifespan. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"))
+
+The Baltimore Longitudinal Study of Aging makes the pattern even clearer. After adjustment for leisure-time physical activity, peak VO₂ declined in every adult decade, but the decline accelerated from roughly 3 to 6 percent per 10 years in the 20s and 30s to more than 20 percent per 10 years in the 70s and beyond. Similar longitudinal decline was seen across all quartiles of self-reported physical activity. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"))
+
+That makes the first competing claim mostly right. VO₂ max does decline with age, and the longitudinal evidence shows that the decline steepens in later life. But the slope is not fixed in all contexts: behavior changes the level of fitness you carry into older age, and in older men who continue vigorous endurance training the rate of loss can be materially lower than in sedentary peers. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/2361923/ "https://pubmed.ncbi.nlm.nih.gov/2361923/"))
+
+## Can training slow the decline?
+
+Yes, but not abolish it. In a follow-up study of older men, master endurance athletes who continued vigorous training lost VO₂ max at about 5.5 percent per decade, versus 12 percent per decade in age-matched sedentary men, roughly half the rate of decline. That is a meaningful attenuation, but it is still a decline. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/2361923/ "https://pubmed.ncbi.nlm.nih.gov/2361923/"))
+
+Interventions in previously sedentary older adults show that aerobic capacity remains modifiable. A meta-analysis of 41 controlled trials found that endurance training increased VO₂ max by about 3.78 mL/kg/min, or 16.3 percent, in adults aged 60 and older, with larger gains in programs lasting more than 20 weeks and using roughly 60 to less than 70 percent of VO₂ max. A newer meta-analysis of 38 randomized trials found that aerobic training improved VO₂ max or peak VO₂ and 6-minute walk performance more than resistance training, while resistance training was better for lean body mass. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16230876/ "https://pubmed.ncbi.nlm.nih.gov/16230876/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/38878596/ "https://pubmed.ncbi.nlm.nih.gov/38878596/"))
+
+Resistance training is not only a muscle intervention. A 2022 systematic review and meta-analysis of 37 studies found that resistance training in healthy older adults improved VO₂ peak by about 1.89 mL/kg/min in shorter interventions, along with better 6-minute walk performance. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/"))
+
+## In older adults, what matters more for function: VO₂ max, muscle, or strength?
+
+This claim needs to be split up. For many older-adult outcomes, muscle mass by itself is a weak predictor. A 2023 systematic review concluded that physical performance in older adults is significantly related to muscle strength, whereas the relationship with muscle mass is weak or negligible. In an observational study of community-dwelling older adults, muscle quality was the strongest correlate of dynamic lower-extremity function, with aerobic fitness and fat mass acting as secondary predictors. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38033420/ "https://pubmed.ncbi.nlm.nih.gov/38033420/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"))
+
+But that does not mean VO₂ max is unimportant. Aerobic capacity is more directly tied to endurance-type tasks and the ability to sustain activity. In the LIFE randomized trial, a structured moderate-intensity physical activity program reduced major mobility disability over 2.6 years in older adults at risk, using loss of the ability to walk 400 meters as the primary outcome. Aerobic training also improves 6-minute walk performance, and exercise in residential care is associated with improvements in outcomes such as sit-to-stand, walking speed, balance, handgrip, and the Barthel index. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/38878596/ "https://pubmed.ncbi.nlm.nih.gov/38878596/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/37182530/ "https://pubmed.ncbi.nlm.nih.gov/37182530/"))
+
+The most defensible synthesis is that strength, muscle quality, and balance are often more proximal determinants of short functional tasks and falls risk, whereas aerobic capacity matters more for walking endurance, mobility disability, and how much physiological reserve an older adult has before daily tasks become limiting. In practice, older-adult function is often addressed with multicomponent training rather than by optimizing a single variable. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/30703272/ "https://pubmed.ncbi.nlm.nih.gov/30703272/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/37182530/ "https://pubmed.ncbi.nlm.nih.gov/37182530/"))
+
+## Starting late still yields large benefits
+
+The third competing claim is well supported, especially for strength and function. In frail nursing-home residents with a mean age of about 87 years, progressive resistance training increased strength by 113 percent, improved gait velocity, and improved stair-climbing power over 10 weeks. In another study of frail institutionalized adults around age 90, eight weeks of high-intensity resistance training increased strength by 174 percent, increased midthigh muscle area, and improved tandem gait speed by 48 percent. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/8190152/ "https://pubmed.ncbi.nlm.nih.gov/8190152/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/2342214/ "https://pubmed.ncbi.nlm.nih.gov/2342214/"))
+
+These were not narrow VO₂ max trials. Their importance is broader: advanced age does not eliminate trainability. Even when maximal aerobic capacity is lower than it was decades earlier, starting exercise late can still produce large gains in the abilities that most closely support independence. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/8190152/ "https://pubmed.ncbi.nlm.nih.gov/8190152/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/2342214/ "https://pubmed.ncbi.nlm.nih.gov/2342214/"))
+
+## Functional outcomes: falls, mobility, ADLs
+
+If the question is not only whether VO₂ max can be raised, but what keeps older adults functioning, the best evidence points toward exercise programs that combine capacities. A Cochrane review found that balance and functional exercise reduced the rate of falls by 24 percent and the number of people experiencing one or more falls by 13 percent. Programs combining balance and functional exercise with resistance training probably reduced falls even more. By contrast, the effect of resistance training alone or walking alone on falls was uncertain. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/30703272/ "https://pubmed.ncbi.nlm.nih.gov/30703272/"))
+
+At the broader population level, an umbrella review of systematic reviews and meta-analyses found that physically active older adults have lower risks of recurrent falls, ADL disability, and functional limitation, among other benefits. In residential care, the strongest association for better overall physical function was seen around 110 to 225 minutes of weekly exercise, with the largest estimated gains around 170 minutes per week. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/32020713/ "https://pubmed.ncbi.nlm.nih.gov/32020713/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/37182530/ "https://pubmed.ncbi.nlm.nih.gov/37182530/"))
+
+## Limits and open debates
+
+There is no single age-adjusted dose that is best for every outcome. The training that most efficiently raises VO₂ max is not always the same training that most reduces falls or improves ADLs. Different studies also prioritize different outcomes: VO₂ max or peak VO₂, 6-minute walk, 400-meter walk, gait speed, sit-to-stand, Barthel index, or composite physical function. That heterogeneity makes it risky to rank aerobic capacity, strength, and muscle mass as if they were interchangeable. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16230876/ "https://pubmed.ncbi.nlm.nih.gov/16230876/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/38878596/ "https://pubmed.ncbi.nlm.nih.gov/38878596/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/37182530/ "https://pubmed.ncbi.nlm.nih.gov/37182530/"))
+
+The fourth competing claim, that age-related decline is driven more by inactivity than biology, is too strong. Inactivity clearly worsens fitness trajectories, and being active is associated with higher cardiorespiratory fitness across adulthood. But longitudinal cohort data show that peak VO₂ still declines across all activity quartiles and accelerates with age. The best reading of the evidence is that biology creates a real downward pressure, while inactivity determines how much additional loss is layered on top of it. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"))
+
+## Quick reference points
+
+- In youth, cardiorespiratory fitness generally rises from childhood into adolescence, with sex-specific patterns strongly influenced by growth and fat-free mass. Structured exercise can still improve CRF by roughly 5.4 to 8.5 percent. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/"); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/39639233/ "https://pubmed.ncbi.nlm.nih.gov/39639233/"))
+    
+- In adults, CRF decline is nonlinear and accelerates after midlife; longitudinal cohorts show steeper losses in later decades than cross-sectional summaries often imply. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"))
+    
+- In previously sedentary older adults, endurance training can raise VO₂ max by about 3.78 mL/kg/min, or 16.3 percent, with larger gains in longer, moderate-intensity programs. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16230876/ "https://pubmed.ncbi.nlm.nih.gov/16230876/"))
+    
+- Aerobic training improves VO₂ max and walking performance more than resistance training, while resistance training is better for lean body mass. Resistance training can still improve VO₂ peak modestly. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38878596/ "https://pubmed.ncbi.nlm.nih.gov/38878596/"); [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/"))
+    
+- For older-adult function, strength and muscle quality usually matter more than muscle mass alone, but aerobic capacity still matters for endurance and mobility disability. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38033420/ "https://pubmed.ncbi.nlm.nih.gov/38033420/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"))
+    
+- Starting late can still produce large gains in strength, gait, and physical function, even in frail adults in their late 80s and 90s. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/2342214/ "https://pubmed.ncbi.nlm.nih.gov/2342214/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/8190152/ "https://pubmed.ncbi.nlm.nih.gov/8190152/"))
+    
+## Practical interpretation
+
+- Claim 1 is basically correct: VO₂ max declines with age, but training can substantially slow the decline and raise current capacity. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/2361923/ "https://pubmed.ncbi.nlm.nih.gov/2361923/"))
+    
+- Claim 2 is partly correct only after revision: in older adults, strength, muscle quality, balance, and task-specific function often matter more than muscle mass alone, and they may matter more than VO₂ max for falls or short functional tasks. But VO₂ max still matters for endurance, walking capacity, mobility disability, and independence. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38033420/ "https://pubmed.ncbi.nlm.nih.gov/38033420/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/30703272/ "https://pubmed.ncbi.nlm.nih.gov/30703272/"))
+    
+- Claim 3 is well supported for function: starting late can still yield large benefits, even in frail adults in their late 80s and 90s. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/2342214/ "https://pubmed.ncbi.nlm.nih.gov/2342214/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/8190152/ "https://pubmed.ncbi.nlm.nih.gov/8190152/"))
+    
+- Claim 4 is too absolute: inactivity is a major modifiable driver of low fitness, but longitudinal data do not support the idea that biology can be trained away. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"))
+    
+
+## References
+
+- Ingvarsdottir TH, Johannsson E, Rognvaldsdottir V, et al. Longitudinal development and tracking of cardiorespiratory fitness from childhood to adolescence. _PLOS One_. 2024. PMID: 38551951. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC10980206/"))
+    
+- Armstrong N, Welsman J. Clarity and Confusion in the Development of Youth Aerobic Fitness. _Front Physiol_. 2019. PMCID: PMC6682696. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682696/"))
+    
+- Pinho CDF, et al. Effects of different supervised and structured physical exercise on the physical fitness trainability of children and adolescents: a meta-analysis and meta-regression. _BMC Pediatr_. 2024. PMID: 39639233. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/39639233/ "https://pubmed.ncbi.nlm.nih.gov/39639233/"))
+    
+- Jackson AS, Sui X, Hébert JR, Church TS, Blair SN. Role of lifestyle and aging on the longitudinal change in cardiorespiratory fitness. _Arch Intern Med_. 2009;169(19):1781-1787. PMID: 19858436. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19858436/ "https://pubmed.ncbi.nlm.nih.gov/19858436/"))
+    
+- Fleg JL, Morrell CH, Bos AG, et al. Accelerated longitudinal decline of aerobic capacity in healthy older adults. _Circulation_. 2005;112(5):674-682. PMID: 16043637. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16043637/ "https://pubmed.ncbi.nlm.nih.gov/16043637/"))
+    
+- Rogers MA, Hagberg JM, Martin WH 3rd, Ehsani AA, Holloszy JO. Decline in VO2max with aging in master athletes and sedentary men. _J Appl Physiol_. 1990;68(5):2195-2199. PMID: 2361923. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/2361923/ "https://pubmed.ncbi.nlm.nih.gov/2361923/"))
+    
+- Huang G, Gibson CA, Tran ZV, Osness WH. Controlled endurance exercise training and VO2max changes in older adults: a meta-analysis. _Prev Cardiol_. 2005;8(4):217-225. PMID: 16230876. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16230876/ "https://pubmed.ncbi.nlm.nih.gov/16230876/"))
+    
+- An J, Su Z, Meng S. Effect of aerobic training versus resistance training for improving cardiorespiratory fitness and body composition in middle-aged to older adults: a systematic review and meta-analysis of randomized controlled trials. _Arch Gerontol Geriatr_. 2024. PMID: 38878596. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38878596/ "https://pubmed.ncbi.nlm.nih.gov/38878596/"))
+    
+- Smart TFF, et al. The role of resistance exercise training for improving cardiorespiratory fitness in healthy older adults: a systematic review and meta-analysis. _Age Ageing_. 2022;51(6):afac143. PMID: 35737600. PMCID: PMC9220026. ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC9220026/"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/35737600/ "https://pubmed.ncbi.nlm.nih.gov/35737600/"))
+    
+- Riviati N, Indra B. Relationship between muscle mass and muscle strength with physical performance in older adults: a systematic review. _SAGE Open Med_. 2023. PMID: 38033420. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38033420/ "https://pubmed.ncbi.nlm.nih.gov/38033420/"))
+    
+- Misic MM, Rosengren KS, Woods JA, Evans EM. Muscle quality, aerobic fitness and fat mass predict lower-extremity physical function in community-dwelling older adults. _Gerontology_. 2007. PMID: 17446711. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/17446711/ "https://pubmed.ncbi.nlm.nih.gov/17446711/"))
+    
+- Pahor M, Guralnik JM, Ambrosius WT, et al. Effect of structured physical activity on prevention of major mobility disability in older adults: the LIFE study randomized clinical trial. _JAMA_. 2014;311(23):2387-2396. PMID: 24866862. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/24866862/ "https://pubmed.ncbi.nlm.nih.gov/24866862/"))
+    
+- Sherrington C, Fairhall NJ, Wallbank GK, et al. Exercise for preventing falls in older people living in the community. _Cochrane Database Syst Rev_. 2019;1:CD012424. PMID: 30703272. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/30703272/ "https://pubmed.ncbi.nlm.nih.gov/30703272/"))
+    
+- Cunningham C, O’Sullivan R, Caserotti P, Tully MA. Consequences of physical inactivity in older adults: a systematic review of reviews and meta-analyses. _Scand J Med Sci Sports_. 2020;30(5):816-827. PMID: 32020713. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/32020713/ "https://pubmed.ncbi.nlm.nih.gov/32020713/"))
+    
+- Valenzuela PL, et al. Effects of physical exercise on physical function in older adults in residential care: a systematic review and network meta-analysis of randomised controlled trials. _Lancet Healthy Longev_. 2023;4(6):e247-e256. PMID: 37182530. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/37182530/ "https://pubmed.ncbi.nlm.nih.gov/37182530/"))
+    
+- Fiatarone MA, Marks EC, Ryan ND, Meredith CN, Lipsitz LA, Evans WJ. High-intensity strength training in nonagenarians. Effects on skeletal muscle. _JAMA_. 1990;263(22):3029-3034. PMID: 2342214. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/2342214/ "https://pubmed.ncbi.nlm.nih.gov/2342214/"))
+    
+- Fiatarone MA, O’Neill EF, Ryan ND, et al. Exercise training and nutritional supplementation for physical frailty in very elderly people. _N Engl J Med_. 1994;330(25):1769-1775. PMID: 8190152. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/8190152/ "https://pubmed.ncbi.nlm.nih.gov/8190152/"))
