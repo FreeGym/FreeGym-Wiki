@@ -59,7 +59,7 @@ In a 6-month randomized trial in obese participants, a hypocaloric diet concentr
 
 In trained men on a standardized exercise program, different approaches to placing carbs around evening training (including avoiding carbs after training in one group) produced **similar improvements in fat mass and fat-free mass**, with **no significant differences among interventions**. ([DOI][2])
 
-A longer-term glucose-focused RCT in type 2 diabetes also found that restricting carbohydrate-rich foods to earlier in the day did **not** produce additional glycometabolic benefits beyond an energy-matched Mediterranean-style diet; exploratory analyses suggested changes were not driven by carb timing per se. ([ZORA][6])
+A longer-term glucose-focused RCT in type 2 diabetes also found that restricting carbohydrate-rich foods to earlier in the day did **not** produce additional glycometabolic benefits beyond an energy-matched Mediterranean-style diet; exploratory analyses suggested changes were not driven by carb timing per se. ([DOI][6])
 
 These trials don’t prove that “night carbs never matter,” but they do show that “night carbs automatically become fat” is not a conclusion supported by randomized human outcome data. ([Wiley Online Library][5])
 
@@ -81,7 +81,7 @@ So: **night carbs aren’t automatically “fat,” but they are more likely to 
 
 If your goal is **glycemic control**, front-loading carbohydrates earlier is biologically and empirically plausible: multiple randomized crossover studies/meta-analyses show better postprandial glucose responses earlier vs later. ([ResearchGate][3])
 
-However, a longer-duration RCT in type 2 diabetes found that an “early time-restricted carb” approach was feasible and effective for weight/glucose management but **not superior** to a conventional, energy-matched Mediterranean-style diet -suggesting that, over weeks, the incremental benefit of carb timing (beyond energy/macronutrient prescription and adherence) may be modest in at least some populations. ([ZORA][6])
+However, a longer-duration RCT in type 2 diabetes found that an “early time-restricted carb” approach was feasible and effective for weight/glucose management but **not superior** to a conventional, energy-matched Mediterranean-style diet -suggesting that, over weeks, the incremental benefit of carb timing (beyond energy/macronutrient prescription and adherence) may be modest in at least some populations. ([DOI][6])
 
 ## Quick reference
 
@@ -108,13 +108,13 @@ However, a longer-duration RCT in type 2 diabetes found that an “early time-re
 * de Almeida RS, Marot LP, Latorraca COC, Oliveira RÁ, Crispim CA. *Is Evening Carbohydrate Intake in Healthy Individuals Associated with Higher Postprandial Glycemia and Insulinemia When Compared to Morning Intake?* Systematic Review & Meta-analysis of randomized crossover studies. J Am Nutr Assoc. 2023. DOI: 10.1080/07315724.2022.2043199. ([DOI][7])
 * Kessler K, Hornemann S, Petzke KJ, et al. *The effect of diurnal distribution of carbohydrates and fat on glycaemic control in humans: a randomized controlled trial.* Scientific Reports. 2017;7:44170. DOI: 10.1038/srep44170. ([Nature][4])
 * Haldar S, et al. *High or low glycemic index meals at dinner results in greater postprandial glycemia compared with breakfast: a randomized controlled trial.* BMJ Open Diabetes Research & Care. 2020;8(1):e001099. DOI: 10.1136/bmjdrc-2019-001099. ([BMJ Open Diabetes Research & Care][8])
-* Tricò D, Masoni MC, Baldi S, et al. *Early time-restricted carbohydrate consumption vs conventional dieting in type 2 diabetes: a randomised controlled trial.* Diabetologia. 2024;67(2):263–274. DOI: 10.1007/s00125-023-06045-9. ([ZORA][6])
+* Tricò D, Masoni MC, Baldi S, et al. *Early time-restricted carbohydrate consumption vs conventional dieting in type 2 diabetes: a randomised controlled trial.* Diabetologia. 2024;67(2):263–274. DOI: 10.1007/s00125-023-06045-9. ([DOI][6])
 
 [1]: https://link.springer.com/article/10.1186/s40798-020-00297-0 "https://link.springer.com/article/10.1186/s40798-020-00297-0"
 [2]: https://doi.org/10.1007/s00394-024-03540-6 "https://doi.org/10.1007/s00394-024-03540-6"
 [3]: https://doi.org/10.1080/07420528.2019.1683856 "https://doi.org/10.1080/07420528.2019.1683856"
 [4]: https://www.nature.com/articles/srep44170 "https://www.nature.com/articles/srep44170"
 [5]: https://onlinelibrary.wiley.com/doi/full/10.1038/oby.2011.48 "https://onlinelibrary.wiley.com/doi/full/10.1038/oby.2011.48"
-[6]: https://www.zora.uzh.ch/server/api/core/bitstreams/811cd5ac-883a-4205-a9e0-d526c7766e5b/content "https://www.zora.uzh.ch/server/api/core/bitstreams/811cd5ac-883a-4205-a9e0-d526c7766e5b/content"
+[6]: https://doi.org/10.1007/s00125-023-06045-9 "https://doi.org/10.1007/s00125-023-06045-9"
 [7]: https://doi.org/10.1080/07315724.2022.2043199 "https://doi.org/10.1080/07315724.2022.2043199"
 [8]: https://drc.bmj.com/content/8/1/e001099 "https://drc.bmj.com/content/8/1/e001099"
