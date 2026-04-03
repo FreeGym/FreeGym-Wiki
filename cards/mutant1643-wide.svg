@@ -44,16 +44,16 @@
   <text x="37.80" y="322.56" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Pharmacology</text>
   <text x="37.80" y="359.42" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">Cardiology</text>
   <text x="660.00" y="214.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">LAST ACTIVE</text>
-  <text x="660.00" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">2026-03</text>
+  <text x="660.00" y="248.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">2026-04</text>
 
   <text x="660.00" y="278.70" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">CITATIONS</text>
-  <text x="660.00" y="313.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">920</text>
+  <text x="660.00" y="313.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">1111</text>
 
   <text x="660.00" y="343.20" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">COMMITS</text>
-  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">73</text>
+  <text x="660.00" y="377.85" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">74</text>
 
   <text x="660.00" y="407.70" font-family="system-ui, -apple-system, sans-serif" font-size="18.90" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="660.00" y="442.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">75</text>
+  <text x="660.00" y="442.35" font-family="system-ui, -apple-system, sans-serif" font-size="28.35" fill="white">85</text>
 
   <!-- Footer -->
   <rect x="0" y="510.00" width="1200" height="120.00" rx="0" fill="#000000"/>
