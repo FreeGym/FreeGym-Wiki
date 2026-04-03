@@ -7,7 +7,7 @@ maintainers:
   - exercise-physiology
   - pharmacology
   - cardiology
-  last_active: 2026-03
+  last_active: 2026-04
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -301,8 +301,48 @@ maintainers:
     type: major_edit
     citations_added: 0
     pr: 172
-  total_citations: 920
-  commits: 73
+  - file: exercise-physiology/cardiorespiratory-fitness/altitude-training-real-advantage-or-placebo.md
+    type: created
+    citations_added: 13
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/do-you-need-to-breathe-through-your-nose.md
+    type: created
+    citations_added: 22
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/fueling-does-low-carb-training-fat-oxidation-or-harm-performance.md
+    type: created
+    citations_added: 24
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/heat-training-does-it-improve-vo2max-and-performance.md
+    type: created
+    citations_added: 10
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/is-mitochondrial-health-a-meaningful-concept.md
+    type: created
+    citations_added: 27
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/overtraining-vs-just-not-recovered-yet.md
+    type: created
+    citations_added: 15
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/sex-differences-should-vo2max-be-interpreted-differently.md
+    type: created
+    citations_added: 14
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2max-across-the-lifespan.md
+    type: created
+    citations_added: 21
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2max-and-metabolic-health.md
+    type: created
+    citations_added: 17
+    pr: 174
+  - file: exercise-physiology/cardiorespiratory-fitness/vo2max-and-the-heart.md
+    type: created
+    citations_added: 28
+    pr: 174
+  total_citations: 1111
+  commits: 74
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
