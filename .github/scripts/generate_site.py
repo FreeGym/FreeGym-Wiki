@@ -78,6 +78,13 @@ def esc(value):
     return html.escape(str(value))
 
 
+def format_number(value):
+    try:
+        return f"{int(value):,}"
+    except (TypeError, ValueError):
+        return str(value)
+
+
 def read_data():
     with open(REPO_ROOT / 'contributors.yaml', 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
@@ -183,9 +190,9 @@ def render_profile_card(profile):
         <span class="role-badge {role_class(profile['role'])}">{role_badge(profile['role'])}</span>
       </div>
       <div class="stats">
-        <div class="stat"><span>Citations</span><strong>{profile['citations']}</strong></div>
-        <div class="stat"><span>Contributions</span><strong>{contributions}</strong></div>
-        <div class="stat"><span>Commits</span><strong>{profile['commits']}</strong></div>
+        <div class="stat"><span>Citations</span><strong>{format_number(profile['citations'])}</strong></div>
+        <div class="stat"><span>Contributions</span><strong>{format_number(contributions)}</strong></div>
+        <div class="stat"><span>Commits</span><strong>{format_number(profile['commits'])}</strong></div>
         <div class="stat"><span>Last Active</span><strong>{esc(profile['last_active'])}</strong></div>
       </div>
       <div class="topic-row">{render_topics(profile['topics'])}</div>
@@ -239,9 +246,9 @@ def render_index(profiles, topics, stats):
         </div>
       </div>
       <div class="hero-panel">
-        <div class="stat"><span>Verified profiles</span><strong>{stats['verified']}</strong></div>
-        <div class="stat"><span>Total citations</span><strong>{stats['citations']}</strong></div>
-        <div class="stat"><span>Active topics</span><strong>{stats['topics']}</strong></div>
+        <div class="stat"><span>Verified profiles</span><strong>{format_number(stats['verified'])}</strong></div>
+        <div class="stat"><span>Total citations</span><strong>{format_number(stats['citations'])}</strong></div>
+        <div class="stat"><span>Active topics</span><strong>{format_number(stats['topics'])}</strong></div>
       </div>
     </section>
 
@@ -289,7 +296,7 @@ def render_contributions(contributions):
   <a href="{REPO_URL}/blob/main/{file_path}">{esc(file_name)}</a>
   <div class="contribution-meta">
     <span>Type: {esc(ctype)}</span>
-    <span>Citations added: {citations_added}</span>
+    <span>Citations added: {format_number(citations_added)}</span>
     <span>File: {esc(file_path)}{pr_link}</span>
   </div>
 </div>'''
@@ -336,9 +343,9 @@ def render_profile(profile):
         <div class="role-badge {role_class(profile['role'])}" style="margin-top: 0.75rem; display: inline-flex;">{role_badge(profile['role'])}</div>
         <div class="topic-row">{render_topics(profile['topics'])}</div>
         <div class="stats">
-          <div class="stat"><span>Citations</span><strong>{profile['citations']}</strong></div>
-          <div class="stat"><span>Contributions</span><strong>{contributions}</strong></div>
-          <div class="stat"><span>Commits</span><strong>{profile['commits']}</strong></div>
+          <div class="stat"><span>Citations</span><strong>{format_number(profile['citations'])}</strong></div>
+          <div class="stat"><span>Contributions</span><strong>{format_number(contributions)}</strong></div>
+          <div class="stat"><span>Commits</span><strong>{format_number(profile['commits'])}</strong></div>
           <div class="stat"><span>Last Active</span><strong>{esc(profile['last_active'])}</strong></div>
         </div>
       </div>
