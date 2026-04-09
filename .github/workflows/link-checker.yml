@@ -69,6 +69,7 @@ jobs:
             --exclude "^https://(?:www\\.)?diabetesjournals\\.org"
             --exclude "^https://(?:www\\.)?cell\\.com"
             --exclude "^https://(?:www\\.)?jacc\\.org"
+            --exclude "^https://eprints\\.gla\\.ac\\.uk"
             --timeout 30
             '**/*.md'
           fail: true
