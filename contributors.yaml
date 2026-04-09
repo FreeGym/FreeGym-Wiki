@@ -356,7 +356,7 @@ maintainers:
   joined: 2026-03
   topics:
   - Womens-Health
-  last_active: 2026-03
+  last_active: 2026-04
   contributions:
   - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
     type: created
@@ -382,8 +382,28 @@ maintainers:
     type: created
     citations_added: 11
     pr: 165
-  total_citations: 62
-  commits: 4
+  - file: Womens-Health/10-is-it-normal-to-pee-when-you-laugh-cough-or-sneeze.md
+    type: created
+    citations_added: 13
+    pr: 187
+  - file: Womens-Health/11-menpause-weight-gain-and-aging.md
+    type: created
+    citations_added: 14
+    pr: 187
+  - file: Womens-Health/7-are-women's-knees-actually-weaker.md
+    type: created
+    citations_added: 33
+    pr: 187
+  - file: Womens-Health/8-is-hormone-replacement-therapy-safe.md
+    type: created
+    citations_added: 21
+    pr: 187
+  - file: Womens-Health/9-is-pms-real-or-are-you-just-hungry-and-tired.md
+    type: created
+    citations_added: 30
+    pr: 187
+  total_citations: 173
+  commits: 5
 trusted: []
 contributors:
 - github: FreeGym
