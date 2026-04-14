@@ -349,8 +349,44 @@ maintainers:
     type: edit
     citations_added: 2
     pr: 182
-  total_citations: 1115
-  commits: 78
+  - file: exercise-physiology/cardiorespiratory-fitness/exercise-vs-medication.md
+    type: created
+    citations_added: 30
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/how-much-exercise-for-max-health-benefit.md
+    type: created
+    citations_added: 17
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/how-much-zone-2-do-you-need.md
+    type: created
+    citations_added: 20
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/how-should-you-find-your-zone-2-in-practice.md
+    type: created
+    citations_added: 12
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/is-zone-2-best-for-mitochondria-metabolic-flexibility-and-fat-oxidation.md
+    type: created
+    citations_added: 11
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/practical-targets-what-metrics-should-be-tracked.md
+    type: created
+    citations_added: 39
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/what-is-zone-2-exactly.md
+    type: created
+    citations_added: 14
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/zone-2-for-weight-loss.md
+    type: created
+    citations_added: 18
+    pr: 192
+  - file: exercise-physiology/cardiorespiratory-fitness/zone-2-vs-HIIT-which-builds-a-better-aerobic-engine.md
+    type: created
+    citations_added: 13
+    pr: 192
+  total_citations: 1289
+  commits: 79
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
