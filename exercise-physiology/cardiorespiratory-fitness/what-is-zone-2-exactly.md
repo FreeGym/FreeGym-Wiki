@@ -1,0 +1,76 @@
+# What _Is_ Zone 2, Exactly?
+
+“Zone 2” is not a single universal heart-rate band. It is a label whose meaning changes with the zone model being used. In physiology terms, a defensible anchor for the popular 5-zone use of the term is exercise performed just below the first lactate or ventilatory threshold (LT1/VT1), but fixed %HRmax zones, fixed lactate cutoffs, and “easy conversational pace” are all approximations of that boundary rather than interchangeable definitions. ([MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233); [Anselmi et al., 2021](https://doi.org/10.1111/sms.14007); [Meixner et al., 2025](https://doi.org/10.1155/tsm2/2008291)) ([Frontiers](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.682233/full))
+
+## Why the term is confusing
+
+Part of the confusion is that “Zone 2” means different things in different systems. In the research literature on training-intensity distribution, a 3-zone model is common: Zone 1 is below LT1/VT1, Zone 2 is between the first and second thresholds, and Zone 3 is above the second threshold. In current coaching practice, especially in 5-zone systems, “Zone 2” is often used for work just below LT1/VT1. Those are not the same zone. ([Sperlich et al., 2023](https://doi.org/10.3389/fspor.2023.1258585); [Sitko et al., 2025](https://doi.org/10.1123/ijspp.2024-0303)) ([Frontiers](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2023.1258585/full))
+
+## The clearest physiological definition
+
+If someone is using “Zone 2” in the popular endurance-training sense rather than the 3-zone research model, the cleanest definition is “the upper part of easy aerobic work, just below LT1/VT1.” LT1/VT1 is the first clear point at which lactate or ventilation begins to rise above the prior steady pattern, making it a physiologically grounded boundary rather than an arbitrary percentage of max heart rate, even if threshold detection methods are not perfectly interchangeable. ([MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233); [Sitko et al., 2025](https://doi.org/10.1123/ijspp.2024-0303)) ([Frontiers](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.682233/full))
+
+## How well LT1 and VT1 agree
+
+When measured carefully, lactate- and ventilatory-based first thresholds line up reasonably well. In well-trained cyclists, [Pallarés et al.](https://doi.org/10.1371/journal.pone.0163389) found that the workload at the lactate threshold matched VT1, and both ventilatory thresholds and lactate thresholds showed high test-retest reliability. Ventilatory thresholds showed coefficients of variation around 1.6% to 3.5%, while the better-performing lactate thresholds were also highly reliable. The same paper reported no specific funding and no competing interests. ([Pallarés et al., 2016](https://doi.org/10.1371/journal.pone.0163389)) ([PLOS](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0163389))
+
+## Why generic heart-rate zones often miss it
+
+Fixed percentage-based zones do not map cleanly onto LT1/VT1 across individuals. In a mixed sample of cardiac patients, sedentary adults, and athletes, [Anselmi et al.](https://doi.org/10.1111/sms.14007) concluded that exercise intensity defined from percentages of peak HR and peak VO2 can misclassify the effective physiological domain, and they advised a threshold-based rather than range-based approach; the paper reported no study funding, while also acknowledging open-access funding. ([Anselmi et al., 2021](https://doi.org/10.1111/sms.14007)) ([ResearchGate](https://www.researchgate.net/publication/352753018_The_importance_of_ventilatory_thresholds_to_define_aerobic_exercise_intensity_in_cardiac_patients_and_healthy_subjects))
+
+Training status also shifts where VT1 and VT2 occur relative to HRmax, VO2max, and maximal speed. In a large cross-sectional treadmill study, the percentage of maximum at which VT1 and VT2 occurred rose with training status, which means the same fixed %HRmax can land in different domains for different people. That study reported university/public funding and no conflicts of interest. The paper’s title and methods describe 971 males and 301 females, although some versions of the abstract appear to contain a conflicting male sample count. ([Benítez-Muñoz et al., 2025](https://doi.org/10.1007/s00421-024-05622-z)) ([ResearchGate](https://www.researchgate.net/publication/384291026_Differences_in_the_ventilatory_thresholds_in_treadmill_according_to_training_status_in_971_males_and_301_females_a_cross-sectional_study))
+
+A 2025 runner study makes the practical problem concrete. LT1 averaged about 80.7% of HRmax in that sample, but with substantial variation and sex differences; at a fixed 80% HRmax, 57% of participants were still in the moderate domain while 43% were already in the heavy domain. In the same paper, mean absolute error for estimating LT1 from fixed HR anchors was about 4.9 to 7.4 beats per minute, and using estimated rather than measured maxima worsened accuracy. The authors reported no conflicts of interest. ([Nuuttila et al., 2025](https://doi.org/10.1007/s00421-025-05748-8)) ([ResearchGate](https://www.researchgate.net/publication/389882896_The_accuracy_of_fixed_intensity_anchors_to_estimate_lactate_thresholds_in_recreational_runners))
+
+That supports the claim that many people’s “Zone 2” is set too hard when it is defined by generic HR percentages. But “too hard” does not automatically mean classic tempo or threshold work; more precisely, it means the session may have drifted above LT1 into the heavy domain, which changes the intended stimulus. ([MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233); [Nuuttila et al., 2025](https://doi.org/10.1007/s00421-025-05748-8)) ([Frontiers](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2021.682233/full))
+
+## Is lactate a better definition than heart-rate zones?
+
+Lactate-based prescription is more defensible when it is individualized, not when it relies on a universal fixed cutoff. [Pallarés et al.](https://doi.org/10.1371/journal.pone.0163389) found that individualized lactate thresholds can validly track VT1 and VT2 workloads. But [Meixner et al.](https://doi.org/10.1155/tsm2/2008291) showed that fixed blood-lactate markers and fixed %HRmax markers both displayed substantial interindividual variability when used to define 5-zone “Zone 2.” VT1 and FatMax aligned more closely than the generic fixed markers, suggesting that individualized physiology is more useful than a single rule like “stay under 2 mmol/L.” Meixner et al. reported no funding and no conflicts of interest. ([Pallarés et al., 2016](https://doi.org/10.1371/journal.pone.0163389); [Meixner et al., 2025](https://doi.org/10.1155/tsm2/2008291)) ([PLOS](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0163389))
+
+## What “easy conversational pace” gets right and wrong
+
+The talk test is a useful field proxy, but it is still a proxy. In a systematic review of cardiopulmonary patients, the last positive talk-test stage correlated with the first ventilatory threshold, and workload, VO2, and heart rate at that stage were not different from the corresponding VT1 values. The review concluded that the stage where a person can still speak comfortably can be used to guide aerobic exercise, while also noting that protocols remain heterogeneous and interpretation requires caution. That review reported academic/public funding and no conflict of interest. ([Vieira et al., 2022](https://doi.org/10.31083/j.rcm2307225); [MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233)) ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11266803/))
+
+So “easy conversational pace” is a reasonable fallback when testing is unavailable. It is not nonsense, but it is less precise than locating LT1/VT1 directly. ([Vieira et al., 2022](https://doi.org/10.31083/j.rcm2307225); [MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233)) ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11266803/))
+
+## What training-distribution studies do and do not show
+
+Observational reviews of elite endurance training do show that athletes spend most of their training at low intensity. In a review covering 175 training-intensity distributions across endurance sports, [Sperlich et al.](https://doi.org/10.3389/fspor.2023.1258585) reported that more than 60% of endurance exercise was low intensity in 91% of cases, with pyramidal and polarized patterns both common. Importantly, in that literature “low intensity” usually means the whole range below LT1/VT1, which is broader than the narrower popular “Zone 2” discussion. The same review also emphasized that quantification methods varied widely and that the literature did not support sweeping general conclusions. The review reported no financial support and no commercial conflicts, while also disclosing editorial-board roles at the journal. ([Sperlich et al., 2023](https://doi.org/10.3389/fspor.2023.1258585)) ([Frontiers](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2023.1258585/full))
+
+Intervention studies do not show that one narrow “Zone 2” target is uniquely magical. In a 2024 systematic review with meta-analysis, [Oliveira et al.](https://doi.org/10.1007/s40279-024-02034-z) found that polarized training was superior to other distributions for improving VO2peak, especially in shorter interventions and in highly trained athletes, but it was similar to other models for time-trial performance, time to exhaustion, and power or velocity at LT2/VT2. The paper reported public academic funding and no competing interests. ([Oliveira et al., 2024](https://doi.org/10.1007/s40279-024-02034-z)) ([ResearchGate](https://www.researchgate.net/publication/380425831_Comparison_of_Polarized_Versus_Other_Types_of_Endurance_Training_Intensity_Distribution_on_Athletes%27_Endurance_Performance_A_Systematic_Review_with_Meta-analysis))
+
+Taken together, the training-distribution literature supports doing a lot of work below the first threshold. It does not show that there is one universally correct app-based “Zone 2” heart-rate band, nor that the adaptations from work near LT1/VT1 are unique to that exact band and unavailable slightly below or above it. ([Sperlich et al., 2023](https://doi.org/10.3389/fspor.2023.1258585); [Oliveira et al., 2024](https://doi.org/10.1007/s40279-024-02034-z); [Sitko et al., 2025](https://doi.org/10.1123/ijspp.2024-0303)) ([Frontiers](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2023.1258585/full))
+
+## Practical interpretation
+
+- First ask which zone model is being used. In a 3-zone research model, Zone 2 usually means the band between LT1/VT1 and LT2/VT2. In current 5-zone coaching usage, “Zone 2” usually means just below LT1/VT1. ([Sperlich et al., 2023](https://doi.org/10.3389/fspor.2023.1258585); [Sitko et al., 2025](https://doi.org/10.1123/ijspp.2024-0303)) ([Frontiers](https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2023.1258585/full))
+    
+- If precision matters, threshold testing beats generic %HRmax formulas. LT1/VT1 are reproducible enough to anchor prescription, and individualized lactate thresholds are a reasonable substitute when gas-exchange testing is unavailable. ([Pallarés et al., 2016](https://doi.org/10.1371/journal.pone.0163389); [Anselmi et al., 2021](https://doi.org/10.1111/sms.14007)) ([PLOS](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0163389))
+    
+- A fixed heart-rate band can undershoot or overshoot the intended domain. That is why “my Zone 2 feels like tempo” can be true for some people and false for others. ([Benítez-Muñoz et al., 2025](https://doi.org/10.1007/s00421-024-05622-z); [Nuuttila et al., 2025](https://doi.org/10.1007/s00421-025-05748-8)) ([ResearchGate](https://www.researchgate.net/publication/384291026_Differences_in_the_ventilatory_thresholds_in_treadmill_according_to_training_status_in_971_males_and_301_females_a_cross-sectional_study))
+    
+- If testing is unavailable, comfortable speech and easy breathing are practical approximations, not exact physiological definitions. ([Vieira et al., 2022](https://doi.org/10.31083/j.rcm2307225); [MacIntosh et al., 2021](https://doi.org/10.3389/fphys.2021.682233)) ([PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11266803/))
+    
+
+## References
+
+- [MacIntosh BR, Murias JM, Keir DA, Weir JM. What Is Moderate to Vigorous Exercise Intensity? Front Physiol. 2021;12:682233. DOI: 10.3389/fphys.2021.682233.](https://doi.org/10.3389/fphys.2021.682233)
+    
+- [Pallarés JG, Morán-Navarro R, Ortega JF, Fernández-Elías VE, Mora-Rodriguez R. Validity and Reliability of Ventilatory and Blood Lactate Thresholds in Well-Trained Cyclists. PLoS One. 2016;11(9):e0163389. DOI: 10.1371/journal.pone.0163389.](https://doi.org/10.1371/journal.pone.0163389)
+    
+- [Anselmi F, Cavigli L, Pagliaro A, et al. The importance of ventilatory thresholds to define aerobic exercise intensity in cardiac patients and healthy subjects. Scand J Med Sci Sports. 2021;31:1796-1808. DOI: 10.1111/sms.14007.](https://doi.org/10.1111/sms.14007)
+    
+- [Vieira AM, Martins EM, Althoff A, et al. Application and Measurement Properties of the Talk Test in Cardiopulmonary Patients: A Systematic Review. Rev Cardiovasc Med. 2022;23(7):225. DOI: 10.31083/j.rcm2307225.](https://doi.org/10.31083/j.rcm2307225)
+    
+- [Benítez-Muñoz JA, Benito PJ, Guisado-Cuadrado I, Cupeiro R, Peinado AB. Differences in the ventilatory thresholds in treadmill according to training status in 971 males and 301 females: a cross-sectional study. Eur J Appl Physiol. 2025;125:499-510. DOI: 10.1007/s00421-024-05622-z.](https://doi.org/10.1007/s00421-024-05622-z)
+    
+- [Nuuttila O-P, Kaikkonen P, Sievänen H, Vasankari T, Kyröläinen H. The accuracy of fixed intensity anchors to estimate lactate thresholds in recreational runners. Eur J Appl Physiol. 2025;125:2161-2171. DOI: 10.1007/s00421-025-05748-8.](https://doi.org/10.1007/s00421-025-05748-8)
+    
+- [Meixner B, Filipas L, Holmberg H-C, Sperlich B. Zone 2 Intensity: A Critical Comparison of Individual Variability in Different Submaximal Exercise Intensity Boundaries. Transl Sports Med. 2025;2025:2008291. DOI: 10.1155/tsm2/2008291.](https://doi.org/10.1155/tsm2/2008291)
+    
+- [Sperlich B, Matzka M, Holmberg H-C. The proportional distribution of training by elite endurance athletes at different intensities during different phases of the season. Front Sports Act Living. 2023;5:1258585. DOI: 10.3389/fspor.2023.1258585.](https://doi.org/10.3389/fspor.2023.1258585)
+    
+- [Oliveira PS, Boppre G, Fonseca H. Comparison of Polarized Versus Other Types of Endurance Training Intensity Distribution on Athletes’ Endurance Performance: A Systematic Review with Meta-analysis. Sports Med. 2024. DOI: 10.1007/s40279-024-02034-z.](https://doi.org/10.1007/s40279-024-02034-z)
+    
+- [Sitko S, Artetxe X, Bonnevie-Svendsen M, et al. What Is “Zone 2 Training”?: Experts’ Viewpoint on Definition, Training Methods, and Expected Adaptations. Int J Sports Physiol Perform. 2025;20(11):1614-1617. DOI: 10.1123/ijspp.2024-0303.](https://doi.org/10.1123/ijspp.2024-0303)
