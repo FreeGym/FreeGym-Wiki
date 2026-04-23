@@ -43,17 +43,20 @@
   <text x="64.80" y="481.40" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Exercise Physiology</text>
   <text x="64.80" y="538.60" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Pharmacology</text>
   <text x="64.80" y="595.80" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Cardiology</text>
+  <text x="64.80" y="653.00" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Biomarkers</text>
+  <text x="64.80" y="710.20" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Sleep</text>
+  <text x="64.80" y="767.40" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">Wearables</text>
   <text x="594.00" y="367.20" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">LAST ACTIVE</text>
   <text x="594.00" y="424.20" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">2026-04</text>
 
   <text x="594.00" y="549.45" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">CITATIONS</text>
-  <text x="594.00" y="606.45" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">1,289</text>
+  <text x="594.00" y="606.45" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">1,375</text>
 
   <text x="594.00" y="731.70" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">COMMITS</text>
-  <text x="594.00" y="788.70" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">79</text>
+  <text x="594.00" y="788.70" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">80</text>
 
   <text x="594.00" y="913.95" font-family="system-ui, -apple-system, sans-serif" font-size="30.00" fill="#8a8a8a">CONTRIBUTIONS</text>
-  <text x="594.00" y="970.95" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">96</text>
+  <text x="594.00" y="970.95" font-family="system-ui, -apple-system, sans-serif" font-size="44.00" fill="white">113</text>
 
   <!-- Footer -->
   <rect x="0" y="1161.00" width="1080" height="189.00" rx="0" fill="#000000"/>

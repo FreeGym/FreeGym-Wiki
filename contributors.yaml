@@ -7,6 +7,9 @@ maintainers:
   - exercise-physiology
   - pharmacology
   - cardiology
+  - biomarkers
+  - sleep
+  - wearables
   last_active: 2026-04
   contributions:
   - file: nutrition/Protein/protein.md
@@ -385,8 +388,76 @@ maintainers:
     type: created
     citations_added: 13
     pr: 192
-  total_citations: 1289
-  commits: 79
+  - file: biomarkers/Blood Sugar & Metabolic Health/blood-sugar-and-metabolic-health.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Hormones/hormones.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Inflammation Markers/inflammation-markers.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Interpreting Biomarkers/interpreting-biomarkers.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Iron & Hematology/iron-and-hematology.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Lipids/lipids.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Liver & Kidney Function/liver-and-kidney-function.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: biomarkers/Vitamins & Minerals/vitamins-and-minerals.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: exercise-physiology/cardiorespiratory-fitness/zone-2-and-glycemic-control.md
+    type: created
+    citations_added: 14
+    pr: 197
+  - file: exercise-physiology/cardiorespiratory-fitness/zone-2-for-older-adults.md
+    type: created
+    citations_added: 9
+    pr: 197
+  - file: nutrition/Fiber & Gut Health/does-fiber-type-matter-more-than-fiber-amount.md
+    type: created
+    citations_added: 14
+    pr: 197
+  - file: nutrition/Fiber & Gut Health/how-much-fiber-do-you-actually-need.md
+    type: created
+    citations_added: 17
+    pr: 197
+  - file: nutrition/Fiber & Gut Health/is-resistant-starch-a-superfood.md
+    type: created
+    citations_added: 9
+    pr: 197
+  - file: nutrition/Fiber & Gut Health/is-the-microbiome-the-missing-piece-in-nutrition.md
+    type: created
+    citations_added: 10
+    pr: 197
+  - file: nutrition/Fiber & Gut Health/prebiotics-vs-probiotics-vs-fermented-foods.md
+    type: created
+    citations_added: 13
+    pr: 197
+  - file: sleep/Sleep Apnea/sleep-apnea.md
+    type: created
+    citations_added: 0
+    pr: 197
+  - file: wearables/Wearable Fitness Trackers/wearable-fitness-trackers.md
+    type: created
+    citations_added: 0
+    pr: 197
+  total_citations: 1375
+  commits: 80
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
