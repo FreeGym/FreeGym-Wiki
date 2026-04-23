@@ -87,6 +87,13 @@ jobs:
           pr_number = int(pr_number_raw)
           author = os.environ.get("PR_AUTHOR", "")
           labels_json = os.environ.get("LABELS_JSON", "[]")
+          github_output = os.environ.get("GITHUB_OUTPUT")
+
+          def set_output(name, value):
+              if github_output:
+                  with open(github_output, "a") as f:
+                      f.write(f"{name}={value}\n")
+
           try:
               labels = json.loads(labels_json) if labels_json else []
           except json.JSONDecodeError:
@@ -112,8 +119,25 @@ jobs:
           all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
 
           # Filter to content markdown files only
-          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version']
+          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version', 'biomarkers', 'wearables']
           content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
+
+          if not content_files:
+              set_output("has_content", "false")
+              with open('pr_analysis.json', 'w') as f:
+                  json.dump({
+                      'author': author,
+                      'pr_number': pr_number,
+                      'is_substantive': is_substantive,
+                      'topics': [],
+                      'contributions': [],
+                      'total_citations': 0,
+                      'commits': 0
+                  }, f)
+              print("No content markdown files changed; skipping contributor update.")
+              raise SystemExit(0)
+
+          set_output("has_content", "true")
 
           # Get the full diff to analyze citations
           result = subprocess.run(
@@ -256,6 +280,7 @@ jobs:
           PYTHON_SCRIPT
 
       - name: Update contributors.yaml
+        if: steps.analyze.outputs.has_content == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -426,6 +451,7 @@ jobs:
           PYTHON_SCRIPT
 
       - name: Generate CONTRIBUTORS.md
+        if: steps.analyze.outputs.has_content == 'true'
         run: |
           python << 'PYTHON_SCRIPT'
           import yaml
@@ -602,9 +628,11 @@ jobs:
           PYTHON_SCRIPT
 
       - name: Generate SVG profile cards
+        if: steps.analyze.outputs.has_content == 'true'
         run: python .github/scripts/generate_cards.py
 
       - name: Create or update contributor PR
+        if: steps.analyze.outputs.has_content == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
