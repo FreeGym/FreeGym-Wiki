@@ -2,7 +2,7 @@
 
 The most debated questions about dietary supplements - from the few that clearly work to the many that probably don't, and the industry problems that make it hard to tell the difference.
 
-For individual vitamin and mineral debates, see [Micronutrients](../Micronutrients/micronutrients.md). For omega-3/fish oil, see [Fat](../Fat/fat.md). For BCAAs, see [Protein](../Protein/protein.md).
+For individual vitamin and mineral debates, see [Micronutrients](../Micronutrients/README.md). For omega-3/fish oil, see [Fat](../Fat/fat.md). For BCAAs, see [Protein](../Protein/protein.md).
 
 **Status:** Seeking contributors. Each section frames a controversy. Evidence needed.
 

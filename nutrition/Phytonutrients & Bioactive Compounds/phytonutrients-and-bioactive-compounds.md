@@ -1,6 +1,6 @@
 # Phytonutrients & Bioactive Compounds
 
-The most debated questions about the thousands of non-essential but biologically active compounds in food that fall outside the traditional macronutrient and micronutrient categories — polyphenols, flavonoids, carotenoids, glucosinolates, nitrates, and other plant-derived or food-derived bioactives. For compounds commonly sold in pill form, see [Supplements](../Supplements/supplements.md). For fiber and prebiotic compounds specifically, see [Fiber & Gut Health](../Fiber%20%26%20Gut%20Health/fiber-and-gut-health.md). For antioxidant vitamins and minerals, see [Micronutrients](../Micronutrients/micronutrients.md).
+The most debated questions about the thousands of non-essential but biologically active compounds in food that fall outside the traditional macronutrient and micronutrient categories — polyphenols, flavonoids, carotenoids, glucosinolates, nitrates, and other plant-derived or food-derived bioactives. For compounds commonly sold in pill form, see [Supplements](../Supplements/supplements.md). For fiber and prebiotic compounds specifically, see [Fiber & Gut Health](../Fiber%20%26%20Gut%20Health/fiber-and-gut-health.md). For antioxidant vitamins and minerals, see [Micronutrients](../Micronutrients/README.md).
 
 **Status:** Seeking contributors. Each section frames a controversy. Evidence needed.
 
