@@ -564,8 +564,20 @@ maintainers:
     type: edit
     citations_added: 0
     pr: 200
-  total_citations: 1557
-  commits: 82
+  - file: nutrition/Fiber & Gut Health/does-fiber-help-you-lose-weight.md
+    type: major_edit
+    citations_added: 5
+    pr: 203
+  - file: nutrition/Phytonutrients & Bioactive Compounds/phytonutrients-and-bioactive-compounds.md
+    type: edit
+    citations_added: 0
+    pr: 203
+  - file: nutrition/Supplements/supplements.md
+    type: edit
+    citations_added: 0
+    pr: 203
+  total_citations: 1562
+  commits: 83
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
