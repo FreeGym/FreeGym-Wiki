@@ -520,16 +520,124 @@ contributors:
   - nutrition
   - Womens-Health
   - exercise-physiology
-  last_active: 2026-04
-  prs_merged: 11
-  substantive_prs: 3
+  last_active: 2026-05
+  prs_merged: 12
+  substantive_prs: 4
   contributions:
   - file: nutrition/Protein/protein-rda.md
     type: major_edit
     citations_added: 3
     pr: 29
-  total_citations: 3
-  commits: 13
+  - file: nutrition/Fiber & Gut Health/can-too-much-fiber-be-harmful.md
+    type: created
+    citations_added: 14
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/do-artificial-sweeteners-wreck-your-gut.md
+    type: created
+    citations_added: 9
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/does-cooking-destroy-fiber.md
+    type: created
+    citations_added: 17
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/does-fiber-help-you-lose-weight.md
+    type: created
+    citations_added: 33
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/does-the-gut-brain-axis-explain-mental-health.md
+    type: created
+    citations_added: 20
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/is-gut-health-the-key-to-athletic-performance.md
+    type: created
+    citations_added: 36
+    pr: 200
+  - file: nutrition/Fiber & Gut Health/is-leaky-gut-real.md
+    type: created
+    citations_added: 29
+    pr: 200
+  - file: nutrition/Micronutrients/Antioxidants/antioxidants.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Athletes & Micronutrients/athletes-and-micronutrients.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Calcium/calcium.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Electrolytes/electrolytes.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Folate/folate.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Food vs Supplements/food-vs-supplements.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Iodine/iodine.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Iron/iron.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Magnesium/magnesium.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Multivitamins/multivitamins.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/RDAs/rdas.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/README.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Selenium/selenium.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Vitamin A/vitamin-a.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Vitamin B12/vitamin-b12.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Vitamin D/should-you-test-your-vitamin-d-levels.md
+    type: created
+    citations_added: 24
+    pr: 200
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d.md
+    type: major_edit
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Vitamin K2/vitamin-k2.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/Zinc/zinc.md
+    type: created
+    citations_added: 0
+    pr: 200
+  - file: nutrition/Micronutrients/micronutrients.md
+    type: edit
+    citations_added: 0
+    pr: 200
+  total_citations: 185
+  commits: 15
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02
