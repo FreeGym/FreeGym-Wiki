@@ -2,8 +2,6 @@
 
 Vitamin D is arguably the most debated micronutrient in modern nutrition. The debates span dosing, testing, threshold definitions, trial design, athlete-specific risks, regional prevalence, and the gap between population guidelines and individual decision-making.
 
-This page expands on the overview in [Micronutrients](micronutrients.md) and covers the controversies that make vitamin D uniquely contested.
-
 **Status:** Seeking contributors. Each section frames a controversy. Evidence needed.
 
 ---
@@ -128,8 +126,53 @@ When guidelines discourage testing but supplementation culture continues growing
 
 ---
 
+## Absorption and Bioavailability
+
+Vitamin D is fat-soluble, and absorption depends on dietary fat, body composition, and gut function. The "1000 IU raises 25(OH)D by X" assumption breaks down across these variables.
+
+**Competing claims:**
+
+1. Vitamin D absorption is fat-soluble - taking supplements with the largest fat-containing meal increases absorption substantially compared to fasted or low-fat dosing
+2. Adipose tissue sequesters vitamin D - adults with higher BMI have lower 25(OH)D for the same supplement dose, often requiring 2-3x higher doses to reach equivalent serum levels
+3. D2 (ergocalciferol) and D3 (cholecalciferol) are not equivalent - D3 raises 25(OH)D more efficiently and maintains levels longer, making D2 a poor choice for status correction despite being commonly prescribed
+4. Bile acid sequestrants, orlistat, IBD, gastric bypass, and cystic fibrosis all impair vitamin D absorption - making "standard dose" inadequate in these populations
+
+**Evidence needed:** Fat co-ingestion absorption studies, BMI and 25(OH)D dose-response data, D2 vs D3 head-to-head pharmacokinetic trials, malabsorption population vitamin D status research.
+
+---
+
+## Toxicity and Upper Limits
+
+Vitamin D toxicity is rare but real. Hypercalcemia from chronic excess is the principal harm pathway, and the "more is better" framing combined with high-dose supplementation has produced a small but documented stream of toxicity cases.
+
+**Competing claims:**
+
+1. Sustained intake above 10,000 IU/day for months can produce hypercalcemia, hypercalciuria, kidney stones, and soft tissue calcification - the upper safe intake (4000 IU/day) is conservative but not arbitrary
+2. Acute single-dose toxicity is uncommon but documented from manufacturing errors and intermittent megadoses (300,000-600,000 IU bolus regimens)
+3. The "vitamin D toxicity is essentially impossible" claim circulating in supplement communities is contradicted by published case series - toxicity is rare because most users do not take harmful doses, not because the nutrient is incapable of harm
+4. Genetic variants in CYP24A1 (which metabolizes active D) produce hypersensitivity to standard supplementation - a small but identifiable population that develops toxicity at unremarkable doses
+
+**Evidence needed:** Vitamin D toxicity case series and dose thresholds, intermittent megadose protocol harm data, CYP24A1 polymorphism prevalence and clinical impact, safe upper limit dose-response studies.
+
+---
+
+## Interactions
+
+Vitamin D interacts with magnesium (required for activation), calcium (synergistic), K2 (calcification direction), and several drug classes that meaningfully impair status.
+
+**Competing claims:**
+
+1. Magnesium is required for the conversion of 25(OH)D to active 1,25(OH)2D - Mg-deficient patients may not respond to D supplementation, and the routine "test D, ignore Mg" pattern misses a real cofactor requirement
+2. Glucocorticoids (prednisone, dexamethasone) reduce intestinal calcium absorption and accelerate D catabolism - chronic users have measurably lower D status and higher fracture risk
+3. Anticonvulsants (phenytoin, phenobarbital, carbamazepine) induce hepatic enzymes that accelerate D metabolism - long-term users often need 2-4x typical supplementation
+4. Bile acid sequestrants (cholestyramine), orlistat, and PPIs reduce D absorption to varying degrees - making D status assessment important in users of these medications
+
+**Evidence needed:** Mg-D activation studies in deficient patients, glucocorticoid-D status interaction research, anticonvulsant dose-D requirement modeling, drug-D interaction prevalence analyses in primary care.
+
+---
+
 ## How to Contribute
 
 Pick a section. Find the relevant meta-analyses, systematic reviews, or high-quality RCTs. Summarize what the evidence shows, including limitations.
 
-See [CONTRIBUTING.md](../../CONTRIBUTING.md) for citation standards.
+See [CONTRIBUTING.md](../../../CONTRIBUTING.md) for citation standards.
