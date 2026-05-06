@@ -254,7 +254,33 @@ def render_profile_card(profile):
     '''
 
 
-def render_index(profiles, topics, stats):
+def render_communicator_homepage_card(comm):
+    """Compact homepage card for a communicator. Reuses existing CSS classes."""
+    topics_attr = ','.join(comm['topics'])
+    topic_count = len(comm['topics'])
+
+    return f'''
+    <article class="profile-card reveal" data-profile data-name="{esc(comm['name'])}" data-handle="{esc(comm['github'])}" data-topics="{esc(topics_attr)}">
+      <div class="card-top">
+        <img class="avatar" src="https://github.com/{esc(comm['github'])}.png?size=200" alt="{esc(comm['name'])} avatar">
+        <div class="identity">
+          <h3>{esc(comm['name'])}</h3>
+          <p>@{esc(comm['github'])}</p>
+        </div>
+        <span class="role-badge verified">Verified Communicator</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>Verified Since</span><strong>{esc(format_verified_since(comm['verified_since']))}</strong></div>
+        <div class="stat"><span>Topics</span><strong>{format_number(topic_count)}</strong></div>
+        <div class="stat"><span>Verified By</span><strong>FreeGym</strong></div>
+      </div>
+      <div class="topic-row">{render_topics(comm['topics'])}</div>
+      <a class="card-link" href="communicators/{esc(comm['github'])}/">View profile</a>
+    </article>
+    '''
+
+
+def render_index(profiles, communicators, topics, stats):
     topic_buttons = ['<button class="filter-chip active" data-topic="all">All topics</button>']
     for key in topics:
         topic_buttons.append(
@@ -262,6 +288,20 @@ def render_index(profiles, topics, stats):
         )
 
     cards_html = '\n'.join(render_profile_card(p) for p in profiles)
+
+    if communicators:
+        communicator_cards_html = '\n'.join(render_communicator_homepage_card(c) for c in communicators)
+        communicator_section = f'''
+    <section class="reveal" style="margin-top: 4rem;">
+      <h2 style="margin-bottom: 0.5rem;">Verified Communicators</h2>
+      <p style="opacity: 0.7; margin-bottom: 1.5rem;">Vetted public communicators of FreeGym Wiki articles.</p>
+      <section class="profile-grid">
+        {communicator_cards_html}
+      </section>
+    </section>
+'''
+    else:
+        communicator_section = ''
 
     return f'''<!doctype html>
 <html lang="en">
@@ -318,7 +358,7 @@ def render_index(profiles, topics, stats):
     <section class="profile-grid">
       {cards_html}
     </section>
-
+{communicator_section}
     <div class="footer">Generated from contributors.yaml. Last updated {stats['updated']}.</div>
   </main>
 
@@ -558,7 +598,7 @@ def main():
     # Ensure GitHub Pages serves all files.
     write_file(SITE_DIR / '.nojekyll', '')
 
-    index_html = render_index(profiles, topics, stats)
+    index_html = render_index(profiles, communicators, topics, stats)
     write_file(SITE_DIR / 'index.html', index_html)
 
     for profile in profiles:
