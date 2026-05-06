@@ -355,8 +355,12 @@ def render_index(profiles, communicators, topics, stats):
       <div class="results-bar" data-results>0 profiles</div>
     </section>
 
-    <section class="profile-grid">
-      {cards_html}
+    <section class="reveal" style="margin-top: 1rem;">
+      <h2 style="margin-bottom: 0.5rem;">Verified Contributors</h2>
+      <p style="opacity: 0.7; margin-bottom: 1.5rem;">Authors and editors of FreeGym Wiki articles.</p>
+      <section class="profile-grid">
+        {cards_html}
+      </section>
     </section>
 {communicator_section}
     <div class="footer">Generated from contributors.yaml. Last updated {stats['updated']}.</div>
