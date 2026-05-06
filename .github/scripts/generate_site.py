@@ -14,8 +14,21 @@ REPO_ROOT = BASE_DIR.parent.parent
 SITE_DIR = REPO_ROOT / 'site'
 SITE_SRC = REPO_ROOT / 'site-src'
 CONTRIB_DIR = SITE_DIR / 'contributors'
+COMMUNICATORS_DIR = SITE_DIR / 'communicators'
 CARDS_SRC = REPO_ROOT / 'cards'
 CARDS_DEST = SITE_DIR / 'cards'
+
+CHANNEL_LABELS = {
+    'freegym': 'FreeGym',
+    'youtube': 'YouTube',
+    'instagram': 'Instagram',
+    'twitter': 'Twitter',
+    'x': 'X',
+    'linkedin': 'LinkedIn',
+    'tiktok': 'TikTok',
+    'podcast': 'Podcast',
+    'website': 'Website',
+}
 
 REPO_URL = os.getenv('REPO_URL', 'https://github.com/FreeGym/FreeGym-Wiki')
 RAW_BASE = os.getenv('RAW_BASE', 'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main')
@@ -29,6 +42,9 @@ TOPIC_LABELS = {
     'nutrition': 'Nutrition',
     'exercise-physiology': 'Exercise Physiology',
     'pharmacology': 'Pharmacology',
+    'biomarkers': 'Biomarkers',
+    'wearables': 'Wearables',
+    'musculoskeletal-health': 'Musculoskeletal',
     'exercise': 'Fitness',
     'sleep': 'Sleep',
     'mental-health': 'Mental Health',
@@ -83,6 +99,17 @@ def format_number(value):
         return f"{int(value):,}"
     except (TypeError, ValueError):
         return str(value)
+
+
+def format_verified_since(ym):
+    """'2026-05' -> 'May 2026'. Returns the input on parse failure."""
+    months = ['', 'January', 'February', 'March', 'April', 'May', 'June',
+              'July', 'August', 'September', 'October', 'November', 'December']
+    try:
+        y, m = ym.split('-', 1)
+        return f"{months[int(m)]} {int(y)}"
+    except Exception:
+        return ym or '-'
 
 
 def read_data():
@@ -140,6 +167,32 @@ def sort_profiles(profiles):
         profiles,
         key=lambda p: (role_priority.get(p['role'], 9), p['name'].lower())
     )
+
+
+def collect_communicators(data):
+    """Build a list of communicator profile dicts from contributors.yaml.
+
+    Communicators are a separate role tier from contributors — maintainer-curated,
+    no commit/citation history, just verified topic authorization.
+    """
+    communicators = []
+    for entry in data.get('communicators') or []:
+        if not isinstance(entry, dict) or not entry.get('github'):
+            continue
+        github = entry.get('github', '')
+        topics = normalize_topics(entry.get('verified_topics') or entry.get('topics') or [])
+        channels = entry.get('channels') or {}
+        # Filter out channels with empty values; preserve insertion order
+        channels = {k: v for k, v in channels.items() if v}
+        communicators.append({
+            'github': github,
+            'name': entry.get('name') or github,
+            'topics': topics,
+            'topic_labels': [label_topic(t) for t in topics],
+            'verified_since': entry.get('verified_since', '-'),
+            'channels': channels,
+        })
+    return sorted(communicators, key=lambda c: c['name'].lower())
 
 
 def build_topic_filters(topic_keys):
@@ -370,6 +423,88 @@ def render_profile(profile):
 '''
 
 
+def render_channel_links(channels):
+    """Render channel links as an unordered list. Returns empty string if none."""
+    if not channels:
+        return ''
+    items = []
+    for key, value in channels.items():
+        label = CHANNEL_LABELS.get(key, key.title())
+        href = value if value.startswith(('http://', 'https://')) else f'https://{value}'
+        items.append(f'<li><a href="{esc(href)}" rel="noopener" target="_blank">{esc(label)}</a></li>')
+    return '<ul class="channels">' + ''.join(items) + '</ul>'
+
+
+def render_communicator_profile(comm):
+    """Render the per-communicator HTML profile page."""
+    handle = comm['github']
+    profile_url = f"{SITE_BASE_URL}/communicators/{handle}/"
+    card_url = f"{RAW_BASE}/cards/{handle}-communicator-portrait.png?v={BUILD_STAMP}"
+    card_local = f"../../cards/{handle}-communicator-portrait.png?v={BUILD_STAMP}"
+
+    topics_inline = ', '.join(comm['topic_labels']) if comm['topic_labels'] else 'multiple topics'
+
+    channels_section = ''
+    if comm['channels']:
+        channels_section = f'''
+    <section class="section reveal">
+      <h2>Find {esc(comm['name'])} on</h2>
+      {render_channel_links(comm['channels'])}
+    </section>
+'''
+
+    return f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(comm['name'])} - FreeGym Wiki Communicator</title>
+  <meta name="description" content="Verified Communicator on FreeGym Wiki — {esc(comm['name'])} (@{esc(handle)}) communicates on {esc(topics_inline)}.">
+  <meta property="og:title" content="{esc(comm['name'])} - FreeGym Wiki Communicator">
+  <meta property="og:description" content="Verified Communicator on FreeGym Wiki — communicates on {esc(topics_inline)}.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="{profile_url}">
+  <meta property="og:image" content="{card_url}">
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><span class="dot"></span>FreeGym Wiki</div>
+    <nav class="nav-links">
+      <a href="../../index.html">Directory</a>
+      <a href="{REPO_URL}">GitHub</a>
+      <a href="{REPO_URL}/blob/main/VERIFICATION.md">Verification</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="profile-hero reveal">
+      <div class="profile-panel">
+        <img class="avatar" src="https://github.com/{esc(handle)}.png?size=200" alt="{esc(comm['name'])} avatar">
+        <h1>{esc(comm['name'])}</h1>
+        <div class="handle">@{esc(handle)}</div>
+        <div class="role-badge verified" style="margin-top: 0.75rem; display: inline-flex;">Verified Communicator</div>
+        <div class="topic-row">{render_topics(comm['topics'])}</div>
+        <div class="stats">
+          <div class="stat"><span>Verified Since</span><strong>{esc(format_verified_since(comm['verified_since']))}</strong></div>
+          <div class="stat"><span>Topics</span><strong>{format_number(len(comm['topics']))}</strong></div>
+          <div class="stat"><span>Verified By</span><strong>FreeGym</strong></div>
+        </div>
+      </div>
+      <div class="profile-card-preview">
+        <img src="{card_local}" alt="{esc(comm['name'])} card preview">
+      </div>
+    </section>
+{channels_section}
+    <div class="footer">Profile data from contributors.yaml. Last updated {datetime.date.today().isoformat()}.</div>
+  </main>
+
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
+'''
+
+
 def write_file(path, content):
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8') as f:
@@ -403,6 +538,8 @@ def main():
     profiles = sort_profiles(profiles)
     topics = build_topic_filters(topic_keys)
 
+    communicators = collect_communicators(data)
+
     stats = {
         'verified': len(profiles),
         'citations': sum(p['citations'] for p in profiles),
@@ -412,6 +549,8 @@ def main():
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     CONTRIB_DIR.mkdir(parents=True, exist_ok=True)
+    if communicators:
+        COMMUNICATORS_DIR.mkdir(parents=True, exist_ok=True)
 
     copy_cards()
     copy_static_assets()
@@ -426,7 +565,11 @@ def main():
         profile_html = render_profile(profile)
         write_file(CONTRIB_DIR / profile['github'] / 'index.html', profile_html)
 
-    print(f"Generated site for {len(profiles)} profiles")
+    for comm in communicators:
+        comm_html = render_communicator_profile(comm)
+        write_file(COMMUNICATORS_DIR / comm['github'] / 'index.html', comm_html)
+
+    print(f"Generated site for {len(profiles)} profiles, {len(communicators)} communicators")
 
 
 if __name__ == '__main__':

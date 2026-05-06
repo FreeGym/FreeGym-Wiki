@@ -27,12 +27,21 @@ CARD_SIZES = {
 
 ACTIVE_WINDOW_DAYS = 60
 USE_LOGO = os.getenv('USE_LOGO', '1').lower() not in ('0', 'false', 'no')
+
+# Constant brand line rendered on every communicator card.
+COMMUNICATOR_MISSION = "Building the future of health and fitness."
+
 TOPIC_ALIASES = {
     'heart-health': 'cardiology',
 }
 TOPIC_LABELS = {
     'nutrition': 'Nutrition',
     'exercise': 'Fitness',
+    'exercise-physiology': 'Exercise Physiology',
+    'pharmacology': 'Pharmacology',
+    'biomarkers': 'Biomarkers',
+    'wearables': 'Wearables',
+    'musculoskeletal-health': 'Musculoskeletal',
     'sleep': 'Sleep',
     'mental-health': 'Mental Health',
     'supplements': 'Supplements',
@@ -129,6 +138,33 @@ def normalize_topics(topics):
             seen.add(canonical)
             normalized.append(canonical)
     return normalized
+
+
+def label_topic(key):
+    """Display label for a canonical topic key."""
+    return TOPIC_LABELS.get(key, key.replace('-', ' ').title())
+
+
+def chunk_topics(topics, max_lines=2):
+    """Split topics into ~equal chunks across at most `max_lines` lines."""
+    n = len(topics)
+    if n == 0:
+        return []
+    if n <= max_lines:
+        return [[t] for t in topics]
+    per_line = (n + max_lines - 1) // max_lines
+    return [topics[i:i + per_line] for i in range(0, n, per_line)]
+
+
+def format_verified_since(ym):
+    """'2026-05' -> 'May 2026'. Returns the input on parse failure."""
+    months = ['', 'January', 'February', 'March', 'April', 'May', 'June',
+              'July', 'August', 'September', 'October', 'November', 'December']
+    try:
+        y, m = ym.split('-', 1)
+        return f"{months[int(m)]} {int(y)}"
+    except Exception:
+        return ym or '-'
 
 
 def generate_card(
@@ -375,6 +411,230 @@ def generate_card(
     return svg
 
 
+def generate_communicator_card(
+    github,
+    name,
+    topics,
+    verified_since,
+    size_label='default',
+    avatar_data_uri=None,
+    logo_data=None,
+):
+    """Generate an SVG card for a verified communicator.
+
+    Communicators are vetted public communicators of FreeGym Wiki content.
+    The card composition deliberately differs from the contributor card:
+    centered avatar + name, mission line, topic typography (no badges),
+    FreeGym logo footer, and a "Verified by FreeGym" stamp instead of
+    the contributor stats panel.
+    """
+    width, height = CARD_SIZES[size_label]
+    unit = min(width, height)
+    margin = unit * 0.06
+    is_wide = width > height
+    is_tall = height >= width * 1.4  # story format needs vertical redistribution
+
+    # ── Footer band ──────────────────────────────────────────────────
+    footer_h = max(height * 0.17, 145)
+    footer_y = height - footer_h
+
+    logo_uri, logo_w, logo_h = (logo_data or (None, None, None))
+    if logo_uri and logo_w and logo_h:
+        logo_aspect = logo_w / logo_h
+        logo_w_max = width * 0.75
+        logo_h_cap = footer_h * 0.72
+        logo_w_final = logo_w_max
+        logo_h_final = logo_w_final / logo_aspect
+        if logo_h_final > logo_h_cap:
+            logo_h_final = logo_h_cap
+            logo_w_final = logo_h_final * logo_aspect
+        logo_x = (width - logo_w_final) / 2
+        logo_y = footer_y + footer_h * 0.10
+    else:
+        logo_x = logo_y = logo_w_final = logo_h_final = 0
+
+    auth_size = max(unit * 0.018, 14)
+    auth_y_offset = footer_h * 0.13
+
+    # ── Avatar ───────────────────────────────────────────────────────
+    if is_wide:
+        avatar_d = min(unit * 0.40, 250)
+    elif is_tall:
+        avatar_d = min(unit * 0.27, 290)
+    else:
+        avatar_d = min(unit * 0.24, 260)
+    avatar_r = avatar_d / 2
+
+    if is_wide:
+        avatar_cx = margin + avatar_r + unit * 0.04
+        avatar_cy = height / 2
+    elif is_tall:
+        avatar_cx = width / 2
+        avatar_cy = height * 0.18
+    else:
+        avatar_cx = width / 2
+        avatar_cy = margin + avatar_r + unit * 0.015
+
+    ring_stroke_w = max(unit * 0.0025, 1.5)
+    ring_color = '#3a3a3a'
+
+    # Verification glyph: red filled circle with white checkmark, bottom-right of avatar
+    glyph_r = avatar_r * 0.27
+    glyph_cx = avatar_cx + avatar_r * 0.72
+    glyph_cy = avatar_cy + avatar_r * 0.72
+    check_size = glyph_r * 0.95
+    cx1 = glyph_cx - check_size * 0.40
+    cy1 = glyph_cy + check_size * 0.05
+    cx2 = glyph_cx - check_size * 0.05
+    cy2 = glyph_cy + check_size * 0.32
+    cx3 = glyph_cx + check_size * 0.42
+    cy3 = glyph_cy - check_size * 0.32
+    glyph_stroke_w = glyph_r * 0.18
+
+    # ── Name + handle + role label ───────────────────────────────────
+    if is_wide:
+        text_x_anchor = avatar_cx + avatar_r + unit * 0.06
+        text_align = 'start'
+        name_size = min(unit * 0.085, 54)
+        name_y = height * 0.30
+    else:
+        text_x_anchor = width / 2
+        text_align = 'middle'
+        name_size = min(unit * 0.075, 82)
+        name_y = avatar_cy + avatar_r + unit * 0.075
+
+    handle_size = name_size * 0.36
+    role_size = name_size * 0.24
+    if is_wide:
+        handle_y = name_y + handle_size * 2.4
+        role_y = handle_y + role_size * 2.4
+    else:
+        handle_y = name_y + handle_size * 1.7
+        role_y = handle_y + role_size * 1.9
+
+    # ── Mission pull-quote ───────────────────────────────────────────
+    if is_wide:
+        mission_size = min(unit * 0.045, 26)
+        mission_y = role_y + mission_size * 2.0
+        mission_x = text_x_anchor
+        mission_anchor = 'start'
+    elif is_tall:
+        mission_size = min(unit * 0.050, 54)
+        mission_y = height * 0.50
+        mission_x = width / 2
+        mission_anchor = 'middle'
+    else:
+        mission_size = min(unit * 0.046, 48)
+        mission_y = role_y + mission_size * 2.4
+        mission_x = width / 2
+        mission_anchor = 'middle'
+
+    # ── Topics as typography (no badges) ─────────────────────────────
+    visible = list(normalize_topics(topics))[:8]
+    chunks = chunk_topics(visible, max_lines=2)
+
+    if is_wide:
+        topic_size = min(unit * 0.034, 22)
+        topic_x = text_x_anchor
+        topic_anchor = 'start'
+    elif is_tall:
+        topic_size = min(unit * 0.028, 34)
+        topic_x = width / 2
+        topic_anchor = 'middle'
+    else:
+        topic_size = min(unit * 0.028, 30)
+        topic_x = width / 2
+        topic_anchor = 'middle'
+
+    if is_tall:
+        topic_block_top = height * 0.68
+        topic_line_height = topic_size * 1.9
+    elif is_wide:
+        topic_block_top = mission_y + mission_size * 3.3
+        topic_line_height = topic_size * 1.95
+    else:
+        topic_block_top = mission_y + mission_size * 2.0
+        topic_line_height = topic_size * 1.7
+
+    topic_label_size = max(unit * 0.014, 11)
+    if is_wide:
+        topic_label_y = topic_block_top - topic_size * 1.8
+    else:
+        topic_label_y = topic_block_top - topic_size * 1.4
+
+    # ── Build SVG ────────────────────────────────────────────────────
+    avatar_url = avatar_data_uri or f"https://github.com/{github}.png?size=400"
+
+    parts = []
+    parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b0b0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="88%" cy="12%" r="55%">
+      <stop offset="0%" style="stop-color:#E10600;stop-opacity:0.13"/>
+      <stop offset="100%" style="stop-color:#E10600;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="avatar-clip">
+      <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#glow)"/>
+  <rect width="{width}" height="{max(unit * 0.008, 5):.2f}" fill="#E10600"/>
+
+  <!-- avatar -->
+  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="#111111"/>
+  <image x="{avatar_cx - avatar_r:.2f}" y="{avatar_cy - avatar_r:.2f}" width="{avatar_d:.2f}" height="{avatar_d:.2f}" href="{avatar_url}" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="none" stroke="{ring_color}" stroke-width="{ring_stroke_w:.2f}"/>
+
+  <!-- verification glyph -->
+  <circle cx="{glyph_cx:.2f}" cy="{glyph_cy:.2f}" r="{glyph_r:.2f}" fill="#E10600" stroke="#0b0b0b" stroke-width="{max(unit * 0.005, 2.5):.2f}"/>
+  <polyline points="{cx1:.2f},{cy1:.2f} {cx2:.2f},{cy2:.2f} {cx3:.2f},{cy3:.2f}" fill="none" stroke="#ffffff" stroke-width="{glyph_stroke_w:.2f}" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- name + handle + role -->
+  <text x="{text_x_anchor:.2f}" y="{name_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{name_size:.2f}" font-weight="700" fill="#ffffff" letter-spacing="-1">{name or github}</text>
+  <text x="{text_x_anchor:.2f}" y="{handle_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{handle_size:.2f}" fill="#7a7a7a">@{github}</text>
+  <text x="{text_x_anchor:.2f}" y="{role_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{role_size:.2f}" font-weight="500" fill="#E10600" letter-spacing="5">VERIFIED COMMUNICATOR</text>
+
+  <!-- mission line — modern, minimal -->
+  <text x="{mission_x:.2f}" y="{mission_y:.2f}" text-anchor="{mission_anchor}" font-family="'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-weight="300" font-size="{mission_size:.2f}" fill="#ededed" letter-spacing="-0.5">{COMMUNICATOR_MISSION}</text>
+
+  <!-- topic label -->
+  <text x="{topic_x:.2f}" y="{topic_label_y:.2f}" text-anchor="{topic_anchor}" font-family="system-ui, -apple-system, sans-serif" font-size="{topic_label_size:.2f}" font-weight="600" fill="#5a5a5a" letter-spacing="4">COMMUNICATES ON</text>
+''')
+
+    for line_idx, chunk in enumerate(chunks):
+        line_y = topic_block_top + line_idx * topic_line_height
+        line_text = '  ·  '.join(label_topic(t) for t in chunk)
+        parts.append(f'''  <text x="{topic_x:.2f}" y="{line_y:.2f}" text-anchor="{topic_anchor}" font-family="system-ui, -apple-system, sans-serif" font-size="{topic_size:.2f}" font-weight="500" fill="#cccccc">{line_text}</text>
+''')
+
+    parts.append(f'''  <rect x="0" y="{footer_y:.2f}" width="{width}" height="{footer_h:.2f}" rx="0" fill="#000000"/>
+  <line x1="{margin:.2f}" y1="{footer_y:.2f}" x2="{width - margin:.2f}" y2="{footer_y:.2f}" stroke="#1f1f1f" stroke-width="1"/>
+''')
+
+    if logo_uri:
+        parts.append(f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
+''')
+    else:
+        parts.append(f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h * 0.55:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit * 0.075, 60):.2f}" font-weight="700">
+    <tspan fill="white">FREE</tspan><tspan fill="#E10600">GYM</tspan>
+  </text>
+''')
+
+    parts.append(f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h - auth_y_offset:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{auth_size:.2f}" fill="#666666" letter-spacing="3">VERIFIED BY FREEGYM &#x00B7; SINCE {format_verified_since(verified_since).upper()}</text>
+</svg>''')
+
+    return ''.join(parts)
+
+
 def main():
     os.makedirs('cards', exist_ok=True)
 
@@ -457,6 +717,48 @@ def main():
             print(f"Generated {svg_path}")
 
             # Also generate PNG version for easy downloading
+            if HAS_CAIROSVG:
+                try:
+                    cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=png_path, scale=2)
+                    print(f"Generated {png_path}")
+                except Exception as e:
+                    print(f"Warning: Could not generate PNG for {png_path}: {e}")
+
+    # Communicators — separate role with its own card design.
+    # Maintainer-curated; not auto-tracked from PR activity. Cards are emitted
+    # to cards/<handle>-communicator{,-portrait,-story,-wide}.svg so they don't
+    # collide with contributor card filenames if the same handle ever appears
+    # in both lists.
+    communicators = data.get('communicators') or []
+    for comm in communicators:
+        if not isinstance(comm, dict) or not comm.get('github'):
+            continue
+        github = comm.get('github', '')
+        name = comm.get('name', github)
+        topics = comm.get('verified_topics') or comm.get('topics') or []
+        verified_since = comm.get('verified_since', '-')
+
+        avatar_data_uri = fetch_avatar_base64(github)
+
+        for size_label in CARD_SIZES:
+            svg = generate_communicator_card(
+                github=github,
+                name=name,
+                topics=topics,
+                verified_since=verified_since,
+                size_label=size_label,
+                avatar_data_uri=avatar_data_uri,
+                logo_data=logo_data,
+            )
+
+            suffix = '' if size_label == 'default' else f'-{size_label}'
+            svg_path = f"cards/{github}-communicator{suffix}.svg"
+            png_path = f"cards/{github}-communicator{suffix}.png"
+
+            with open(svg_path, 'w', encoding='utf-8') as f:
+                f.write(svg)
+            print(f"Generated {svg_path}")
+
             if HAS_CAIROSVG:
                 try:
                     cairosvg.svg2png(bytestring=svg.encode('utf-8'), write_to=png_path, scale=2)
