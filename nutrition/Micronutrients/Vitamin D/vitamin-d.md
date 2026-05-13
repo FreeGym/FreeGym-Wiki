@@ -66,6 +66,21 @@ Athletes are not average-risk adults. They train under high mechanical load, oft
 
 ---
 
+## Vitamin D and Testosterone: Real Signal or Wishful Thinking?
+
+The vitamin D-testosterone link is one of the most repeated claims in fitness and men's-health communities. The mechanism is plausible (the vitamin D receptor is expressed in testicular tissue and Leydig cells), cross-sectional data repeatedly shows lower 25(OH)D tracking with lower total testosterone, and one early RCT reported a meaningful T increase with supplementation. The larger and better-controlled trials that followed have mostly failed to replicate it - and the pattern looks familiar: benefit, where it appears, concentrates in deficient men, not in pushing already-replete men higher.
+
+**Competing claims:**
+
+1. Pilz 2011 - a year-long RCT in overweight men receiving ~3,300 IU/day - showed clinically meaningful increases in total, bioactive, and free testosterone vs placebo, and is the single most-cited piece of "D raises T" evidence
+2. Lerchbaum 2017 and subsequent RCTs in healthy men with normal baseline testosterone have been null - suggesting the Pilz effect was driven by baseline deficiency and metabolic context, not a general T-raising property of vitamin D
+3. The 25(OH)D-testosterone observational correlation is real but confounded - sun exposure, outdoor activity, body composition, and overall health all co-vary with both variables, and observational designs cannot isolate D's contribution
+4. The "stack D to optimize testosterone" framing extrapolates Pilz-style results past their original population - the honest read is that correcting deficiency may help T in deficient men, and supplementing replete men for T-raising purposes lacks supporting trial evidence
+
+**Evidence needed:** Meta-analyses of D supplementation on testosterone stratified by baseline 25(OH)D and BMI, RCTs enriching for deficient men with low-normal T, dose-response data, mechanistic studies isolating Leydig-cell VDR activation at physiological vs pharmacological D concentrations.
+
+---
+
 ## Vitamin D Testing: Can You Trust the Number?
 
 Vitamin D measurement has well-documented analytic problems. Between-assay variability can be substantial, different labs can produce meaningfully different results for the same sample, and standardization efforts are ongoing but incomplete.
@@ -156,18 +171,60 @@ Vitamin D toxicity is rare but real. Hypercalcemia from chronic excess is the pr
 
 ---
 
-## Interactions
+## Magnesium: Required Cofactor or Marketing Hook?
 
-Vitamin D interacts with magnesium (required for activation), calcium (synergistic), K2 (calcification direction), and several drug classes that meaningfully impair status.
+Magnesium is required by the enzymes that convert dietary/supplemental D to 25(OH)D and then to active 1,25(OH)2D. This biochemistry is not in dispute. What *is* disputed is whether this enzymatic requirement translates into a clinical need for magnesium supplementation alongside vitamin D in the general population.
 
 **Competing claims:**
 
-1. Magnesium is required for the conversion of 25(OH)D to active 1,25(OH)2D - Mg-deficient patients may not respond to D supplementation, and the routine "test D, ignore Mg" pattern misses a real cofactor requirement
-2. Glucocorticoids (prednisone, dexamethasone) reduce intestinal calcium absorption and accelerate D catabolism - chronic users have measurably lower D status and higher fracture risk
-3. Anticonvulsants (phenytoin, phenobarbital, carbamazepine) induce hepatic enzymes that accelerate D metabolism - long-term users often need 2-4x typical supplementation
-4. Bile acid sequestrants (cholestyramine), orlistat, and PPIs reduce D absorption to varying degrees - making D status assessment important in users of these medications
+1. Magnesium is a required cofactor for the hepatic and renal hydroxylases that activate vitamin D - in genuinely Mg-deficient patients, D supplementation can fail to raise 25(OH)D or 1,25(OH)2D as expected
+2. Enzymatic requirement does not imply supplementation requirement - most adults have enough magnesium for normal D activation, and routine co-supplementation is a marketing extrapolation, not an evidence-based clinical recommendation
+3. NHANES and similar surveys show a meaningful share of adults below the magnesium EAR, so "most people are Mg-sufficient" is an assumption that doesn't hold uniformly - especially in populations with low whole-food intake
+4. The popular claim that "unconverted vitamin D raises blood calcium" is mechanistically muddled - hypercalcemia from vitamin D requires actual elevated active D driving intestinal calcium absorption, not magnesium-deficient "stranded" precursor accumulating to a harmful effect
 
-**Evidence needed:** Mg-D activation studies in deficient patients, glucocorticoid-D status interaction research, anticonvulsant dose-D requirement modeling, drug-D interaction prevalence analyses in primary care.
+**Evidence needed:** RCTs of Mg co-supplementation vs D alone in Mg-replete and Mg-deplete cohorts, dose-response data for D activation across magnesium status quartiles, prevalence of clinically relevant Mg deficiency in populations being advised to supplement D, mechanistic studies on whether unactivated D species contribute to hypercalcemia at any plausible intake.
+
+---
+
+## Vitamin K2 and the Calcium Routing Hypothesis
+
+A widespread claim in supplement communities holds that vitamin D raises calcium absorption and K2 "directs" that calcium to bones rather than arteries - implying D supplementation without K2 risks vascular calcification. The mechanistic basis (K2-dependent activation of matrix Gla protein and osteocalcin) is real. Whether the clinical extrapolation is supported is a separate question.
+
+**Competing claims:**
+
+1. K2 activates matrix Gla protein (an inhibitor of vascular calcification) and osteocalcin (which incorporates calcium into bone matrix) - so K2 status plausibly modulates where dietary and supplemental calcium ends up
+2. Observational data (Rotterdam Study, others) link higher K2 intake with lower coronary calcification and CVD mortality - but observational findings consistently overstate effects vs subsequent RCTs
+3. RCTs of K2 (especially MK-7) show improvements in arterial stiffness and bone markers in postmenopausal women, but no large trial has tested D + K2 vs D alone for hard cardiovascular or fracture endpoints
+4. The "D without K2 calcifies arteries" framing is a popularized simplification - clinically meaningful vascular calcification from standard-dose D supplementation in K2-replete or even average individuals has not been demonstrated, and the warning is more relevant to high-dose D regimens than to typical maintenance dosing
+
+**Evidence needed:** RCTs of D vs D + K2 with vascular calcification and fracture endpoints, dose-response data on MK-4 vs MK-7 forms, K2 status surveys in populations using high-dose D, mechanistic studies isolating K2's contribution to calcium localization at physiological intakes.
+
+---
+
+## Vitamin A and Vitamin D: Synergy, Antagonism, or Noise?
+
+Vitamins A and D both signal through nuclear receptors that share the RXR heterodimerization partner, creating real molecular crosstalk. This biochemistry has produced two opposing popular narratives: that adequate vitamin A is necessary for D's immune and bone effects, and that excess vitamin A antagonizes D and worsens fracture risk. Both narratives outrun the human evidence.
+
+**Competing claims:**
+
+1. Cellular and animal studies show that retinoic acid (active A) and 1,25(OH)2D compete for RXR availability - in extreme conditions, one can attenuate the other's transcriptional effects
+2. Observational human data on high preformed retinol intake and fracture risk is mixed - some cohorts show increased hip fracture risk at high intakes, others show no association after adjustment
+3. The tweet-level claim that "adequate vitamin A maximizes immune health and bone density alongside D" is not supported by trial evidence - no RCT shows that adding vitamin A to D supplementation in non-deficient individuals improves immune or skeletal outcomes
+4. Practical risk asymmetry: preformed vitamin A (retinol) has a relatively narrow therapeutic window with documented hepatotoxicity and teratogenicity - "stack A with D" advice without status assessment is more likely to cause harm than to add benefit in typical Western or Indian diets
+
+**Evidence needed:** Human RCTs of A + D vs D alone for immune and skeletal endpoints, preformed retinol vs beta-carotene intake stratification in fracture cohorts, vitamin A status surveys in populations advised to co-supplement, dose thresholds at which A meaningfully antagonizes D signaling in vivo.
+
+---
+
+## Drug Interactions
+
+Several drug classes meaningfully impair vitamin D status or interact with D supplementation. Co-nutrient interactions (magnesium, K2, vitamin A) are addressed in their own sections above.
+
+- **Glucocorticoids** (prednisone, dexamethasone): reduce intestinal calcium absorption and accelerate D catabolism via 24-hydroxylase induction. Chronic users have measurably lower 25(OH)D and elevated fracture risk - glucocorticoid-induced osteoporosis (GIOP) has its own treatment guidelines.
+- **CYP-inducing anticonvulsants** (phenytoin, phenobarbital, carbamazepine): induce hepatic enzymes that accelerate D metabolism, with documented osteomalacia in long-term users since the 1970s. Newer agents (lamotrigine, levetiracetam, valproate) lack the same CYP induction and appear largely D-neutral, though long-term data is thinner.
+- **Bile acid sequestrants** (cholestyramine, colesevelam) **and orlistat**: impair fat-soluble vitamin absorption via fat malabsorption. Niche populations now - statins replaced sequestrants for most lipid management - but the interaction is mechanistically clean where it applies.
+- **Thiazide diuretics**: reduce urinary calcium excretion. Combined with chronic high-dose D supplementation, this creates a synergistic hypercalcemia risk that is clinically underappreciated, especially in older adults stacking both.
+- **Proton pump inhibitors** *(contested)*: PPI use has been associated with lower 25(OH)D and higher fracture risk in observational studies, but the D-specific pathway is weak - most fracture-risk research goes through calcium absorption, not D status directly. Worth flagging for assessment in long-term PPI users, not treating as a confirmed D-depleting agent.
 
 ---
 
