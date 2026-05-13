@@ -583,7 +583,7 @@ maintainers:
   joined: 2026-03
   topics:
   - Womens-Health
-  last_active: 2026-04
+  last_active: 2026-05
   contributions:
   - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
     type: created
@@ -629,25 +629,6 @@ maintainers:
     type: created
     citations_added: 30
     pr: 187
-  total_citations: 173
-  commits: 5
-trusted: []
-contributors:
-- github: FreeGym
-  joined: 2026-02
-  checkmark: true
-  topics:
-  - nutrition
-  - Womens-Health
-  - exercise-physiology
-  last_active: 2026-05
-  prs_merged: 12
-  substantive_prs: 4
-  contributions:
-  - file: nutrition/Protein/protein-rda.md
-    type: major_edit
-    citations_added: 3
-    pr: 29
   - file: Womens-Health/11-menopause-weight-gain-and-aging.md
     type: edit
     citations_added: 0
@@ -708,8 +689,27 @@ contributors:
     type: created
     citations_added: 0
     pr: 208
-  total_citations: 193
-  commits: 15
+  total_citations: 363
+  commits: 9
+trusted: []
+contributors:
+- github: FreeGym
+  joined: 2026-02
+  checkmark: true
+  topics:
+  - nutrition
+  - Womens-Health
+  - exercise-physiology
+  last_active: 2026-04
+  prs_merged: 11
+  substantive_prs: 3
+  contributions:
+  - file: nutrition/Protein/protein-rda.md
+    type: major_edit
+    citations_added: 3
+    pr: 29
+  total_citations: 3
+  commits: 13
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02

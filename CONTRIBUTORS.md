@@ -9,7 +9,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
 | <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `Nutrition` `Exercise Physiology` `Pharmacology` `Cardiology` `Biomarkers` `Sleep` `Wearables` | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +140 more | 1562 | 83 | 2026-05 | [View](cards/mutant1643.svg) |
-| <a id="Thestrongdoc"></a>⭐ | [@Thestrongdoc](https://github.com/Thestrongdoc) | `Women's Health` | [1-is-it-normal-to-have-irregular-periods.md](Womens-Health/1-is-it-normal-to-have-irregular-periods.md), [2-do-heavy-periods-mean-something-is-wrong.md](Womens-Health/2-do-heavy-periods-mean-something-is-wrong.md), [3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md](Womens-Health/3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md) +8 more | 173 | 5 | 2026-04 | [View](cards/Thestrongdoc.svg) |
+| <a id="Thestrongdoc"></a>⭐ | [@Thestrongdoc](https://github.com/Thestrongdoc) | `Women's Health` | [1-is-it-normal-to-have-irregular-periods.md](Womens-Health/1-is-it-normal-to-have-irregular-periods.md), [2-do-heavy-periods-mean-something-is-wrong.md](Womens-Health/2-do-heavy-periods-mean-something-is-wrong.md), [3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md](Womens-Health/3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md) +23 more | 363 | 9 | 2026-05 | [View](cards/Thestrongdoc.svg) |
 
 ---
 
@@ -17,7 +17,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|--------|---------------|-----------|---------|-------------|------|
-| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `Nutrition` `Women's Health` `Exercise Physiology` | [protein-rda.md](nutrition/Protein/protein-rda.md), [11-menopause-weight-gain-and-aging.md](Womens-Health/11-menopause-weight-gain-and-aging.md), [12-why-women-often-feel-colder-than-men.md](Womens-Health/Energy & Metabolism/12-why-women-often-feel-colder-than-men.md) +13 more | 193 | 15 | 2026-05 | [View](cards/FreeGym.svg) |
+| <a id="FreeGym"></a>✓ | [@FreeGym](https://github.com/FreeGym) | `Nutrition` `Women's Health` `Exercise Physiology` | [protein-rda.md](nutrition/Protein/protein-rda.md) | 3 | 13 | 2026-04 | [View](cards/FreeGym.svg) |
 
 ---
 
@@ -65,7 +65,7 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%AD%90_Maintainer-gold)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#Thestrongdoc)
-[![Citations](https://img.shields.io/badge/Citations-173-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#Thestrongdoc)
+[![Citations](https://img.shields.io/badge/Citations-363-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#Thestrongdoc)
 [![Women's Health](https://img.shields.io/badge/Topic-Women%27s%20Health-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#Thestrongdoc)
 ```
 
@@ -80,7 +80,7 @@ Direct link: `https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main/cards/
 
 ```markdown
 [![FreeGym Verified](https://img.shields.io/badge/FreeGym_Wiki-%E2%9C%93_Verified-red)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
-[![Citations](https://img.shields.io/badge/Citations-193-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
+[![Citations](https://img.shields.io/badge/Citations-3-blue)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Nutrition](https://img.shields.io/badge/Topic-Nutrition-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Women's Health](https://img.shields.io/badge/Topic-Women%27s%20Health-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)
 [![Exercise Physiology](https://img.shields.io/badge/Topic-Exercise%20Physiology-green)](https://github.com/FreeGym/FreeGym-Wiki/blob/main/CONTRIBUTORS.md#FreeGym)

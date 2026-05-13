@@ -109,6 +109,54 @@ jobs:
                       author = info.get("author", {}).get("login", "")
                   if not labels:
                       labels = [l.get("name") for l in info.get("labels", []) if l.get("name")]
+
+          service_accounts = {"FreeGym"}
+
+          def infer_author_from_commits(pr_number, pr_author):
+              """Use the lone human commit author when an org account opened the PR."""
+              if pr_author not in service_accounts:
+                  return pr_author
+
+              result = subprocess.run(
+                  ["gh", "pr", "view", str(pr_number), "--json", "commits"],
+                  capture_output=True, text=True
+              )
+              if result.returncode != 0 or not result.stdout.strip():
+                  raise SystemExit(
+                      f"Fatal: PR #{pr_number} was opened by service account @{pr_author}, "
+                      "but commit authors could not be read."
+                  )
+
+              info = json.loads(result.stdout)
+              ignored = service_accounts | {"github-actions[bot]"}
+              candidates = []
+              for commit in info.get("commits", []) or []:
+                  commit_authors = commit.get("authors", []) or []
+                  if not commit_authors:
+                      continue
+                  # GitHub includes co-authors here. Use the primary commit
+                  # author only so trailers do not create false ambiguity.
+                  login = commit_authors[0].get("login")
+                  if login and login not in ignored:
+                      candidates.append(login)
+
+              unique_candidates = sorted(set(candidates))
+              if len(unique_candidates) == 1:
+                  inferred = unique_candidates[0]
+                  print(f"PR author @{pr_author} is a service account; crediting commit author @{inferred}.")
+                  return inferred
+              if not unique_candidates:
+                  raise SystemExit(
+                      f"Fatal: PR #{pr_number} was opened by service account @{pr_author}, "
+                      "but no human GitHub commit author was found."
+                  )
+              raise SystemExit(
+                  f"Fatal: PR #{pr_number} was opened by service account @{pr_author}, "
+                  f"but multiple human commit authors were found: {', '.join(unique_candidates)}. "
+                  "Process this PR manually to avoid misattribution."
+              )
+
+          author = infer_author_from_commits(pr_number, author)
           is_substantive = "substantive" in labels
 
           # Get list of files changed
@@ -322,7 +370,7 @@ jobs:
               values can never propagate."""
               try:
                   result = subprocess.run(
-                      ["gh", "api", "search/commits",
+                      ["gh", "api", "--method", "GET", "search/commits",
                        "-f", f"q=author:{github_username} repo:FreeGym/FreeGym-Wiki",
                        "--jq", ".total_count"],
                       capture_output=True, text=True, timeout=30
@@ -648,11 +696,15 @@ jobs:
           # Get PR info for branch naming and commit message
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             pr_number="${{ inputs.pr_number }}"
-            author=$(gh pr view "$pr_number" --json author --jq '.author.login')
           else
             pr_number="${{ github.event.pull_request.number }}"
-            author="${{ github.event.pull_request.user.login }}"
           fi
+          author=$(python - <<'PYTHON_SCRIPT'
+          import json
+          with open('pr_analysis.json', 'r') as f:
+              print(json.load(f).get('author', ''))
+          PYTHON_SCRIPT
+          )
 
           git commit -m "Update contributors: $author (PR #${pr_number})"
 

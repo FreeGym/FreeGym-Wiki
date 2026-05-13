@@ -59,9 +59,11 @@ jobs:
             --exclude "^https://www\\.ahajournals\\.org"
             --exclude "^https://www\\.cochranelibrary\\.com"
             --exclude "^https://www\\.researchgate\\.net"
+            --exclude "^https://fdc\\.nal\\.usda\\.gov/fdc-app\\.html"
             --exclude "^https://www\\.foodsafety\\.gov/"
             --exclude "^https://www\\.fsis\\.usda\\.gov/"
             --exclude "^https://www\\.fda\\.gov/food/food-additives-petitions/"
+            --exclude "^https://www\\.fda\\.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen"
             --exclude "^https://www\\.anid\\.cl/"
             --exclude "^https://www\\.nifa\\.usda\\.gov/"
             --exclude "^https://www\\.daytwo\\.com/"
@@ -77,6 +79,7 @@ jobs:
             --exclude "^https://(?:www\\.)?diabetesjournals\\.org"
             --exclude "^https://(?:www\\.)?cell\\.com"
             --exclude "^https://(?:www\\.)?jacc\\.org"
+            --exclude "^https://www\\.fertstert\\.org/"
             --exclude "^https://eprints\\.gla\\.ac\\.uk"
             --timeout 30
             '**/*.md'
