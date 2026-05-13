@@ -640,16 +640,76 @@ contributors:
   - nutrition
   - Womens-Health
   - exercise-physiology
-  last_active: 2026-04
-  prs_merged: 11
-  substantive_prs: 3
+  last_active: 2026-05
+  prs_merged: 12
+  substantive_prs: 4
   contributions:
   - file: nutrition/Protein/protein-rda.md
     type: major_edit
     citations_added: 3
     pr: 29
-  total_citations: 3
-  commits: 13
+  - file: Womens-Health/11-menopause-weight-gain-and-aging.md
+    type: edit
+    citations_added: 0
+    pr: 208
+  - file: Womens-Health/Energy & Metabolism/12-why-women-often-feel-colder-than-men.md
+    type: major_edit
+    citations_added: 29
+    pr: 208
+  - file: Womens-Health/Energy & Metabolism/13-does-iron-deficiency-always-make-you-tired.md
+    type: major_edit
+    citations_added: 11
+    pr: 208
+  - file: Womens-Health/Energy & Metabolism/energy-and-metabolism.md
+    type: created
+    citations_added: 0
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/17-does-your-period-actually-sync-with-other-women.md
+    type: created
+    citations_added: 24
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/18-are-menstrual-migraines-different-from-regular-migraines.md
+    type: created
+    citations_added: 16
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/20-late-luteal-fatigue.md
+    type: created
+    citations_added: 17
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/21-female-hair-loss.md
+    type: created
+    citations_added: 22
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/22-does-seed-cycling-actually-balance-hormones.md
+    type: created
+    citations_added: 11
+    pr: 208
+  - file: Womens-Health/Menstrual & Hormonal Health/menstrual-and-hormonal-health.md
+    type: major_edit
+    citations_added: 0
+    pr: 208
+  - file: Womens-Health/Training & Recovery/14-is-creatine-actually-useful-for-women.md
+    type: major_edit
+    citations_added: 14
+    pr: 208
+  - file: Womens-Health/Training & Recovery/15-is-cycle-syncing-your-workouts-real-science.md
+    type: major_edit
+    citations_added: 14
+    pr: 208
+  - file: Womens-Health/Training & Recovery/16-do-women-recover-differently-from-hard-workouts.md
+    type: major_edit
+    citations_added: 12
+    pr: 208
+  - file: Womens-Health/Training & Recovery/19-do-women-need-different-protein-intake-than-men.md
+    type: created
+    citations_added: 20
+    pr: 208
+  - file: Womens-Health/Training & Recovery/training-and-recovery.md
+    type: created
+    citations_added: 0
+    pr: 208
+  total_citations: 193
+  commits: 15
   checkmark_pr: 29
 - github: github-actions[bot]
   joined: 2026-02
