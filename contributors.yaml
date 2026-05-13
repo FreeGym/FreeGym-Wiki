@@ -576,8 +576,56 @@ maintainers:
     type: edit
     citations_added: 0
     pr: 203
-  total_citations: 1562
-  commits: 83
+  - file: nutrition/Micronutrients/Vitamin D/blind-supplementation.md
+    type: created
+    citations_added: 15
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/do-the-big-vitamin-d-trials-actually-answer-the-right-questions.md
+    type: created
+    citations_added: 33
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/population-guidelines-vs-individual-decisions.md
+    type: created
+    citations_added: 24
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/the-vitamin-d-threshold-war.md
+    type: created
+    citations_added: 17
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-for-athletes.md
+    type: created
+    citations_added: 33
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-in-high-prevalence-regions.md
+    type: created
+    citations_added: 20
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-testing-can-you-trust-the-number.md
+    type: created
+    citations_added: 24
+    pr: 212
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d.md
+    type: major_edit
+    citations_added: 0
+    pr: 212
+  - file: wearables/Wearable Fitness Trackers/are-recovery-readiness-and-stress-scores-meaningful.md
+    type: created
+    citations_added: 7
+    pr: 212
+  - file: wearables/Wearable Fitness Trackers/can-your-watch-screen-for-heart-conditions.md
+    type: created
+    citations_added: 18
+    pr: 212
+  - file: wearables/Wearable Fitness Trackers/is-wearable-heart-rate-accurate-enough-to-be-useful.md
+    type: created
+    citations_added: 6
+    pr: 212
+  - file: wearables/Wearable Fitness Trackers/what-can-a-wearable-physically-measure.md
+    type: created
+    citations_added: 10
+    pr: 212
+  total_citations: 1769
+  commits: 255
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
