@@ -624,8 +624,16 @@ maintainers:
     type: created
     citations_added: 10
     pr: 212
+  - file: biomarkers/Blood Sugar & Metabolic Health/blood-sugar-and-metabolic-health.md
+    type: major_edit
+    citations_added: 0
+    pr: 215
+  - file: biomarkers/Lipids/lipids.md
+    type: major_edit
+    citations_added: 0
+    pr: 215
   total_citations: 1769
-  commits: 255
+  commits: 258
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
