@@ -61,6 +61,25 @@ Discordance is not rare. It's particularly common in metabolic syndrome, insulin
 
 ---
 
+## Non-HDL Cholesterol: The Free Marker That Should Be Standard
+
+Non-HDL cholesterol is calculated by subtracting HDL-C from total cholesterol. The arithmetic is trivial. The biology is meaningful: non-HDL captures cholesterol in every atherogenic lipoprotein - LDL, VLDL, IDL, chylomicron remnants, and Lp(a) - not just LDL. Because every atherogenic particle carries exactly one ApoB molecule, non-HDL cholesterol correlates tightly with ApoB and tracks the same underlying biology. It costs nothing extra (it's calculated from numbers already on every lipid panel), doesn't require fasting, and isn't distorted by elevated triglycerides the way calculated LDL-C is.
+
+Despite this, non-HDL cholesterol is rarely reported as a primary number on US lipid panels. European guidelines (ESC) have promoted non-HDL alongside LDL-C for years. The 2018 ACC/AHA guidelines include non-HDL targets but in practice clinicians still anchor on LDL-C. The case for moving non-HDL to the primary slot: it captures more atherogenic biology than LDL-C, requires no new assay, eliminates the Friedewald error problem at high triglycerides, and is essentially free.
+
+The case against is mostly inertia and a concern about clinical familiarity. Decades of risk calculators, treatment thresholds, and patient communication have been built around LDL-C. Switching the primary marker requires retooling guidelines, EMR systems, and conversation scripts. Non-HDL adds 30 mg/dL to LDL-C targets (a normal triglyceride-rich lipoprotein contribution), which is intuitive once you know it but confusing during transition.
+
+**Competing claims:**
+
+1. Non-HDL cholesterol should be the primary lipid target, with LDL-C demoted to a secondary number - it captures all atherogenic particles, isn't distorted by triglyceride levels, requires no extra testing, and brings practice closer to the underlying biology that ApoB measures more directly
+2. Non-HDL is the right intermediate step between LDL-C and ApoB - it's free, on every panel already, and captures most of ApoB's added value in patients with elevated triglycerides; rolling out ApoB universally is expensive, but rolling out non-HDL is just a reporting change
+3. The clinical inertia around LDL-C is too entrenched to overcome with a simple arithmetic substitute - changing primary targets requires retraining clinicians, re-educating patients, and revising risk calculators, all for a marker that adds modest value in most patients
+4. Non-HDL and ApoB convey nearly identical information, so the choice between them is more practical than scientific - non-HDL wins on cost and availability, ApoB wins on directness and standardization; either is superior to LDL-C alone for risk assessment in metabolic syndrome populations
+
+**Evidence needed:** Non-HDL vs LDL-C head-to-head outcome prediction studies, ESC vs ACC/AHA guideline implementation outcomes, lipid panel reporting changes and clinical decision impact, non-HDL vs ApoB concordance in metabolic syndrome populations, treatment threshold equivalents between LDL-C, non-HDL, and ApoB.
+
+---
+
 ## Is "Good Cholesterol" Actually Good?
 
 HDL cholesterol was the hero of the lipid world for decades. Higher HDL, lower cardiovascular risk. The epidemiological association is robust. HDL was nicknamed "good cholesterol" and became a primary target - exercise raises it, moderate alcohol raises it, and several drug classes were developed specifically to raise it.
@@ -80,6 +99,25 @@ This forced a rethinking. HDL-C may be a marker of metabolic health rather than 
 
 ---
 
+## Niacin: The Drug That Hit Every Marker and Didn't Save Lives
+
+Niacin (nicotinic acid) hits more lipid markers than any other single drug. It raises HDL-C by 15-35%, lowers LDL-C by 5-25%, lowers triglycerides by 20-50%, and lowers Lp(a) by 20-30% - making it the only commonly available drug that meaningfully reduces Lp(a). For decades, niacin was foundational dyslipidemia therapy. The Coronary Drug Project (CDP, 1975) showed niacin reduced non-fatal MI in men with prior MI, and 15-year follow-up suggested mortality benefit. The pharmacology was compelling, the markers all moved in the right direction, and the early outcome data supported the use.
+
+Then the modern trials came. AIM-HIGH (2011) added extended-release niacin to statin therapy in patients with controlled LDL and low HDL; the trial was stopped early for futility, with no cardiovascular benefit despite HDL improvement. HPS2-THRIVE (2014) tested niacin/laropiprant added to statin in 25,673 high-risk patients; no benefit on the primary endpoint, and increased rates of diabetes, infection, GI side effects, and bleeding. The clinical implication was stark: even a drug that improved every lipid marker simultaneously did not translate into outcome benefit in the statin era.
+
+The dissection of why has been instructive. The baseline lipid milieu was different in CDP (pre-statin era) versus AIM-HIGH/HPS2-THRIVE (everyone already on statin). The HDL increase that looked beneficial in observational data didn't translate to function-driven cardioprotection. Niacin's side effect burden (flushing - which is dose-limiting and reduces adherence; hepatotoxicity; hyperglycemia; gout; myopathy when combined with statins) became unjustifiable when the outcome benefit evaporated. The drug is now rarely prescribed for lipid indications.
+
+**Competing claims:**
+
+1. Niacin's modern trials definitively closed the case - in statin-treated patients, raising HDL and lowering triglycerides with niacin doesn't reduce events, and the side effect profile makes continued use indefensible; the historical CDP benefit reflects a pre-statin era that no longer applies
+2. Niacin retains a niche for patients with elevated Lp(a) who can't access or afford newer Lp(a)-targeted therapies - it's the only widely available drug that lowers Lp(a) meaningfully, and individual decisions in high-Lp(a) patients may still favor niacin despite the negative trials
+3. The niacin trials are another surrogate-endpoint cautionary tale - they prove that improving HDL, triglycerides, and Lp(a) simultaneously doesn't necessarily prevent events, and the assumption that a comprehensive lipid panel improvement equals clinical benefit is wrong
+4. AIM-HIGH and HPS2-THRIVE tested niacin added to statin in already well-treated patients - the marginal benefit of additional lipid improvement on top of LDL already reduced was always going to be small; the trials prove niacin isn't useful on top of statin, not that niacin is useless
+
+**Evidence needed:** AIM-HIGH and HPS2-THRIVE subgroup analyses, Coronary Drug Project long-term follow-up, niacin and Lp(a) reduction outcome data, niacin in statin-intolerant populations, flushing tolerance and adherence studies, comparison with newer Lp(a)-targeted therapies.
+
+---
+
 ## What Do Triglycerides Actually Tell You?
 
 Triglycerides are the most abundant fat in the blood. Elevated triglycerides are associated with cardiovascular risk, but the relationship is more complicated than the LDL story. Triglycerides travel inside VLDL and other triglyceride-rich lipoproteins. When triglycerides are high, VLDL particles are large and numerous, and as they're metabolized, they leave behind atherogenic remnant particles. It may be these remnants - not the triglycerides themselves - that drive risk.
@@ -96,6 +134,25 @@ The fasting vs non-fasting question adds another layer. Triglycerides are the mo
 4. Non-fasting triglycerides should be the standard because they reflect real-world physiology and predict events at least as well as fasting values - the insistence on fasting creates barriers to testing without improving clinical utility
 
 **Evidence needed:** Mendelian randomization studies on triglycerides and remnant cholesterol, REDUCE-IT trial data (icosapent ethyl), TG/HDL ratio and insulin resistance correlation studies, non-fasting vs fasting triglyceride comparison data for risk prediction, remnant cholesterol measurement methods and outcomes data.
+
+---
+
+## Remnant Cholesterol: The Real Culprit Hiding in Triglycerides?
+
+Remnant cholesterol is the cholesterol carried in triglyceride-rich lipoproteins and their remnants - VLDL, IDL, and chylomicron remnants. It can be estimated from a standard lipid panel by subtraction: Total Cholesterol minus LDL-C minus HDL-C equals remnant cholesterol. The number sits on every panel already, invisible because it's never reported. And it may matter more than the markers that get all the attention.
+
+The Mendelian randomization evidence is striking. Studies from Børge Nordestgaard's group at the Copenhagen General Population Study, and replications in other cohorts, have shown that genetically elevated remnant cholesterol is associated with ischemic heart disease independent of LDL-C. The genetic instrument removes confounding from lifestyle, diet, and reverse causation, supporting a causal relationship. Triglycerides themselves may not be directly atherogenic - they're cleared metabolically without lasting effect - but the remnant particles left behind after triglyceride hydrolysis can enter the arterial wall, be retained, and trigger atherosclerosis much like LDL does.
+
+This reframes the triglyceride story. Elevated triglycerides matter not because triglycerides themselves are bad, but because they signal a population of remnant particles that are atherogenic. It also reframes the fibrate failures: drugs that lower triglycerides without specifically reducing remnant particles wouldn't be expected to prevent events. And it points toward measuring remnant cholesterol directly as a clinical tool, which is now possible at modest additional cost via NMR-based fractionation or formal lipoprotein analysis.
+
+**Competing claims:**
+
+1. Remnant cholesterol should be calculated and reported on every standard lipid panel - the numbers required are already on the panel, the Mendelian randomization evidence supports causality, and an elevated remnant level identifies risk that LDL-C alone misses; not reporting it is a missed opportunity at zero cost
+2. Direct remnant cholesterol measurement (via NMR or specialized assays) is more accurate than the calculated estimate and should become a standard advanced lipid test - the calculated version inherits Friedewald limitations and underestimates remnants in patients with severe hypertriglyceridemia
+3. Remnant cholesterol is what fibrates and other triglyceride-lowering agents should have been targeting all along - the surrogate-endpoint failure of fibrates may reflect that they lowered triglycerides without specifically reducing remnant particle number, while drugs like icosapent ethyl may work in part by altering remnant biology more effectively
+4. The clinical case for remnant cholesterol is largely epidemiological and mechanistic; no randomized trial has yet shown that targeting remnant cholesterol specifically (independent of LDL or triglycerides) reduces events, so adopting it as a primary target is premature
+
+**Evidence needed:** Copenhagen Mendelian randomization studies on remnant cholesterol, direct vs calculated remnant measurement comparison, remnant cholesterol incremental risk prediction beyond LDL-C and ApoB, outcome trials of interventions targeting remnant cholesterol specifically, remnant cholesterol response to dietary and pharmacological interventions.
 
 ---
 
@@ -121,6 +178,27 @@ The fibrate story fits the broader pattern: lowering a biomarker (triglycerides)
 4. Icosapent ethyl's success in REDUCE-IT is commonly cited as vindication of triglyceride lowering, but STRENGTH's null result with a different omega-3 formulation suggests REDUCE-IT's benefit may be EPA-specific rather than triglyceride-specific, further weakening the surrogate interpretation
 
 **Evidence needed:** FIELD, ACCORD-Lipid, and PROMINENT detailed subgroup analyses, REDUCE-IT vs STRENGTH mechanism reconciliation, ApoB and remnant cholesterol as outcome-relevant targets, Mendelian randomization on triglycerides vs remnant cholesterol vs specific lipoprotein fractions, pemafibrate post-trial analyses.
+
+---
+
+## Omega-3 for Cardiovascular Prevention: EPA, DHA, and the REDUCE-IT Question
+
+Omega-3 fatty acids - EPA (eicosapentaenoic acid) and DHA (docosahexaenoic acid) - have been studied for cardiovascular prevention for decades. The original observations came from Greenland Inuit populations with high marine fat intake and low cardiovascular disease rates. Mechanistic studies showed effects on triglycerides, inflammation, platelet function, and arrhythmia susceptibility. Generations of cardiologists recommended fish oil supplementation. The trial record is more mixed and more interesting than the supplement aisle suggests.
+
+The low-dose OTC supplement story is essentially negative. VITAL (2018, 25,871 participants, omega-3 1g/day for primary prevention) showed no significant reduction in the primary cardiovascular endpoint. ASCEND (2018, 15,480 diabetics, omega-3 1g/day) similarly null. Multiple meta-analyses of low-to-moderate dose omega-3 supplementation in mixed populations have shown small or no effect. The widely sold 1g fish oil capsule does not prevent cardiovascular events at population scale.
+
+REDUCE-IT (2018) tested something different: 4g/day of icosapent ethyl (pure EPA, no DHA) in 8,179 statin-treated patients with elevated triglycerides and cardiovascular risk. The result was a 25% relative reduction in major adverse cardiovascular events. STRENGTH (2020) tested a similar high dose of EPA plus DHA in a similar population - and was stopped for futility. The contrast is the central puzzle. Either EPA specifically is cardioprotective and DHA neutralizes or counteracts it; or the mineral oil placebo used in REDUCE-IT (which mildly raised inflammatory and lipid markers in the placebo arm) artificially inflated the apparent benefit; or some other unmeasured difference between the trials produced the divergent results.
+
+The 2024 FDA actions retained icosapent ethyl's cardiovascular indication. The 2023 ESC guidelines recommend it for the specific population studied in REDUCE-IT. Most cardiologists no longer recommend OTC fish oil supplements for cardiovascular prevention, but the supplement industry continues to sell them on the older mechanism story.
+
+**Competing claims:**
+
+1. The REDUCE-IT result is real and pharmacologically specific to high-dose pure EPA - the failure of STRENGTH and low-dose mixtures reflects that DHA blunts EPA's benefit or that EPA-specific mechanisms (membrane stability, anti-inflammatory effects) require pure-EPA dosing; icosapent ethyl deserves wider adoption in eligible patients
+2. The REDUCE-IT benefit is partly or wholly attributable to the mineral oil placebo - the placebo group's LDL and CRP rose during the trial, inflating the comparison; without an inert placebo arm, the magnitude of EPA's true benefit is uncertain
+3. OTC fish oil supplements should be removed from cardiovascular prevention recommendations entirely - VITAL, ASCEND, and meta-analyses are clear that 1g/day doesn't prevent events; continued recommendation by clinicians and supplement companies misleads patients and wastes money
+4. Omega-3 supplementation has effects beyond cardiovascular events - triglyceride lowering, cognitive function, mood, inflammation, joint health - so blanket dismissal of supplements based on CV outcome trials ignores the broader use case, even if the cardiovascular claim is now unsupportable
+
+**Evidence needed:** REDUCE-IT mineral oil placebo analyses and re-evaluations, STRENGTH vs REDUCE-IT mechanistic reconciliation, EPA-specific vs EPA+DHA pharmacology in arterial biology, OTC fish oil dose-response studies, non-cardiovascular omega-3 outcome data (cognition, inflammation, depression).
 
 ---
 
@@ -174,6 +252,25 @@ There is some truth to the premise. Small dense LDL is associated with higher ca
 4. Size reflects underlying metabolic health (insulin resistance produces small dense LDL) and is useful as a marker of metabolic syndrome even if it doesn't independently drive risk - it has clinical value even if the causal story is about particle number
 
 **Evidence needed:** Studies adjusting cardiovascular outcomes for both LDL particle number and size simultaneously, mechanistic studies on particle size and arterial wall penetration, Mendelian randomization on LDL size and CVD (independent of particle count), outcomes data on lean mass hyper-responders with high LDL but predominantly large particles.
+
+---
+
+## Oxidized LDL: Necessary Step or Marker of Trouble?
+
+The oxidation hypothesis of atherosclerosis predates much of the modern LDL story. The proposal: native LDL is relatively inert in the arterial wall, but once LDL is oxidized - by reactive oxygen species, by myeloperoxidase, by other mechanisms - it becomes biologically active. Oxidized LDL (oxLDL) is recognized by macrophage scavenger receptors that don't downregulate with cholesterol accumulation, leading to foam cell formation and plaque progression. In this model, LDL concentration matters because it provides the substrate, but the oxidative environment of the arterial wall determines whether atherosclerosis develops.
+
+Oxidized LDL can be measured in plasma, though it's not on standard panels. Multiple assays exist (most commonly antibody-based, like the Mercodia oxLDL assay measuring oxidized phospholipid epitopes on ApoB-100). Epidemiological data consistently show that elevated circulating oxLDL is associated with cardiovascular events, often with stronger prediction than LDL-C in adjusted models. Statins lower oxLDL substantially. Antioxidant supplementation - vitamin E, beta-carotene - was the obvious next step.
+
+That step failed. The HOPE trial (vitamin E, 2000) showed no cardiovascular benefit. The HPS antioxidant arm (2002) was null. Meta-analyses of vitamin E trials suggest no benefit and possibly small harm at high doses. The implication: oxidative stress may be involved in atherosclerosis, but supplementing with isolated antioxidants doesn't reduce it in a way that improves outcomes. Whether this means oxLDL isn't truly causal, or whether antioxidant supplements simply don't reach the relevant sites of oxidation, is still debated.
+
+**Competing claims:**
+
+1. Oxidized LDL is the actual atherogenic species, and LDL-C is a proxy for the substrate available for oxidation - this explains why patients with normal LDL still develop atherosclerosis (high oxidative stress oxidizes whatever LDL is available) and why some high-LDL patients don't (low oxidative stress preserves native LDL); measuring oxLDL adds independent risk information
+2. The failure of antioxidant trials argues against the oxidation hypothesis as a direct therapeutic target - if oxidation were the proximate cause, large-scale antioxidant intervention should have helped; the null results suggest that oxidation is a downstream marker, not the upstream driver
+3. The oxLDL story is consistent with the LDL hypothesis, not in conflict with it - oxidation occurs in the arterial wall after LDL retention, and reducing the LDL substrate is more effective than trying to reduce oxidation after particles are already deposited; this is why statins outperform antioxidants
+4. Plasma oxLDL measurement reflects systemic oxidative status but may not predict arterial wall oxidation specifically - the assays detect circulating oxidized particles, while atherosclerosis depends on intima-resident oxidation; clinical utility of plasma oxLDL is therefore limited compared to its mechanistic interest
+
+**Evidence needed:** oxLDL incremental prediction beyond LDL-C and ApoB in long-term cohort studies, statin effects on oxLDL and correlation with outcome benefit, antioxidant trial meta-analyses (HOPE, HPS, ATBC, CARET), assay standardization for oxLDL measurement, arterial wall vs plasma oxLDL discordance studies.
 
 ---
 
@@ -272,6 +369,48 @@ But dismissing all statin muscle symptoms as nocebo is also wrong. Statin myopat
 
 ---
 
+## Ezetimibe and the IMPROVE-IT Validation
+
+For decades after the statin revolution, every other LDL-lowering approach was viewed skeptically. The Coronary Drug Project, AIM-HIGH, and the CETP inhibitor failures had established a pattern: lowering a lipid marker through a non-statin mechanism did not reliably translate into outcome benefit. The "statin or nothing" mindset was widespread enough that even sensible adjunctive therapies struggled for credibility.
+
+Ezetimibe entered this environment in 2002. It inhibits intestinal cholesterol absorption by blocking the NPC1L1 transporter at the brush border, reducing dietary and biliary cholesterol uptake and lowering LDL-C by 15-20% as monotherapy and an additional 20-25% when added to statin. The mechanism is non-statin and non-PCSK9. For years, ezetimibe was approved and widely prescribed based on the LDL-lowering effect alone, with no outcome trial. Critics argued this was exactly the kind of surrogate-endpoint approval that the fibrate story should have warned against.
+
+IMPROVE-IT (2015) provided the answer. The trial randomized 18,144 patients post-acute coronary syndrome to simvastatin alone or simvastatin plus ezetimibe, with median 6-year follow-up. The combination arm achieved a median LDL-C of 53 mg/dL versus 70 mg/dL in the simvastatin arm. The primary endpoint - a composite of cardiovascular death, MI, unstable angina, revascularization, or stroke - was reduced by 6.4% relative (absolute 2%). The result was modest but statistically significant, and the implication was important: non-statin LDL lowering does reduce events, in proportion to the LDL reduction achieved.
+
+IMPROVE-IT validated the LDL hypothesis beyond statins and made the case for combination therapy in patients who can't reach LDL targets on statins alone. It also reset expectations: a modest LDL reduction produces a modest outcome benefit, in keeping with the broader "more LDL lowering equals more event reduction" pattern that statin trials had established.
+
+**Competing claims:**
+
+1. IMPROVE-IT changed the framing of non-statin lipid therapy - it proved that LDL reduction reduces events regardless of mechanism, validating ezetimibe and supporting the subsequent PCSK9 inhibitor and bempedoic acid trials; the era of "statin or nothing" was correctly ended
+2. The IMPROVE-IT benefit was small in absolute terms (2% absolute over 6 years) and obtained only by adding a second drug to high-risk post-ACS patients - extrapolating this to primary prevention or non-ACS populations isn't supported by the trial, and ezetimibe's broader use deserves more scrutiny
+3. Ezetimibe is the appropriate first add-on for statin-intolerant patients or patients not at LDL goal on maximum-tolerated statin - it has decades of safety data, no major drug interactions, and modest cost; PCSK9 inhibitors and bempedoic acid should be reserved for patients who need further reduction beyond statin-plus-ezetimibe
+4. The IMPROVE-IT effect size raises questions about cost-effectiveness in lower-risk populations - the absolute risk reduction depends entirely on baseline risk, and adding ezetimibe to lower-risk primary prevention patients produces benefits too small to justify in many health systems
+
+**Evidence needed:** IMPROVE-IT subgroup analyses by baseline LDL and risk, ezetimibe in primary prevention outcome data, comparative effectiveness of ezetimibe vs PCSK9 inhibitors as second-line agents, real-world adherence and discontinuation rates for ezetimibe, generic ezetimibe pricing impact on prescribing patterns.
+
+---
+
+## Bempedoic Acid and Inclisiran: The New LDL-Lowering Arsenal
+
+Two newer agents have entered the LDL-lowering market with different mechanisms and different positioning. Bempedoic acid inhibits ATP-citrate lyase (ACL), an enzyme upstream of HMG-CoA reductase in the cholesterol synthesis pathway. Because ACL is activated in liver but not skeletal muscle, bempedoic acid produces meaningful LDL reduction without the muscle side effects that plague statin-intolerant patients. Inclisiran is a small interfering RNA (siRNA) that targets PCSK9 mRNA in hepatocytes, reducing PCSK9 protein production and increasing LDL receptor recycling - achieving the same end as PCSK9 monoclonal antibodies but with twice-yearly subcutaneous injection rather than every 2-4 weeks.
+
+CLEAR Outcomes (2023) tested bempedoic acid in 13,970 statin-intolerant patients with high cardiovascular risk. The primary composite endpoint was reduced by 13% relative (absolute 1.6% over 3.4 years). The trial provided the first cardiovascular outcome data for a non-statin oral LDL-lowering drug in statin-intolerant patients - a clinically important and previously underserved population. The benefit was modest, consistent with the modest LDL reduction (~17%), and aligned with the broader pattern that outcome benefit scales with LDL reduction regardless of mechanism.
+
+Inclisiran's outcome trials are ongoing. The ORION program has demonstrated robust LDL reduction (~50% from baseline) with twice-yearly dosing, but cardiovascular outcome data is still maturing (ORION-4 expected 2026). The lead positioning argument is adherence: a twice-yearly injection administered in the clinic eliminates the daily-medication compliance problem that plagues lifelong statin therapy.
+
+Both drugs raise unresolved questions about cost, access, durability, and positioning. Bempedoic acid is oral and modestly priced, well-suited to statin-intolerant patients, with established outcome benefit. Inclisiran is expensive, requires healthcare-system delivery, and lacks completed outcome trials, but offers an adherence model that no oral drug can match.
+
+**Competing claims:**
+
+1. Bempedoic acid fills a genuine clinical gap for statin-intolerant patients - CLEAR Outcomes provides the outcome evidence that ezetimibe alone couldn't, and the muscle-sparing mechanism is mechanistically supported; it should be standard second-line therapy in statin-intolerant patients
+2. Inclisiran's value depends entirely on ORION-4 results - if cardiovascular outcomes match the LDL reduction, the twice-yearly dosing model could transform lipid management; if outcomes disappoint relative to LDL reduction, the cost-benefit collapses
+3. The expanding LDL-lowering arsenal addresses real clinical gaps but also creates a tiered system based on insurance and access - bempedoic acid is generic-priced eventually and accessible; PCSK9 antibodies and inclisiran are expensive and gatekept; this two-tier reality undermines the population-level benefit of better LDL-lowering options
+4. The proliferation of new agents reflects a strategic pivot by lipid pharma after the statin patent cliffs - the clinical need exists, but the marketing and pricing strategies focus on relatively niche populations (statin-intolerant, FH) where premium prices are easier to defend, while broader populations remain on cheaper generic statins
+
+**Evidence needed:** CLEAR Outcomes long-term follow-up and subgroup analyses, ORION-4 cardiovascular outcomes (expected 2026), real-world adherence data on inclisiran twice-yearly dosing, cost-effectiveness analyses across LDL-lowering drug classes, bempedoic acid generic-pricing impact on access.
+
+---
+
 ## Medications That Shift Your Lipid Panel
 
 Multiple common medications alter lipid values independently of lifestyle or disease, producing patterns that can be misread as dyslipidemia.
@@ -352,6 +491,46 @@ Meanwhile, in young adults, early detection and treatment of elevated LDL may ha
 
 ---
 
+## Familial Hypercholesterolemia: The Genetic Disease That Mostly Goes Undiagnosed
+
+Familial hypercholesterolemia (FH) is one of the most common Mendelian disorders in medicine and one of the most underdiagnosed. The heterozygous form occurs in approximately 1 in 250 people - more common than type 1 diabetes. It's caused by mutations in the LDL receptor (most cases), ApoB (the LDL receptor ligand), or PCSK9 gain-of-function (less common). The functional consequence is reduced hepatic LDL clearance, producing LDL-C levels typically in the 190-400 mg/dL range from childhood onward. Untreated heterozygous FH carries roughly a 20-fold increased risk of premature coronary heart disease - first MIs in men in their 40s-50s, in women in their 50s-60s.
+
+Despite the high prevalence and the dramatic risk, FH is diagnosed in fewer than 10% of affected individuals globally. Several barriers compound the under-diagnosis. There's no single diagnostic threshold (clinical criteria like the Dutch Lipid Clinic Network, Simon Broome, and MEDPED use combinations of LDL level, family history, physical findings, and genetic testing). Many patients with elevated LDL get treated empirically with statins without ever being identified as having a heritable condition. The diagnosis matters because it should trigger cascade screening of first-degree relatives, each of whom has a 50% probability of inheriting the variant - a high-yield genetic screening opportunity that's almost never executed in primary care.
+
+Treatment of FH requires substantial LDL reduction, often beyond what statin monotherapy achieves. Combination therapy with ezetimibe, PCSK9 inhibitors, bempedoic acid, or (for homozygous FH) more specialized agents like evinacumab, lomitapide, or LDL apheresis is frequently needed. Yet treatment intensity in identified FH patients is also routinely insufficient - registry data consistently show that diagnosed FH patients fail to reach LDL goals, often because clinicians treat their elevated LDL as a generic dyslipidemia rather than recognizing the lifetime exposure context.
+
+**Competing claims:**
+
+1. Universal lipid screening in adolescence (with reflexive cascade testing for elevated values) is the most effective way to identify FH at population scale - waiting for symptoms misses decades of preventable risk, and the genetic and lipid testing required is inexpensive enough to justify universal screening
+2. The bigger problem isn't undiagnosed FH per se but undertreated FH - many patients with diagnostically obvious elevated LDL get statin monotherapy and are considered "treated" despite LDL remaining well above goal; aggressive combination therapy should be standard in identified FH patients
+3. Cascade screening of first-degree relatives after an FH diagnosis is the highest-yield genetic intervention in cardiology - each known FH patient identifies approximately 8 additional family members at 50% risk; building cascade screening into clinical workflows would transform population FH identification
+4. The FH diagnostic framework is overly complicated - LDL-C above 190 in adults (or above 160 in children) with family history of premature CHD should trigger treatment intensification regardless of formal FH labeling; the diagnostic complexity has become an obstacle to clinical action
+
+**Evidence needed:** Population FH prevalence by genetic vs clinical criteria, cascade screening implementation outcomes, FH treatment intensity and LDL goal achievement registries, universal pediatric lipid screening cost-effectiveness, FH outcomes by treatment intensity in long-term cohorts.
+
+---
+
+## Menopause, HRT, and the Lipid Timing Hypothesis
+
+The menopausal transition reshapes the lipid panel. As estrogen levels decline, LDL-C typically rises 10-15%, HDL-C may decline modestly, triglycerides often rise, and Lp(a) increases - sometimes substantially in women who had previously normal levels. The cardiovascular risk gap between men and women narrows in the decade after menopause, and lipid changes account for part of that convergence. Whether and how to use hormone replacement therapy (HRT) to modify this transition has been one of the most consequential and confused debates in modern medicine.
+
+Pre-2002, observational data consistently associated HRT with reduced cardiovascular events. The Nurses' Health Study and others showed roughly a 40% lower CHD rate in HRT users. Mechanism studies confirmed favorable lipid effects: oral estrogen lowered LDL ~10-15% and raised HDL ~10%. Cardiologists widely recommended HRT for cardiovascular protection. Then HERS (1998) and the Women's Health Initiative (WHI, 2002) randomized older women with established or moderate cardiovascular risk to HRT versus placebo. WHI was stopped early for harm: increased breast cancer, stroke, and venous thromboembolism in the HRT arm, with no cardiovascular benefit. HRT prescribing collapsed.
+
+The reanalysis in subsequent years identified a timing hypothesis. WHI enrolled women with an average age of 63 - typically 10+ years past menopause. Most existing atherosclerotic plaque had already formed in the post-menopausal estrogen-deficient years. HRT in this population may actually destabilize existing plaque (estrogen has both atheroprotective and prothrombotic effects). In contrast, younger women starting HRT within 5-10 years of menopause may experience the lipid and arterial benefits without the destabilization risk. ELITE (2016) provided support: CIMT progression was slowed in women starting HRT within 6 years of menopause, but not in those starting more than 10 years out. KEEPS (2015) was largely neutral but consistent with the timing pattern.
+
+Current practice in most guidelines: HRT for cardiovascular protection isn't recommended, but for women with significant menopausal symptoms starting HRT within ~10 years of menopause, the cardiovascular profile appears at least neutral and possibly favorable. Transdermal estrogen (which avoids the hepatic first-pass effect that drives triglyceride increases and clotting factor changes) is increasingly preferred over oral estrogen when cardiovascular risk is a concern.
+
+**Competing claims:**
+
+1. The timing hypothesis is well-supported by ELITE and reanalyses of WHI - HRT started early in menopause is cardiovascular-neutral or beneficial, while HRT started late is harmful; the WHI conclusion was right for the population studied but has been overgeneralized to all menopausal HRT use
+2. The WHI conclusion still applies for cardiovascular indications - HRT should not be prescribed for cardiovascular protection at any age, and the timing hypothesis is a post-hoc rescue of a failed paradigm that justifies treatment decisions on weaker evidence than the original WHI null finding
+3. Transdermal estrogen substantially mitigates the cardiovascular concerns associated with oral estrogen - it bypasses hepatic first-pass, doesn't raise triglycerides or clotting factors the same way, and may have a different risk-benefit profile that hasn't been adequately tested in randomized trials
+4. Lp(a) rises substantially in some women after menopause and is rarely measured, even when LDL is being monitored - this is a high-impact gap, especially in women with family histories of cardiovascular disease, and Lp(a) testing should be routine in the menopausal lipid workup
+
+**Evidence needed:** WHI and HERS reanalyses by age at initiation, ELITE long-term follow-up, KEEPS outcomes by HRT formulation and timing, transdermal vs oral estrogen cardiovascular outcome trials, Lp(a) changes through menopausal transition and intervention impact, atherosclerosis progression studies in early vs late HRT initiators.
+
+---
+
 ## The Cholesterol Ratio Debate: TC/HDL, TG/HDL, ApoB/ApoA1
 
 Before ApoB gained prominence, cholesterol ratios were the primary tool for adding nuance beyond individual lipid values. Total cholesterol-to-HDL ratio (TC/HDL), triglyceride-to-HDL ratio (TG/HDL), and ApoB-to-ApoA1 ratio each capture a different aspect of the lipid profile that single markers miss.
@@ -370,6 +549,84 @@ Yet ratios have fallen out of favor in some clinical guidelines, which now empha
 4. Ratios are most useful as screening tools and metabolic health indicators, not as treatment targets - they're excellent for identifying who needs further evaluation but should not be used to guide statin or lipid-lowering therapy decisions
 
 **Evidence needed:** INTERHEART ApoB/ApoA1 data, TG/HDL and insulin resistance correlation studies, comparative risk prediction models (ratios vs ApoB vs LDL-C), clinical decision studies using ratios as triggers for advanced testing, guideline comparison of ratio vs single-marker approaches.
+
+---
+
+## Coronary Artery Calcium (CAC) Scoring: Direct Look or Diagnostic Detour?
+
+Coronary artery calcium scoring uses a non-contrast CT scan to detect and quantify calcified plaque in the coronary arteries. The Agatston score - calculated from the area and density of calcified deposits - reflects the cumulative atherosclerotic burden that has reached the calcification stage. A score of zero means no detectable calcified plaque. Scores above 100 indicate moderate burden, above 400 substantial, and above 1000 severe. The test takes about 10 minutes, costs $100-400, and uses a radiation dose of roughly 1 mSv (comparable to a year of background radiation).
+
+The case for CAC is that it directly measures the outcome that lipid markers are trying to predict. Decades of LDL exposure either have or haven't produced calcified plaque - and CAC shows you which. A "zero CAC" in a person with elevated LDL is reassuring in a way no risk calculator can match: whatever has been happening so far, it hasn't crossed the threshold of detectable arterial calcification. The MESA study and others have shown that CAC scoring substantially reclassifies cardiovascular risk - moving many "intermediate risk" patients into either truly low or truly high risk categories that change management.
+
+The case against is that CAC only sees the late stage of atherosclerosis. Calcified plaque is stable plaque - the more dangerous lesions (soft, lipid-rich, vulnerable to rupture) may exist without calcification, particularly in younger patients. A zero CAC in a 70-year-old means something very different from a zero CAC in a 35-year-old. The "warranty period" of a zero CAC (how long it predicts low risk) is debated. Radiation exposure, while small, is non-zero. And in patients who already have a clear treatment indication, the test changes nothing.
+
+**Competing claims:**
+
+1. CAC scoring should be incorporated into primary prevention decision-making for any patient at intermediate risk by standard calculators - it directly measures atherosclerotic burden, reclassifies a meaningful percentage of patients, and resolves the most uncertain treatment decisions; the radiation dose and cost are easily justified by the clinical value
+2. CAC is most useful as a "downstager" for patients otherwise heading toward statin therapy - a zero CAC in a 50-year-old with borderline LDL is strong evidence against starting lifelong medication, and this reclassification spares millions of patients unnecessary treatment without missing high-risk individuals
+3. The "zero CAC warranty" is shorter than CAC enthusiasts claim - particularly in younger patients, the absence of calcium doesn't rule out non-calcified plaque, and excessive reassurance from a zero score can delay appropriate prevention; rescanning every 5-7 years is more appropriate than treating a single zero score as a long-term green light
+4. CAC scoring has become a longevity-medicine fashion that exceeds its evidence base - it's being ordered in low-risk young adults where the pretest probability is too low to justify the radiation, the cost, or the anxiety produced by incidental findings; targeted use in intermediate-risk middle-aged patients is appropriate, broad use is not
+
+**Evidence needed:** MESA CAC reclassification data, "warranty period" duration studies by age, CAC vs CCTA discordance in soft-plaque-rich populations, CAC scoring impact on statin prescribing decisions, radiation exposure cumulative risk over repeated scanning, incidental finding rates and their downstream costs.
+
+---
+
+## CCTA and the Anatomical-vs-Functional Screening Debate
+
+Coronary CT angiography (CCTA) uses contrast-enhanced CT to directly visualize the coronary arteries, showing both calcified and non-calcified (soft) plaque, lumen narrowing, and high-risk plaque features. Unlike CAC, which only detects calcium, CCTA sees the soft plaque that may not yet have calcified but is often the more rupture-prone lesion. Unlike stress testing (exercise ECG, nuclear perfusion, stress echo), which detects flow-limiting disease through induced ischemia, CCTA detects anatomical disease whether or not it currently impairs flow. This is the core of the screening debate: do you image the anatomy or test the function?
+
+For decades, stress testing was the standard non-invasive workup for suspected coronary disease. The logic was that only flow-limiting disease (typically >70% stenosis) caused symptoms and events, so detecting ischemia identified who needed intervention. SCOT-HEART (2018) challenged this. It randomized 4,146 patients with stable chest pain to CCTA plus standard care vs standard care alone; the CCTA arm had a 41% lower rate of coronary death or non-fatal MI at 5 years, largely driven by better identification of patients who benefited from preventive therapy (statins, aspirin). The anatomical approach found more disease earlier and changed treatment intensity.
+
+ISCHEMIA (2020) cut from a different angle. It randomized 5,179 patients with moderate-to-severe ischemia on stress testing to invasive (catheterization + revascularization) vs conservative (medical therapy first) management. The result: no significant difference in cardiovascular death or MI over 3-4 years. This challenged the premise that detecting ischemia in stable disease should drive revascularization. The anatomical disease was being treated procedurally when medical therapy was sufficient.
+
+The combined message is unsettled. Anatomy (CCTA) identifies disease that benefits from preventive intensification. Functional testing (stress imaging) identifies ischemia that does not reliably benefit from invasive intervention. Different tests answer different questions. Yet practice patterns vary widely by region, training, and reimbursement.
+
+**Competing claims:**
+
+1. CCTA should be the first-line test for stable chest pain and intermediate-risk asymptomatic patients - it directly visualizes the disease process, including soft plaque that CAC misses, and SCOT-HEART showed it changes outcomes by intensifying prevention; stress testing has a smaller role in modern practice
+2. Stress testing retains a defined role for assessing symptom-disease correlation, exercise capacity, and ischemic burden - it's not a screening test for asymptomatic patients, but it answers questions about functional significance that CCTA cannot, and dismissing it ignores the complementary information
+3. The ISCHEMIA trial fundamentally changed the meaning of a positive stress test - moderate ischemia is no longer a mandate for catheterization, which shifts the value of stress testing toward decisions about medical therapy intensity rather than procedural intervention
+4. The right test depends on the question being asked - CAC for risk stratification in asymptomatic intermediate-risk patients, CCTA for symptomatic patients or those with concerning CAC, stress testing for symptom correlation and functional capacity, invasive angiography only when revascularization is being considered; promoting any single modality as the answer ignores how they layer
+
+**Evidence needed:** SCOT-HEART long-term follow-up, ISCHEMIA subgroup analyses by ischemic burden, head-to-head CCTA vs CAC in asymptomatic intermediate-risk populations, CCTA radiation dose vs CAC for comparable diagnostic information, regional practice variation studies and outcome correlations, cost-effectiveness comparisons of testing strategies.
+
+---
+
+## Carotid Imaging: CIMT and Plaque Ultrasound
+
+The carotid arteries are accessible, superficial, and bilaterally symmetric, which makes them an attractive window into systemic atherosclerosis. Two distinct ultrasound modalities target them. Carotid intima-media thickness (CIMT) measures the combined thickness of the intimal and medial layers of the carotid wall, typically in the common carotid artery distal to the bifurcation. Carotid plaque ultrasound looks for discrete focal plaque - actual lesions protruding into the lumen. The two approaches answer different questions and have very different evidence bases.
+
+CIMT was widely promoted in the 2000s as a non-invasive surrogate for systemic atherosclerosis and was incorporated into the 2010 ACC/AHA risk assessment guidelines as an option for intermediate-risk patients. It then largely fell out of favor. The METEOR trial showed that statins slowed CIMT progression, but the reclassification benefit over standard risk factors was modest. The measurement is operator-dependent. Reference ranges vary by lab and population. And CIMT correlates with cardiovascular events less robustly than focal plaque does. The 2013 ACC/AHA guidelines removed CIMT as a recommended risk assessment tool.
+
+Carotid plaque ultrasound has held up better. Detecting discrete plaque (focal protrusion or wall thickening above a threshold like 1.5mm) is a more specific marker of atherosclerotic disease than wall thickness alone. Plaque presence reclassifies intermediate-risk patients more effectively than CIMT, and plaque burden (sum of plaque areas across multiple arteries) predicts events with hazard ratios that compete with CAC. Yet carotid plaque assessment hasn't entered mainstream US practice the way CAC has, partly because of variability in protocols and partly because CAC took the screening niche.
+
+**Competing claims:**
+
+1. Carotid plaque ultrasound should be used more widely as a CAC alternative - it has comparable predictive value for cardiovascular events, no radiation exposure, lower cost, and can be done in the same visit as a vascular workup; the bias toward CAC in US practice reflects historical adoption rather than evidence-based superiority
+2. CIMT has been correctly de-emphasized in guidelines - the marker added little above standard risk factors, was operator-dependent, and pushed clinicians toward an imperfect tool when more direct alternatives (focal plaque, CAC) became available
+3. Carotid imaging is most useful in populations where CAC is suboptimal - younger patients in whom calcified plaque hasn't yet developed, patients with renal disease where contrast and radiation are concerns, and serial monitoring over time where avoiding repeated radiation matters
+4. The choice between CAC and carotid plaque ultrasound matters less than getting either one done in appropriate patients - the bigger gap is the population of intermediate-risk patients who get neither and have their treatment decisions made on risk calculators alone
+
+**Evidence needed:** Head-to-head CAC vs carotid plaque ultrasound for event prediction, METEOR and other CIMT progression trials, focal plaque vs CIMT incremental risk prediction studies, operator variability in carotid plaque measurement, cost-effectiveness comparisons of carotid imaging vs CAC in different populations.
+
+---
+
+## Ankle-Brachial Index: The Cheapest Cardiovascular Test Almost Nobody Orders
+
+The ankle-brachial index (ABI) is a ratio of systolic blood pressure measured at the ankle to systolic blood pressure measured at the arm. It takes 10-15 minutes with a handheld Doppler and a blood pressure cuff, costs almost nothing, requires no radiation, no contrast, and no specialized facility. A normal ABI is 1.0-1.4. An ABI below 0.9 indicates peripheral arterial disease (PAD) - atherosclerotic narrowing in the leg arteries. An ABI above 1.4 indicates non-compressible arteries, often from medial calcification (common in diabetics).
+
+The diagnostic finding (PAD) is itself a strong predictor of cardiovascular events. A patient with an abnormal ABI has a 2-3x increased risk of cardiovascular death, MI, and stroke compared to a patient with the same risk factors and a normal ABI. PAD reflects atherosclerosis at a different vascular bed, but the systemic disease that produced it puts the entire arterial tree at risk. ABI essentially answers "is there meaningful systemic atherosclerosis affecting blood flow somewhere I can easily measure?" - and the answer carries prognostic weight independent of coronary-specific testing.
+
+ABI's clinical underuse is striking given the favorable cost-benefit profile. USPSTF has historically given ABI screening an "I" rating (insufficient evidence to recommend for or against in asymptomatic adults), citing limited data on whether knowing the result improves outcomes. Vascular societies have been more enthusiastic. In practice, ABI is rarely ordered in primary care unless patients present with claudication symptoms, by which point the test mostly confirms what symptoms already suggest. The screening application - asymptomatic atherosclerosis detection - is largely ignored.
+
+**Competing claims:**
+
+1. ABI should be a routine screening test for adults over 50 with cardiovascular risk factors - it's cheap, fast, non-invasive, and detects a condition (PAD) that independently elevates cardiovascular risk and changes preventive treatment intensity; the USPSTF's cautious stance reflects insufficient screening trials, not insufficient mechanistic evidence
+2. ABI is most useful as a confirmatory test in symptomatic patients rather than a screening test - asymptomatic PAD detection doesn't reliably change management beyond what risk factor assessment already drives, and screening trials haven't demonstrated outcome benefit
+3. The biggest gap is in diabetic populations where PAD is common, often silent, and changes wound care, exercise prescription, and revascularization decisions - ABI should be routine in diabetes regardless of symptoms, even if the case for general population screening is debated
+4. A normal ABI doesn't rule out significant atherosclerosis - it specifically detects flow-limiting disease in the legs, and patients with extensive but non-flow-limiting plaque, or with non-compressible arteries that produce falsely elevated ABIs, can have substantial cardiovascular risk despite a "normal" result; over-reliance on ABI as a stand-alone screen risks false reassurance
+
+**Evidence needed:** USPSTF systematic reviews on ABI screening, ABI screening intervention trials with cardiovascular outcomes, ABI in diabetic populations and impact on management decisions, ABI as incremental predictor beyond standard risk factors, non-compressible artery prevalence in diabetic and elderly populations.
 
 ---
 
