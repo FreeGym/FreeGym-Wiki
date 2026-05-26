@@ -8,7 +8,7 @@ This file is auto-generated from [contributors.yaml](contributors.yaml). Do not 
 
 | | Name | Topics | Contributions | Citations | Commits | Last Active | Card |
 |---|------|-----------|---------------|-----------|---------|-------------|------|
-| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `Nutrition` `Exercise Physiology` `Pharmacology` `Cardiology` `Biomarkers` `Sleep` `Wearables` | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +152 more | 1769 | 255 | 2026-05 | [View](cards/mutant1643.svg) |
+| <a id="mutant1643"></a>⭐ | [@mutant1643](https://github.com/mutant1643) | `Nutrition` `Exercise Physiology` `Pharmacology` `Cardiology` `Biomarkers` `Sleep` `Wearables` | [protein.md](nutrition/Protein/protein.md), [protein-rda.md](nutrition/Protein/protein-rda.md), [protein-timing.md](nutrition/Protein/protein-timing.md) +154 more | 1769 | 258 | 2026-05 | [View](cards/mutant1643.svg) |
 | <a id="Thestrongdoc"></a>⭐ | [@Thestrongdoc](https://github.com/Thestrongdoc) | `Women's Health` | [1-is-it-normal-to-have-irregular-periods.md](Womens-Health/1-is-it-normal-to-have-irregular-periods.md), [2-do-heavy-periods-mean-something-is-wrong.md](Womens-Health/2-do-heavy-periods-mean-something-is-wrong.md), [3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md](Womens-Health/3-do-women-really-need-to-worry-about-bone-health-earlier-than-men.md) +23 more | 363 | 9 | 2026-05 | [View](cards/Thestrongdoc.svg) |
 
 ---
