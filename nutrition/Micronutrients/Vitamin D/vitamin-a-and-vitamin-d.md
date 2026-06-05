@@ -62,7 +62,7 @@ EFSA's 2024 scientific opinion retained an adult tolerable upper intake level fo
 
 A clinical review on vitamin A toxicity notes that chronic toxicity can occur after high intakes of preformed vitamin A over months to years, and that serum retinol is not a sensitive marker of excessive liver vitamin A stores. The same review highlights concern about preformed vitamin A exposure from diet and supplements in developed-country settings. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16469975/))
 
-Vitamin A deficiency is still a real public-health issue in some groups. For example, analyses from India's Comprehensive National Nutrition Survey reported meaningful vitamin A deficiency prevalence among children. That supports targeted deficiency prevention and treatment; it does not, by itself, support blanket retinol co-supplementation for adults already consuming adequate vitamin A. ([Clinical Epidemiology and Global Health](https://cegh.net/article/S2213-3984%2821%2900072-5/fulltext)) ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/)) ([EFSA Journal](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8814))
+Vitamin A deficiency is still a real public-health issue in some groups. For example, analyses from India's Comprehensive National Nutrition Survey reported meaningful vitamin A deficiency prevalence among children. That supports targeted deficiency prevention and treatment; it does not, by itself, support blanket retinol co-supplementation for adults already consuming adequate vitamin A. ([DOI](https://doi.org/10.1016/j.cegh.2021.100768)) ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/)) ([EFSA Journal](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8814))
 
 ## Funding and bias note
 
@@ -97,7 +97,7 @@ The main conclusion here does not depend on supplement-manufacturer-funded evide
 
 - People who are pregnant, trying to become pregnant, have liver disease, drink heavily, use retinoid medications, or already consume high-retinol foods should be especially cautious with preformed vitamin A. ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/)) ([EFSA Journal](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8814)) ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16469975/))
 
-- Correcting vitamin A deficiency is different from adding retinol to "optimize" vitamin D. Deficiency treatment should be status- and context-specific. ([Clinical Epidemiology and Global Health](https://cegh.net/article/S2213-3984%2821%2900072-5/fulltext)) ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/))
+- Correcting vitamin A deficiency is different from adding retinol to "optimize" vitamin D. Deficiency treatment should be status- and context-specific. ([DOI](https://doi.org/10.1016/j.cegh.2021.100768)) ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/))
 
 - For most non-deficient adults, the safer default is not to stack retinol with vitamin D unless there is a clear dietary, clinical, or laboratory reason. ([NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/)) ([EFSA Journal](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8814))
 
@@ -146,4 +146,4 @@ Until then, the best summary is: **real molecular crosstalk, weak human evidence
 
 - Penniston KL, Tanumihardjo SA. The acute and chronic toxic effects of vitamin A. _American Journal of Clinical Nutrition_. 2006. DOI: 10.1093/ajcn/83.2.191. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/16469975/))
 
-- Kundu S, Rai B, Shukla A. Prevalence and determinants of vitamin A deficiency among children in India: findings from a national cross-sectional survey. _Clinical Epidemiology and Global Health_. 2021. DOI: 10.1016/j.cegh.2021.100768. ([Clinical Epidemiology and Global Health](https://cegh.net/article/S2213-3984%2821%2900072-5/fulltext))
+- Kundu S, Rai B, Shukla A. Prevalence and determinants of vitamin A deficiency among children in India: findings from a national cross-sectional survey. _Clinical Epidemiology and Global Health_. 2021. DOI: 10.1016/j.cegh.2021.100768. ([DOI](https://doi.org/10.1016/j.cegh.2021.100768))
