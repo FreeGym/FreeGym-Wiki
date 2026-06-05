@@ -736,8 +736,24 @@ maintainers:
     type: created
     citations_added: 8
     pr: 219
-  total_citations: 2116
-  commits: 263
+  - file: nutrition/Micronutrients/Vitamin D/absorption-and-bioavailability.md
+    type: edit
+    citations_added: 2
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-a-and-vitamin-d.md
+    type: edit
+    citations_added: 1
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-and-testosterone.md
+    type: major_edit
+    citations_added: 4
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-for-skin-and-hair.md
+    type: major_edit
+    citations_added: 11
+    pr: 221
+  total_citations: 2134
+  commits: 266
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
