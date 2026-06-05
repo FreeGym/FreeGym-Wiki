@@ -1,6 +1,6 @@
 # Is Gut Health the Key to Athletic Performance?
 
-Gut health is not yet "the key" to athletic performance. The better summary is that the gut may be a meaningful support system and a common limiter: it can affect gastrointestinal tolerance and respiratory-illness burden, and may affect metabolic signaling, but evidence that deliberately reshaping the microbiome reliably improves human performance is still early. ([Journal of Sport and Health Science](https://www.sciencedirect.com/science/article/pii/S2095254622000916); [Journal of Athletic Training](https://pubmed.ncbi.nlm.nih.gov/33481001/); [Nutrients](https://pubmed.ncbi.nlm.nih.gov/35807826/)) This draft follows the supplied sample's evidence-forward format and includes explicit conflict-of-interest notes for key commercially relevant or disclosed conflicts where available.
+Gut health is not yet "the key" to athletic performance. The better summary is that the gut may be a meaningful support system and a common limiter: it can affect gastrointestinal tolerance and respiratory-illness burden, and may affect metabolic signaling, but evidence that deliberately reshaping the microbiome reliably improves human performance is still early. ([Journal of Sport and Health Science](https://www.sciencedirect.com/science/article/pii/S2095254622000916); [Journal of Athletic Training](https://pubmed.ncbi.nlm.nih.gov/33481001/); [Nutrients](https://pubmed.ncbi.nlm.nih.gov/35807826/))
 
 ## What the claim is and is not
 

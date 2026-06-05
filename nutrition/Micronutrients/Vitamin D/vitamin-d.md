@@ -228,6 +228,22 @@ Several drug classes meaningfully impair vitamin D status or interact with D sup
 
 ---
 
+## Vitamin D for Skin and Hair: The Wellness Loop
+
+Vitamin D is one of the most-recycled answers in skin and hair content - for telogen effluvium, alopecia areata, acne, HS, eczema. The pop-culture version flattens a real but narrow biology (topical D analogues work for psoriasis, VDR mutations cause hereditary alopecia) into a general "fix your D, fix your skin/hair" claim that the supplementation evidence does not support.
+
+**Competing claims:**
+
+1. "Low vitamin D causes hair loss" - the most repeated claim, applied to telogen effluvium, female pattern hair loss, and postpartum shedding. Cross-sectional studies do show lower mean 25(OH)D in affected women, but RCTs of oral D as a regrowth intervention in non-deficient individuals are sparse and mostly null - the correlation is real, the causal supplementation claim is not established
+2. The VDR-alopecia link is genuine but narrower than presented - vitamin D-dependent rickets type IIA produces a hereditary alopecia phenotype, and alopecia areata cohorts show lower 25(OH)D, but this does not extend to "oral D supplementation regrows hair" in replete or mildly insufficient individuals
+3. Topical vitamin D analogues (calcipotriol, calcitriol) are evidence-based first-line therapy for mild-moderate plaque psoriasis - but this is local VDR activation at pharmacological skin concentrations, not systemic supplementation, and the popular "vitamin D treats psoriasis, so take more vitamin D" conflation misrepresents both route and dose
+4. The acne, HS, and atopic dermatitis "D deficiency drives my skin condition" narrative rests almost entirely on cross-sectional associations - supplementation trials are small, often unblinded, and rarely show effects large enough to justify D as a primary intervention rather than as correction of a coincident deficiency
+5. "Stop avoiding the sun, your skin needs it" - a wellness-culture pushback against dermatology's photoprotection messaging that conflates two different outcomes (D synthesis vs photoaging and skin cancer risk), and ignores that meaningful D synthesis requires far less UV than meaningful photodamage
+
+**Evidence needed:** RCTs of oral D supplementation for telogen effluvium and androgenetic alopecia stratified by baseline 25(OH)D, dose-response trials in alopecia areata, head-to-head oral vs topical D in inflammatory dermatoses, prospective trials in HS and acne measuring whether correcting deficiency changes disease trajectory independent of other treatment, dosimetry studies on UV exposure thresholds separating D synthesis from photodamage.
+
+---
+
 ## How to Contribute
 
 Pick a section. Find the relevant meta-analyses, systematic reviews, or high-quality RCTs. Summarize what the evidence shows, including limitations.
