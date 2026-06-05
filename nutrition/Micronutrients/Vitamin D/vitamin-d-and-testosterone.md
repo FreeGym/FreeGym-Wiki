@@ -40,7 +40,7 @@ A [2019 systematic review and meta-analysis of randomized trials](https://pubmed
 
 A newer [2024 systematic review and meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC11506788/) found a small increase in total testosterone with vitamin D supplementation, but no significant effect on free testosterone, LH, FSH, SHBG, estradiol, or free androgen index. The authors also reported heterogeneity and risk-of-bias concerns, so the result is better read as a weak signal than a settled clinical effect.
 
-A [2026 systematic review/meta-analysis focused on infertile men](https://peerj.com/articles/21002/) reported small improvements in semen parameters and serum testosterone, but did not find significant effects on clinical pregnancy or live birth. That evidence is relevant to infertile men, not to healthy replete men using vitamin D as a testosterone enhancer.
+A [2026 systematic review/meta-analysis focused on infertile men](https://doi.org/10.7717/peerj.21002) reported small improvements in semen parameters and serum testosterone, but did not find significant effects on clinical pregnancy or live birth. That evidence is relevant to infertile men, not to healthy replete men using vitamin D as a testosterone enhancer.
 
 ## Deficiency, BMI, and the "correcting a deficit" hypothesis
 
@@ -72,7 +72,7 @@ The [2024 infertile-men RCT](https://pubmed.ncbi.nlm.nih.gov/37555466/) reported
 
 - [2024 meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC11506788/): vitamin D showed a small total-testosterone increase, but no consistent effect on free testosterone or other reproductive hormones.
 
-- [2026 infertile-men meta-analysis](https://peerj.com/articles/21002/): small improvements were reported for testosterone and semen parameters, but not for clinical pregnancy or live birth.
+- [2026 infertile-men meta-analysis](https://doi.org/10.7717/peerj.21002): small improvements were reported for testosterone and semen parameters, but not for clinical pregnancy or live birth.
 
 
 ## Practical interpretation
@@ -83,7 +83,7 @@ The [2024 infertile-men RCT](https://pubmed.ncbi.nlm.nih.gov/37555466/) reported
 
 - In healthy men with normal testosterone, vitamin D supplementation has not shown reliable testosterone-raising effects. ([Lerchbaum et al. 2017](https://pubmed.ncbi.nlm.nih.gov/28938446/))
 
-- In deficient men with obesity or infertility, there may be a modest signal, but it remains subgroup-dependent and not strong enough to frame vitamin D as a dependable testosterone therapy. ([Damas-Fuentes et al. 2022](https://pubmed.ncbi.nlm.nih.gov/36120442/), [Holt et al. 2024](https://pubmed.ncbi.nlm.nih.gov/37555466/), [2026 infertile-men meta-analysis](https://peerj.com/articles/21002/))
+- In deficient men with obesity or infertility, there may be a modest signal, but it remains subgroup-dependent and not strong enough to frame vitamin D as a dependable testosterone therapy. ([Damas-Fuentes et al. 2022](https://pubmed.ncbi.nlm.nih.gov/36120442/), [Holt et al. 2024](https://pubmed.ncbi.nlm.nih.gov/37555466/), [2026 infertile-men meta-analysis](https://doi.org/10.7717/peerj.21002))
 
 - In men selected for low testosterone, the best direct RCT evidence did not show a testosterone increase. ([Lerchbaum et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6842386/))
 
@@ -108,7 +108,7 @@ The [2024 infertile-men RCT](https://pubmed.ncbi.nlm.nih.gov/37555466/) reported
 
 - Abu-Zaid A, et al. [The Impact of Vitamin D on Androgens and Anabolic Steroids among Adult Males: A Meta-Analytic Review](https://pmc.ncbi.nlm.nih.gov/articles/PMC11506788/). Diseases. 2024;12(10):228. DOI: 10.3390/diseases12100228. PMID: 39452471.
 
-- Zhang G, Nelli G, et al. [Vitamin D supplementation in infertile men: a systematic review and meta-analysis of effects on semen quality and endocrine function](https://peerj.com/articles/21002/). PeerJ. 2026;14:e21002. DOI: 10.7717/peerj.21002.
+- Zhang G, Nelli G, et al. [Vitamin D supplementation in infertile men: a systematic review and meta-analysis of effects on semen quality and endocrine function](https://doi.org/10.7717/peerj.21002). PeerJ. 2026;14:e21002. DOI: 10.7717/peerj.21002.
 
 - Holt R, et al. [Effects of vitamin D on sex steroids, luteinizing hormone and testosterone to luteinizing hormone ratio in 307 infertile men](https://pubmed.ncbi.nlm.nih.gov/37555466/). Andrology. 2024;12(3):553-560. DOI: 10.1111/andr.13505. PMID: 37555466.
 
