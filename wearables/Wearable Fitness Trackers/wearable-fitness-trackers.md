@@ -145,6 +145,25 @@ The downstream consequence matters. People use calorie-burn estimates to calibra
 
 ---
 
+## How Accurate Is Distance From a Wearable?
+
+Distance is one of the few wearable outputs with two fundamentally different measurement pathways, and the accuracy of each is very different. Outdoor distance from a GPS-equipped device is a direct geometric measurement - the device fixes position from satellites and computes path length between fixes. Under open sky, modern multi-band GPS chipsets (dual-frequency L1/L5) deliver distance accuracy within roughly 1-2% of a measured course. Older or single-band chipsets perform meaningfully worse, particularly in urban canyons, dense tree cover, and twisty trails where signal reflection and lower fix rates cause the recorded track to either short-cut corners or zigzag with phantom motion.
+
+Indoor distance is a different animal entirely. With no GPS available - treadmills, indoor tracks, gym workouts - the device estimates distance from accelerometer-derived step counts multiplied by an assumed stride length. The stride length is either calibrated from prior GPS runs, entered by the user, or inferred from height. Stride length changes with pace, fatigue, gradient, terrain, and footwear, so a single calibration constant produces systematic error across different conditions. Validation studies typically find treadmill distance errors in the 10-20% range, with error growing at the extremes of pace.
+
+This matters because distance is upstream of pace, calorie burn, and VO2 max. A 15% distance error becomes a 15% pace error, which propagates into the heart-rate-to-workload mapping that VO2 max algorithms depend on, and into the speed-times-bodyweight term in calorie models. The downstream metrics inherit the upstream error without flagging it.
+
+**Competing claims:**
+
+1. Outdoor GPS distance from a modern multi-band wearable is accurate enough for nearly any recreational and most competitive use cases - the 1-2% error under open sky is smaller than the variation in race course measurement itself, and treating GPS distance as essentially correct is reasonable for training pace, race pacing, and longitudinal mileage tracking
+2. Indoor and treadmill distance should be treated as estimates, not measurements - the stride-length model that generates them is too simplistic to handle real variation in gait, and users who want accurate indoor distance should rely on the equipment's own readout or accept the wearable number as approximate
+3. The error in indoor distance propagates silently into other metrics - calorie and VO2 max outputs from indoor sessions inherit a base-rate distance error that the device never discloses, and users who mix indoor and outdoor training are feeding inconsistent inputs into their composite scores without knowing it
+4. Multi-band GPS is now the meaningful differentiator in wearable distance accuracy - the gap between a dual-frequency chipset in difficult conditions (urban, forest) and an older single-band chipset is large enough that distance accuracy claims should be qualified by which GPS hardware the device uses, not by brand name alone
+
+**Evidence needed:** GPS distance validation across chipset generations (single-band L1 vs multi-band L1/L5) under varied conditions (open, urban, forest, trail), wearable treadmill distance accuracy validation across pace ranges and gradients, stride-length calibration drift studies, propagation of distance error into pace/calorie/VO2 max estimates, comparison of wearable GPS distance to certified course measurement.
+
+---
+
 ## Is Wearable VO2 Max Worth Tracking?
 
 No wearable directly measures VO2 max. The device estimates it from heart rate, pace, movement, and model assumptions about the user's physiology. The estimate requires the user to be doing a sustained aerobic effort (typically outdoor running or walking) during which heart rate and pace can be tracked simultaneously. The algorithm then maps the relationship between heart rate and workload to an estimated VO2 max using population-based models.

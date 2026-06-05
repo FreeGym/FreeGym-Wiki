@@ -1,4 +1,4 @@
-## Animal vs plant protein
+# Animal vs Plant Protein
 
 "Animal protein is superior" is usually a claim about protein quality per gram (digestibility and indispensable amino-acid profile), whereas "plant protein is equivalent" is usually a claim about real-world outcomes when total protein and diet design are matched (hypertrophy, strength, performance). (Reid‑McCann et al., 2025; Lim et al., 2021) ([OUP Academic](https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494 "https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494"); [MDPI](https://www.mdpi.com/2072-6643/13/2/661 "https://www.mdpi.com/2072-6643/13/2/661"))
 
