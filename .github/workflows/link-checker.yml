@@ -81,6 +81,8 @@ jobs:
             --exclude "^https://(?:www\\.)?jacc\\.org"
             --exclude "^https://www\\.fertstert\\.org/"
             --exclude "^https://eprints\\.gla\\.ac\\.uk"
+            --exclude "^https://(?:[a-z0-9-]+\\.)?jmir\\.org"
+            --exclude "^https://knowledge4policy\\.ec\\.europa\\.eu/"
             --timeout 30
             '**/*.md'
           fail: true

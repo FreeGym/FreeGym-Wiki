@@ -10,7 +10,7 @@ maintainers:
   - biomarkers
   - sleep
   - wearables
-  last_active: 2026-05
+  last_active: 2026-06
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -632,8 +632,128 @@ maintainers:
     type: major_edit
     citations_added: 0
     pr: 215
-  total_citations: 1769
-  commits: 258
+  - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
+    type: major_edit
+    citations_added: 1
+    pr: 217
+  - file: nutrition/Micronutrients/Vitamin D/the-vitamin-d-threshold-war.md
+    type: major_edit
+    citations_added: 3
+    pr: 217
+  - file: nutrition/Fat/does-fat-timing-matter.md
+    type: major_edit
+    citations_added: 1
+    pr: 219
+  - file: nutrition/Fiber & Gut Health/is-gut-health-the-key-to-athletic-performance.md
+    type: major_edit
+    citations_added: 3
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/absorption-and-bioavailability.md
+    type: created
+    citations_added: 29
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/magnesium-and-vitamin-d.md
+    type: created
+    citations_added: 20
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-a-and-vitamin-d.md
+    type: created
+    citations_added: 14
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-and-drug-interactions.md
+    type: created
+    citations_added: 35
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-and-testosterone.md
+    type: created
+    citations_added: 14
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-for-skin-and-hair.md
+    type: created
+    citations_added: 45
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-toxicity-and-upper-limits.md
+    type: created
+    citations_added: 17
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d.md
+    type: edit
+    citations_added: 0
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-k2-and-calcium-routing-hypothesis.md
+    type: created
+    citations_added: 34
+    pr: 219
+  - file: nutrition/Micronutrients/Zinc/zinc.md
+    type: major_edit
+    citations_added: 0
+    pr: 219
+  - file: nutrition/Protein/animal-vs-plant-protein.md
+    type: edit
+    citations_added: 0
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/can-a-watch-measure-blood-pressure.md
+    type: created
+    citations_added: 13
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/can-your-ring-predict-ovulation.md
+    type: created
+    citations_added: 9
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/can-your-wearable-accurately-track-sleep.md
+    type: created
+    citations_added: 24
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/how-accurate-is-distance-from-a-wearable.md
+    type: created
+    citations_added: 18
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/hrv-from-a-wearable.md
+    type: created
+    citations_added: 9
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/overnight-respiratory-rate-from-a-wearable.md
+    type: created
+    citations_added: 11
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/should-you-trust-wearable-calorie-estimates.md
+    type: created
+    citations_added: 12
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/skin-temperature.md
+    type: created
+    citations_added: 19
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/wearable-blood-oxygen-and-sleep-apnea-screening.md
+    type: created
+    citations_added: 8
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/wearable-fitness-trackers.md
+    type: edit
+    citations_added: 0
+    pr: 219
+  - file: wearables/Wearable Fitness Trackers/wearable-vo2-max.md
+    type: created
+    citations_added: 8
+    pr: 219
+  - file: nutrition/Micronutrients/Vitamin D/absorption-and-bioavailability.md
+    type: edit
+    citations_added: 2
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-a-and-vitamin-d.md
+    type: edit
+    citations_added: 1
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-and-testosterone.md
+    type: major_edit
+    citations_added: 4
+    pr: 221
+  - file: nutrition/Micronutrients/Vitamin D/vitamin-d-for-skin-and-hair.md
+    type: major_edit
+    citations_added: 11
+    pr: 221
+  total_citations: 2134
+  commits: 266
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
