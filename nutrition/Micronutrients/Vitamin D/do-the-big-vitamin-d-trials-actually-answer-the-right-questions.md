@@ -24,7 +24,7 @@ VITAL also used chronic disease endpoints. Cancer and cardiovascular events are 
 
 ## D2d was also mostly not deficiency-enriched
 
-D2d enrolled adults with prediabetes, not adults selected for vitamin D deficiency. Mean baseline 25-hydroxyvitamin D was about 28.0 ng/mL, and 78.3 percent of participants had baseline levels at or above 20 ng/mL. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906); [D2d Study PDF](https://d2dstudy.org/wp-content/uploads/2024/02/2019-Pittas-NEJM-Vitamin-D-supplementation-and-prevention-of-type-2-diabetes.pdf))
+D2d enrolled adults with prediabetes, not adults selected for vitamin D deficiency. Mean baseline 25-hydroxyvitamin D was about 28.0 ng/mL, and 78.3 percent of participants had baseline levels at or above 20 ng/mL. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906))
 
 During the trial, vitamin D supplementation substantially raised 25-hydroxyvitamin D, but the primary intention-to-treat comparison still did not reach statistical significance for diabetes prevention. The main result therefore argues against a large average diabetes-prevention effect in the enrolled prediabetes population, not against every possible benefit in deficient subgroups. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906); [UT Southwestern record](https://utsouthwestern.elsevierpure.com/en/publications/vitamin-d-supplementation-and-prevention-of-type-2-diabetes))
 
@@ -100,7 +100,7 @@ Industry funding is not the main weakness of VITAL or D2d for the deficiency que
 
 - D2d tested vitamin D3 4000 IU/day in adults with prediabetes and did not show a statistically significant diabetes-prevention effect in the primary intention-to-treat analysis. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906); [UT Southwestern record](https://utsouthwestern.elsevierpure.com/en/publications/vitamin-d-supplementation-and-prevention-of-type-2-diabetes))
 
-- D2d’s mean baseline 25-hydroxyvitamin D was about 28.0 ng/mL; 78.3 percent were at or above 20 ng/mL. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906); [D2d Study PDF](https://d2dstudy.org/wp-content/uploads/2024/02/2019-Pittas-NEJM-Vitamin-D-supplementation-and-prevention-of-type-2-diabetes.pdf))
+- D2d’s mean baseline 25-hydroxyvitamin D was about 28.0 ng/mL; 78.3 percent were at or above 20 ng/mL. ([Pittas et al., 2019](https://www.nejm.org/doi/full/10.1056/NEJMoa1900906))
 
 - An individual participant data meta-analysis of vitamin D trials in prediabetes estimated a modest overall diabetes-risk reduction, with larger apparent benefit in the small subgroup below about 12 ng/mL. ([Pittas et al., 2023](https://doi.org/10.7326/M22-3018); [PubMed record](https://pubmed.ncbi.nlm.nih.gov/36745886/))
 

@@ -759,7 +759,8 @@ maintainers:
   joined: 2026-03
   topics:
   - Womens-Health
-  last_active: 2026-05
+  - biomarkers
+  last_active: 2026-06
   contributions:
   - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
     type: created
@@ -865,8 +866,52 @@ maintainers:
     type: created
     citations_added: 0
     pr: 208
-  total_citations: 363
-  commits: 9
+  - file: Womens-Health/Energy & Metabolism/23-why-is-fat-distributed-differently-in-women's-bodies.md
+    type: created
+    citations_added: 28
+    pr: 225
+  - file: Womens-Health/Energy & Metabolism/24-do-women's-metabolism-adapt-differently-to-dieting.md
+    type: created
+    citations_added: 16
+    pr: 225
+  - file: Womens-Health/Energy & Metabolism/27-does-sleep-loss-hit-women's-metabolism-differently-than-men.md
+    type: created
+    citations_added: 37
+    pr: 225
+  - file: Womens-Health/Menstrual & Hormonal Health/25-menstrual-cycle-as-fifth-vital-sign.md
+    type: created
+    citations_added: 61
+    pr: 225
+  - file: Womens-Health/Menstrual & Hormonal Health/28-estrogen-dominance.md
+    type: created
+    citations_added: 13
+    pr: 225
+  - file: Womens-Health/Training & Recovery/26-should-women-train-differently-during-perimenopause.md
+    type: created
+    citations_added: 17
+    pr: 225
+  - file: biomarkers/Blood Sugar & Metabolic Health/fasting-glucose-as-screening-tool.md
+    type: created
+    citations_added: 13
+    pr: 225
+  - file: biomarkers/Blood Sugar & Metabolic Health/why-isn't-fasting-insulin-a-standard-test.md
+    type: created
+    citations_added: 51
+    pr: 225
+  - file: biomarkers/Lipids/LDL-C-vs-LDL-P-vs-ApoB.md
+    type: created
+    citations_added: 19
+    pr: 225
+  - file: biomarkers/Lipids/is-LDL-cholesterol-causal-in-ASCVD.md
+    type: created
+    citations_added: 50
+    pr: 225
+  - file: biomarkers/Lipids/what-does-a-standard-lipid-panel-actually-tell-you.md
+    type: created
+    citations_added: 44
+    pr: 225
+  total_citations: 712
+  commits: 11
 trusted: []
 contributors:
 - github: FreeGym
