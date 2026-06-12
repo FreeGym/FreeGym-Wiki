@@ -90,6 +90,7 @@ jobs:
             --exclude "^https://www\\.lipidjournal\\.com"
             --exclude "^https://journals\\.lww\\.com"
             --exclude "^https://psychiatryonline\\.org"
+            --exclude "^https://profith\\.ugr\\.es"
             --timeout 30
             '**/*.md'
           fail: true
