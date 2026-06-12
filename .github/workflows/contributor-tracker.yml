@@ -257,6 +257,11 @@ jobs:
                   r'https?://research\.birmingham\.ac\.uk/[^\s\)]+',
                   r'https?://(?:www\.)?cambridge\.org/core/journals/[^\s\)]+',
                   r'https?://pubs\.rsc\.org/en/content/articlehtml/[^\s\)]+',
+                  r'https?://pubs\.rsc\.org/en/content/articlelanding/[^\s\)]+',
+                  r'https?://cdnsciencepub\.com/doi/[^\s\)]+',
+                  r'https?://publications\.aap\.org/[^\s\)]+',
+                  r'https?://onlinecjc\.ca/article/[^\s\)]+',
+                  r'https?://(?:www\.)?lipidjournal\.com/article/[^\s\)]+',
               ]
 
               publisher_urls = set()
