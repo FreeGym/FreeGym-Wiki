@@ -752,8 +752,16 @@ maintainers:
     type: major_edit
     citations_added: 11
     pr: 221
-  total_citations: 2134
-  commits: 266
+  - file: exercise-physiology/cardiorespiratory-fitness/fueling-does-low-carb-training-fat-oxidation-or-harm-performance.md
+    type: edit
+    citations_added: 2
+    pr: 227
+  - file: nutrition/Micronutrients/Vitamin D/do-the-big-vitamin-d-trials-actually-answer-the-right-questions.md
+    type: edit
+    citations_added: 1
+    pr: 227
+  total_citations: 2137
+  commits: 274
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
