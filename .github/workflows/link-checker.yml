@@ -88,6 +88,8 @@ jobs:
             --exclude "^https://publications\\.aap\\.org"
             --exclude "^https://onlinecjc\\.ca"
             --exclude "^https://www\\.lipidjournal\\.com"
+            --exclude "^https://journals\\.lww\\.com"
+            --exclude "^https://psychiatryonline\\.org"
             --timeout 30
             '**/*.md'
           fail: true

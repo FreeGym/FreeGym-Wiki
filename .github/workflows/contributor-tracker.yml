@@ -262,6 +262,8 @@ jobs:
                   r'https?://publications\.aap\.org/[^\s\)]+',
                   r'https?://onlinecjc\.ca/article/[^\s\)]+',
                   r'https?://(?:www\.)?lipidjournal\.com/article/[^\s\)]+',
+                  r'https?://journals\.lww\.com/[^\s\)]+',
+                  r'https?://psychiatryonline\.org/doi/[^\s\)]+',
               ]
 
               publisher_urls = set()
