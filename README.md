@@ -16,13 +16,13 @@ Live site: https://freegym.github.io/FreeGym-Wiki/
 
 ## The Premise
 
-It is January 2026, and trying to find reliable health information online is exhausting.
+It is January 2026. Trying to find reliable health information online is exhausting.
 
-The problem is not that people do not care about evidence. The problem is that most health advice now arrives through feeds built for speed, outrage, and sales. A weak study becomes a supplement pitch. A half-true warning becomes a 60-second Reel. When a creator gets something wrong, the post can disappear and the record disappears with it.
+Most health advice now arrives through feeds built for speed, outrage, and sales. A weak study becomes a supplement pitch. A half-true warning becomes a 60-second Reel. When a creator gets something wrong, the post can disappear and the record disappears with it.
 
-That is why this project uses GitHub.
+This project uses GitHub because it gives health information a public record.
 
-Social media is built around attention. A repository is built around history, review, and version control. For health information, that difference is not cosmetic. It changes how mistakes are corrected, how disagreements are handled, and how trust is earned.
+Social media is built around attention. A repository is built around history, review, and version control. For health information, the format changes how mistakes are corrected, how disagreements are handled, and how trust is earned.
 
 ---
 
@@ -30,21 +30,21 @@ Social media is built around attention. A repository is built around history, re
 
 Health content on social media has a few recurring problems. They are familiar enough that they can start to feel normal.
 
-**Fear presented as education.** Seed oils will kill you. Sugar is poison. The ingredient you cannot pronounce must be toxic. Claims like this spread because fear travels quickly, not because the evidence supports panic. A rat study, a mechanistic speculation, or one out-of-context chart can become a confident public warning while dose, population, and real-world risk get ignored.
+**Fear presented as education.** Seed oils will kill you. Sugar is poison. The ingredient you cannot pronounce must be toxic. Claims like this spread because fear travels quickly. A rat study, a mechanistic speculation, or one out-of-context chart can become a confident public warning while dose, population, and real-world risk get ignored.
 
 **Cherry-picked studies.** One paper finds an association and suddenly the claim is "proven." The studies showing no effect are left out. So are the limitations, the study design, the confidence intervals, and whether the result applies to humans in the first place.
 
-**Contradictory advice with no place to reconcile it.** Keto is the answer. Vegan is the answer. Carnivore is the answer. Fasting is essential. Fasting is dangerous. Cardio kills gains. Cardio is mandatory. Plenty of people cite studies while giving advice that directly conflicts with someone else citing studies. The hard part is not finding a confident opinion. The hard part is knowing which claim survives scrutiny.
+**Contradictory advice with no place to reconcile it.** Keto is the answer. Vegan is the answer. Carnivore is the answer. Fasting is essential. Fasting is dangerous. Cardio kills gains. Cardio is mandatory. Plenty of people cite studies while giving advice that directly conflicts with someone else citing studies. Confident opinions are everywhere. The hard part is knowing which claim survives scrutiny.
 
 **No durable record of being wrong.** A creator makes a claim, gets corrected, deletes the post, and moves on. Their page can look clean even if thousands of people saw the original mistake. There is no public trail showing what changed or why.
 
-**Credentials used as shortcuts for proof.** Follower counts, blue checkmarks, degrees, and certifications can matter, but none of them settle whether a claim is true. A weekend certification does not make someone right. A PhD does not make every claim right either. This wiki puts the claim and the evidence first. Anyone can contribute if the evidence is strong enough.
+**Credentials used as shortcuts for proof.** Follower counts, blue checkmarks, degrees, and certifications can matter, but none of them settle whether a claim is true. A weekend certification can come with bad advice. A PhD can too. This wiki puts the claim and the evidence first. Anyone can contribute if the evidence is strong enough.
 
 **Financial incentives hidden inside education.** A supplement recommendation may come with an affiliate link. A diet claim may lead to a course. An attack on an ingredient may benefit a sponsor. Disclosures exist, but the incentives are often hard to see from the post itself.
 
-**Anecdotes treated like data.** Personal experience can be useful, but it is not the same as controlled evidence. "I did this and improved" does not tell us what caused the improvement, what else changed, or whether the same thing applies to someone else.
+**Anecdotes treated like data.** Personal experience can be useful, but controlled evidence answers a different question. "I did this and improved" leaves out what caused the improvement, what else changed, and whether the same thing applies to someone else.
 
-**Risky advice for serious conditions.** Fitness tips and medical advice now sit beside each other in the same feed. People with real conditions can be pushed toward unproven alternatives, vaccine misinformation, cancer "cures," or mental health advice from people who are not equipped to give it. The stakes are not always harmless.
+**Risky advice for serious conditions.** Fitness tips and medical advice now sit beside each other in the same feed. People with real conditions can be pushed toward unproven alternatives, vaccine misinformation, cancer "cures," or mental health advice from people without the training or context to give it. Some mistakes cause real harm.
 
 **Unrealistic standards made to look normal.** Drug-assisted physiques are presented as natural. Before-and-after images are edited, lit, pumped, and timed for effect. People compare themselves to a performance and assume they are failing.
 
@@ -66,10 +66,10 @@ In a repository, the history stays visible. Open an article, click "History," an
 
 ```text
 Jan 2024: Added warning regarding hair loss (Citation X)
-Mar 2025: Removed hair loss warning. New meta-analysis (Citation Y) does not support the claim.
+Mar 2025: Removed hair loss warning. New meta-analysis (Citation Y) found no clear support for the claim.
 ```
 
-That is not a weakness. That is what honest updating looks like.
+Honest updating leaves a trail.
 
 **Issues give debate somewhere to live.**
 
@@ -81,11 +81,11 @@ If a citation is wrong, someone can open an Issue explaining the problem, link t
 
 The main repository is the shared evidence base. Someone with a specific hypothesis can fork it and make their case without hiding where they differ from the main version.
 
-That matters. If a coach, clinic, or creator uses a modified version, readers can compare the fork to the main repo and see exactly what changed. There is less room for vague claims about "the science" when the differences are visible line by line.
+If a coach, clinic, or creator uses a modified version, readers can compare the fork to the main repo and see exactly what changed. Vague claims about "the science" become harder to hide when the differences are visible line by line.
 
 **Automation catches the boring failures.**
 
-Broken citations, dead links, and stale references are not glamorous problems, but they matter. This repo uses automated checks so basic maintenance does not depend only on memory. Automation does not decide what is true, but it helps keep the evidence trail inspectable.
+Broken citations, dead links, and stale references are boring maintenance problems with real consequences. This repo uses automated checks so basic upkeep is less dependent on memory. Automation cannot decide what is true, but it helps keep the evidence trail inspectable.
 
 ---
 
@@ -109,7 +109,7 @@ Right now, hundreds of creators can make separate versions of "How to Build Musc
 
 This project is built around a different model: one public article that can be challenged, corrected, improved, forked, and cited. Experts can open Pull Requests. Readers can inspect the sources. Contributors build a public body of work instead of asking people to trust a persona.
 
-Trust should come from process, not performance.
+Trust should come from the work people can inspect.
 
 ---
 
@@ -119,7 +119,7 @@ In health and fitness, a useful public record is more valuable than a polished f
 
 Your GitHub profile can show that you contributed to accurate, evidence-based material. Commits become receipts. Pull Requests show how your work was reviewed. Issues show how you handle disagreement and correction.
 
-That kind of credibility is harder to fake.
+Credibility built this way is harder to fake.
 
 ---
 
@@ -133,7 +133,7 @@ This repository powers the verification system for [FreeGym](https://freegym.ai/
 
 **Maintainer Star**: People who review contributions and help maintain quality standards receive a star designation instead of a checkmark.
 
-The difference from most verification systems is simple: you cannot buy it or claim it. You earn it through work that other people can inspect.
+Most verification systems can be bought, borrowed, or claimed through status. FreeGym verification is earned through work that other people can inspect.
 
 See [VERIFICATION.md](VERIFICATION.md) for the full rules.
 
@@ -148,7 +148,7 @@ If you want to audit or extend the verification system, start here:
 
 ## Contributing
 
-This wiki is open source. Truth should not have a paywall.
+This wiki is open source. Truth belongs outside a paywall.
 
 If you want to add evidence, correct an error, or propose a new topic, read the [Contribution Guidelines](CONTRIBUTING.md).
 

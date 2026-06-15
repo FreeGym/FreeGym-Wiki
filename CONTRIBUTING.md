@@ -10,13 +10,13 @@ Your contribution history becomes your credibility.
 
 On social media, anyone can call themselves a nutrition expert, fitness coach, or researcher. Here, the record is more concrete. If you have written accurate, well-cited material in the nutrition folder, people can see it. If you have corrected claims in the sleep folder, they can see that too. The work is the proof.
 
-Corrections are part of the culture here. In most public-facing health content, being wrong is treated like a brand problem, so posts get deleted and everyone moves on. In this repo, changing your mind because better evidence appears is visible in the history. That is not embarrassing. It is the point.
+Corrections are part of the culture here. In most public-facing health content, being wrong is treated like a brand problem, so posts get deleted and everyone moves on. In this repo, changing your mind because better evidence appears is visible in the history. The record shows the correction instead of hiding it.
 
-You also become associated with topics through actual work. If someone wants to know who has contributed meaningfully to sleep science, they can look at the accepted contributions in that area. That is a different kind of authority than follower count.
+You also become associated with topics through actual work. If someone wants to know who has contributed meaningfully to sleep science, they can look at the accepted contributions in that area. The authority comes from reviewed work instead of follower count.
 
 Social platforms reward hot takes, speed, controversy, and fear. This project rewards accuracy, usefulness, and careful revisions. A good contribution may be quiet, but it stays linkable and citable.
 
-Most health creators end up looking similar: same formats, same claims, same engagement tactics. Contributing here says something different. It shows that you care enough about accuracy to put your work in a public, reviewable system.
+Most health creators end up looking similar: same formats, same claims, same engagement tactics. Contributing here shows that you care enough about accuracy to put your work in a public, reviewable system.
 
 ---
 
@@ -26,7 +26,7 @@ You contribute by opening a Pull Request. The `main` branch is protected, so dir
 
 If you find an error, open a PR with the fix. If you have evidence to add, open a PR. If you disagree with an existing claim, open an Issue first, discuss the evidence, and then open a PR if the discussion supports a change.
 
-When your first PR is merged, you are automatically added to [contributors.yaml](contributors.yaml). You do not need to ask for that separately.
+When your first PR is merged, you are automatically added to [contributors.yaml](contributors.yaml). No separate request is needed.
 
 ---
 
@@ -56,19 +56,19 @@ Write a clear title and description. Explain what you changed and why. If you ad
 
 **5. Wait for review**
 
-A maintainer will review the PR. They may approve it, ask questions, or request changes. That is normal. Respond to the feedback and update the PR if needed.
+A maintainer will review the PR. They may approve it, ask questions, or request changes. This happens often. Respond to the feedback and update the PR if needed.
 
 **6. Get merged**
 
 Once the PR is approved, a maintainer merges it. Your change becomes part of the wiki, and [contributors.yaml](contributors.yaml) is updated automatically.
 
-That is it. You have contributed to open-source health knowledge.
+You have contributed to open-source health knowledge.
 
 ---
 
 ## What Counts as Valid Evidence
 
-Not all sources carry the same weight. Use the strongest evidence available for the claim you are making.
+Different sources carry different weight. Use the strongest evidence available for the claim you are making.
 
 **Tier 1: Strongest**
 - Systematic reviews and meta-analyses from peer-reviewed journals
@@ -123,7 +123,7 @@ Always include:
 
 ## The Trust System
 
-GitHub tracks activity. This project tracks trust. Those are not the same thing.
+GitHub tracks activity. This project tracks trust.
 
 Activity means you have made changes. Trust means the community has reason to believe your changes are accurate, careful, and useful.
 
@@ -155,13 +155,13 @@ Quality matters more than volume. Ten careful, well-cited paragraphs are worth m
 - Adds new claims backed by Tier 1-2 evidence
 - Makes a major edit with **>=3 citations** or **>=20 substantive lines**
 - Corrects an existing claim with stronger evidence or clearer limitations
-- Does not count: formatting, wording tweaks, or link fixes only
+- Formatting, wording tweaks, and link-only fixes do not count
 
 ---
 
 ## Challenging Existing Content
 
-Disagreement is welcome, but the process matters.
+Disagreement is welcome. Use the process below so the record is clear.
 
 1. **Open an Issue first.** Use a clear title, such as "Dispute: [Topic] - [Your concern]".
 
@@ -210,7 +210,7 @@ Avoid:
 
 ## What Happens After You Contribute
 
-Your PR gets reviewed. Someone may request changes. That is normal and not personal. The review is about the evidence and the clarity of the writing.
+Your PR gets reviewed. Someone may request changes. Treat that as part of the work. The review is about the evidence and the clarity of the writing.
 
 Once merged:
 - You appear in [contributors.yaml](contributors.yaml) automatically
@@ -218,7 +218,7 @@ Once merged:
 - The "last update" badge on the README changes
 - If you touched a new folder, that topic is reflected in your contributor profile
 
-Keep contributing, engage constructively in Issues, and keep the quality high. That is how trust builds here.
+Keep contributing, engage constructively in Issues, and keep the quality high. Trust builds through that record.
 
 ---
 
