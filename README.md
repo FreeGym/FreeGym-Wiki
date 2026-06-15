@@ -16,86 +16,76 @@ Live site: https://freegym.github.io/FreeGym-Wiki/
 
 ## The Premise
 
-It's January 2026. Anyone trying to find trustworthy health information is exhausted.
+It is January 2026. Trying to find reliable health information online is exhausting.
 
-Not from training. From algorithm-driven science. From cherry-picked studies weaponized to sell supplements with no scientific backing in 60-second Reels. From influencers who delete posts when proven wrong, leaving no trace of their misinformation.
+Most health advice now arrives through feeds built for speed, outrage, and sales. A weak study becomes a supplement pitch. A half-true warning becomes a 60-second Reel. When a creator gets something wrong, the post can disappear and the record disappears with it.
 
-So they're migrating to GitHub.
+This project uses GitHub because it gives health information a public record.
 
-Social media is built for engagement. A repository is built for accuracy and version control. The difference matters more than it sounds.
-
-Think of it as immutable truth with audit trails.
+Social media is built around attention. A repository is built around history, review, and version control. For health information, the format changes how mistakes are corrected, how disagreements are handled, and how trust is earned.
 
 ---
 
 ## What We're Fixing
 
-Social media health content is broken in ways that have become so normal we barely notice them anymore.
+Health content on social media has a few recurring problems. They are familiar enough that they can start to feel normal.
 
-**Fear-mongering disguised as education.** Seed oils will kill you. Sugar is poison. That ingredient you can't pronounce? Toxic. These claims spread because fear drives engagement, not because the evidence supports panic. A single rat study becomes "EXPOSED: What They Don't Want You to Know." The actual risk assessment, the dose-response relationship, the human relevance? Doesn't fit in a Reel.
+**Fear presented as education.** Seed oils will kill you. Sugar is poison. The ingredient you cannot pronounce must be toxic. Claims like this spread because fear travels quickly. A rat study, a mechanistic speculation, or one out-of-context chart can become a confident public warning while dose, population, and real-world risk get ignored.
 
-**Cherry-picked studies presented as settled science.** One study shows a correlation, and suddenly it's "PROVEN." The five other studies showing no effect? Never mentioned. The limitations section of the paper? Never read. Creators screenshot the abstract, ignore the methodology, and move on to the next post.
+**Cherry-picked studies.** One paper finds an association and suddenly the claim is "proven." The studies showing no effect are left out. So are the limitations, the study design, the confidence intervals, and whether the result applies to humans in the first place.
 
-**Contradictory advice with no way to reconcile it.** Keto is the answer. No, vegan is the answer. Actually, carnivore. Fasting is essential. Fasting is dangerous. Cardio kills gains. Cardio is mandatory. Every expert sounds confident, cites studies, and completely disagrees with the next expert. Regular people have no way to evaluate who's right.
+**Contradictory advice with no place to reconcile it.** Keto is the answer. Vegan is the answer. Carnivore is the answer. Fasting is essential. Fasting is dangerous. Cardio kills gains. Cardio is mandatory. Plenty of people cite studies while giving advice that directly conflicts with someone else citing studies. Confident opinions are everywhere. The hard part is knowing which claim survives scrutiny.
 
-**Deleted history when proven wrong.** An influencer makes a claim. It gets debunked. The post disappears. Their profile looks like they've never been wrong about anything. There's no record, no correction, no accountability. The audience who believed the original claim never sees the retraction.
+**No durable record of being wrong.** A creator makes a claim, gets corrected, deletes the post, and moves on. Their page can look clean even if thousands of people saw the original mistake. There is no public trail showing what changed or why.
 
-**Proxies instead of proof.** Social media judges credibility by followers, blue checkmarks, and titles. "Certified coach." "Doctor." "Researcher." But credentials are proxies, not proof. A weekend certification doesn't make someone right. Neither does a PhD. What matters is whether the claim holds up to scrutiny. This repo puts the science first. Anyone can contribute if the evidence is solid. We remove credential-based gatekeeping, not evidence-based standards.
+**Credentials used as shortcuts for proof.** Follower counts, blue checkmarks, degrees, and certifications can matter, but none of them settle whether a claim is true. A weekend certification can come with bad advice. A PhD can too. This wiki puts the claim and the evidence first. Anyone can contribute if the evidence is strong enough.
 
-**Financial incentives buried under "education."** The supplement they're recommending? Affiliate link. The diet they swear by? They sell a course on it. The ingredient they're attacking? Competitor to their sponsor. Disclosure requirements exist but enforcement doesn't.
+**Financial incentives hidden inside education.** A supplement recommendation may come with an affiliate link. A diet claim may lead to a course. An attack on an ingredient may benefit a sponsor. Disclosures exist, but the incentives are often hard to see from the post itself.
 
-**Anecdotes treated as evidence.** "I did X and my Y improved, therefore X causes Y improvement." No control group. No accounting for other variables. No consideration of placebo effect. Personal experience is valid but it's not data, and the distinction gets erased.
+**Anecdotes treated like data.** Personal experience can be useful, but controlled evidence answers a different question. "I did this and improved" leaves out what caused the improvement, what else changed, and whether the same thing applies to someone else.
 
-**Dangerous advice for serious conditions.** People with actual medical conditions get told to try unproven alternatives. Vaccine misinformation spreads. Cancer "cures" circulate. Mental health advice comes from everywhere. The algorithm doesn't distinguish between harmless fitness tips and potentially lethal medical guidance. This repo cares only about what the science says. Science doesn't respect authority bias, follower counts, or h-index. A claim is either supported by evidence or it isn't, regardless of who made it.
+**Risky advice for serious conditions.** Fitness tips and medical advice now sit beside each other in the same feed. People with real conditions can be pushed toward unproven alternatives, vaccine misinformation, cancer "cures," or mental health advice from people without the training or context to give it. Some mistakes cause real harm.
 
-**Unrealistic expectations presented as normal.** Physiques achieved with performance-enhancing drugs presented as "natural transformation." Photoshopped before-and-afters. Lighting tricks and pump timing sold as sustainable results. People compare themselves to illusions and feel like failures.
+**Unrealistic standards made to look normal.** Drug-assisted physiques are presented as natural. Before-and-after images are edited, lit, pumped, and timed for effect. People compare themselves to a performance and assume they are failing.
 
-**Exercise advice that causes injury.** Form cues that sound good but biomechanically don't make sense. "No pain no gain" mentality that ignores warning signals. One-size-fits-all programming that doesn't account for individual differences, injury history, or recovery capacity.
+**Exercise advice that ignores bodies.** Some form cues sound authoritative but make little biomechanical sense. Some programming ignores injury history, recovery, anatomy, or training age. "No pain, no gain" is easy to repeat and easy to misuse.
 
-**Nutrition claims that ignore context.** "This food is bad" without mentioning dose matters. "This diet is optimal" without mentioning it depends on the individual. Absolute statements about complex systems that don't have absolute answers.
+**Nutrition claims with no context.** "This food is bad" often leaves out dose, pattern, health status, culture, access, and goals. Most useful nutrition answers are conditional. Social media rewards absolute ones.
 
-This repo exists because Brandolini's Law is real: the amount of energy needed to refute misinformation is an order of magnitude larger than what it takes to produce it. Social media optimizes for production. We're optimizing for refutation, documentation, and collaborative truth-finding.
+This repo exists because misinformation is cheap to produce and expensive to clean up. We are trying to make the clean-up work public, organized, and easier to build on.
 
 ---
 
 ## Why a Repository Beats Social Media
 
-**The diff is the narrative.**
+**The diff shows the work.**
 
-On Instagram, when a creator changes their mind, they either delete the old post or publish a new one that contradicts the first. History erased or audience confused. Pick your poison.
+On social media, a correction usually means an old post gets deleted or a new post contradicts it. Either the history vanishes or the audience is left to piece it together.
 
-In this repository, the history of scientific consensus lives in the Git commit history. Open `supplements/creatine.md` and click "History." You'll see something like this:
+In a repository, the history stays visible. Open an article, click "History," and you can see what changed:
 
-```
+```text
 Jan 2024: Added warning regarding hair loss (Citation X)
-Mar 2025: REMOVED hair loss warning. New meta-analysis (Citation Y) debunks connection.
+Mar 2025: Removed hair loss warning. New meta-analysis (Citation Y) found no clear support for the claim.
 ```
 
-Critics call it flip-flopping. Engineers call it updating the software based on new patches. The diff proves intellectual honesty. You can watch science correct itself in real time.
+Honest updating leaves a trail.
 
-**Issues replace comments.**
+**Issues give debate somewhere to live.**
 
-YouTube comment sections are graveyards of trolls and anecdotes. GitHub Issues are structured forums for methodological debate.
+Comment sections are built for reactions. GitHub Issues are better suited for slow disagreement.
 
-Picture this. You publish a protocol on Zone 2 Cardio. A PhD student doesn't leave a nasty comment. Instead, they open Issue #402 titled "Correction on Mitochondrial Density Citation." They provide a conflicting study. The community discusses p-values and sample sizes in the thread. Someone labels the issue as a bug related to accuracy. A Pull Request resolves it by updating the wiki with a nuanced caveat.
+If a citation is wrong, someone can open an Issue explaining the problem, link the better evidence, and let others respond. If the correction holds up, a Pull Request changes the article and links back to the discussion. The debate becomes part of the public record instead of disappearing into a comment thread.
 
-The noise gets filtered out. Only the signal remains.
+**Forks make disagreement visible.**
 
-**Forking creates transparency.**
+The main repository is the shared evidence base. Someone with a specific hypothesis can fork it and make their case without hiding where they differ from the main version.
 
-The main repo, what we call upstream, is the Gold Standard. It contains only claims proven by high-quality meta-analyses. Boring, dry, accurate.
+If a coach, clinic, or creator uses a modified version, readers can compare the fork to the main repo and see exactly what changed. Vague claims about "the science" become harder to hide when the differences are visible line by line.
 
-A niche creator, say a Keto coach, forks that repo. They keep the Sleep and Hydration modules synced with upstream, but they modify the Nutrition folder to reflect their specific hypothesis.
+**Automation catches the boring failures.**
 
-Here's where it gets interesting. Users can view the exact diff between the Global Repo and the Coach's Fork. That diff is their Unique Value Proposition. No hidden agendas. No mystery about where someone deviates from consensus. You can see precisely what they believe that mainstream science doesn't, and you can evaluate it for yourself.
-
-**Continuous integration validates citations.**
-
-In 2026, "trust me, bro" is dead.
-
-This repository uses automated workflows to validate claims. Broken link checkers flag retracted studies or dead URLs immediately. Live badges show what percentage of citations come from peer-reviewed sources versus preprints. A Twitter creator posts a screenshot of a study title. A GitHub creator posts a markdown file where the study is parsed, limitations are bolded, and confidence intervals are visualized.
-
-That's the difference between performance and proof.
+Broken citations, dead links, and stale references are boring maintenance problems with real consequences. This repo uses automated checks so basic upkeep is less dependent on memory. Automation cannot decide what is true, but it helps keep the evidence trail inspectable.
 
 ---
 
@@ -103,31 +93,33 @@ That's the difference between performance and proof.
 
 | Feature | Instagram / YouTube | Evidence-Based Repository |
 |---------|---------------------|---------------------------|
-| **Updates** | New post buries the old | `git push` updates a living document |
-| **Corrections** | "Sorry guys" video | `Revert commit` with explanation |
-| **Debate** | Flame wars in comments | Structured Issues with labels |
-| **Sources** | "Link in bio" (often broken) | Hyperlinked footnotes with DOI |
-| **State** | Static snapshot | Living, breathing, versioned truth |
+| **Updates** | New post buries the old | `git push` updates the document |
+| **Corrections** | Apology video or deletion | Commit history with an explanation |
+| **Debate** | Comment threads | Structured Issues with labels |
+| **Sources** | "Link in bio" | Linked references with DOI or PMID |
+| **State** | Static post | Versioned living document |
 | **Credibility** | Follower count | Contribution history |
-| **Accountability** | Delete and pretend | Immutable commit history |
+| **Accountability** | Delete and move on | Public history |
 
 ---
 
 ## The Paradigm Shift
 
-Think about how inefficient the current system is. 500 fitness YouTubers each make "How to Build Muscle" videos with slightly different opinions. Same topic, scattered across platforms, no way to synthesize or verify.
+Right now, hundreds of creators can make separate versions of "How to Build Muscle," each with different claims, different citations, and no shared way to resolve conflicts.
 
-Now imagine one collaborative, peer-reviewed wiki article. It links to actual studies, not "research shows" with nothing behind it. It shows contribution history, so you know who added what, when, and why. Experts can challenge and improve claims via Pull Requests. Anyone can fork it and adapt it for specific populations. Trust builds through process, not personality.
+This project is built around a different model: one public article that can be challenged, corrected, improved, forked, and cited. Experts can open Pull Requests. Readers can inspect the sources. Contributors build a public body of work instead of asking people to trust a persona.
+
+Trust should come from the work people can inspect.
 
 ---
 
 ## Why Your GitHub Profile Will Matter
 
-In 2026, the most influential "Health Influencer" is a repository, not a person.
+In health and fitness, a useful public record is more valuable than a polished feed.
 
-Your GitHub profile shows you contributed to truth, not that you performed for an algorithm. Commits become receipts. Pull requests become peer review. Resolved issues become corrections in the public record.
+Your GitHub profile can show that you contributed to accurate, evidence-based material. Commits become receipts. Pull Requests show how your work was reviewed. Issues show how you handle disagreement and correction.
 
-Health, fitness, and medicine drown in noise. A repo like this is pure signal.
+Credibility built this way is harder to fake.
 
 ---
 
@@ -135,13 +127,13 @@ Health, fitness, and medicine drown in noise. A repo like this is pure signal.
 
 This repository powers the verification system for [FreeGym](https://freegym.ai/), a health and fitness social network.
 
-**Red Checkmark**: Contributors who have merged substantive, evidence-based content earn verification. This checkmark appears on their FreeGym profile, linked directly to their contribution history here.
+**Red Checkmark**: Contributors who have merged substantive, evidence-based content earn verification. The checkmark appears on their FreeGym profile and links back to their contribution history here.
 
-**Topic Badges**: Contribute to specific domains (nutrition, exercise, sleep) and earn badges showing where you've demonstrated knowledge through actual work.
+**Topic Badges**: Contributors can earn badges for specific domains, such as nutrition, exercise, and sleep, by doing accepted work in those areas.
 
-**Maintainer Star**: Those who review and maintain quality standards get a star designation instead of a checkmark.
+**Maintainer Star**: People who review contributions and help maintain quality standards receive a star designation instead of a checkmark.
 
-The key difference from other verification systems: you can't buy it, you can't claim it, you can only earn it through auditable contributions. When someone sees your red checkmark on FreeGym, they can click through and see exactly what you contributed.
+Most verification systems can be bought, borrowed, or claimed through status. FreeGym verification is earned through work that other people can inspect.
 
 See [VERIFICATION.md](VERIFICATION.md) for the full rules.
 
@@ -156,12 +148,12 @@ If you want to audit or extend the verification system, start here:
 
 ## Contributing
 
-This wiki is open source. Truth doesn't have a paywall.
+This wiki is open source. Truth belongs outside a paywall.
 
-If you want to contribute evidence, correct an error, or propose a new topic, see our [Contribution Guidelines](CONTRIBUTING.md).
+If you want to add evidence, correct an error, or propose a new topic, read the [Contribution Guidelines](CONTRIBUTING.md).
 
 ---
 
 ## License
 
-This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Share freely, attribute properly, and keep derivatives open.
+This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Share it freely, attribute it properly, and keep derivatives open.
