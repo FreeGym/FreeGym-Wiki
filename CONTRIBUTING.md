@@ -1,6 +1,6 @@
 # Contributing to FreeGym Wiki
 
-This document explains how to contribute, what counts as valid evidence, and how you build trust in this community.
+This guide explains how to contribute, what kind of evidence we accept, and how trust is built in this project.
 
 ---
 
@@ -8,97 +8,95 @@ This document explains how to contribute, what counts as valid evidence, and how
 
 Your contribution history becomes your credibility.
 
-On social media, anyone can call themselves a "nutrition expert" or "fitness coach." Here, your expertise is demonstrated, not declared. You either have a track record of accurate, well-cited contributions to the nutrition folder, or you don't. The history speaks for itself.
+On social media, anyone can call themselves a nutrition expert, fitness coach, or researcher. Here, the record is more concrete. If you have written accurate, well-cited material in the nutrition folder, people can see it. If you have corrected claims in the sleep folder, they can see that too. The work is the proof.
 
-Corrections build trust here instead of destroying it. In the influencer world, admitting you were wrong is brand suicide. You delete and pretend. Here, updating your position based on new evidence is visible in the commit history. That transparency signals intellectual honesty, which is rare and valuable in health content.
+Corrections are part of the culture here. In most public-facing health content, being wrong is treated like a brand problem, so posts get deleted and everyone moves on. In this repo, changing your mind because better evidence appears is visible in the history. The record shows the correction instead of hiding it.
 
-You become associated with specific topics. If someone wants to know who actually understands sleep science, they can look at who has contributed the most reviewed and accepted content to the sleep folder. That's a different kind of authority than follower count. It's earned through work, not performance.
+You also become associated with topics through actual work. If someone wants to know who has contributed meaningfully to sleep science, they can look at the accepted contributions in that area. The authority comes from reviewed work instead of follower count.
 
-Building authority on social media means playing the engagement game. Hot takes. Controversy. Fear-mongering gets views. Here, you build authority by being right and being helpful. No algorithm punishes you for being accurate but boring.
+Social platforms reward hot takes, speed, controversy, and fear. This project rewards accuracy, usefulness, and careful revisions. A good contribution may be quiet, but it stays linkable and citable.
 
-A tweet disappears in hours. A contribution to this wiki is permanent, linkable, and citable. When someone asks "why should I trust you on this topic?" you can point to a body of work instead of a follower count.
-
-Most health creators are indistinguishable. Same content, same format, same engagement tactics. Contributing here signals you're different. You care about accuracy enough to participate in a peer-reviewed, version-controlled system. That matters to the people worth reaching.
+Most health creators end up looking similar: same formats, same claims, same engagement tactics. Contributing here shows that you care enough about accuracy to put your work in a public, reviewable system.
 
 ---
 
 ## How Contributions Work
 
-You contribute by opening a Pull Request. The `main` branch is protected, so direct pushes will be rejected. All changes must go through a PR.
+You contribute by opening a Pull Request. The `main` branch is protected, so direct pushes are rejected. Every change goes through review.
 
-Find something wrong? Open a PR with the fix. Have evidence to add? Open a PR. Disagree with a claim? Open an Issue first, discuss it, then open a PR if the community agrees.
+If you find an error, open a PR with the fix. If you have evidence to add, open a PR. If you disagree with an existing claim, open an Issue first, discuss the evidence, and then open a PR if the discussion supports a change.
 
-When your first PR gets merged, you're automatically added to [contributors.yaml](contributors.yaml). A bot handles this. You don't need to ask anyone.
+When your first PR is merged, you are automatically added to [contributors.yaml](contributors.yaml). No separate request is needed.
 
 ---
 
 ## Step-by-Step: Submitting Your First Contribution
 
-If you've never contributed to a GitHub project before, here's exactly what to do.
+If you have never contributed to a GitHub project before, this is the basic path.
 
 **1. Fork the repository**
 
-Click the "Fork" button in the top-right corner of [the repo page](https://github.com/FreeGym/FreeGym-Wiki). This creates your own copy under your GitHub account.
+Click the "Fork" button in the top-right corner of [the repo page](https://github.com/FreeGym/FreeGym-Wiki). This creates a copy under your GitHub account.
 
 **2. Make your changes**
 
-You can edit files directly on GitHub (click any file, then the pencil icon) or clone your fork locally if you prefer working on your computer.
+You can edit files directly on GitHub by opening a file and clicking the pencil icon. If you prefer working locally, clone your fork and edit the files on your computer.
 
 **3. Commit your changes**
 
-If editing on GitHub, scroll down and write a short description of what you changed. Click "Commit changes."
+If you are editing on GitHub, scroll down after making your change, write a short description, and click "Commit changes."
 
-If working locally, stage and commit your changes with Git, then push to your fork.
+If you are working locally, stage and commit your changes with Git, then push them to your fork.
 
 **4. Open a Pull Request**
 
-Go back to the original FreeGym-Wiki repo. GitHub will show a banner saying you recently pushed to your fork. Click "Compare & pull request."
+Go back to the original FreeGym-Wiki repo. GitHub usually shows a banner for recently pushed branches. Click "Compare & pull request."
 
-Write a clear title and description. Explain what you changed and why. If you're adding citations, mention which studies you're referencing.
+Write a clear title and description. Explain what you changed and why. If you added citations, mention the studies you used.
 
 **5. Wait for review**
 
-A maintainer will review your PR. They might approve it, request changes, or ask questions. This is normal. Respond to feedback, make adjustments if needed.
+A maintainer will review the PR. They may approve it, ask questions, or request changes. This happens often. Respond to the feedback and update the PR if needed.
 
 **6. Get merged**
 
-Once approved, a maintainer merges your PR. Your changes are now part of the wiki. The bot automatically adds you to [contributors.yaml](contributors.yaml).
+Once the PR is approved, a maintainer merges it. Your change becomes part of the wiki, and [contributors.yaml](contributors.yaml) is updated automatically.
 
-That's it. You've contributed to open-source health knowledge.
+You have contributed to open-source health knowledge.
 
 ---
 
 ## What Counts as Valid Evidence
 
-Not all sources are equal. We use a hierarchy.
+Different sources carry different weight. Use the strongest evidence available for the claim you are making.
 
 **Tier 1: Strongest**
 - Systematic reviews and meta-analyses from peer-reviewed journals
 - Cochrane reviews
-- Large RCTs (randomized controlled trials) with pre-registration
+- Large randomized controlled trials with pre-registration
 
 **Tier 2: Strong**
-- Individual RCTs from peer-reviewed journals
+- Individual randomized controlled trials from peer-reviewed journals
 - Prospective cohort studies with large sample sizes
 
 **Tier 3: Acceptable with caveats**
-- Observational studies (note limitations clearly)
-- Mechanistic studies (cell/animal, must be labeled as such)
+- Observational studies, with limitations clearly noted
+- Mechanistic studies, including cell or animal research, labeled clearly
 - Expert consensus statements from recognized bodies
 
 **Tier 4: Not acceptable as primary evidence**
-- Blog posts, podcasts, YouTube videos
-- Unpublished preprints (can be mentioned, not cited as proof)
+- Blog posts, podcasts, or YouTube videos
+- Unpublished preprints, though they can be mentioned as preliminary
 - Single case studies
-- "Someone said" or personal anecdotes
+- Personal anecdotes or "someone said" claims
 
-When you add a claim, cite the strongest available evidence. If only Tier 3 evidence exists, say so explicitly.
+When you add a claim, cite the best available evidence. If only weaker evidence exists, say that plainly in the article.
 
 ---
 
 ## How to Format Citations
 
-Use inline links with the study title or a brief description. Put the full reference at the bottom of the file.
+Use inline links in the text, then include the full reference at the bottom of the file.
 
 **In the text:**
 ```markdown
@@ -125,57 +123,57 @@ Always include:
 
 ## The Trust System
 
-GitHub tracks activity. We track trust. They're different.
+GitHub tracks activity. This project tracks trust.
 
-Activity means you've done stuff. Trust means the community believes your stuff is accurate.
+Activity means you have made changes. Trust means the community has reason to believe your changes are accurate, careful, and useful.
 
 **Three levels exist:**
 
 | Level | What it means | How you get there |
 |-------|---------------|-------------------|
-| Contributor | You've had a PR merged | Automatic on first merge |
+| Contributor | You have had a PR merged | Automatic on first merge |
 | Trusted | Maintainers vouch for your work | Maintainers decide |
 | Maintainer | You can merge PRs and promote others | Existing maintainers invite you |
 
 **How promotion works:**
 
-There's no fixed threshold. After you've contributed for a while, a maintainer might open an Issue proposing to promote you. They'll link to your past contributions. Other maintainers weigh in. If there's consensus, someone updates [contributors.yaml](contributors.yaml) with your new status and who vouched for you.
+There is no fixed threshold. After you have contributed for a while, a maintainer may open an Issue proposing to promote you. They will link to your past contributions, other maintainers can weigh in, and if there is consensus, someone updates [contributors.yaml](contributors.yaml) with your new status and who vouched for you.
 
-This means promotions are transparent. Anyone can see who vouched for whom and why.
+Promotions are public by design. Anyone can see who vouched for whom and why.
 
-**What we look at (but don't automate):**
+**What we look at, without automating it:**
 
 - Do your citations check out?
 - Do you represent studies accurately, including limitations?
 - When someone challenges your work, do you engage constructively?
-- Do your contributions survive, or do they get reverted often?
+- Do your contributions hold up over time, or do they often need to be reverted?
 
-We value quality over quantity. Ten well-cited paragraphs matter more than a hundred sloppy ones.
+Quality matters more than volume. Ten careful, well-cited paragraphs are worth more than a hundred sloppy ones.
 
-**What counts as substantive (for verification):**
+**What counts as substantive for verification:**
 
-- Adds new claims backed by Tier 1–2 evidence
-- Major edit with **≥3 citations** or **≥20 substantive lines**
+- Adds new claims backed by Tier 1-2 evidence
+- Makes a major edit with **>=3 citations** or **>=20 substantive lines**
 - Corrects an existing claim with stronger evidence or clearer limitations
-- **Does not count:** formatting, wording tweaks, or link fixes only
+- Formatting, wording tweaks, and link-only fixes do not count
 
 ---
 
 ## Challenging Existing Content
 
-Disagreement is welcome. Here's the process.
+Disagreement is welcome. Use the process below so the record is clear.
 
-1. **Open an Issue first.** Title it clearly: "Dispute: [Topic] - [Your concern]"
+1. **Open an Issue first.** Use a clear title, such as "Dispute: [Topic] - [Your concern]".
 
-2. **State your case with evidence.** Link to studies that contradict the current claim. Explain why your evidence is stronger (larger sample, better methodology, more recent).
+2. **State your case with evidence.** Link to studies that contradict the current claim. Explain why your evidence is stronger, such as a larger sample, better methodology, or more recent data.
 
-3. **Wait for discussion.** Give others time to respond. A few days minimum.
+3. **Wait for discussion.** Give others time to respond. A few days is usually the minimum.
 
 4. **If consensus forms, open a PR.** Reference the Issue number in your PR description.
 
-5. **If no consensus, that's okay.** The Issue stays open as a documented debate. Future readers can see both sides.
+5. **If no consensus forms, leave the Issue open.** A documented debate is still useful. Future readers can see both sides and the evidence behind them.
 
-Don't just edit things you disagree with. The Issue trail matters. It shows the community considered the evidence.
+Do not rewrite contested content without discussion. The Issue trail shows that the community considered the evidence.
 
 ---
 
@@ -186,41 +184,41 @@ Before submitting:
 - [ ] Claims are supported by Tier 1 or Tier 2 evidence where possible
 - [ ] Citations include author, year, journal, and PMID/DOI
 - [ ] Limitations are noted when using weaker evidence
-- [ ] You've checked that linked URLs actually work
-- [ ] The writing is clear and accessible (avoid unnecessary jargon)
-- [ ] You've searched existing Issues to see if this was already discussed
+- [ ] Linked URLs actually work
+- [ ] The writing is clear and accessible
+- [ ] Existing Issues have been checked for related discussion
 
 ---
 
 ## Style Guide
 
-Write for someone smart but unfamiliar with the topic.
+Write for someone smart who is new to the topic.
 
 - Define technical terms on first use
 - Use active voice
-- Keep sentences varied in length
-- No hype or sensationalism
-- State uncertainty when it exists ("evidence suggests" vs "studies prove")
+- Vary sentence length
+- Avoid hype and sensationalism
+- State uncertainty when it exists, such as "evidence suggests" instead of "studies prove"
 
 Avoid:
 - Clickbait framing
-- Absolute statements when evidence is mixed
+- Absolute statements when the evidence is mixed
 - Dismissing legitimate scientific debate
-- Cherry-picking studies that support one view
+- Cherry-picking studies that support only one view
 
 ---
 
 ## What Happens After You Contribute
 
-Your PR gets reviewed. Someone might request changes. This is normal and not personal. We're checking the evidence, not judging you.
+Your PR gets reviewed. Someone may request changes. Treat that as part of the work. The review is about the evidence and the clarity of the writing.
 
 Once merged:
 - You appear in [contributors.yaml](contributors.yaml) automatically
-- Your contribution is part of the permanent Git history
+- Your contribution becomes part of the permanent Git history
 - The "last update" badge on the README changes
-- If you touched a new folder, it's noted in your contributor profile
+- If you touched a new folder, that topic is reflected in your contributor profile
 
-Keep contributing, engage constructively in Issues, and maintain quality. That's how you build trust here.
+Keep contributing, engage constructively in Issues, and keep the quality high. Trust builds through that record.
 
 ---
 
