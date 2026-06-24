@@ -67,6 +67,7 @@ jobs:
             --exclude "^https://www\\.anid\\.cl/"
             --exclude "^https://www\\.nifa\\.usda\\.gov/"
             --exclude "^https://www\\.daytwo\\.com/"
+            --exclude "^https://www\\.sweeteners\\.org/"
             --exclude "^https://(?:www\\.)?nationalacademies\\.org/read/"
             --exclude "^https://nap\\.nationalacademies\\.org/read/"
             --exclude "^https://(?:www\\.)?link\\.springer\\.com"
