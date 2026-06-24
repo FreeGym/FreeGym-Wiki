@@ -145,16 +145,27 @@ def label_topic(key):
     return TOPIC_LABELS.get(key, key.replace('-', ' ').title())
 
 
-def chunk_topics(topics, max_lines=2):
-    """Split topics into ~equal chunks across at most `max_lines` lines."""
-    n = len(topics)
-    if n == 0:
-        return []
-    if n <= max_lines:
-        return [[t] for t in topics]
-    per_line = (n + max_lines - 1) // max_lines
-    return [topics[i:i + per_line] for i in range(0, n, per_line)]
+def chunk_topics(topics, max_chars):
+    """Wrap topic labels into lines that fit the card width."""
+    chunks = []
+    current = []
+    current_len = 0
+    separator_len = len('  ·  ')
 
+    for topic in topics:
+        topic_len = len(label_topic(topic))
+        next_len = topic_len if not current else current_len + separator_len + topic_len
+        if current and next_len > max_chars:
+            chunks.append(current)
+            current = [topic]
+            current_len = topic_len
+        else:
+            current.append(topic)
+            current_len = next_len
+
+    if current:
+        chunks.append(current)
+    return chunks
 
 def format_verified_since(ym):
     """'2026-05' -> 'May 2026'. Returns the input on parse failure."""
@@ -531,7 +542,6 @@ def generate_communicator_card(
 
     # ── Topics as typography (no badges) ─────────────────────────────
     visible = list(normalize_topics(topics))
-    chunks = chunk_topics(visible, max_lines=2)
 
     if is_wide:
         topic_size = min(unit * 0.034, 22)
@@ -545,6 +555,13 @@ def generate_communicator_card(
         topic_size = min(unit * 0.028, 30)
         topic_x = width / 2
         topic_anchor = 'middle'
+
+    if is_wide:
+        topic_max_width = width - topic_x - margin
+    else:
+        topic_max_width = width - (margin * 2)
+    topic_max_chars = max(24, int(topic_max_width / (topic_size * 0.56)))
+    chunks = chunk_topics(visible, max_chars=topic_max_chars)
 
     if is_tall:
         topic_block_top = height * 0.68
