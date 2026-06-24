@@ -93,6 +93,8 @@ jobs:
             --exclude "^https://profith\\.ugr\\.es"
             --exclude "^https://ouci\\.dntb\\.gov\\.ua"
             --exclude "^https://(?:www\\.)?jddonline\\.com"
+            --exclude "^https://www\\.ema\\.europa\\.eu/"
+            --exclude "^https://cdr\\.lib\\.unc\\.edu/"
             --timeout 30
             '**/*.md'
           fail: true
