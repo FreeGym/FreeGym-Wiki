@@ -530,7 +530,7 @@ def generate_communicator_card(
         mission_anchor = 'middle'
 
     # ── Topics as typography (no badges) ─────────────────────────────
-    visible = list(normalize_topics(topics))[:8]
+    visible = list(normalize_topics(topics))
     chunks = chunk_topics(visible, max_lines=2)
 
     if is_wide:
