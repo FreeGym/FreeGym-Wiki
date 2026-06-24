@@ -760,8 +760,12 @@ maintainers:
     type: edit
     citations_added: 1
     pr: 227
-  total_citations: 2137
-  commits: 274
+  - file: Womens-Health/Training & Recovery/26-should-women-train-differently-during-perimenopause.md
+    type: major_edit
+    citations_added: 11
+    pr: 241
+  total_citations: 2148
+  commits: 283
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
