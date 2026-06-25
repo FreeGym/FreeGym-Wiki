@@ -377,34 +377,75 @@ def render_index(profiles, communicators, topics, stats):
 '''
 
 
+def contribution_area(file_path):
+    if not file_path or file_path == '-':
+        return '-'
+    return label_topic(file_path.split('/', 1)[0])
+
+
+def contribution_title(file_path):
+    if not file_path or file_path == '-':
+        return 'Untitled article'
+    title = Path(file_path).stem.replace('-', ' ').replace('_', ' ')
+    title = ' '.join(title.split())
+    return title[:1].upper() + title[1:] if title else Path(file_path).name
+
+
+def contribution_type_label(ctype):
+    labels = {
+        'created': 'Created',
+        'major_edit': 'Major edit',
+        'edit': 'Edit',
+    }
+    return labels.get(ctype, str(ctype).replace('_', ' ').title())
+
+
 def render_contributions(contributions):
     if not contributions:
-        return '<div class="contribution-item">No recorded contributions yet.</div>'
+        return '<div class="empty-state">No recorded contributions yet.</div>'
 
-    items = []
+    rows = []
     for item in contributions:
         file_path = item.get('file', '-')
-        file_name = file_path.split('/')[-1]
         ctype = item.get('type', 'edit')
         citations_added = item.get('citations_added', 0)
         pr_number = item.get('pr')
 
-        pr_link = ''
-        if pr_number:
-            pr_link = f' | PR <a href="{REPO_URL}/pull/{pr_number}">#{pr_number}</a>'
+        article = esc(contribution_title(file_path))
+        area = esc(contribution_area(file_path))
+        work = esc(contribution_type_label(ctype))
+        citations = format_number(citations_added)
+        article_url = f'{REPO_URL}/blob/main/{file_path}'
+        pr_html = f'<a href="{REPO_URL}/pull/{pr_number}">#{pr_number}</a>' if pr_number else '-'
 
-        items.append(
-            f'''<div class="contribution-item">
-  <a href="{REPO_URL}/blob/main/{file_path}">{esc(file_name)}</a>
-  <div class="contribution-meta">
-    <span>Type: {esc(ctype)}</span>
-    <span>Citations added: {format_number(citations_added)}</span>
-    <span>File: {esc(file_path)}{pr_link}</span>
-  </div>
-</div>'''
+        rows.append(
+            f'''<tr>
+  <td><a class="contribution-title" href="{article_url}">{article}</a></td>
+  <td>{area}</td>
+  <td><span class="work-pill">{work}</span></td>
+  <td class="number-cell">{citations}</td>
+  <td>{pr_html}</td>
+</tr>'''
         )
-    return '\n'.join(items)
 
+    table_rows = '\n      '.join(rows)
+
+    return f'''<div class="contribution-table-wrap">
+  <table class="contribution-table">
+    <thead>
+      <tr>
+        <th scope="col">Article</th>
+        <th scope="col">Area</th>
+        <th scope="col">Work</th>
+        <th scope="col">Citations</th>
+        <th scope="col">PR</th>
+      </tr>
+    </thead>
+    <tbody>
+      {table_rows}
+    </tbody>
+  </table>
+</div>'''
 
 def render_profile(profile):
     contributions = profile['contribution_count']
