@@ -822,8 +822,12 @@ maintainers:
     type: created
     citations_added: 10
     pr: 244
+  - file: wearables/Wearable Fitness Trackers/body-composition-biological-age-healthspan-scores.md
+    type: edit
+    citations_added: 0
+    pr: 249
   total_citations: 2392
-  commits: 286
+  commits: 289
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
