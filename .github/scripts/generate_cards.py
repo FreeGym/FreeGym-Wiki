@@ -438,12 +438,12 @@ def generate_card_reference(
     if active_recent:
         p_fs = max(width * 0.0215, 18)
         dot_r = max(width * 0.008, 8)
-        pad_x = p_fs * 0.9
+        pad_x = p_fs * 1.05
         gap = p_fs * 0.55
-        text_w = len('ACTIVE') * p_fs * 0.62
+        text_w = len('ACTIVE') * p_fs * 0.70
         pill_w = pad_x * 2 + dot_r * 2 + gap + text_w
         pill_h = p_fs * 2.18
-        pill_x = content_x + content_w - pill_w
+        pill_x = content_x + content_w - pill_w - width * 0.018
         pill_y = frame_y + height * 0.04
         cy_p = pill_y + pill_h / 2
         dot_cx = pill_x + pad_x + dot_r
@@ -645,7 +645,7 @@ def generate_card_reference(
         isize = icon_r * 1.06
         text_x = tx + stat_tile_h * 0.91
         lbl_size = max(width * 0.0145, 15)
-        val_size = min(width * 0.036, 40)
+        val_size = min(width * 0.033, 36)
         tile_rx = stat_tile_h * 0.16
         hl_inset = max(tile_rx * 0.5, 6)
         p.append(
