@@ -1034,214 +1034,216 @@ def generate_communicator_card(
     """
     width, height = CARD_SIZES[size_label]
     unit = min(width, height)
-    margin = unit * 0.06
-    is_wide = width > height
-    is_tall = height >= width * 1.4  # story format needs vertical redistribution
+    cx = width / 2.0
 
-    # ── Footer band ──────────────────────────────────────────────────
-    footer_h = max(height * 0.17, 145)
-    footer_y = height - footer_h
+    frame_x = width * 0.025
+    frame_y = height * 0.02
+    frame_w = width - 2 * frame_x
+    frame_h = height - 2 * frame_y
+    corner = width * 0.035
+    pad = width * 0.045
+    avail_w = frame_w - 2 * pad
 
     logo_uri, logo_w, logo_h = (logo_data or (None, None, None))
+
+    # ── footer (rounded bottom panel) ────────────────────────────────
+    footer_h = max(height * 0.13, 150)
+    footer_y = frame_y + frame_h - footer_h
     if logo_uri and logo_w and logo_h:
         logo_aspect = logo_w / logo_h
-        logo_w_max = width * 0.75
-        logo_h_cap = footer_h * 0.72
-        logo_w_final = logo_w_max
+        logo_w_final = width * 0.46
         logo_h_final = logo_w_final / logo_aspect
-        if logo_h_final > logo_h_cap:
-            logo_h_final = logo_h_cap
-            logo_w_final = logo_h_final * logo_aspect
         logo_x = (width - logo_w_final) / 2
-        logo_y = footer_y + footer_h * 0.10
+        logo_y = footer_y + footer_h * 0.42 - logo_h_final / 2
     else:
         logo_x = logo_y = logo_w_final = logo_h_final = 0
+    auth_size = max(unit * 0.017, 13)
 
-    auth_size = max(unit * 0.018, 14)
-    auth_y_offset = footer_h * 0.13
-
-    # ── Avatar ───────────────────────────────────────────────────────
-    if is_wide:
-        avatar_d = min(unit * 0.40, 250)
-    elif is_tall:
-        avatar_d = min(unit * 0.27, 290)
-    else:
-        avatar_d = min(unit * 0.24, 260)
-    avatar_r = avatar_d / 2
-
-    if is_wide:
-        avatar_cx = margin + avatar_r + unit * 0.04
-        avatar_cy = height / 2
-    elif is_tall:
-        avatar_cx = width / 2
-        avatar_cy = height * 0.18
-    else:
-        avatar_cx = width / 2
-        avatar_cy = margin + avatar_r + unit * 0.015
-
-    ring_stroke_w = max(unit * 0.0025, 1.5)
-    ring_color = '#3a3a3a'
-
-    # Verification glyph: red filled circle with white checkmark, bottom-right of avatar
-    glyph_r = avatar_r * 0.27
-    glyph_cx = avatar_cx + avatar_r * 0.72
-    glyph_cy = avatar_cy + avatar_r * 0.72
-    check_size = glyph_r * 0.95
-    cx1 = glyph_cx - check_size * 0.40
-    cy1 = glyph_cy + check_size * 0.05
-    cx2 = glyph_cx - check_size * 0.05
-    cy2 = glyph_cy + check_size * 0.32
-    cx3 = glyph_cx + check_size * 0.42
-    cy3 = glyph_cy - check_size * 0.32
-    glyph_stroke_w = glyph_r * 0.18
-
-    # ── Name + handle + role label ───────────────────────────────────
-    if is_wide:
-        text_x_anchor = avatar_cx + avatar_r + unit * 0.06
-        text_align = 'start'
-        name_size = min(unit * 0.085, 54)
-        name_y = height * 0.30
-    else:
-        text_x_anchor = width / 2
-        text_align = 'middle'
-        name_size = min(unit * 0.075, 82)
-        name_y = avatar_cy + avatar_r + unit * 0.075
-
-    handle_size = name_size * 0.36
-    role_size = name_size * 0.24
-    if is_wide:
-        handle_y = name_y + handle_size * 2.4
-        role_y = handle_y + role_size * 2.4
-    else:
-        handle_y = name_y + handle_size * 1.7
-        role_y = handle_y + role_size * 1.9
-
-    # ── Mission pull-quote ───────────────────────────────────────────
-    if is_wide:
-        mission_size = min(unit * 0.045, 26)
-        mission_y = role_y + mission_size * 2.0
-        mission_x = text_x_anchor
-        mission_anchor = 'start'
-    elif is_tall:
-        mission_size = min(unit * 0.050, 54)
-        mission_y = height * 0.50
-        mission_x = width / 2
-        mission_anchor = 'middle'
-    else:
-        mission_size = min(unit * 0.046, 48)
-        mission_y = role_y + mission_size * 2.4
-        mission_x = width / 2
-        mission_anchor = 'middle'
-
-    # ── Topics as typography (no badges) ─────────────────────────────
-    visible = list(normalize_topics(topics))
-
-    if is_wide:
-        topic_size = min(unit * 0.034, 22)
-        topic_x = text_x_anchor
-        topic_anchor = 'start'
-    elif is_tall:
-        topic_size = min(unit * 0.028, 34)
-        topic_x = width / 2
-        topic_anchor = 'middle'
-    else:
-        topic_size = min(unit * 0.028, 30)
-        topic_x = width / 2
-        topic_anchor = 'middle'
-
-    if is_wide:
-        topic_max_width = width - topic_x - margin
-    else:
-        topic_max_width = width - (margin * 2)
-    topic_max_chars = max(24, int(topic_max_width / (topic_size * 0.56)))
-    chunks = chunk_topics(visible, max_chars=topic_max_chars)
-
-    if is_tall:
-        topic_block_top = height * 0.68
-        topic_line_height = topic_size * 1.9
-    elif is_wide:
-        topic_block_top = mission_y + mission_size * 3.3
-        topic_line_height = topic_size * 1.95
-    else:
-        topic_block_top = mission_y + mission_size * 2.0
-        topic_line_height = topic_size * 1.7
-
-    topic_label_size = max(unit * 0.014, 11)
-    if is_wide:
-        topic_label_y = topic_block_top - topic_size * 1.8
-    else:
-        topic_label_y = topic_block_top - topic_size * 1.4
-
-    # ── Build SVG ────────────────────────────────────────────────────
     avatar_url = avatar_data_uri or f"https://github.com/{github}.png?size=400"
+    ring_w = max(unit * 0.006, 3.5)
+    RED = '#E10600'
+
+    # ── type sizes (scale by the SHORTER dim so 'wide' shrinks too) ──
+    name_size = min(unit * 0.082, 92)
+    handle_size = name_size * 0.40
+    role_size = max(name_size * 0.235, 15)
+    mission_size = min(unit * 0.052, 56)
+    label_size = max(unit * 0.0155, 13)
+    label_text = 'COMMUNICATES ON'
+    label_w = len(label_text) * label_size * 0.62 + (len(label_text) - 1) * 4
+    div1_w = frame_w * 0.42
+
+    # ── topic pills: pack into centered rows ─────────────────────────
+    labels = [label_topic(t) for t in normalize_topics(topics)] or ['Multiple topics']
+    pill_fs = min(width * 0.030, frame_h * 0.0245)
+    pill_h = pill_fs * 2.25
+    pill_pad = pill_fs * 0.9
+    pill_gap = pill_fs * 0.62
+    row_gap = pill_h * 0.30
+
+    def _pw(s):
+        return len(s) * pill_fs * 0.58 + pill_pad * 2
+
+    rows = []
+    cur, cur_w = [], 0.0
+    for lab in labels:
+        w = _pw(lab)
+        add = w if not cur else w + pill_gap
+        if cur and cur_w + add > avail_w:
+            rows.append(cur)
+            cur, cur_w = [], 0.0
+            add = w
+        cur.append((lab, w))
+        cur_w += add
+    if cur:
+        rows.append(cur)
+    pills_block_h = len(rows) * pill_h + max(len(rows) - 1, 0) * row_gap
+
+    # ── stack offsets, then centre the whole block vertically ────────
+    avatar_d = min(width * 0.30, frame_h * 0.21)
+    avatar_r = avatar_d / 2
+    o_name = avatar_d + name_size * 0.95
+    o_handle = o_name + handle_size * 1.45
+    o_role = o_handle + role_size * 1.95
+    o_div = o_role + role_size * 1.7
+    o_mission = o_div + mission_size * 1.5
+    o_label = o_mission + mission_size * 1.35
+    o_pills = o_label + label_size * 1.6
+    content_h = o_pills + pills_block_h
+
+    block_top = frame_y + max(0, (footer_y - frame_y - content_h) / 2)
+    avatar_cx = cx
+    avatar_cy = block_top + avatar_r
+    name_y = block_top + o_name
+    handle_y = block_top + o_handle
+    role_y = block_top + o_role
+    div1_y = block_top + o_div
+    mission_y = block_top + o_mission
+    label_y = block_top + o_label
+    pills_top = block_top + o_pills
+
+    avatar_x = avatar_cx - avatar_r
+    avatar_top = avatar_cy - avatar_r
+
+    glyph_r = avatar_r * 0.27
+    glyph_cx = avatar_cx + avatar_r * 0.70
+    glyph_cy = avatar_cy + avatar_r * 0.70
+    cs = glyph_r * 0.95
+    check = (
+        f'<polyline points="{glyph_cx-cs*0.4:.2f},{glyph_cy+cs*0.05:.2f} '
+        f'{glyph_cx-cs*0.05:.2f},{glyph_cy+cs*0.32:.2f} {glyph_cx+cs*0.42:.2f},{glyph_cy-cs*0.32:.2f}" '
+        f'fill="none" stroke="#ffffff" stroke-width="{glyph_r*0.2:.2f}" stroke-linecap="round" stroke-linejoin="round"/>'
+    )
 
     parts = []
     parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#060606;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0808;stop-opacity:1"/>
+      <stop offset="58%" style="stop-color:#120708;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d080b;stop-opacity:1"/>
     </linearGradient>
-    <radialGradient id="glow" cx="88%" cy="12%" r="55%">
-      <stop offset="0%" style="stop-color:#E10600;stop-opacity:0.13"/>
-      <stop offset="100%" style="stop-color:#2A0305;stop-opacity:0"/>
+    <radialGradient id="cglow" cx="90%" cy="34%" r="72%">
+      <stop offset="0%" style="stop-color:#A21019;stop-opacity:0.40"/>
+      <stop offset="34%" style="stop-color:#6E0C12;stop-opacity:0.16"/>
+      <stop offset="70%" style="stop-color:#2A0406;stop-opacity:0.04"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
     </radialGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
-    </filter>
-    <clipPath id="avatar-clip">
-      <circle cx="{avatar_cx}" cy="{avatar_cy}" r="{avatar_r}"/>
-    </clipPath>
+    <radialGradient id="cglow2" cx="12%" cy="88%" r="55%">
+      <stop offset="0%" style="stop-color:#7A0E15;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="cpill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d1718;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#120c0d;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cfooter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0708;stop-opacity:1"/>
+      <stop offset="34%" style="stop-color:#000000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="chdiv" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E10600;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#F4232C;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#E10600;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="cblur" x="-20%" y="-600%" width="140%" height="1300%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="cshadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/></filter>
+    <filter id="cring" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#9A1018" flood-opacity="0.45"/></filter>
+    <filter id="cframeglow" x="-8%" y="-8%" width="116%" height="116%"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#6A1016" flood-opacity="0.26"/></filter>
+    <clipPath id="cavatar"><circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}"/></clipPath>
+    <clipPath id="cframe"><rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}"/></clipPath>
   </defs>
 
-  <!-- background -->
-  <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#bg)" filter="url(#shadow)"/>
-  <rect width="{width}" height="{height}" rx="{unit * 0.04:.2f}" fill="url(#glow)"/>
-  <rect width="{width}" height="{max(unit * 0.008, 5):.2f}" fill="#E10600"/>
+  <rect width="{width}" height="{height}" fill="#000000"/>
+  <g clip-path="url(#cframe)">
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#cbg)" filter="url(#cshadow)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#cglow)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#cglow2)"/>
+  </g>
 
-  <!-- avatar -->
   <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="#111111"/>
-  <image x="{avatar_cx - avatar_r:.2f}" y="{avatar_cy - avatar_r:.2f}" width="{avatar_d:.2f}" height="{avatar_d:.2f}" href="{avatar_url}" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
-  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="none" stroke="{ring_color}" stroke-width="{ring_stroke_w:.2f}"/>
+  <image x="{avatar_x:.2f}" y="{avatar_top:.2f}" width="{avatar_d:.2f}" height="{avatar_d:.2f}" href="{avatar_url}" xlink:href="{avatar_url}" clip-path="url(#cavatar)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="none" stroke="{RED}" stroke-width="{ring_w:.2f}" filter="url(#cring)"/>
+  <circle cx="{glyph_cx:.2f}" cy="{glyph_cy:.2f}" r="{glyph_r:.2f}" fill="{RED}" stroke="#0b0b0b" stroke-width="{max(unit*0.005,2.5):.2f}"/>
+  {check}
 
-  <!-- verification glyph -->
-  <circle cx="{glyph_cx:.2f}" cy="{glyph_cy:.2f}" r="{glyph_r:.2f}" fill="#E10600" stroke="#0b0b0b" stroke-width="{max(unit * 0.005, 2.5):.2f}"/>
-  <polyline points="{cx1:.2f},{cy1:.2f} {cx2:.2f},{cy2:.2f} {cx3:.2f},{cy3:.2f}" fill="none" stroke="#ffffff" stroke-width="{glyph_stroke_w:.2f}" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="{cx:.2f}" y="{name_y:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{name_size:.2f}" font-weight="700" fill="#ffffff" letter-spacing="-1">{name or github}</text>
+  <text x="{cx:.2f}" y="{handle_y:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{handle_size:.2f}" font-weight="500" fill="#9f9f9f">@{github}</text>
+  <text x="{cx:.2f}" y="{role_y:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{role_size:.2f}" font-weight="600" fill="#8a8a8a" letter-spacing="6">VERIFIED COMMUNICATOR</text>
 
-  <!-- name + handle + role -->
-  <text x="{text_x_anchor:.2f}" y="{name_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{name_size:.2f}" font-weight="700" fill="#ffffff" letter-spacing="-1">{name or github}</text>
-  <text x="{text_x_anchor:.2f}" y="{handle_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{handle_size:.2f}" fill="#7a7a7a">@{github}</text>
-  <text x="{text_x_anchor:.2f}" y="{role_y:.2f}" text-anchor="{text_align}" font-family="system-ui, -apple-system, sans-serif" font-size="{role_size:.2f}" font-weight="500" fill="#E10600" letter-spacing="5">VERIFIED COMMUNICATOR</text>
+  <rect x="{cx-div1_w/2:.2f}" y="{div1_y-5:.2f}" width="{div1_w:.2f}" height="10" fill="url(#chdiv)" filter="url(#cblur)"/>
+  <rect x="{cx-div1_w/2:.2f}" y="{div1_y-1:.2f}" width="{div1_w:.2f}" height="2" fill="url(#chdiv)"/>
 
-  <!-- mission line — modern, minimal -->
-  <text x="{mission_x:.2f}" y="{mission_y:.2f}" text-anchor="{mission_anchor}" font-family="'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-weight="300" font-size="{mission_size:.2f}" fill="#ededed" letter-spacing="-0.5">{COMMUNICATOR_MISSION}</text>
+  <text x="{cx:.2f}" y="{mission_y:.2f}" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-weight="300" font-size="{mission_size:.2f}" fill="#f0f0f0" letter-spacing="-0.5">{COMMUNICATOR_MISSION}</text>
 
-  <!-- topic label -->
-  <text x="{topic_x:.2f}" y="{topic_label_y:.2f}" text-anchor="{topic_anchor}" font-family="system-ui, -apple-system, sans-serif" font-size="{topic_label_size:.2f}" font-weight="600" fill="#5a5a5a" letter-spacing="4">COMMUNICATES ON</text>
+  <text x="{cx:.2f}" y="{label_y:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{label_size:.2f}" font-weight="600" fill="#7a7a7a" letter-spacing="4">{label_text}</text>
+  <line x1="{cx-label_w/2-frame_w*0.12-14:.2f}" y1="{label_y-label_size*0.34:.2f}" x2="{cx-label_w/2-14:.2f}" y2="{label_y-label_size*0.34:.2f}" stroke="{RED}" stroke-opacity="0.4" stroke-width="1.4"/>
+  <line x1="{cx+label_w/2+14:.2f}" y1="{label_y-label_size*0.34:.2f}" x2="{cx+label_w/2+frame_w*0.12+14:.2f}" y2="{label_y-label_size*0.34:.2f}" stroke="{RED}" stroke-opacity="0.4" stroke-width="1.4"/>
 ''')
 
-    for line_idx, chunk in enumerate(chunks):
-        line_y = topic_block_top + line_idx * topic_line_height
-        line_text = '  ·  '.join(label_topic(t) for t in chunk)
-        parts.append(f'''  <text x="{topic_x:.2f}" y="{line_y:.2f}" text-anchor="{topic_anchor}" font-family="system-ui, -apple-system, sans-serif" font-size="{topic_size:.2f}" font-weight="500" fill="#cccccc">{line_text}</text>
-''')
+    py = pills_top
+    for row in rows:
+        row_w = sum(w for _, w in row) + pill_gap * (len(row) - 1)
+        x = cx - row_w / 2
+        for lab, w in row:
+            parts.append(
+                f'  <rect x="{x:.2f}" y="{py:.2f}" width="{w:.2f}" height="{pill_h:.2f}" rx="{pill_h/2:.2f}" fill="url(#cpill)" stroke="{RED}" stroke-opacity="0.42" stroke-width="1.3"/>\n'
+                f'  <text x="{x+w/2:.2f}" y="{py+pill_h*0.64:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{pill_fs:.2f}" font-weight="500" fill="#e8e8e8">{lab}</text>\n'
+            )
+            x += w + pill_gap
+        py += pill_h + row_gap
 
-    parts.append(f'''  <rect x="0" y="{footer_y:.2f}" width="{width}" height="{footer_h:.2f}" rx="0" fill="#000000"/>
-  <line x1="{margin:.2f}" y1="{footer_y:.2f}" x2="{width - margin:.2f}" y2="{footer_y:.2f}" stroke="#1f1f1f" stroke-width="1"/>
-''')
-
+    footer_path = (
+        f'M {frame_x:.2f} {footer_y+width*0.03:.2f} '
+        f'Q {frame_x:.2f} {footer_y:.2f} {frame_x+width*0.03:.2f} {footer_y:.2f} '
+        f'H {frame_x+frame_w-width*0.03:.2f} '
+        f'Q {frame_x+frame_w:.2f} {footer_y:.2f} {frame_x+frame_w:.2f} {footer_y+width*0.03:.2f} '
+        f'V {frame_y+frame_h-corner:.2f} '
+        f'A {corner:.2f} {corner:.2f} 0 0 1 {frame_x+frame_w-corner:.2f} {frame_y+frame_h:.2f} '
+        f'H {frame_x+corner:.2f} A {corner:.2f} {corner:.2f} 0 0 1 {frame_x:.2f} {frame_y+frame_h-corner:.2f} Z'
+    )
+    parts.append(
+        f'  <path d="{footer_path}" fill="url(#cfooter)"/>\n'
+        f'  <ellipse cx="{cx:.2f}" cy="{footer_y:.2f}" rx="{frame_w*0.40:.2f}" ry="{footer_h*0.26:.2f}" fill="url(#cglow)" opacity="0.5"/>\n'
+        f'  <rect x="{cx-frame_w*0.30:.2f}" y="{footer_y-6:.2f}" width="{frame_w*0.60:.2f}" height="12" fill="url(#chdiv)" filter="url(#cblur)"/>\n'
+        f'  <rect x="{cx-frame_w*0.30:.2f}" y="{footer_y-1.1:.2f}" width="{frame_w*0.60:.2f}" height="2.2" fill="url(#chdiv)"/>\n'
+    )
     if logo_uri:
-        parts.append(f'''  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>
-''')
+        parts.append(f'  <image x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="xMidYMid meet"/>\n')
     else:
-        parts.append(f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h * 0.55:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit * 0.075, 60):.2f}" font-weight="700">
-    <tspan fill="white">FREE</tspan><tspan fill="#E10600">GYM</tspan>
-  </text>
-''')
+        parts.append(
+            f'  <text x="{cx:.2f}" y="{footer_y + footer_h*0.45:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit*0.075,60):.2f}" font-weight="700"><tspan fill="white">FREE</tspan><tspan fill="{RED}">GYM</tspan></text>\n'
+        )
+    parts.append(
+        f'  <text x="{cx:.2f}" y="{frame_y+frame_h-footer_h*0.16:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{auth_size:.2f}" fill="#7a6a6b" letter-spacing="3">VERIFIED BY FREEGYM &#x00B7; SINCE {format_verified_since(verified_since).upper()}</text>\n'
+    )
 
-    parts.append(f'''  <text x="{width / 2:.2f}" y="{footer_y + footer_h - auth_y_offset:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{auth_size:.2f}" fill="#666666" letter-spacing="3">VERIFIED BY FREEGYM &#x00B7; SINCE {format_verified_since(verified_since).upper()}</text>
-</svg>''')
-
+    parts.append(
+        f'  <rect x="{frame_x+2:.2f}" y="{frame_y+2:.2f}" width="{frame_w-4:.2f}" height="{frame_h-4:.2f}" rx="{corner:.2f}" fill="none" stroke="#8E1219" stroke-opacity="0.26" stroke-width="9" filter="url(#cframeglow)"/>\n'
+        f'  <rect x="{frame_x+3:.2f}" y="{frame_y+3:.2f}" width="{frame_w-6:.2f}" height="{frame_h-6:.2f}" rx="{corner-1:.2f}" fill="none" stroke="{RED}" stroke-opacity="0.66" stroke-width="2.3"/>\n'
+    )
+    parts.append('</svg>')
     return ''.join(parts)
 
 
