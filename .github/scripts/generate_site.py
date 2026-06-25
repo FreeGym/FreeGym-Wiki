@@ -534,7 +534,7 @@ def render_profile(profile):
       </div>
     </section>
 
-    <section class="section reveal">
+    <section class="section">
       <h2>Contributions</h2>
       <div class="contribution-list">
         {render_contributions(profile['contributions'])}
