@@ -469,9 +469,9 @@ def generate_card_reference(
             f'  <text x="{txt_x:.2f}" y="{cy_p + p_fs*0.34:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{p_fs:.2f}" font-weight="560" letter-spacing="{active_letter_spacing:.2f}" fill="#e7e7e7">{active_label}</text>\n'
         )
 
-    stat_x = name_x
+    stat_x = avatar_cx + avatar_r + width * 0.035
     stat_top = frame_y + height * 0.213
-    stat_gap = width * 0.022
+    stat_gap = width * 0.018
     stat_right = frame_x + frame_w - width * 0.030
     stat_tile_w = (stat_right - stat_x - stat_gap) / 2
     stat_row_gap = height * 0.016
@@ -661,7 +661,7 @@ def generate_card_reference(
         text_x = tx + stat_tile_h * 0.91
         lbl_size = max(width * 0.0145, 15)
         val_size = min(width * 0.0385, 42)
-        value_right_pad = width * 0.018
+        value_right_pad = width * 0.028
         value_max_w = stat_tile_w - (text_x - tx) - value_right_pad
         val_size = fit_svg_font_size(val, val_size, value_max_w, 0.64, max(width * 0.030, 32))
         tile_rx = stat_tile_h * 0.16
