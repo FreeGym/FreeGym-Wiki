@@ -61,6 +61,19 @@ def format_number(value):
         return str(value)
 
 
+def estimate_svg_text_width(text, font_size, width_factor=0.62, letter_spacing=0):
+    """Approximate SVG text width for fitting generated card labels."""
+    text = str(text)
+    return len(text) * font_size * width_factor + max(len(text) - 1, 0) * letter_spacing
+
+
+def fit_svg_font_size(text, font_size, max_width, width_factor=0.62, min_size=12, letter_spacing=0):
+    """Shrink a font size only when the estimated text width exceeds max_width."""
+    measured = estimate_svg_text_width(text, font_size, width_factor, letter_spacing)
+    if measured <= max_width:
+        return font_size
+    return max(min_size, font_size * (max_width / measured))
+
 def get_png_size(path):
     """Return (width, height) for a PNG image."""
     with open(path, 'rb') as f:
@@ -436,11 +449,13 @@ def generate_card_reference(
 
     active_markup = ''
     if active_recent:
+        active_label = 'ACTIVE'
+        active_letter_spacing = 1.25
         p_fs = max(width * 0.0215, 18)
         dot_r = max(width * 0.008, 8)
-        pad_x = p_fs * 0.9
+        pad_x = p_fs * 1.05
         gap = p_fs * 0.55
-        text_w = len('ACTIVE') * p_fs * 0.62
+        text_w = estimate_svg_text_width(active_label, p_fs, 0.62, active_letter_spacing)
         pill_w = pad_x * 2 + dot_r * 2 + gap + text_w
         pill_h = p_fs * 2.18
         pill_x = frame_x + frame_w - width * 0.035 - pill_w
@@ -451,7 +466,7 @@ def generate_card_reference(
         active_markup = (
             f'  <rect x="{pill_x:.2f}" y="{pill_y:.2f}" width="{pill_w:.2f}" height="{pill_h:.2f}" rx="{pill_h/2:.2f}" fill="url(#activePillGrad)" stroke="#4f3838" stroke-opacity="0.82" stroke-width="1.35"/>\n'
             f'  <circle cx="{dot_cx:.2f}" cy="{cy_p:.2f}" r="{dot_r:.2f}" fill="#5ee27f"/>\n'
-            f'  <text x="{txt_x:.2f}" y="{cy_p + p_fs*0.34:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{p_fs:.2f}" font-weight="560" letter-spacing="1.25" fill="#e7e7e7">ACTIVE</text>\n'
+            f'  <text x="{txt_x:.2f}" y="{cy_p + p_fs*0.34:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{p_fs:.2f}" font-weight="560" letter-spacing="{active_letter_spacing:.2f}" fill="#e7e7e7">{active_label}</text>\n'
         )
 
     stat_x = name_x
@@ -646,6 +661,9 @@ def generate_card_reference(
         text_x = tx + stat_tile_h * 0.91
         lbl_size = max(width * 0.0145, 15)
         val_size = min(width * 0.0385, 42)
+        value_right_pad = width * 0.018
+        value_max_w = stat_tile_w - (text_x - tx) - value_right_pad
+        val_size = fit_svg_font_size(val, val_size, value_max_w, 0.64, max(width * 0.030, 32))
         tile_rx = stat_tile_h * 0.16
         hl_inset = max(tile_rx * 0.5, 6)
         p.append(
