@@ -94,6 +94,7 @@ jobs:
             --exclude "^https://profith\\.ugr\\.es"
             --exclude "^https://ouci\\.dntb\\.gov\\.ua"
             --exclude "^https://(?:www\\.)?jddonline\\.com"
+            --exclude "^https://actaorthop\\.org/"
             --exclude "^https://news\\.samsung\\.com/"
             --exclude "^https://ods\\.od\\.nih\\.gov/"
             --exclude "^https://publications\\.rwth-aachen\\.de/"
