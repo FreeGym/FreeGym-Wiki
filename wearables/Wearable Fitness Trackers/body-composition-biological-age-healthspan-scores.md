@@ -142,7 +142,7 @@ The problem is not that all of these signals are meaningless. Some inputs are re
 
 The problem is label inflation. A signal that may support a narrow statement becomes a marketed age, healthspan, recovery, or metabolic-health score. Then the score is exported without the caveats, measurement conditions, algorithm details, validation cohort, or uncertainty interval.
 
-For human coaching, that may be tolerable. For AI-ingested health data, it is not.
+For human coaching, that may be tolerable. For context-stripped health-data systems, it is not.
 
 ## References
 
