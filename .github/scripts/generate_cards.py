@@ -42,6 +42,7 @@ TOPIC_LABELS = {
     'biomarkers': 'Biomarkers',
     'wearables': 'Wearables',
     'musculoskeletal-health': 'Musculoskeletal',
+    'dermatology': 'Dermatology',
     'sleep': 'Sleep',
     'mental-health': 'Mental Health',
     'supplements': 'Supplements',
@@ -178,6 +179,566 @@ def format_verified_since(ym):
         return ym or '-'
 
 
+RED = '#B3131B'
+LOGO_CROP_VIEWBOX = (55, 165, 815, 130)
+# Sizes that use the modern (tile-grid) contributor layout. The landscape
+# 'wide' and very tall 'story' formats keep the original single-column layout.
+MODERN_SIZES = ('portrait',)
+MODERN_HANDLES = {'mutant1643', 'Thestrongdoc'}
+
+
+# Professional line icons (Lucide / Tabler, 24x24 viewBox, stroke-based).
+# Stored colour-agnostic; _icon() applies stroke colour + scale at render time.
+# Canonical paths verified against the lucide / tabler source (24x24 viewBox).
+# 'moon' keeps two appended "z" strokes to match the reference's sleep glyph.
+_ICON_PATHS = {
+    'calendar': '<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>',
+    'file-text': '<path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',
+    'code': '<path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>',
+    'users': '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/>',
+    'salad': '<path d="M7 21h10"/><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M11.38 12a2.4 2.4 0 0 1-.4-4.77 2.4 2.4 0 0 1 3.2-2.77 2.4 2.4 0 0 1 3.47-.63 2.4 2.4 0 0 1 3.37 3.37 2.4 2.4 0 0 1-1.1 3.7 2.51 2.51 0 0 1 .03 1.1"/><path d="m13 12 4-4"/><path d="M10.9 7.25A3.99 3.99 0 0 0 4 10c0 .73.2 1.41.54 2"/>',
+    'run': '<path d="M11.007 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M4 17l5 1l.75 -1.5"/><path d="M15 21v-4l-4 -3l1 -6"/><path d="M7 12v-3l5 -1l3 3l3 1"/>',
+    'pill': '<path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/>',
+    'heart-pulse': '<path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
+    'testtube': '<g transform="rotate(11 12 12)"><path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/><circle cx="10.9" cy="18.4" r="0.75"/><circle cx="12.7" cy="16.8" r="0.65"/></g>',
+    'moon': '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M17.3 3.4h2.9l-2.9 3.2h2.9"/><path d="M19.6 6.9h2.1l-2.1 2.4h2.1"/>',
+    'watch': '<path d="M6 9a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-6a3 3 0 0 1-3-3v-6"/><path d="M9 18v3h6v-3"/><path d="M9 6v-3h6v3"/><path d="M12 9.8v2.7l1.5 1"/>',
+    'venus': '<circle cx="12" cy="9" r="6"/><path d="M12 15v7"/><path d="M9 19h6"/>',
+    'bone': '<path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/>',
+    'shield': '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
+    'tag': '<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.5"/>',
+}
+
+_STAT_ICON = {
+    'calendar': 'calendar',
+    'citations': 'file-text',
+    'commits': 'code',
+    'contributions': 'users',
+}
+
+_TOPIC_ICON = {
+    'nutrition': 'salad',
+    'exercise-physiology': 'run',
+    'exercise': 'run',
+    'pharmacology': 'pill',
+    'supplements': 'pill',
+    'cardiology': 'heart-pulse',
+    'biomarkers': 'testtube',
+    'sleep': 'moon',
+    'wearables': 'watch',
+    'Womens-Health': 'venus',
+    'musculoskeletal-health': 'bone',
+    'dermatology': 'shield',
+}
+
+
+def _icon(key, cx, cy, size, stroke_px, color):
+    """Render a named 24x24 icon, centered on (cx, cy) and scaled to `size`.
+
+    `stroke_px` is the stroke width in the icon's own 24-unit space (lucide's
+    native is 2). It is NOT divided by the scale, so the visual stroke scales
+    with the icon size — i.e. authentic, proportional lucide weight at any size.
+    """
+    inner = _ICON_PATHS.get(key) or _ICON_PATHS['tag']
+    k = size / 24.0
+    sw = stroke_px
+    tx = cx - size / 2.0
+    ty = cy - size / 2.0
+    return (
+        f'<g transform="translate({tx:.2f} {ty:.2f}) scale({k:.4f})" '
+        f'fill="none" stroke="{color}" stroke-width="{sw:.2f}" '
+        f'stroke-linecap="round" stroke-linejoin="round">{inner}</g>'
+    )
+
+
+def _stat_glyph(name, cx, cy, s, sw, color):
+    """Stat-tile icon tuned to the supplied reference card."""
+    if name == 'calendar':
+        w = s * 0.78
+        h = s * 0.68
+        x = cx - w / 2
+        y = cy - h / 2 + s * 0.03
+        return (
+            f'<g fill="none" stroke="{color}" stroke-width="{sw:.2f}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}" rx="{s*0.08:.2f}"/>'
+            f'<path d="M {x:.2f} {y+s*0.21:.2f} H {x+w:.2f}"/>'
+            f'<path d="M {x+s*0.18:.2f} {y-s*0.08:.2f} V {y+s*0.12:.2f}"/>'
+            f'<path d="M {x+w-s*0.18:.2f} {y-s*0.08:.2f} V {y+s*0.12:.2f}"/>'
+            f'<path d="M {cx-s*0.11:.2f} {cy+s*0.08:.2f} l {s*0.08:.2f} {s*0.08:.2f} l {s*0.17:.2f} {-s*0.2:.2f}"/>'
+            f'</g>'
+        )
+    if name == 'citations':
+        w = s * 0.62
+        h = s * 0.76
+        x = cx - w / 2
+        y = cy - h / 2 + s * 0.01
+        fold = s * 0.17
+        txt_y = cy + s * 0.16
+        return (
+            f'<g fill="none" stroke="{color}" stroke-width="{sw:.2f}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<path d="M {x:.2f} {y:.2f} H {x+w-fold:.2f} L {x+w:.2f} {y+fold:.2f} V {y+h:.2f} H {x:.2f} Z"/>'
+            f'<path d="M {x+w-fold:.2f} {y:.2f} V {y+fold:.2f} H {x+w:.2f}"/>'
+            f'<path d="M {x+s*0.15:.2f} {y+h-s*0.18:.2f} H {x+w-s*0.16:.2f}"/>'
+            f'</g>'
+            f'<text x="{cx-s*0.05:.2f}" y="{txt_y:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{s*0.285:.2f}" font-weight="700" fill="{color}">6</text>'
+            f'<circle cx="{cx+s*0.15:.2f}" cy="{txt_y-s*0.18:.2f}" r="{s*0.055:.2f}" fill="none" stroke="{color}" stroke-width="{sw*0.75:.2f}"/>'
+        )
+    if name == 'commits':
+        left = cx - s * 0.40
+        right = cx + s * 0.40
+        top = cy - s * 0.28
+        mid = cy
+        bot = cy + s * 0.28
+        return (
+            f'<g fill="none" stroke="{color}" stroke-width="{sw*1.12:.2f}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<path d="M {left+s*0.18:.2f} {top:.2f} L {left:.2f} {mid:.2f} L {left+s*0.18:.2f} {bot:.2f}"/>'
+            f'<path d="M {right-s*0.18:.2f} {top:.2f} L {right:.2f} {mid:.2f} L {right-s*0.18:.2f} {bot:.2f}"/>'
+            f'<path d="M {cx+s*0.12:.2f} {cy-s*0.42:.2f} L {cx-s*0.12:.2f} {cy+s*0.42:.2f}"/>'
+            f'</g>'
+        )
+    if name == 'contributions':
+        return (
+            f'<g fill="none" stroke="{color}" stroke-width="{sw:.2f}" stroke-linecap="round" stroke-linejoin="round">'
+            f'<circle cx="{cx-s*0.17:.2f}" cy="{cy-s*0.19:.2f}" r="{s*0.15:.2f}"/>'
+            f'<circle cx="{cx+s*0.23:.2f}" cy="{cy-s*0.13:.2f}" r="{s*0.12:.2f}"/>'
+            f'<path d="M {cx-s*0.47:.2f} {cy+s*0.33:.2f} C {cx-s*0.42:.2f} {cy+s*0.02:.2f}, {cx-s*0.16:.2f} {cy-s*0.01:.2f}, {cx+s*0.02:.2f} {cy+s*0.10:.2f}"/>'
+            f'<path d="M {cx+s*0.10:.2f} {cy+s*0.12:.2f} C {cx+s*0.33:.2f} {cy+s*0.10:.2f}, {cx+s*0.48:.2f} {cy+s*0.22:.2f}, {cx+s*0.50:.2f} {cy+s*0.43:.2f}"/>'
+            f'</g>'
+        )
+    return _icon(_STAT_ICON.get(name, 'tag'), cx, cy, s, sw, color)
+
+def _topic_glyph(key, cx, cy, s, sw, color):
+    """Topic-tile icon. Delegates to the professional icon set."""
+    return _icon(_TOPIC_ICON.get(key, 'tag'), cx, cy, s * 1.07, sw, color)
+
+
+def generate_card_reference(
+    github,
+    display_name,
+    badge_type,
+    topics,
+    citations,
+    files,
+    last_active,
+    commits,
+    size_label,
+    avatar_data_uri=None,
+    logo_data=None,
+):
+    """Modern "reference" portrait card for the maintainers (Abhinav, Neha).
+
+    DESIGN RULES — preserve these; do NOT revert to a fixed grid or placeholders.
+
+    Scope: rendered only when size_label in MODERN_SIZES (('portrait',)) AND
+    github in MODERN_HANDLES ({'mutant1643','Thestrongdoc'}). Every other size or
+    handle falls back to the legacy generate_card() layout.
+
+    Topic grid (DYNAMIC — scales with the number of topics):
+      * 2-column grid; rows = ceil(n_topics / 2). NO empty "+" placeholders.
+      * Tile height scales to fill the panel, capped at a comfortable size
+        (height*0.072) so few topics aren't stretched into slabs, and floored
+        (height*0.044) so many stay readable. Icon + label font follow tile height.
+      * Sparse cards: the TOP TOPICS panel HUGS its content (panel_h_draw =
+        min(content_height, full_height)); the freed space becomes open,
+        softly-lit card above the footer. ~5+ topics fill the panel completely.
+      * Odd topic count: the lone final tile is centered in its row.
+      * >10 topics: first 9 + a "+N more" tile (handled where topic_tiles is built).
+
+    Icons: canonical lucide/tabler paths in _ICON_PATHS, drawn by _icon() at a
+    thin proportional stroke (icon_sw ~ 1.6, finer than lucide-native 2.0) to
+    match the reference. Glyphs picked to match the reference exactly: Biomarkers
+    = tilted test tube with bubbles (NOT a flask), Wearables = square smartwatch
+    (Tabler device-watch, NOT round), Sleep = crescent moon + two z's. Stat-tile
+    icons are bespoke in _stat_glyph(). Do not revert these.
+
+    Footer: a softly-rounded bottom panel (not a hard strip), pure black directly
+    behind the logo so the logo asset's black banner blends in, with a crimson
+    light-bar accent at the top-center above the logo and no hard divider line.
+    """
+    width, height = CARD_SIZES[size_label]
+    logo_uri, logo_w, logo_h = logo_data if logo_data else (None, None, None)
+    unit = min(width, height)
+
+    frame_x = width * 0.028
+    frame_y = height * 0.022
+    frame_w = width - 2 * frame_x
+    frame_h = height - 2 * frame_y
+    corner = width * 0.032
+    content_inset = width * 0.04
+    content_x = frame_x + content_inset
+    content_w = frame_w - 2 * content_inset
+
+    citations_display = format_number(citations if citations is not None else 0)
+    commits_display = format_number(commits if commits is not None else 0)
+    contributions_display = format_number(len(files) if files else 0)
+    active_recent = is_active_recent(last_active)
+    badge_text = 'Maintainer' if badge_type == 'maintainer' else 'Verified Contributor'
+
+    topic_keys = normalize_topics(topics)
+    extra = 0
+    if len(topic_keys) > 10:
+        extra = len(topic_keys) - 9
+        topic_keys = topic_keys[:9]
+    topic_tiles = [(k, TOPIC_LABELS.get(k, k.replace('-', ' ').title())) for k in topic_keys]
+    if extra:
+        topic_tiles.append(('__more__', f'+{extra} more'))
+    if not topic_tiles:
+        topic_tiles = [('__none__', 'No topics yet')]
+
+    avatar_d = width * 0.204
+    avatar_r = avatar_d / 2
+    avatar_cx = frame_x + frame_w * 0.18
+    avatar_cy = frame_y + frame_h * 0.171
+    avatar_url = avatar_data_uri if avatar_data_uri else f"https://github.com/{github}.png?size=200"
+
+    badge_cx = avatar_cx + avatar_r * 0.72
+    badge_cy = avatar_cy + avatar_r * 0.72
+    badge_r = avatar_r * 0.29
+    badge_stroke_w = max(unit * 0.004, 2)
+    if badge_type == 'maintainer':
+        outer_r = badge_r * 0.58
+        inner_r = badge_r * 0.27
+        pts = []
+        for i in range(10):
+            angle = math.radians(-90 + i * 36)
+            rr = outer_r if i % 2 == 0 else inner_r
+            pts.append(f"{badge_cx + rr * math.cos(angle):.2f},{badge_cy + rr * math.sin(angle):.2f}")
+        badge_symbol = f'<polygon points="{" ".join(pts)}" fill="white"/>'
+        badge_fill, badge_stroke = RED, '#FFFFFF'
+    else:
+        cs = badge_r * 0.9
+        badge_symbol = (
+            f'<polyline points="{badge_cx-cs*0.35:.2f},{badge_cy+cs*0.05:.2f} '
+            f'{badge_cx-cs*0.05:.2f},{badge_cy+cs*0.3:.2f} {badge_cx+cs*0.4:.2f},{badge_cy-cs*0.35:.2f}" '
+            f'fill="none" stroke="white" stroke-width="{badge_r*0.16:.2f}" stroke-linecap="round" stroke-linejoin="round"/>'
+        )
+        badge_fill, badge_stroke = RED, RED
+
+    name_x = avatar_cx + avatar_r + width * 0.071
+    name_y = frame_y + height * 0.107
+    name_size = min(width * 0.0665, 72)
+    handle_size = min(width * 0.028, 31)
+    role_size = min(width * 0.0225, 25)
+    handle_y = name_y + handle_size * 1.55
+    role_y = handle_y + role_size * 1.55
+
+    footer_h = max(height * 0.10, 124)
+    footer_y = frame_y + frame_h - footer_h
+    if logo_uri and logo_w and logo_h:
+        _, _, logo_crop_w, logo_crop_h = LOGO_CROP_VIEWBOX
+        logo_aspect = logo_crop_w / logo_crop_h
+        logo_w_final = width * 0.47
+        logo_h_final = logo_w_final / logo_aspect
+        logo_x = (width - logo_w_final) / 2
+        logo_y = footer_y + footer_h * 0.60 - logo_h_final / 2
+    else:
+        logo_x = logo_y = logo_w_final = logo_h_final = 0
+
+    active_markup = ''
+    if active_recent:
+        p_fs = max(width * 0.0215, 18)
+        dot_r = max(width * 0.008, 8)
+        pad_x = p_fs * 0.9
+        gap = p_fs * 0.55
+        text_w = len('ACTIVE') * p_fs * 0.62
+        pill_w = pad_x * 2 + dot_r * 2 + gap + text_w
+        pill_h = p_fs * 2.18
+        pill_x = frame_x + frame_w - width * 0.035 - pill_w
+        pill_y = frame_y + height * 0.04
+        cy_p = pill_y + pill_h / 2
+        dot_cx = pill_x + pad_x + dot_r
+        txt_x = dot_cx + dot_r + gap
+        active_markup = (
+            f'  <rect x="{pill_x:.2f}" y="{pill_y:.2f}" width="{pill_w:.2f}" height="{pill_h:.2f}" rx="{pill_h/2:.2f}" fill="url(#activePillGrad)" stroke="#4f3838" stroke-opacity="0.82" stroke-width="1.35"/>\n'
+            f'  <circle cx="{dot_cx:.2f}" cy="{cy_p:.2f}" r="{dot_r:.2f}" fill="#5ee27f"/>\n'
+            f'  <text x="{txt_x:.2f}" y="{cy_p + p_fs*0.34:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{p_fs:.2f}" font-weight="560" letter-spacing="1.25" fill="#e7e7e7">ACTIVE</text>\n'
+        )
+
+    stat_x = name_x
+    stat_top = frame_y + height * 0.213
+    stat_gap = width * 0.022
+    stat_right = frame_x + frame_w - width * 0.030
+    stat_tile_w = (stat_right - stat_x - stat_gap) / 2
+    stat_row_gap = height * 0.016
+    stat_tile_h = height * 0.087
+    stat_grid_h = 2 * stat_tile_h + stat_row_gap
+
+    block_gap = height * 0.050
+    panel_x = content_x
+    panel_y = stat_top + stat_grid_h + block_gap
+    panel_w = content_w
+    panel_bottom_gap = height * 0.024
+    panel_h = footer_y - panel_y - panel_bottom_gap
+    panel_pad = width * 0.036
+    topic_col_gap = width * 0.028
+    topic_row_gap = width * 0.0165
+    label_row_h = width * 0.024
+    gap_after_label = width * 0.018
+    n_topics = len(topic_tiles)
+    rows = max(1, math.ceil(n_topics / 2))
+    topic_tile_w = (panel_w - 2 * panel_pad - topic_col_gap) / 2
+    avail_grid_h = panel_h - 2 * panel_pad - label_row_h - gap_after_label
+    # Comfortable tile height: shrink to fit when there are many rows, but never
+    # stretch past a comfortable size when there are few. The panel then HUGS its
+    # content (compact) for sparse cards instead of being a half-empty box; the
+    # freed space below becomes open, softly-lit card before the footer.
+    raw_tile_h = (avail_grid_h - (rows - 1) * topic_row_gap) / rows
+    topic_tile_h = max(min(raw_tile_h, height * 0.072), height * 0.044)
+    topic_grid_h = rows * topic_tile_h + (rows - 1) * topic_row_gap
+    panel_content_h = 2 * panel_pad + label_row_h + gap_after_label + topic_grid_h
+    panel_h_draw = min(panel_content_h, panel_h)
+
+    p = []
+    p.append(f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050505;stop-opacity:1"/>
+      <stop offset="42%" style="stop-color:#060505;stop-opacity:1"/>
+      <stop offset="76%" style="stop-color:#0B0506;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1B0709;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="86%" cy="3%" r="78%">
+      <stop offset="0%" style="stop-color:#9C1019;stop-opacity:0.52"/>
+      <stop offset="30%" style="stop-color:#760D14;stop-opacity:0.26"/>
+      <stop offset="62%" style="stop-color:#3A0608;stop-opacity:0.09"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="14%" cy="100%" r="76%">
+      <stop offset="0%" style="stop-color:#7E1119;stop-opacity:0.16"/>
+      <stop offset="45%" style="stop-color:#3C070A;stop-opacity:0.065"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="93%" cy="44%" r="66%">
+      <stop offset="0%" style="stop-color:#820E15;stop-opacity:0.21"/>
+      <stop offset="42%" style="stop-color:#420709;stop-opacity:0.085"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="footerAmbient" cx="50%" cy="86%" r="52%">
+      <stop offset="0%" style="stop-color:#8C0F17;stop-opacity:0.17"/>
+      <stop offset="38%" style="stop-color:#48070C;stop-opacity:0.075"/>
+      <stop offset="100%" style="stop-color:#120203;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="tileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1D1B1B;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#111010;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#130708;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="topicPillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#171616;stop-opacity:0.78"/>
+      <stop offset="54%" style="stop-color:#0D0C0C;stop-opacity:0.68"/>
+      <stop offset="100%" style="stop-color:#17090A;stop-opacity:0.58"/>
+    </linearGradient>
+    <linearGradient id="topicEdgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B0507;stop-opacity:0"/>
+      <stop offset="70%" style="stop-color:#6A0B10;stop-opacity:0.055"/>
+      <stop offset="100%" style="stop-color:#9E1118;stop-opacity:0.18"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#121111;stop-opacity:1"/>
+      <stop offset="46%" style="stop-color:#0D0C0C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#070606;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="edgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B0507;stop-opacity:0"/>
+      <stop offset="70%" style="stop-color:#7A0C12;stop-opacity:0.09"/>
+      <stop offset="100%" style="stop-color:#B3131B;stop-opacity:0.30"/>
+    </linearGradient>
+    <linearGradient id="activePillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#171313;stop-opacity:0.96"/>
+      <stop offset="100%" style="stop-color:#332020;stop-opacity:0.96"/>
+    </linearGradient>
+    <linearGradient id="footerPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0C0708;stop-opacity:1"/>
+      <stop offset="34%" style="stop-color:#000000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="footerTopGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#D11620;stop-opacity:0.68"/>
+      <stop offset="30%" style="stop-color:#8E1017;stop-opacity:0.28"/>
+      <stop offset="68%" style="stop-color:#2A0507;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#120304;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="footerAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E10600;stop-opacity:0"/>
+      <stop offset="26%" style="stop-color:#E10600;stop-opacity:0.10"/>
+      <stop offset="50%" style="stop-color:#F4232C;stop-opacity:0.88"/>
+      <stop offset="74%" style="stop-color:#E10600;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#E10600;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="accentGlow" x="-20%" y="-600%" width="140%" height="1300%">
+      <feGaussianBlur stdDeviation="5.5"/>
+    </filter>
+    <radialGradient id="footerLogoBed" cx="50%" cy="58%" r="68%">
+      <stop offset="0%" style="stop-color:#010101;stop-opacity:0.98"/>
+      <stop offset="58%" style="stop-color:#010101;stop-opacity:0.82"/>
+      <stop offset="100%" style="stop-color:#010101;stop-opacity:0"/>
+    </radialGradient>
+    <pattern id="dots" width="8.5" height="8.5" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.08" fill="#B3131B" shape-rendering="geometricPrecision"/>
+    </pattern>
+    <radialGradient id="dotFade" cx="93%" cy="4%" r="57%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="18%" style="stop-color:#ffffff;stop-opacity:0.96"/>
+      <stop offset="39%" style="stop-color:#ffffff;stop-opacity:0.58"/>
+      <stop offset="61%" style="stop-color:#ffffff;stop-opacity:0.18"/>
+      <stop offset="81%" style="stop-color:#ffffff;stop-opacity:0.035"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </radialGradient>
+    <mask id="dotMask" maskUnits="userSpaceOnUse" x="0" y="0" width="{width}" height="{height}">
+      <rect width="{width}" height="{height}" fill="#000000"/>
+      <rect width="{width}" height="{height}" fill="url(#dotFade)"/>
+    </mask>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+    <filter id="redGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8.5" flood-color="#8B0E14" flood-opacity="0.30"/>
+    </filter>
+    <filter id="frameGlow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#681016" flood-opacity="0.24"/>
+    </filter>
+    <filter id="tileGlow" x="-24%" y="-28%" width="148%" height="156%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5.5" flood-color="#7A1117" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softBlackBlend" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="card-clip"><rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}"/></clipPath>
+    <clipPath id="avatar-clip"><circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}"/></clipPath>
+  </defs>
+
+  <rect width="{width}" height="{height}" fill="#000000"/>
+  <g clip-path="url(#card-clip)">
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#bg)" filter="url(#shadow)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#glow)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#glow2)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#glow3)"/>
+    <rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" rx="{corner:.2f}" fill="url(#footerAmbient)"/>
+    <g mask="url(#dotMask)"><rect x="{frame_x:.2f}" y="{frame_y:.2f}" width="{frame_w:.2f}" height="{frame_h:.2f}" fill="url(#dots)" fill-opacity="0.56"/></g>
+  </g>
+''')
+    p.append(active_markup)
+    p.append(f'''  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="#111111"/>
+  <image x="{avatar_cx-avatar_r:.2f}" y="{avatar_cy-avatar_r:.2f}" width="{avatar_d:.2f}" height="{avatar_d:.2f}" href="{avatar_url}" xlink:href="{avatar_url}" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="{avatar_cx:.2f}" cy="{avatar_cy:.2f}" r="{avatar_r:.2f}" fill="none" stroke="{RED}" stroke-width="5.4" filter="url(#redGlow)"/>
+  <circle cx="{badge_cx:.2f}" cy="{badge_cy:.2f}" r="{badge_r:.2f}" fill="{badge_fill}" stroke="{badge_stroke}" stroke-width="{badge_stroke_w:.2f}"/>
+  {badge_symbol}
+  <text x="{name_x:.2f}" y="{name_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{name_size:.2f}" font-weight="700" fill="#ffffff">{display_name or github}</text>
+  <text x="{name_x:.2f}" y="{handle_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{handle_size:.2f}" font-weight="400" fill="#9f9f9f">@{github}</text>
+  <text x="{name_x:.2f}" y="{role_y:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{role_size:.2f}" font-weight="400" fill="#858585">FreeGym Wiki {badge_text}</text>
+''')
+
+    stats = [
+        ('calendar', 'LAST ACTIVE', str(last_active or '-')),
+        ('citations', 'CITATIONS', citations_display),
+        ('commits', 'COMMITS', commits_display),
+        ('contributions', 'CONTRIBUTIONS', contributions_display),
+    ]
+    for idx, (icon, lbl, val) in enumerate(stats):
+        r = idx // 2
+        c = idx % 2
+        tx = stat_x + c * (stat_tile_w + stat_gap)
+        ty = stat_top + r * (stat_tile_h + stat_row_gap)
+        icon_r = stat_tile_h * 0.27
+        icx = tx + stat_tile_h * 0.45
+        icy = ty + stat_tile_h / 2
+        isize = icon_r * 1.06
+        text_x = tx + stat_tile_h * 0.91
+        lbl_size = max(width * 0.0145, 15)
+        val_size = min(width * 0.0385, 42)
+        tile_rx = stat_tile_h * 0.16
+        hl_inset = max(tile_rx * 0.5, 6)
+        p.append(
+            f'  <rect x="{tx:.2f}" y="{ty:.2f}" width="{stat_tile_w:.2f}" height="{stat_tile_h:.2f}" rx="{tile_rx:.2f}" fill="url(#tileGrad)" stroke="#433637" stroke-opacity="0.94" stroke-width="1.25"/>\n'
+            f'  <rect x="{tx+stat_tile_w-width*0.043:.2f}" y="{ty:.2f}" width="{width*0.043:.2f}" height="{stat_tile_h:.2f}" rx="{tile_rx:.2f}" fill="url(#edgeGlow)"/>\n'
+            f'  <path d="M {tx+stat_tile_w-tile_rx:.2f} {ty+0.75:.2f} Q {tx+stat_tile_w-0.75:.2f} {ty+0.75:.2f} {tx+stat_tile_w-0.75:.2f} {ty+tile_rx:.2f} V {ty+stat_tile_h-tile_rx:.2f} Q {tx+stat_tile_w-0.75:.2f} {ty+stat_tile_h-0.75:.2f} {tx+stat_tile_w-tile_rx:.2f} {ty+stat_tile_h-0.75:.2f}" fill="none" stroke="{RED}" stroke-opacity="0.42" stroke-width="1.05" filter="url(#tileGlow)"/>\n'
+            f'  <line x1="{tx+hl_inset:.2f}" y1="{ty+1.5:.2f}" x2="{tx+stat_tile_w-hl_inset:.2f}" y2="{ty+1.5:.2f}" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>\n'
+            f'  <circle cx="{icx:.2f}" cy="{icy:.2f}" r="{icon_r:.2f}" fill="{RED}" fill-opacity="0.10" stroke="{RED}" stroke-opacity="0.62" stroke-width="1.15"/>\n'
+            f'  {_stat_glyph(icon, icx, icy, isize, 2.35, RED)}\n'
+            f'  <text x="{text_x:.2f}" y="{ty+stat_tile_h*0.38:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{lbl_size:.2f}" font-weight="540" letter-spacing="1.35" fill="#a9a9a9">{lbl}</text>\n'
+            f'  <text x="{text_x:.2f}" y="{ty+stat_tile_h*0.80:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{val_size:.2f}" font-weight="760" fill="#f8f8f8">{val}</text>\n'
+        )
+
+    p.append(f'  <rect x="{panel_x:.2f}" y="{panel_y:.2f}" width="{panel_w:.2f}" height="{panel_h_draw:.2f}" rx="{width*0.024:.2f}" fill="url(#panelGrad)" stroke="#352B2C" stroke-opacity="0.95" stroke-width="1.25"/>\n')
+    bar_x = panel_x + panel_pad
+    bar_y = panel_y + panel_pad
+    lbl_size2 = max(width * 0.016, 17)
+    bar_w = width * 0.0065
+    bar_h = lbl_size2 * 1.25
+    p.append(
+        f'  <rect x="{bar_x:.2f}" y="{bar_y:.2f}" width="{bar_w:.2f}" height="{bar_h:.2f}" rx="{bar_w/2:.2f}" fill="{RED}"/>\n'
+        f'  <text x="{bar_x + bar_w + 16:.2f}" y="{bar_y + lbl_size2:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{lbl_size2:.2f}" font-weight="620" letter-spacing="4.6" fill="#e6e6e6">TOP TOPICS</text>\n'
+    )
+    grid_top = panel_y + panel_pad + label_row_h + gap_after_label
+    last_solo = (n_topics % 2 == 1)
+    icon_sw = 1.6  # thinner stroke to match the reference (24-unit space)
+    for slot in range(n_topics):
+        r = slot // 2
+        c = slot % 2
+        tx = panel_x + panel_pad + c * (topic_tile_w + topic_col_gap)
+        ty = grid_top + r * (topic_tile_h + topic_row_gap)
+        if last_solo and slot == n_topics - 1:
+            tx = panel_x + panel_pad + (panel_w - 2 * panel_pad - topic_tile_w) / 2
+        key, lbl = topic_tiles[slot]
+        gcx = tx + topic_tile_h * 0.58
+        gcy = ty + topic_tile_h / 2
+        gsize = topic_tile_h * 0.47
+        div_x = tx + topic_tile_h * 1.34
+        lab_x = tx + topic_tile_h * 1.58
+        lab_size = max(min(topic_tile_h * 0.26, 22), 16)
+        p.append(
+            f'  <rect x="{tx:.2f}" y="{ty:.2f}" width="{topic_tile_w:.2f}" height="{topic_tile_h:.2f}" rx="{topic_tile_h*0.24:.2f}" fill="url(#topicPillGrad)" stroke="#642226" stroke-opacity="0.50" stroke-width="0.85"/>\n'
+            f'  <rect x="{tx+topic_tile_w-width*0.032:.2f}" y="{ty:.2f}" width="{width*0.032:.2f}" height="{topic_tile_h:.2f}" rx="{topic_tile_h*0.24:.2f}" fill="url(#topicEdgeGlow)"/>\n'
+            f'  <path d="M {tx+topic_tile_w-topic_tile_h*0.24:.2f} {ty+0.65:.2f} Q {tx+topic_tile_w-0.65:.2f} {ty+0.65:.2f} {tx+topic_tile_w-0.65:.2f} {ty+topic_tile_h*0.24:.2f} V {ty+topic_tile_h-topic_tile_h*0.24:.2f} Q {tx+topic_tile_w-0.65:.2f} {ty+topic_tile_h-0.65:.2f} {tx+topic_tile_w-topic_tile_h*0.24:.2f} {ty+topic_tile_h-0.65:.2f}" fill="none" stroke="{RED}" stroke-opacity="0.24" stroke-width="0.75" filter="url(#tileGlow)"/>\n'
+            f'  {_topic_glyph(key, gcx, gcy, gsize*0.94, icon_sw, RED)}\n'
+            f'  <line x1="{div_x:.2f}" y1="{ty+topic_tile_h*0.28:.2f}" x2="{div_x:.2f}" y2="{ty+topic_tile_h*0.72:.2f}" stroke="{RED}" stroke-opacity="0.38" stroke-width="1.05"/>\n'
+            f'  <text x="{lab_x:.2f}" y="{ty+topic_tile_h*0.61:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{lab_size:.2f}" font-weight="460" fill="#dddddd">{lbl}</text>\n'
+        )
+
+    footer_top_r = width * 0.030
+    footer_path = (
+        f'M {frame_x:.2f} {footer_y+footer_top_r:.2f} '
+        f'Q {frame_x:.2f} {footer_y:.2f} {frame_x+footer_top_r:.2f} {footer_y:.2f} '
+        f'H {frame_x+frame_w-footer_top_r:.2f} '
+        f'Q {frame_x+frame_w:.2f} {footer_y:.2f} {frame_x+frame_w:.2f} {footer_y+footer_top_r:.2f} '
+        f'V {frame_y+frame_h-corner:.2f} '
+        f'A {corner:.2f} {corner:.2f} 0 0 1 {frame_x+frame_w-corner:.2f} {frame_y+frame_h:.2f} '
+        f'H {frame_x+corner:.2f} A {corner:.2f} {corner:.2f} 0 0 1 {frame_x:.2f} {frame_y+frame_h-corner:.2f} Z'
+    )
+    footer_edge_path = (
+        f'M {frame_x:.2f} {footer_y + footer_h*0.22:.2f} V {frame_y+frame_h-corner:.2f} '
+        f'A {corner:.2f} {corner:.2f} 0 0 0 {frame_x+corner:.2f} {frame_y+frame_h:.2f} '
+        f'H {frame_x+frame_w-corner:.2f} A {corner:.2f} {corner:.2f} 0 0 0 {frame_x+frame_w:.2f} {frame_y+frame_h-corner:.2f} '
+        f'V {footer_y + footer_h*0.22:.2f}'
+    )
+    accent_w = frame_w * 0.60
+    accent_x = width / 2 - accent_w / 2
+    p.append(
+        f'  <path d="{footer_path}" fill="url(#footerPanelGrad)"/>\n'
+        f'  <ellipse cx="{width/2:.2f}" cy="{footer_y:.2f}" rx="{frame_w*0.46:.2f}" ry="{footer_h*0.24:.2f}" fill="url(#footerTopGlow)"/>\n'
+        f'  <rect x="{accent_x:.2f}" y="{footer_y-6:.2f}" width="{accent_w:.2f}" height="12" rx="6" fill="url(#footerAccent)" filter="url(#accentGlow)"/>\n'
+        f'  <rect x="{accent_x:.2f}" y="{footer_y-1.1:.2f}" width="{accent_w:.2f}" height="2.2" rx="1.1" fill="url(#footerAccent)"/>\n'
+        f'  <path d="{footer_edge_path}" fill="none" stroke="#9A141B" stroke-opacity="0.55" stroke-width="1.35" filter="url(#frameGlow)"/>\n'
+    )
+    if logo_uri:
+        crop_x, crop_y, crop_w, crop_h = LOGO_CROP_VIEWBOX
+        p.append(
+            f'  <svg x="{logo_x:.2f}" y="{logo_y:.2f}" width="{logo_w_final:.2f}" height="{logo_h_final:.2f}" viewBox="{crop_x} {crop_y} {crop_w} {crop_h}" preserveAspectRatio="xMidYMid meet" overflow="hidden">\n'
+            f'    <image x="0" y="0" width="{logo_w:.2f}" height="{logo_h:.2f}" href="{logo_uri}" xlink:href="{logo_uri}" preserveAspectRatio="none"/>\n'
+            f'  </svg>\n'
+        )
+    else:
+        p.append(
+            f'  <text x="{width/2:.2f}" y="{footer_y + footer_h*0.62:.2f}" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="{min(unit*0.08,64):.2f}" font-weight="700"><tspan fill="white">FREE</tspan><tspan fill="{RED}">GYM</tspan></text>\n'
+        )
+
+    p.append(
+        f'  <rect x="{frame_x+2:.2f}" y="{frame_y+2:.2f}" width="{frame_w-4:.2f}" height="{frame_h-4:.2f}" rx="{corner-0.75:.2f}" fill="none" stroke="#8E1219" stroke-opacity="0.28" stroke-width="7" filter="url(#frameGlow)"/>\n'
+        f'  <rect x="{frame_x+2.25:.2f}" y="{frame_y+2.25:.2f}" width="{frame_w-4.5:.2f}" height="{frame_h-4.5:.2f}" rx="{corner-1:.2f}" fill="none" stroke="{RED}" stroke-opacity="0.68" stroke-width="1.4"/>\n'
+    )
+    p.append('</svg>')
+    return ''.join(p)
+
 def generate_card(
     github,
     display_name,
@@ -192,6 +753,20 @@ def generate_card(
     logo_data=None,
 ):
     """Generate an SVG profile card with GitHub avatar and FreeGym logo."""
+    if size_label in MODERN_SIZES and github in MODERN_HANDLES:
+        return generate_card_reference(
+            github=github,
+            display_name=display_name,
+            badge_type=badge_type,
+            topics=topics,
+            citations=citations,
+            files=files,
+            last_active=last_active,
+            commits=commits,
+            size_label=size_label,
+            avatar_data_uri=avatar_data_uri,
+            logo_data=logo_data,
+        )
     width, height = CARD_SIZES[size_label]
     logo_uri, logo_w, logo_h = logo_data if logo_data else (None, None, None)
     unit = min(width, height)
@@ -352,7 +927,7 @@ def generate_card(
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0b0b0b;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#060606;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
     </linearGradient>
     <radialGradient id="glow" cx="85%" cy="15%" r="60%">
@@ -586,12 +1161,12 @@ def generate_communicator_card(
     parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0b0b0b;stop-opacity:1"/>
+      <stop offset="0%" style="stop-color:#060606;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1"/>
     </linearGradient>
     <radialGradient id="glow" cx="88%" cy="12%" r="55%">
       <stop offset="0%" style="stop-color:#E10600;stop-opacity:0.13"/>
-      <stop offset="100%" style="stop-color:#E10600;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#2A0305;stop-opacity:0"/>
     </radialGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
