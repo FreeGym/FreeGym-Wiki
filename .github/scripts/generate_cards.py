@@ -443,7 +443,7 @@ def generate_card_reference(
         text_w = len('ACTIVE') * p_fs * 0.62
         pill_w = pad_x * 2 + dot_r * 2 + gap + text_w
         pill_h = p_fs * 2.18
-        pill_x = frame_x + frame_w - width * 0.035 - pill_w
+        pill_x = content_x + content_w - pill_w
         pill_y = frame_y + height * 0.04
         cy_p = pill_y + pill_h / 2
         dot_cx = pill_x + pad_x + dot_r
@@ -454,10 +454,10 @@ def generate_card_reference(
             f'  <text x="{txt_x:.2f}" y="{cy_p + p_fs*0.34:.2f}" font-family="system-ui, -apple-system, sans-serif" font-size="{p_fs:.2f}" font-weight="560" letter-spacing="1.25" fill="#e7e7e7">ACTIVE</text>\n'
         )
 
-    stat_x = name_x
-    stat_top = frame_y + height * 0.213
+    stat_x = content_x
+    stat_top = max(frame_y + height * 0.213, avatar_cy + avatar_r + height * 0.030)
     stat_gap = width * 0.022
-    stat_right = frame_x + frame_w - width * 0.030
+    stat_right = content_x + content_w
     stat_tile_w = (stat_right - stat_x - stat_gap) / 2
     stat_row_gap = height * 0.016
     stat_tile_h = height * 0.087
@@ -645,7 +645,7 @@ def generate_card_reference(
         isize = icon_r * 1.06
         text_x = tx + stat_tile_h * 0.91
         lbl_size = max(width * 0.0145, 15)
-        val_size = min(width * 0.0385, 42)
+        val_size = min(width * 0.036, 40)
         tile_rx = stat_tile_h * 0.16
         hl_inset = max(tile_rx * 0.5, 6)
         p.append(
