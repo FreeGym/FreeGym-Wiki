@@ -10,6 +10,8 @@ maintainers:
   - biomarkers
   - sleep
   - wearables
+  - musculoskeletal-health
+  - dermatology
   last_active: 2026-06
   contributions:
   - file: nutrition/Protein/protein.md

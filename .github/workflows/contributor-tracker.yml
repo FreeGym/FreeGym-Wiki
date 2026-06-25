@@ -167,7 +167,7 @@ jobs:
           all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
 
           # Filter to content markdown files only
-          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version', 'biomarkers', 'wearables']
+          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version', 'biomarkers', 'wearables', 'musculoskeletal-health', 'dermatology']
           content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
 
           if not content_files:
@@ -264,6 +264,10 @@ jobs:
                   r'https?://(?:www\.)?lipidjournal\.com/article/[^\s\)]+',
                   r'https?://journals\.lww\.com/[^\s\)]+',
                   r'https?://psychiatryonline\.org/doi/[^\s\)]+',
+                  r'https?://europepmc\.org/article/med/\d+',
+                  r'https?://(?:www\.)?jmir\.org/[^\s\)]+',
+                  r'https?://actaorthop\.org/actao/article/view/[^\s\)]+',
+                  r'https?://kclpure\.kcl\.ac\.uk/portal/en/publications/[^\s\)]+',
               ]
 
               publisher_urls = set()
@@ -520,6 +524,8 @@ jobs:
               'cardiology': 'Cardiology',
               'Womens-Health': "Women's Health",
               'exercise-physiology': 'Exercise Physiology',
+              'musculoskeletal-health': 'Musculoskeletal',
+              'dermatology': 'Dermatology',
           }
 
           def label_topic(topic):
