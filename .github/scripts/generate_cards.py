@@ -1067,7 +1067,7 @@ def generate_communicator_card(
     name_size = min(unit * 0.082, 92)
     handle_size = name_size * 0.40
     role_size = max(name_size * 0.235, 15)
-    mission_size = min(unit * 0.052, 56)
+    mission_size = min(unit * 0.052, 56, (frame_w * 0.92) / (len(COMMUNICATOR_MISSION) * 0.5))
     label_size = max(unit * 0.0155, 13)
     label_text = 'COMMUNICATES ON'
     label_w = len(label_text) * label_size * 0.62 + (len(label_text) - 1) * 4
