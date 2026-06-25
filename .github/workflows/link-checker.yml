@@ -99,6 +99,9 @@ jobs:
             --exclude "^https://publications\\.rwth-aachen\\.de/"
             --exclude "^https://www\\.ema\\.europa\\.eu/"
             --exclude "^https://cdr\\.lib\\.unc\\.edu/"
+            --exclude "^https://actaorthop\\.org/"
+            --exclude "^https://apjcn\\.qdu\\.edu\\.cn/"
+            --exclude "^https://insight\\.jci\\.org/"
             --timeout 30
             '**/*.md'
           fail: true
