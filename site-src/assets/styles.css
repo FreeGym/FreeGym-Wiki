@@ -453,27 +453,67 @@ img {
 }
 
 .contribution-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.contribution-item {
-  padding: 1rem 1.2rem;
-  border-radius: 18px;
+  overflow-x: auto;
   border: 1px solid var(--border);
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
-  display: grid;
-  gap: 0.6rem;
+  box-shadow: var(--shadow);
 }
 
-.contribution-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.contribution-table-wrap {
+  min-width: 720px;
+}
+
+.contribution-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.contribution-table th,
+.contribution-table td {
+  padding: 0.95rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.contribution-table th {
+  color: var(--muted-2);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contribution-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.contribution-title {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.work-pill {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 0.22rem 0.55rem;
   color: var(--muted);
-  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
 }
 
+.number-cell {
+  font-variant-numeric: tabular-nums;
+}
+
+.empty-state {
+  padding: 1rem 1.2rem;
+  color: var(--muted);
+}
 .footer {
   margin-top: 4rem;
   color: var(--muted-2);
