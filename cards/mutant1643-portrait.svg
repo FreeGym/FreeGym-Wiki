@@ -151,7 +151,7 @@
   <circle cx="773.71" cy="375.98" r="31.71" fill="#B3131B" fill-opacity="0.10" stroke="#B3131B" stroke-opacity="0.62" stroke-width="1.15"/>
   <g fill="none" stroke="#B3131B" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><path d="M 763.29 363.54 H 778.42 L 784.13 369.25 V 389.08 H 763.29 Z"/><path d="M 778.42 363.54 V 369.25 H 784.13"/><path d="M 768.33 383.03 H 778.75"/></g><text x="772.03" y="381.35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9.58" font-weight="700" fill="#B3131B">6</text><circle cx="778.75" cy="375.30" r="1.85" fill="none" stroke="#B3131B" stroke-width="1.76"/>
   <text x="827.74" y="361.88" font-family="system-ui, -apple-system, sans-serif" font-size="15.66" font-weight="540" letter-spacing="1.35" fill="#a9a9a9">CITATIONS</text>
-  <text x="827.74" y="411.21" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">2,148</text>
+  <text x="827.74" y="411.21" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">2,392</text>
   <rect x="400.59" y="456.30" width="296.50" height="117.45" rx="18.79" fill="url(#tileGrad)" stroke="#433637" stroke-opacity="0.94" stroke-width="1.25"/>
   <rect x="650.66" y="456.30" width="46.44" height="117.45" rx="18.79" fill="url(#edgeGlow)"/>
   <path d="M 678.30 457.05 Q 696.35 457.05 696.35 475.09 V 554.96 Q 696.35 573.00 678.30 573.00" fill="none" stroke="#B3131B" stroke-opacity="0.42" stroke-width="1.05" filter="url(#tileGlow)"/>
@@ -159,7 +159,7 @@
   <circle cx="453.45" cy="515.02" r="31.71" fill="#B3131B" fill-opacity="0.10" stroke="#B3131B" stroke-opacity="0.62" stroke-width="1.15"/>
   <g fill="none" stroke="#B3131B" stroke-width="2.63" stroke-linecap="round" stroke-linejoin="round"><path d="M 446.05 505.61 L 440.00 515.02 L 446.05 524.44"/><path d="M 460.84 505.61 L 466.89 515.02 L 460.84 524.44"/><path d="M 457.48 500.91 L 449.41 529.14"/></g>
   <text x="507.47" y="500.93" font-family="system-ui, -apple-system, sans-serif" font-size="15.66" font-weight="540" letter-spacing="1.35" fill="#a9a9a9">COMMITS</text>
-  <text x="507.47" y="550.26" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">283</text>
+  <text x="507.47" y="550.26" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">286</text>
   <rect x="720.86" y="456.30" width="296.50" height="117.45" rx="18.79" fill="url(#tileGrad)" stroke="#433637" stroke-opacity="0.94" stroke-width="1.25"/>
   <rect x="970.92" y="456.30" width="46.44" height="117.45" rx="18.79" fill="url(#edgeGlow)"/>
   <path d="M 998.57 457.05 Q 1016.61 457.05 1016.61 475.09 V 554.96 Q 1016.61 573.00 998.57 573.00" fill="none" stroke="#B3131B" stroke-opacity="0.42" stroke-width="1.05" filter="url(#tileGlow)"/>
@@ -167,7 +167,7 @@
   <circle cx="773.71" cy="515.02" r="31.71" fill="#B3131B" fill-opacity="0.10" stroke="#B3131B" stroke-opacity="0.62" stroke-width="1.15"/>
   <g fill="none" stroke="#B3131B" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="767.99" cy="508.64" r="5.04"/><circle cx="781.44" cy="510.66" r="4.03"/><path d="M 757.91 526.12 C 759.59 515.70, 768.33 514.69, 774.38 518.39"/><path d="M 777.07 519.06 C 784.80 518.39, 789.84 522.42, 790.52 529.48"/></g>
   <text x="827.74" y="500.93" font-family="system-ui, -apple-system, sans-serif" font-size="15.66" font-weight="540" letter-spacing="1.35" fill="#a9a9a9">CONTRIBUTIONS</text>
-  <text x="827.74" y="550.26" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">190</text>
+  <text x="827.74" y="550.26" font-family="system-ui, -apple-system, sans-serif" font-size="41.58" font-weight="760" fill="#f8f8f8">204</text>
   <rect x="73.44" y="641.25" width="933.12" height="511.65" rx="25.92" fill="url(#panelGrad)" stroke="#352B2C" stroke-opacity="0.95" stroke-width="1.25"/>
   <rect x="112.32" y="680.13" width="7.02" height="21.60" rx="3.51" fill="#B3131B"/>
   <text x="135.34" y="697.41" font-family="system-ui, -apple-system, sans-serif" font-size="17.28" font-weight="620" letter-spacing="4.6" fill="#e6e6e6">TOP TOPICS</text>

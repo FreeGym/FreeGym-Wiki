@@ -766,8 +766,64 @@ maintainers:
     type: major_edit
     citations_added: 11
     pr: 241
-  total_citations: 2148
-  commits: 283
+  - file: dermatology/00-curriculum.md
+    type: created
+    citations_added: 0
+    pr: 244
+  - file: dermatology/1-why-does-the-body-need-skin-beyond-covering.md
+    type: created
+    citations_added: 21
+    pr: 244
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/4-the-pelvic-girdle-bones-joints-and-why-its-not-a-single-unit.md
+    type: created
+    citations_added: 17
+    pr: 244
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/5-the-si-joint.md
+    type: created
+    citations_added: 22
+    pr: 244
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/6-the-thoracolumbar-fascia.md
+    type: created
+    citations_added: 35
+    pr: 244
+  - file: nutrition/Micronutrients/Zinc/does-zinc-reduce-cold-duration-and-severity.md
+    type: created
+    citations_added: 12
+    pr: 244
+  - file: nutrition/Micronutrients/Zinc/population-zinc-status-hidden-inadequacy.md
+    type: created
+    citations_added: 33
+    pr: 244
+  - file: nutrition/Micronutrients/Zinc/zinc-and-athletes.md
+    type: created
+    citations_added: 27
+    pr: 244
+  - file: nutrition/Micronutrients/Zinc/zinc-and-testosterone.md
+    type: created
+    citations_added: 8
+    pr: 244
+  - file: nutrition/Micronutrients/Zinc/zinc-copper-antagonism.md
+    type: created
+    citations_added: 23
+    pr: 244
+  - file: wearables/Wearable Fitness Trackers/body-composition-biological-age-healthspan-scores.md
+    type: created
+    citations_added: 14
+    pr: 244
+  - file: wearables/Wearable Fitness Trackers/do-company-funded-studies-inflate-wearable-accuracy.md
+    type: created
+    citations_added: 9
+    pr: 244
+  - file: wearables/Wearable Fitness Trackers/do-wearables-actually-improve-health-behavior.md
+    type: created
+    citations_added: 13
+    pr: 244
+  - file: wearables/Wearable Fitness Trackers/wearable-glucose-tracking-and-metabolic-scores.md
+    type: created
+    citations_added: 10
+    pr: 244
+  total_citations: 2392
+  commits: 286
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
