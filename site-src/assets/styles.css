@@ -20,6 +20,11 @@
   box-sizing: border-box;
 }
 
+html {
+  /* dark base so a fast/overscroll "rubber-band" reveals the theme, not white */
+  background-color: var(--bg-0);
+}
+
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
