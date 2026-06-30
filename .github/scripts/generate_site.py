@@ -35,6 +35,7 @@ REPO_URL = os.getenv('REPO_URL', 'https://github.com/FreeGym/FreeGym-Wiki')
 RAW_BASE = os.getenv('RAW_BASE', 'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main')
 SITE_BASE_URL = os.getenv('SITE_BASE_URL', 'https://freegym.github.io/FreeGym-Wiki').rstrip('/')
 BUILD_STAMP = datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S')
+PUBLISH_COMMUNICATORS = os.getenv('PUBLISH_COMMUNICATORS', '').lower() in ('1', 'true', 'yes')
 
 TOPIC_ALIASES = {
     'heart-health': 'cardiology',
@@ -654,10 +655,23 @@ def copy_cards():
     if CARDS_SRC.exists():
         CARDS_DEST.mkdir(parents=True, exist_ok=True)
         for card in CARDS_SRC.glob('*.svg'):
+            if not PUBLISH_COMMUNICATORS and '-communicator' in card.stem:
+                continue
             shutil.copy2(card, CARDS_DEST / card.name)
         for card in CARDS_SRC.glob('*.png'):
+            if not PUBLISH_COMMUNICATORS and '-communicator' in card.stem:
+                continue
             shutil.copy2(card, CARDS_DEST / card.name)
 
+
+def remove_communicator_outputs():
+    if COMMUNICATORS_DIR.exists():
+        shutil.rmtree(COMMUNICATORS_DIR)
+
+    if CARDS_DEST.exists():
+        for pattern in ('*-communicator*.svg', '*-communicator*.png'):
+            for card in CARDS_DEST.glob(pattern):
+                card.unlink()
 
 def main():
     data = read_data()
@@ -665,7 +679,7 @@ def main():
     profiles = sort_profiles(profiles)
     topics = build_topic_filters(topic_keys)
 
-    communicators = collect_communicators(data)
+    communicators = collect_communicators(data) if PUBLISH_COMMUNICATORS else []
 
     stats = {
         'verified': len(profiles),
@@ -676,6 +690,8 @@ def main():
 
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     CONTRIB_DIR.mkdir(parents=True, exist_ok=True)
+    if not PUBLISH_COMMUNICATORS:
+        remove_communicator_outputs()
     if communicators:
         COMMUNICATORS_DIR.mkdir(parents=True, exist_ok=True)
 
