@@ -35,7 +35,7 @@ REPO_URL = os.getenv('REPO_URL', 'https://github.com/FreeGym/FreeGym-Wiki')
 RAW_BASE = os.getenv('RAW_BASE', 'https://raw.githubusercontent.com/FreeGym/FreeGym-Wiki/main')
 SITE_BASE_URL = os.getenv('SITE_BASE_URL', 'https://freegym.github.io/FreeGym-Wiki').rstrip('/')
 BUILD_STAMP = datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S')
-PUBLISH_COMMUNICATORS = os.getenv('PUBLISH_COMMUNICATORS', '1').lower() in ('1', 'true', 'yes')
+PUBLISH_COMMUNICATORS = os.getenv('PUBLISH_COMMUNICATORS', '').lower() in ('1', 'true', 'yes')
 
 TOPIC_ALIASES = {
     'heart-health': 'cardiology',
