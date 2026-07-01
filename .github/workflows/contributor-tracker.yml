@@ -18,7 +18,10 @@
 name: Track Contributors
 
 on:
-  pull_request:
+  # Fork PRs get a read-only token on pull_request, so the tracker
+  # cannot push the generated contributor-update PR after merge.
+  # pull_request_target runs trusted workflow code from main.
+  pull_request_target:
     types: [closed]
     branches: [main]
   workflow_dispatch:
