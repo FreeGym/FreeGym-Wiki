@@ -1017,21 +1017,9 @@ contributors:
   total_citations: 0
   commits: 2
 communicators:
-- github: anshulsadhale02
-  name: Anshul Sadhale
-  verified_since: 2026-05
-  verified_topics:
-  - exercise-physiology
-  - nutrition
-  - cardiology
-  - biomarkers
-  - sleep
-  - pharmacology
-  - wearables
-  - musculoskeletal-health
-- github: Mansafabepari
-  name: Mansafa Bepari
-  verified_since: 2026-06
+- github: FreeGym
+  name: Communicator Placeholder
+  verified_since: TBD
   verified_topics:
   - exercise-physiology
   - nutrition
