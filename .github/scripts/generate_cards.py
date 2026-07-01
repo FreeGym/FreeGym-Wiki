@@ -3,6 +3,7 @@
 
 import base64
 import calendar
+import glob
 import math
 import os
 import urllib.request
@@ -1342,6 +1343,16 @@ def main():
     # collide with contributor card filenames if the same handle ever appears
     # in both lists.
     communicators = data.get('communicators') or []
+    active_communicator_handles = {
+        str(comm.get('github', ''))
+        for comm in communicators
+        if isinstance(comm, dict) and comm.get('github')
+    }
+    for path in glob.glob('cards/*-communicator*.svg') + glob.glob('cards/*-communicator*.png'):
+        handle = os.path.basename(path).split('-communicator', 1)[0]
+        if handle not in active_communicator_handles:
+            os.remove(path)
+            print(f"Removed stale {path}")
     for comm in communicators:
         if not isinstance(comm, dict) or not comm.get('github'):
             continue

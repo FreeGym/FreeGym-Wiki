@@ -103,6 +103,8 @@ jobs:
             --exclude "^https://apjcn\\.qdu\\.edu\\.cn/"
             --exclude "^https://insight\\.jci\\.org/"
             --exclude "^https://shop\\.fittr\\.care/products/fittr-hart-ring$"
+            --exclude "^https://www\\.asep\\.org/"
+            --exclude "^https://support\\.whoop\\.com/"
             --timeout 30
             '**/*.md'
           fail: true
