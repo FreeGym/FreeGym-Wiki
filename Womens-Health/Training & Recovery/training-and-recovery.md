@@ -92,7 +92,7 @@ RED-S — chronic low energy availability with downstream effects on hormones, b
 3. The diagnostic criteria are fuzzy: how low is "too low," over what duration, and how many downstream markers must shift before it counts as RED-S
 4. Treatment is conceptually simple — eat more — but practically hard because of disordered-eating overlap, body-image pressure, and time-cost of preparing more food
 
-**Evidence needed:** Prevalence studies in non-elite active women, validation of low-energy-availability screening tools, longitudinal data on subclinical RED-S and bone or metabolic outcomes, treatment-response studies, overlap with disordered eating and the relative apolitical disordered eating in athletes (RED-S vs. eating disorder discrimination).
+**Evidence needed:** Prevalence studies in non-elite active women, validation of low-energy-availability screening tools, longitudinal data on subclinical RED-S and bone or metabolic outcomes, treatment-response studies, overlap with disordered eating, and evidence distinguishing RED-S from eating disorders in athletes.
 
 ---
 
@@ -153,6 +153,21 @@ Female athletes tear ACLs at 2-8 times the rate of male athletes in matched spor
 4. Low energy availability and undiagnosed RED-S drive a large share of stress fractures and overuse injuries that get blamed on "female anatomy"
 
 **Evidence needed:** Injury epidemiology stratified by sport and training exposure, neuromuscular training intervention trials, hormone-injury correlation studies with confirmed cycle phase, RED-S and stress fracture data, comparisons of injury rates as girls' sports training quality has improved over time.
+
+---
+
+## How Do Hysterectomy and Ovary Removal (Surgical Menopause) Affect Muscle Gain and Recovery?
+
+Hysterectomy is often discussed as if it were one surgery with one hormonal consequence, but the training-relevant distinction is whether the ovaries are removed. Removing the uterus alone leaves ovarian estrogen and androgen production in place, though ovarian function may decline earlier in some women. Removing both ovaries (bilateral oophorectomy) causes surgical menopause: an abrupt loss of ovarian estrogen and a marked fall in ovarian androgens. Women facing or living with this surgery want to know whether muscle gain and recovery genuinely get harder, what is caused by the surgery itself versus the hormone change, and whether surgical menopause differs from natural menopause.
+
+**Competing claims:**
+
+1. Bilateral oophorectomy can impair muscle gain, connective-tissue tolerance, and recovery more sharply than natural menopause because ovarian hormones drop abruptly rather than gradually, especially when surgery occurs before the usual age of menopause
+2. The direct effect on muscle may be modest and often manageable with progressive resistance training, adequate protein, sleep protection, and appropriate hormone therapy; symptoms such as hot flashes, poor sleep, pain, fatigue, and mood changes may degrade training quality more than muscle biology itself
+3. Androgen loss may contribute to low energy, libido, lean-mass, or strength complaints after oophorectomy, but the evidence for testosterone as a muscle or recovery intervention in women is much weaker than the evidence for sexual-function indications
+4. Many post-surgery training struggles are misattributed: uterus-only hysterectomy, immediate surgical recovery, deconditioning, aging, under-fueling, pelvic-floor symptoms, pain, and abrupt surgical menopause are different mechanisms that need to be separated
+
+**Evidence needed:** Strength, lean-mass, muscle-protein-synthesis, tendon, and recovery-marker studies after bilateral oophorectomy specifically, compared with natural menopause, ovary-conserving hysterectomy, and premenopausal controls; studies separating short-term post-operative recovery from long-term endocrine effects; resistance-training RCTs in surgically menopausal women; trials of estrogen therapy and estrogen-plus-testosterone therapy with muscle, strength, function, and recovery endpoints; and analyses of how age at surgery, time since surgery, training status, protein intake, pelvic-floor symptoms, and hormone-therapy use shape lean-mass and strength trajectories.
 
 ---
 

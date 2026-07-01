@@ -1,4 +1,4 @@
-# What's Actually Causing Hair Loss in Women — Stress, Iron, Thyroid, or Androgens?
+# What's Actually Causing Hair Loss in Women - Stress, Iron, Thyroid, or Androgens?
 
 Hair loss in women is best approached as a **pattern-and-trigger problem**, not a single-cause problem. The first split is usually between **shedding** and **miniaturization**: telogen effluvium is increased shedding after a trigger, while female pattern hair loss is progressive follicle miniaturization with lower density, often over the central scalp. These can coexist, which is why “stress,” “low ferritin,” “thyroid,” and “androgens” should be tested against the timeline and exam rather than treated as mutually exclusive explanations. ([Carmina et al., 2019](https://academic.oup.com/jcem/article/104/7/2875/5342938); [Malkud, 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4576621/))
 
@@ -90,9 +90,6 @@ The most evidence-consistent approach is a hybrid: do a structured evaluation, c
 
 For many women, the answer is not **stress vs iron vs thyroid vs androgens**. It is often **telogen shedding plus pattern susceptibility**, or **female pattern hair loss plus a reversible shedding trigger**. The goal is to identify what is active now: recent trigger, ferritin/iron status, thyroid status, androgen-excess signs, miniaturization, and scalp inflammation. ([Carmina et al., 2019](https://academic.oup.com/jcem/article/104/7/2875/5342938); [Cheng et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC7882421/); [Sinclair et al., 2004](https://pubmed.ncbi.nlm.nih.gov/15280836/))
 
-## Funding and conflict-of-interest notes
-
-The [AE-PCOS Society task force report](https://academic.oup.com/jcem/article/104/7/2875/5342938) stated that all members declared no conflicts or financial interests that might interfere with the document. The large 1,404-patient low-dose oral minoxidil safety study disclosed no conflicts of interest. This article does not treat funding or conflict disclosures as uniform across the evidence base; those details should be checked in each individual source. ([Carmina et al., 2019](https://academic.oup.com/jcem/article/104/7/2875/5342938); [Vano-Galvan et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33639244/))
 
 ## References
 

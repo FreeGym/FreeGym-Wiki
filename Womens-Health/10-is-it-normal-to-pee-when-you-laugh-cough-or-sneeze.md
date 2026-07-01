@@ -76,10 +76,6 @@ That does not make surgery first-line for everyone. It does mean that persistent
 - Surgery is not the default first treatment, but it is an evidence-based option for persistent, bothersome, or more severe stress incontinence. (Labrie et al., 2013; van Oorschot et al., 2025). ([PubMed](https://pubmed.ncbi.nlm.nih.gov/24047061/ "Surgery versus physiotherapy for stress urinary incontinence - PubMed"); [PubMed](https://pubmed.ncbi.nlm.nih.gov/39931871/ "Twelve-Year Follow-Up of a Randomised Controlled Trial Comparing the Effectiveness of Pelvic Floor Muscle Training Versus Mid-Urethral Sling Surgery for Female Moderate to Severe Urinary Incontinence - PubMed"))
     
 
-## Funding/conflict note
-
-Funding and conflict disclosures are source-specific and are best checked in the individual articles linked below rather than summarized here.
-
 ## References
 
 - Moossdorff-Steinhauser HFA, Berghmans BCM, Spaanderman MEA, Bols EMJ. Prevalence, incidence and bothersomeness of urinary incontinence between 6 weeks and 1 year post-partum: a systematic review and meta-analysis. _Int Urogynecol J._ 2021;32(7):1675-1693. DOI: 10.1007/s00192-021-04877-w. PMID: 34142179. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8295150/ "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295150/")
