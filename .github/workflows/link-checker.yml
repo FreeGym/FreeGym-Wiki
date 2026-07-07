@@ -58,6 +58,7 @@ jobs:
             --exclude "^https://www\\.nejm\\.org"
             --exclude "^https://www\\.ahajournals\\.org"
             --exclude "^https://www\\.cochranelibrary\\.com"
+            --exclude "^https://www\\.cochrane\\.org/"
             --exclude "^https://www\\.researchgate\\.net"
             --exclude "^https://fdc\\.nal\\.usda\\.gov/fdc-app\\.html"
             --exclude "^https://www\\.foodsafety\\.gov/"
