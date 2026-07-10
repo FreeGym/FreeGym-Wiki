@@ -850,31 +850,7 @@ maintainers:
     type: created
     citations_added: 13
     pr: 277
-  - file: dermatology/2-what-is-the-skin-barrier-physically-chemically-and-immunologically.md
-    type: created
-    citations_added: 28
-    pr: 277
-  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/7-the-lumbopelvic-hip-complex.md
-    type: created
-    citations_added: 32
-    pr: 277
-  - file: nutrition/Micronutrients/Zinc/zinc-in-high-prevalence-regions-south-asia-india.md
-    type: created
-    citations_added: 19
-    pr: 277
-  - file: nutrition/Micronutrients/Zinc/zinc-status-testing-can-you-trust-the-number.md
-    type: created
-    citations_added: 12
-    pr: 277
-  - file: pharmacology/GLP-1/glp-1.md
-    type: major_edit
-    citations_added: 0
-    pr: 277
-  - file: pharmacology/GLP-1/how-do-glp-1-drugs-actually-produce-weight-loss.md
-    type: created
-    citations_added: 13
-    pr: 277
-  total_citations: 2600
+  total_citations: 2496
   commits: 327
 - github: Thestrongdoc
   name: Neha
