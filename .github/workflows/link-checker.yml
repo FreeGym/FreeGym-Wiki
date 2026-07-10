@@ -67,6 +67,8 @@ jobs:
             --exclude "^https://www\\.fda\\.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen"
             --exclude "^https://www\\.anid\\.cl/"
             --exclude "^https://www\\.nifa\\.usda\\.gov/"
+            --exclude "^https://www\.cdc\.gov/contraception/hcp/usmec/combined-hormonal-contraceptives\.html$"
+            --exclude "^https://www\.cdc\.gov/diabetes/risk-factors/index\.html$"
             --exclude "^https://www\\.daytwo\\.com/"
             --exclude "^https://www\\.sweeteners\\.org/"
             --exclude "^https://(?:www\\.)?nationalacademies\\.org/read/"
