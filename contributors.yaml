@@ -850,8 +850,20 @@ maintainers:
     type: created
     citations_added: 13
     pr: 277
-  total_citations: 2496
-  commits: 328
+  - file: dermatology/3-how-do-keratinocytes-melanocytes-fibroblasts-immune-cells-nerves-vessels-glands-follicles-and-microbiota-cooperate.md
+    type: created
+    citations_added: 28
+    pr: 282
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/8-local-vs-global-muscles.md
+    type: created
+    citations_added: 21
+    pr: 282
+  - file: pharmacology/GLP-1/do-glp-1s-cause-dangerous-muscle-loss.md
+    type: created
+    citations_added: 16
+    pr: 282
+  total_citations: 2561
+  commits: 330
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
