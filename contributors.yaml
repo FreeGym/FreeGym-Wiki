@@ -870,7 +870,11 @@ maintainers:
     type: created
     citations_added: 14
     pr: 288
-  total_citations: 2598
+  - file: wearables/Wearable Fitness Trackers/are-recovery-readiness-and-stress-scores-meaningful.md
+    type: edit
+    citations_added: 1
+    pr: 291
+  total_citations: 2599
   commits: 333
 - github: Thestrongdoc
   name: Neha
