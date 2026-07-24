@@ -862,8 +862,16 @@ maintainers:
     type: created
     citations_added: 16
     pr: 282
-  total_citations: 2561
-  commits: 332
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/9-form-closure-and-force-closure-the-vleeming-model.md
+    type: created
+    citations_added: 23
+    pr: 288
+  - file: nutrition/Micronutrients/Zinc/zinc-and-immune-functions-beyond-colds.md
+    type: created
+    citations_added: 14
+    pr: 288
+  total_citations: 2598
+  commits: 333
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
