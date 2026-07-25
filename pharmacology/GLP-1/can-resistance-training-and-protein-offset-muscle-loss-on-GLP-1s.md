@@ -1,0 +1,166 @@
+# Can Resistance Training and Protein Offset Muscle Loss on GLP-1s?
+
+Resistance training and adequate protein probably help preserve muscle during GLP-1-based weight loss, but the direct evidence is not yet strong enough to quantify the benefit or establish a specific protein target. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [FLEX registration](https://clinicaltrials.gov/study/NCT07457437); [Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+As of July 26, 2026, among the completed randomized studies of exercise or protein identified for this review, the S-LiTE trial provides the most informative direct dataset. Its 2026 secondary analysis examined liraglutide combined with a mixed exercise program - not progressive resistance training - and did not include a protein intervention. The purpose-built LEAN-PREP trial testing resistance exercise and protein during semaglutide or tirzepatide treatment and the FLEX trial testing progressive resistance exercise during tirzepatide treatment are recruiting and have no results posted. Of the four competing claims, the third - **that direct evidence remains insufficient** - is therefore closest to the evidence reviewed here. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [LEAN-PREP registration](https://clinicaltrials.gov/study/NCT06885736); [FLEX registration](https://clinicaltrials.gov/study/NCT07457437))
+
+## First, lean mass is not the same as muscle
+
+Many major GLP-1 weight-loss trials with body-composition substudies measured lean body mass or fat-free mass using dual-energy X-ray absorptiometry rather than measuring skeletal muscle directly. ([Neeland et al., 2024](https://doi.org/10.1111/dom.15728))
+
+DXA-derived lean soft tissue excludes bone mineral, whereas fat-free mass generally includes it. Both are broader than skeletal muscle and can be affected by changes in organs, body water and other nonfat tissues. Neither measure isolates contractile skeletal muscle. A reduction in either compartment therefore cannot automatically be interpreted as an equivalent loss of contractile skeletal muscle. ([Neeland et al., 2024](https://doi.org/10.1111/dom.15728))
+
+This distinction matters because a treatment could reduce absolute lean mass while preserving strength, physical function or muscle relative to the smaller body being moved. Conversely, apparently modest lean-mass loss could still matter in an older or frail person if it is accompanied by worsening strength or mobility. Direct muscle imaging, strength testing and physical-performance outcomes are therefore more informative than DXA alone. ([Neeland et al., 2024](https://doi.org/10.1111/dom.15728); [Langer et al., 2026](https://doi.org/10.1016/j.xcrm.2026.102665))
+
+## Direct randomized evidence for exercise during GLP-1 treatment
+
+Among the completed randomized studies of exercise during GLP-1 treatment identified for this review, the S-LiTE trial provides the most informative direct dataset. A 2026 secondary analysis included 193 adults with obesity but without diabetes who first completed an eight-week low-calorie diet and were then randomized for 52 weeks to exercise plus placebo, liraglutide plus usual activity, exercise plus liraglutide, or placebo plus usual activity. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+The exercise program combined interval-based indoor cycling, circuit training and individual moderate-to-vigorous activity. Participants assigned to exercise completed a median of 2.65 sessions and 116 minutes per week, at a median intensity of 79 percent of maximum heart rate. This was a substantial structured exercise intervention, but it was predominantly aerobic and circuit-based rather than a conventional progressive resistance-training program organized around increasing loads. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+Compared with liraglutide alone, exercise plus liraglutide improved stair-climbing time by 1.2 seconds and peak oxygen consumption by 3.0 mL/min/kg of fat-free mass. Exercise alone produced similar fitness benefits, whereas liraglutide alone did not improve physical fitness. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+Absolute knee-extensor strength showed no statistically significant change within any randomized group, and there were no statistically significant differences between groups. Relative-strength outcomes were better than placebo in all three active-treatment groups: relative strength changed by -0.4 percent with exercise, +1.0 percent with liraglutide and +3.3 percent with combined treatment, compared with -7.8 percent with placebo. The between-group advantage largely reflected lower body weight with preserved absolute strength. Appendicular fat-free mass was unchanged in the combined-treatment group over the randomized year. Because this was not an equivalence or noninferiority analysis, nonsignificance does not by itself prove exact preservation. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+These findings support adding exercise to GLP-1 treatment for physical function and cardiorespiratory fitness. They provide some reassurance that substantial weight loss does not necessarily result in a statistically detectable decline in measured absolute strength. They do **not**, however, establish how much progressive resistance training preserves skeletal muscle, because the strengthening component consisted of circuit exercises and the trial did not isolate resistance training from aerobic exercise. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+The trial also studied weight-loss maintenance after an initial low-calorie diet, used liraglutide rather than semaglutide or tirzepatide, and contained no prescribed protein intervention. Its results cannot therefore establish whether resistance training and high protein prevent muscle loss during the initial phase of treatment with newer GLP-1-based drugs. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+**Conflict-of-interest note:** The study was supported by the Novo Nordisk Foundation and several academic or charitable sources. Novo Nordisk A/S supplied liraglutide and placebo pens, while Cambridge Weight Plan supplied the low-calorie meal products. Several authors reported Novo Nordisk advisory roles, research grants, lecture fees, family employment or stock ownership. The randomized design remains informative, but these relationships should be kept in mind. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+## Direct evidence for progressive resistance training and protein
+
+A dedicated factorial trial has now been designed to answer this question: the LEAN-PREP study will randomize 232 adults receiving semaglutide or tirzepatide to usual care, resistance exercise, increased protein intake, or resistance exercise plus increased protein. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+The six-month resistance program is planned for three home-based sessions per week, progressing from one to three sets for major muscle groups. The protein intervention targets 1.6 g/kg/day through dietary changes and protein products. The primary outcome is magnetic-resonance-imaging measurement of quadriceps cross-sectional area, with additional measurements of strength, physical function, intramuscular fat and DXA body composition. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+This is close to the study the evidence base needs, but the 2026 publication is a **protocol**, not a results paper. The trial is recruiting and has no results posted. It cannot yet tell us whether either intervention works, whether combining them produces an additive benefit, or how well participants can adhere to 1.6 g/kg/day while taking semaglutide or tirzepatide. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT06885736))
+
+In LEAN-PREP, the 1.6 g/kg/day target should therefore be understood as an experimental dose selected for testing - not as a GLP-1-specific requirement established by a completed dose-finding study. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+A second registered randomized trial, FLEX, is recruiting 60 women aged 25-50 to compare tirzepatide with habitual-activity guidance against tirzepatide plus a 20-week progressive resistance program performed four times per week. It plans to assess muscle using ultrasound and D3-creatine as well as physical-function measures. FLEX has no protein arm and no results posted, so it expands the future direct evidence base without changing the present conclusion. ([ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT07457437))
+
+A separate 2024 paper that appeared to test tirzepatide and exercise should not be included as supporting evidence. The journal labels the article **retracted**. The formal retraction notice states that the publisher detected one or more indicators across the affected submissions and peer-review processes, including patterns of citation manipulation, indicators of third-party involvement and evidence that articles were not peer-reviewed in line with the journal's policies. ([Retracted article](https://doi.org/10.3233/CH-242134); [Retraction notice](https://doi.org/10.1177/13860291251390410))
+
+## What ordinary calorie-deficit trials suggest
+
+The direct GLP-1 evidence reviewed above does not include a completed trial of progressive resistance training plus prescribed protein. The current case therefore relies substantially on extrapolation from conventional diet-induced weight loss. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+A 2025 systematic review and meta-analysis of 25 randomized trials found that adding resistance exercise to dietary weight loss protected fat-free mass and increased fat loss compared with diet-induced weight loss alone. It also improved measured muscular strength, although the pooled strength result was heterogeneous and rated low certainty. The certainty of evidence for fat-free-mass preservation was rated moderate. ([Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363))
+
+This makes resistance training an empirically reasonable intervention to test during GLP-1 treatment. The limitation is that GLP-1 therapy may produce patterns of food intake and weight loss that differ from those in conventional diet trials. The magnitude of protection cannot simply be assumed to be identical. ([Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498); [Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4))
+
+Protein has a similar indirect evidence base. A 2024 systematic review and meta-analysis included 47 studies and 3,218 adults with overweight or obesity attempting weight loss. Higher protein intake reduced the decline in muscle mass, with a standardized mean difference of 0.75, although it did not significantly preserve strength or physical function. ([Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+In subgroup and meta-regression analyses, intake above approximately 1.3 g/kg/day was associated with better muscle-mass retention, while intake below 1.0 g/kg/day was associated with greater risk of muscle loss. These values should not be treated as validated thresholds for people taking GLP-1 drugs: the included trials were heterogeneous, their risks of bias ranged from low to high, and they did not specifically study semaglutide or tirzepatide. The practical meaning of a g/kg target also depends on which body-weight denominator is used; for example, the Johnson study calculated targets using adjusted body weight. ([Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030); [Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498))
+
+Together, these reviews support the general principle that resistance exercise and higher protein intake can help preserve muscle-related mass during dietary weight loss. They do not prove that a specific exercise program or protein dose will fully prevent muscle loss during GLP-1 treatment. ([Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+## Is enough protein difficult to eat on GLP-1s?
+
+Preliminary dietary-intake studies suggest that some GLP-1 users may struggle to reach higher protein targets, but the evidence is observational and vulnerable to substantial bias. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498); [Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4); [Babazadeh et al., 2026](https://doi.org/10.1016/j.obpill.2026.100292))
+
+In one cross-sectional study, 69 GLP-1 users completed three-day food records. Mean protein intake was 77.3 g/day. Although 75 percent said they had deliberately increased protein after starting treatment, only 43 percent consumed at least 1.2 g/kg of adjusted body weight, 10 percent reached 1.6 g/kg and 5 percent reached 2.0 g/kg. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498))
+
+Those results suggest that reaching targets such as 1.6 g/kg/day may be difficult for many participants in this sample under ordinary conditions. They do not prove that GLP-1-induced appetite suppression caused the low intake because there was no pretreatment dietary measurement, untreated control group or randomized protein intervention. The calculations also used protein targets extrapolated from general hypocaloric-diet literature rather than a demonstrated GLP-1-specific requirement. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498))
+
+**Conflict-of-interest note:** This study was funded by GNC Holdings, and every author was a full-time GNC employee. The paper also discussed protein shakes and meal-replacement products as possible solutions. Its intake measurements may still be useful, but the findings and product-oriented interpretation should be weighted cautiously and should not stand as the sole evidence for a protein recommendation. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498))
+
+A larger 2026 preliminary study collected 48-hour food diaries from 387 adults recruited through online GLP-1 support groups. Mean reported intake was only 753 kcal and 33.4 g of protein per day, and fewer than 10 percent met the study's protein recommendations. ([Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4))
+
+The extremely low mean energy intake raises concern about dietary underreporting, unusually severe restriction or selection of people experiencing more pronounced appetite effects. Recruitment through social-media groups and the use of only two self-reported dietary days further limit generalizability. The study therefore shows that very low protein intake can occur in selected GLP-1 users, not that these intake levels are typical of all patients. ([Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4))
+
+The authors reported university support for publication costs and declared no conflict of interest, although one author also listed a company affiliation. No company funding of the data collection or analysis was reported. ([Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4))
+
+A small prospective 2026 cohort followed 28 adults initiating semaglutide or tirzepatide for 24 weeks without structured nutrition support. Higher absolute protein intake was associated with greater preservation of bioelectrical-impedance-estimated skeletal muscle mass (r = 0.41; P = 0.0498). Because protein intake was not randomized, the sample was small with participant attrition, and muscle mass was estimated rather than directly measured, this is hypothesis-generating evidence rather than proof that higher protein caused better preservation. ([Babazadeh et al., 2026](https://doi.org/10.1016/j.obpill.2026.100292))
+
+The most defensible conclusion is therefore that achieving a high-protein diet **may** be difficult for some people taking GLP-1 therapies. Current observational studies do not show that adequate protein is inevitably unattainable or determine which strategies reliably improve intake and preserve muscle. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498); [Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4); [Babazadeh et al., 2026](https://doi.org/10.1016/j.obpill.2026.100292))
+
+## Do GLP-1 drugs directly impair muscle protein synthesis?
+
+There is human evidence from a registered semaglutide pilot that measured muscle protein synthesis, but the synthesis findings require careful source distinction and do not demonstrate that semaglutide independently suppresses synthesis beyond the effects of weight loss and reduced energy intake. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034); [Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT05606471))
+
+The peer-reviewed 2024 _Clinical Nutrition_ report describes a small, open-label randomized pilot in which adults with type 2 diabetes were assigned to 12 weeks of semaglutide, an approximately 800-kcal/day very-low-calorie diet, or the combination. That journal report primarily presents body-composition and metabolic outcomes. A subsequent 2025 doctoral-thesis analysis from the same registered trial reports that muscle protein synthesis declined in all three groups, in a pattern consistent with the corresponding losses of muscle-related mass, and that the decline was smaller with semaglutide than with the very-low-calorie diet. The synthesis result should therefore be identified as thesis-level evidence unless a separate peer-reviewed report becomes available. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034); [Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT05606471))
+
+That result does not support a confident claim that semaglutide has a uniquely catabolic effect on muscle protein synthesis. However, it cannot exclude one either. There was no weight-stable semaglutide group and no pair-fed control matched to the semaglutide group's energy intake and weight loss. The experiment therefore could not separate a direct drug effect from the expected response to negative energy balance, dietary changes, improved glycaemia and weight loss. ([Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT05606471))
+
+The peer-reviewed study was funded by the UK Medical Research Council; no commercial study funding was identified in the published funding statement. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034))
+
+A related 2026 proof-of-concept publication combined animal experiments with a very small human semaglutide substudy drawn from the same registered clinical-trial program, rather than an independent human cohort. In the human component, absolute vastus lateralis muscle size decreased modestly over 12 weeks, but knee-extension and handgrip strength were maintained. The findings are reassuring about short-term function, but the sample was only about ten participants, lacked a conventional untreated control and cannot establish long-term safety for older or frail populations. ([Langer et al., 2026](https://doi.org/10.1016/j.xcrm.2026.102665); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT05606471))
+
+**Conflict-of-interest note:** The Langer study received academic and public research support, but several authors disclosed prior or current pharmaceutical employment, consulting relationships, speaking fees or stock ownership involving companies including Boehringer Ingelheim, Eli Lilly and Novo Nordisk. These disclosures do not invalidate the data, but the study is too small to provide decisive reassurance. ([Langer et al., 2026](https://doi.org/10.1016/j.xcrm.2026.102665))
+
+Overall, an independent drug-induced suppression of human muscle protein synthesis remains **unproven**. The available human data show muscle protein synthesis changing alongside weight loss and energy restriction, but they do not isolate an independent semaglutide effect. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034); [Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308); [ClinicalTrials.gov registration](https://clinicaltrials.gov/study/NCT05606471))
+
+## Where the competing claims land
+
+1. **Resistance training plus high protein preserves lean mass during GLP-1 treatment just as it does during any caloric deficit:** Plausible and supported indirectly, with partial direct support for structured exercise. It has not yet been demonstrated by the completed direct trials discussed here, which did not test progressive resistance training plus prescribed protein during semaglutide or tirzepatide treatment. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+2. **Appetite suppression makes sufficient protein difficult to consume:** Possible and observed in some dietary-record studies, but not inevitable or causally established. The available studies are self-reported, selected and, in one important case, entirely funded and conducted by a supplement retailer. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498); [Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4); [Babazadeh et al., 2026](https://doi.org/10.1016/j.obpill.2026.100292))
+
+3. **There is insufficient direct evidence, and most recommendations are extrapolated from diet studies:** This is the best-supported claim. The purpose-built LEAN-PREP resistance-training and protein trial is currently represented by a protocol rather than completed results. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+4. **GLP-1 drugs impair muscle protein synthesis independently of caloric intake:** Not established. A doctoral-thesis analysis from a small randomized pilot reports synthesis declines during semaglutide, very-low-calorie dieting and their combination, but the design does not isolate a drug-specific effect. The synthesis findings were not reported in the cited 2024 peer-reviewed paper. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034); [Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308))
+
+
+## Quick reference
+
+- **Completed direct exercise evidence:** A substantial liraglutide RCT using mixed aerobic exercise and circuit training; exercise improved fitness and function, and absolute knee-extensor strength showed no statistically detectable decline, but there was no protein arm. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+- **Progressive resistance training and protein:** LEAN-PREP plans to test resistance exercise, increased protein and their combination during semaglutide or tirzepatide treatment; FLEX separately plans to test progressive resistance exercise during tirzepatide treatment. Both are recruiting and have no results posted. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [LEAN-PREP registration](https://clinicaltrials.gov/study/NCT06885736); [FLEX registration](https://clinicaltrials.gov/study/NCT07457437))
+
+- **Protein target under direct investigation:** 1.6 g/kg/day. This is an experimental trial target, not a GLP-1-specific requirement established by completed dose-finding evidence. ([Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911))
+
+- **Protein feasibility:** Preliminary food records show that many participants do not reach higher targets, but these studies cannot determine causation or population prevalence. ([Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498); [Korus et al., 2026](https://doi.org/10.1186/s12967-026-07702-4); [Babazadeh et al., 2026](https://doi.org/10.1016/j.obpill.2026.100292))
+
+- **Human muscle protein synthesis:** A doctoral-thesis analysis from a small randomized pilot reports reductions during semaglutide, very-low-calorie dieting and their combination; it did not isolate an independent semaglutide effect, and the synthesis result was not reported in the 2024 peer-reviewed paper. ([Anyiam et al., 2024](https://doi.org/10.1016/j.clnu.2024.06.034); [Anyiam, 2025 doctoral thesis](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308))
+
+- **Conventional weight-loss evidence:** Resistance exercise protects fat-free mass, while higher protein modestly improves muscle-mass retention. These are extrapolations rather than direct GLP-1 results. ([Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+
+## Practical interpretation
+
+- Structured exercise should not be presented as a proven way to eliminate all muscle loss during GLP-1 treatment. It is better described as a strongly supported general weight-loss strategy with emerging direct evidence for improving fitness and function during GLP-1 therapy, alongside no statistically detectable decline in measured absolute knee-extensor strength in one liraglutide trial. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0))
+
+- Progressive resistance training is a particularly plausible exercise modality for muscle preservation, but its incremental effect over aerobic or mixed exercise during semaglutide and tirzepatide treatment remains to be measured directly. ([Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [FLEX registration](https://clinicaltrials.gov/study/NCT07457437))
+
+- Higher protein intake probably helps preserve muscle mass during weight loss, but the direct GLP-1 studies discussed here have not validated a specific intake threshold. Values such as 1.3 or 1.6 g/kg/day come from general weight-loss analyses or an ongoing trial design - not completed dose-finding studies in GLP-1 users. Interpretation also depends on the body-weight denominator used; the Johnson study, for example, calculated targets using adjusted body weight. ([Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [Johnson et al., 2025](https://doi.org/10.3389/fnut.2025.1566498))
+
+- Muscle health should be assessed using strength, physical function and, where relevant, direct muscle imaging rather than interpreting every kilogram of DXA lean-mass loss as skeletal-muscle loss. ([Neeland et al., 2024](https://doi.org/10.1111/dom.15728))
+
+- Among the studies reviewed here, the main evidence gap is no longer a lack of plausible interventions. It is the lack of completed randomized trials showing how much muscle progressive resistance training and a defined protein prescription actually preserve during treatment with newer GLP-1-based medications. ([Jensen et al., 2026](https://doi.org/10.1007/s40279-025-02386-0); [Alawadhi et al., 2026](https://doi.org/10.1136/bmjopen-2026-116911); [FLEX registration](https://clinicaltrials.gov/study/NCT07457437); [Binmahfoz et al., 2025](https://doi.org/10.1136/bmjsem-2024-002363); [Kokura et al., 2024](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+
+## References
+
+- Jensen SBK, Fiorenza M, Juhl CR, et al. Physical Fitness with Exercise and GLP-1 Receptor Agonist Treatment Alone or Combined After Diet-Induced Weight Loss: A Secondary Analysis of a Randomized Controlled Trial in Adults with Obesity. _Sports Med._ 2026;56(7):1785-1800. DOI: 10.1007/s40279-025-02386-0. PMID: 41579235. ([Source](https://doi.org/10.1007/s40279-025-02386-0))
+
+- Alawadhi AA, Alroudhan D, Alsaeed DJ, et al. LEAN mass Preservation with Resistance Exercise and Protein during semaglutide and tirzepatide therapy (LEAN-PREP study): a protocol for a randomised controlled trial. _BMJ Open._ 2026;16(4):e116911. DOI: 10.1136/bmjopen-2026-116911. PMID: 42020128. ([Source](https://doi.org/10.1136/bmjopen-2026-116911))
+
+- ClinicalTrials.gov. LEAN Mass Preservation With Resistance Exercise and Protein During Semaglutide/Tirzepatide Therapy (LEAN-PREP). NCT06885736. ([Study record](https://clinicaltrials.gov/study/NCT06885736))
+
+- ClinicalTrials.gov. Function and Lean Mass Preservation With Resistance Exercise During a GLP-1RA Treatment (FLEX). NCT07457437. ([Study record](https://clinicaltrials.gov/study/NCT07457437))
+
+- Bagherzadeh-Rahmani B, et al. Tirzepatide and exercise training in obesity. _Clinical Hemorheology and Microcirculation._ 2024;87(4):465-480. Retracted. DOI: 10.3233/CH-242134. ([Retracted article](https://doi.org/10.3233/CH-242134))
+
+- Sage Publishing. Retraction notice. _Clinical Hemorheology and Microcirculation._ 2025;91(2-4):96-99. DOI: 10.1177/13860291251390410. ([Retraction notice](https://doi.org/10.1177/13860291251390410))
+
+- Binmahfoz A, et al. Effect of resistance exercise on body composition, muscle strength and cardiometabolic health during dietary weight loss in people with overweight or obesity: a systematic review and meta-analysis. _BMJ Open Sport Exerc Med._ 2025;11:e002363. DOI: 10.1136/bmjsem-2024-002363. PMID: 40909191. ([Source](https://doi.org/10.1136/bmjsem-2024-002363))
+
+- Kokura Y, et al. Enhanced protein intake on maintaining muscle mass, strength, and physical function in adults with overweight/obesity: a systematic review and meta-analysis. _Clin Nutr ESPEN._ 2024;63:417-426. DOI: 10.1016/j.clnesp.2024.06.030. PMID: 39002131. ([Source](https://doi.org/10.1016/j.clnesp.2024.06.030))
+
+- Anyiam O, Phillips B, Quinn K, Wilkinson D, Smith K, Atherton PJ, Idris I. Metabolic effects of very-low calorie diet, Semaglutide, or combination of the two, in individuals with type 2 diabetes mellitus. _Clin Nutr._ 2024;43(8):1907-1913. DOI: 10.1016/j.clnu.2024.06.034. PMID: 38996661. ([Source](https://doi.org/10.1016/j.clnu.2024.06.034))
+
+- Anyiam O. An examination into the effects of very-low calorie diets and glucagon-like peptide-1 receptor agonists, individually or in combination, on skeletal muscle metabolism and glycaemic outcomes in individuals with type 2 diabetes living with obesity. Doctoral thesis. University of Nottingham; 2025. ([University of Nottingham Repository](https://repository.nottingham.ac.uk/server/api/core/items/0e6e443f-d979-4bf5-b5e2-bafa7b8e6308))
+
+- ClinicalTrials.gov. Mechanistic Effects of Semaglutide and Very Low Calorie Diet in People With Type 2 Diabetes. NCT05606471. ([Study record](https://clinicaltrials.gov/study/NCT05606471))
+
+- Langer HT, Gilmore NK, Hayden CMT, et al. Weight loss with GLP-1 medicines does not result in a disproportionate loss of muscle mass or function in obese mice and humans. _Cell Rep Med._ 2026;7(3):102665. DOI: 10.1016/j.xcrm.2026.102665. PMID: 41850248. ([Source](https://doi.org/10.1016/j.xcrm.2026.102665))
+
+- Johnson B, Milstead M, Thomas O, et al. Investigating nutrient intake during use of glucagon-like peptide-1 receptor agonist: a cross-sectional study. _Front Nutr._ 2025;12:1566498. DOI: 10.3389/fnut.2025.1566498. PMID: 40352260. ([Source](https://doi.org/10.3389/fnut.2025.1566498))
+
+- Korus S, Cembrowska-Lech D, Kłoda K, Stachowska E. Dietary intake patterns and nutritional adequacy among adults with overweight or obesity treated with GLP-1 or dual GIP/GLP-1 receptor agonists - preliminary study. _J Transl Med._ 2026;24:532. DOI: 10.1186/s12967-026-07702-4. PMID: 41965670. ([Source](https://doi.org/10.1186/s12967-026-07702-4))
+
+- Babazadeh D, Therrien S, Fitch AK, Steinberg FM. Changes in food cravings, dietary quality, body composition, and dietary intake during GLP-1 receptor agonist therapy: The CRAVE study. _Obesity Pillars._ 2026;19:100292. DOI: 10.1016/j.obpill.2026.100292. PMID: 42440974. ([Source](https://doi.org/10.1016/j.obpill.2026.100292))
+
+- Neeland IJ, Linge J, Birkenfeld AL. Changes in lean body mass with glucagon-like peptide-1-based therapies and mitigation strategies. _Diabetes Obes Metab._ 2024;26(Suppl 4):16-27. DOI: 10.1111/dom.15728. PMID: 38937282. ([Source](https://doi.org/10.1111/dom.15728))
