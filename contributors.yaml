@@ -874,7 +874,11 @@ maintainers:
     type: edit
     citations_added: 1
     pr: 291
-  total_citations: 2599
+  - file: pharmacology/GLP-1/can-resistance-training-and-protein-offset-muscle-loss-on-GLP-1s.md
+    type: created
+    citations_added: 12
+    pr: 294
+  total_citations: 2611
   commits: 334
 - github: Thestrongdoc
   name: Neha
