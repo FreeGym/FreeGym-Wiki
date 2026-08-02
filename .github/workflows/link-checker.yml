@@ -109,6 +109,7 @@ jobs:
             --exclude "^https://insight\\.jci\\.org/"
             --exclude "^https://shop\\.fittr\\.care/products/fittr-hart-ring$"
             --exclude "^https://www\\.asep\\.org/"
+            --exclude "^https://www\\.whoop\\.com/"
             --exclude "^https://support\\.whoop\\.com/"
             --timeout 30
             '**/*.md'
