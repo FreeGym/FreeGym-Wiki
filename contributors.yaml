@@ -12,7 +12,7 @@ maintainers:
   - wearables
   - musculoskeletal-health
   - dermatology
-  last_active: 2026-07
+  last_active: 2026-08
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -878,8 +878,24 @@ maintainers:
     type: created
     citations_added: 12
     pr: 294
-  total_citations: 2611
-  commits: 336
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/dinner-timing-and-chrononutrition.md
+    type: created
+    citations_added: 0
+    pr: 298
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/does-dinner-timing-matter.md
+    type: created
+    citations_added: 18
+    pr: 298
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/is-there-an-optimal-daily-eating-window.md
+    type: created
+    citations_added: 14
+    pr: 298
+  - file: pharmacology/GLP-1/do-you-have-to-take-glp-1s-forever.md
+    type: created
+    citations_added: 10
+    pr: 298
+  total_citations: 2653
+  commits: 338
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
