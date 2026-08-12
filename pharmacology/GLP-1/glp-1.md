@@ -2,7 +2,7 @@
 
 The most debated questions about GLP-1 receptor agonists, weight loss pharmacology, and their role in health.
 
-**Status:** Seeking contributors. Each section frames a controversy. Evidence needed.
+**Status:** Six evidence reviews are available. The remaining sections are seeking contributors.
 
 ---
 
@@ -21,7 +21,7 @@ GLP-1-based drugs include GLP-1 receptor agonists such as semaglutide and liragl
 
 ---
 
-## Do GLP-1s Cause Dangerous Muscle Loss?
+## [Do GLP-1s Cause Dangerous Muscle Loss?](do-glp-1s-cause-dangerous-muscle-loss.md)
 
 This is the central controversy in the fitness community. People on GLP-1 RAs lose significant weight, but some of that is lean mass. Critics argue these drugs cause disproportionate muscle loss. Defenders say the lean-to-fat loss ratio is typical for any rapid weight loss.
 
@@ -36,7 +36,7 @@ This is the central controversy in the fitness community. People on GLP-1 RAs lo
 
 ---
 
-## Can Resistance Training and Protein Offset Muscle Loss on GLP-1s?
+## [Can Resistance Training and Protein Offset Muscle Loss on GLP-1s?](can-resistance-training-and-protein-offset-muscle-loss-on-GLP-1s.md)
 
 If muscle loss is a real concern, the practical question is whether it can be mitigated. The fitness community assumes resistance training and high protein intake should help, but the evidence base is thin.
 
@@ -51,7 +51,7 @@ If muscle loss is a real concern, the practical question is whether it can be mi
 
 ---
 
-## Do You Have to Take GLP-1s Forever?
+## [Do You Have to Take GLP-1s Forever?](do-you-have-to-take-glp-1s-forever.md)
 
 Most patients regain significant weight after stopping GLP-1 RAs. This raises the question: is this a lifelong medication, or can it be used as a temporary intervention?
 
@@ -66,7 +66,7 @@ Most patients regain significant weight after stopping GLP-1 RAs. This raises th
 
 ---
 
-## Do GLP-1s Reset Your Body's Weight Set Point?
+## [Do GLP-1s Reset Your Body's Weight Set Point?](do-glp-1s-reset-your-bodys-weight-set-point.md)
 
 Some argue GLP-1 RAs might reset the body's defended weight. Others say the rapid regain after stopping proves they don't.
 
@@ -81,7 +81,7 @@ Some argue GLP-1 RAs might reset the body's defended weight. Others say the rapi
 
 ---
 
-## Why Do Some People Not Respond or Hit a Weight-Loss Plateau?
+## [Why Do Some People Not Respond or Hit a Weight-Loss Plateau?](why-do-some-people-not-respond-or-hit-a-weight-loss-plateau.md)
 
 Average weight-loss results conceal large differences between individuals. Some people lose substantially more than the trial average, some plateau early, and others stop because of side effects or limited benefit. It is unclear how much of this variation reflects biology, dose, adherence, expectations, or the specific drug used.
 

@@ -2,7 +2,7 @@
 
 The most debated questions about dinner timing, daily eating windows, calorie distribution, meal regularity, long-term health, and population-specific meal patterns.
 
-**Status:** Articles are available for dinner timing and daily eating windows. The remaining sections are seeking contributors.
+**Status:** Six evidence reviews are available across the core meal-timing controversies.
 
 ---
 
@@ -41,7 +41,7 @@ This article examines the period between the first and final caloric intake of t
 
 ---
 
-## Does Calorie Distribution Across the Day Matter?
+## [Does Calorie Distribution Across the Day Matter?](does-calorie-distribution-across-the-day-matter.md)
 
 This article examines how daily calories are divided across breakfast, lunch, dinner, and snacks. It does not treat calorie distribution as equivalent to dinner timing or eating-window restriction.
 
@@ -58,7 +58,7 @@ This article examines how daily calories are divided across breakfast, lunch, di
 
 ---
 
-## Does Meal Regularity Matter?
+## [Does Meal Regularity Matter?](does-meal-regularity-matter.md)
 
 This article examines day-to-day variation in meal times and eating windows. It does not evaluate whether the average meal time should be early or late.
 
@@ -75,7 +75,7 @@ This article examines day-to-day variation in meal times and eating windows. It 
 
 ---
 
-## Does Meal Timing Affect Long-Term Disease and Longevity?
+## [Does Meal Timing Affect Long-Term Disease and Longevity?](does-meal-timing-affect-long-term-disease-and-longevity.md)
 
 This article examines diabetes, cardiovascular disease, cancer, ageing, and mortality. Short-term biomarkers, appetite changes, and weight loss belong in the earlier articles unless a study directly connects them to long-term clinical outcomes.
 
@@ -93,7 +93,7 @@ This article examines diabetes, cardiovascular disease, cancer, ageing, and mort
 
 ---
 
-## Who May Need a Different Meal-Timing Pattern?
+## [Who May Need a Different Meal-Timing Pattern?](who-may-need-a-different-meal-timing-pattern.md)
 
 This article examines clinical, nutritional, occupational, and performance-related populations. It includes the late-snack debate and does not determine the general-population effects of early or late dinner.
 
