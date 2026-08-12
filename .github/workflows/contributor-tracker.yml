@@ -170,7 +170,7 @@ jobs:
           all_files = result.stdout.strip().split('\n') if result.stdout.strip() else []
 
           # Filter to content markdown files only
-          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version', 'biomarkers', 'wearables', 'musculoskeletal-health', 'dermatology']
+          content_folders = ['nutrition', 'exercise', 'exercise-physiology', 'sleep', 'mental-health', 'supplements', 'recovery', 'Womens-Health', 'heart-health', 'cardiology', 'pharmacology', 'layman-version', 'biomarkers', 'wearables', 'musculoskeletal-health', 'dermatology', 'endocrinology']
           content_files = [f for f in all_files if any(f.startswith(folder + '/') for folder in content_folders) and f.endswith('.md')]
 
           if not content_files:
@@ -529,6 +529,7 @@ jobs:
               'exercise-physiology': 'Exercise Physiology',
               'musculoskeletal-health': 'Musculoskeletal',
               'dermatology': 'Dermatology',
+              'endocrinology': 'Endocrinology',
           }
 
           def label_topic(topic):
