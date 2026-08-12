@@ -111,7 +111,7 @@ Intermittent fasting is one of the most popular eating patterns of the last deca
 
 ---
 
-## When Do Women's Symptoms Get Pinned on Thyroid Before Iron, Sleep, or Under-Eating Are Checked?
+## Your Thyroid Test Is Abnormal. But Is It Causing Your Symptoms?
 
 Fatigue, weight gain, hair shedding, brain fog, cold intolerance, and low mood overlap heavily across hypothyroidism, iron deficiency, sleep deprivation, low energy availability, perimenopause, and depression. Yet the diagnostic instinct often pivots to thyroid first — sometimes producing prescriptions for symptoms that had a simpler upstream cause.
 
