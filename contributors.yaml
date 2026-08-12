@@ -898,8 +898,40 @@ maintainers:
     type: major_edit
     citations_added: 4
     pr: 302
-  total_citations: 2657
-  commits: 340
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/dinner-timing-and-chrononutrition.md
+    type: edit
+    citations_added: 0
+    pr: 309
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/does-calorie-distribution-across-the-day-matter.md
+    type: created
+    citations_added: 15
+    pr: 309
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/does-meal-regularity-matter.md
+    type: created
+    citations_added: 17
+    pr: 309
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/does-meal-timing-affect-long-term-disease-and-longevity.md
+    type: created
+    citations_added: 17
+    pr: 309
+  - file: nutrition/Meal Frequency & Intermittent Fasting/Dinner Timing & Chrononutrition/who-may-need-a-different-meal-timing-pattern.md
+    type: created
+    citations_added: 15
+    pr: 309
+  - file: pharmacology/GLP-1/do-glp-1s-reset-your-bodys-weight-set-point.md
+    type: created
+    citations_added: 15
+    pr: 309
+  - file: pharmacology/GLP-1/glp-1.md
+    type: edit
+    citations_added: 0
+    pr: 309
+  - file: pharmacology/GLP-1/why-do-some-people-not-respond-or-hit-a-weight-loss-plateau.md
+    type: created
+    citations_added: 14
+    pr: 309
+  total_citations: 2750
+  commits: 345
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
