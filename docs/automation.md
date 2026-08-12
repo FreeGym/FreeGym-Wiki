@@ -60,10 +60,21 @@ Current content folders (from the workflow):
 
 - `nutrition`
 - `exercise`
+- `exercise-physiology`
 - `sleep`
 - `mental-health`
 - `supplements`
 - `recovery`
+- `Womens-Health`
+- `heart-health` (legacy alias for `cardiology`)
+- `cardiology`
+- `pharmacology`
+- `layman-version`
+- `biomarkers`
+- `wearables`
+- `musculoskeletal-health`
+- `dermatology`
+- `endocrinology`
 
 If new folders are added, update `content_folders` in the workflow.
 
