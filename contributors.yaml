@@ -906,7 +906,7 @@ maintainers:
   topics:
   - Womens-Health
   - biomarkers
-  last_active: 2026-07
+  last_active: 2026-08
   contributions:
   - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
     type: created
@@ -1088,7 +1088,63 @@ maintainers:
     type: created
     citations_added: 17
     pr: 271
-  total_citations: 806
+  - file: Womens-Health/Energy & Metabolism/31-is-intermittent-fasting-different-for-women.md
+    type: created
+    citations_added: 48
+    pr: 305
+  - file: Womens-Health/Energy & Metabolism/34-your-thyroid-test-is-abnormal-but-is-it-causing-your-symptoms.md
+    type: created
+    citations_added: 34
+    pr: 305
+  - file: Womens-Health/Energy & Metabolism/energy-and-metabolism.md
+    type: edit
+    citations_added: 0
+    pr: 305
+  - file: Womens-Health/Menstrual & Hormonal Health/32-what-separates-pms-from-pmdd-clinically-and-practically.md
+    type: created
+    citations_added: 46
+    pr: 305
+  - file: Womens-Health/Menstrual & Hormonal Health/35-does-estrogen-withdrawal-explain-more-than-migraines.md
+    type: created
+    citations_added: 60
+    pr: 305
+  - file: Womens-Health/Training & Recovery/33-do-hormonal-contraceptives-affect-strength-and-training-adaptations.md
+    type: created
+    citations_added: 23
+    pr: 305
+  - file: biomarkers/Blood Sugar & Metabolic Health/fructosamine-and-glycated-albumin.md
+    type: created
+    citations_added: 37
+    pr: 305
+  - file: biomarkers/Blood Sugar & Metabolic Health/hba1c-gold-standard-or-flawed.md
+    type: created
+    citations_added: 15
+    pr: 305
+  - file: biomarkers/Blood Sugar & Metabolic Health/medications-that-distort-glucose-testing.md
+    type: created
+    citations_added: 68
+    pr: 305
+  - file: biomarkers/Blood Sugar & Metabolic Health/oral-glucose-tolerance-test.md
+    type: created
+    citations_added: 14
+    pr: 305
+  - file: biomarkers/Lipids/is-good-cholesterol-actually-good.md
+    type: created
+    citations_added: 71
+    pr: 305
+  - file: biomarkers/Lipids/niacin-when-better-lipid-markers-did-not-mean-better-outcomes.md
+    type: created
+    citations_added: 21
+    pr: 305
+  - file: biomarkers/Lipids/remnant-cholesterol.md
+    type: created
+    citations_added: 29
+    pr: 305
+  - file: biomarkers/Lipids/what-do-triglycerides-actually-tell-you.md
+    type: created
+    citations_added: 43
+    pr: 305
+  total_citations: 1315
   commits: 12
 trusted: []
 contributors:
