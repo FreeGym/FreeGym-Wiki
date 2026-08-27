@@ -2,7 +2,7 @@
 
 The most debated questions about GLP-1 receptor agonists, weight loss pharmacology, and their role in health.
 
-**Status:** Six evidence reviews are available. The remaining sections are seeking contributors.
+**Status:** Nine evidence reviews are available. The remaining sections are seeking contributors.
 
 ---
 
@@ -96,7 +96,7 @@ Average weight-loss results conceal large differences between individuals. Some 
 
 ---
 
-## What Are the Real Long-Term Risks?
+## [What Are the Real Long-Term Risks?](what-are-the-real-long-term-risks-of-glp-1-receptor-agonists.md)
 
 GLP-1 RAs have known side effects and several safety signals under investigation. Separating genuine risks from noise is difficult with a relatively new drug class.
 
@@ -112,7 +112,7 @@ GLP-1 RAs have known side effects and several safety signals under investigation
 
 ---
 
-## Should GLP-1s Be Stopped Before Surgery or Endoscopy?
+## [Should GLP-1s Be Stopped Before Surgery or Endoscopy?](should-glp-1s-be-stopped-before-surgery-or-endoscopy.md)
 
 Because GLP-1 RAs can delay gastric emptying, patients may retain stomach contents despite standard fasting before anesthesia or deep sedation. Clinicians disagree about whether these drugs should routinely be withheld or whether the risk can be managed without interrupting treatment.
 
@@ -127,7 +127,7 @@ Because GLP-1 RAs can delay gastric emptying, patients may retain stomach conten
 
 ---
 
-## GLP-1s and Mental Health: Depression and Suicidal Ideation
+## [GLP-1s and Mental Health: Depression and Suicidal Ideation](glp-1s-and-mental-health.md)
 
 Regulatory agencies have investigated signals of depression and suicidal ideation in GLP-1 RA users. The evidence is contested.
 
