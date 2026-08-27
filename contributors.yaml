@@ -930,7 +930,23 @@ maintainers:
     type: created
     citations_added: 14
     pr: 309
-  total_citations: 2750
+  - file: pharmacology/GLP-1/glp-1.md
+    type: edit
+    citations_added: 0
+    pr: 312
+  - file: pharmacology/GLP-1/glp-1s-and-mental-health.md
+    type: created
+    citations_added: 15
+    pr: 312
+  - file: pharmacology/GLP-1/should-glp-1s-be-stopped-before-surgery-or-endoscopy.md
+    type: created
+    citations_added: 11
+    pr: 312
+  - file: pharmacology/GLP-1/what-are-the-real-long-term-risks-of-glp-1-receptor-agonists.md
+    type: created
+    citations_added: 12
+    pr: 312
+  total_citations: 2788
   commits: 345
 - github: Thestrongdoc
   name: Neha
