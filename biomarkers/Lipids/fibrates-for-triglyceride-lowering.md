@@ -149,9 +149,9 @@ REDUCE-IT and PROMINENT did not produce numerically identical triglyceride reduc
 
 Their role in severe hypertriglyceridemia remains reasonable, but the pancreatitis-prevention evidence for fibrates is indirect. The high-triglyceride, low-HDL cardiovascular subgroup is biologically plausible and supported by repeated subgroup observations, but PROMINENT substantially weakened the claim that this phenotype identifies patients who reliably benefit from PPAR-alpha modulation. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/34332805/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/22910758/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/21052016/); [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMoa2210645))
 
-Fenofibrate also has a separate, randomized evidence base for slowing progression of early diabetic retinopathy. In the LENS trial, progression to referable diabetic retinopathy or maculopathy, or treatment for either condition, occurred in 22.7% with fenofibrate versus 29.2% with placebo, hazard ratio 0.73, 95% confidence interval 0.58 to 0.91. This is a noncardiovascular role and does not change the ASCVD conclusion. (Preiss et al., 2024) ([NEJM Evidence](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2400179))
+Fenofibrate also has a separate, randomized evidence base for slowing progression of early diabetic retinopathy. In the LENS trial, progression to referable diabetic retinopathy or maculopathy, or treatment for either condition, occurred in 22.7% with fenofibrate versus 29.2% with placebo, hazard ratio 0.73, 95% confidence interval 0.58 to 0.91. This is a noncardiovascular role and does not change the ASCVD conclusion. (Preiss et al., 2024) ([NEJM Evidence](https://doi.org/10.1056/EVIDoa2400179))
 
-Broad rejection of fibrates would therefore be too strong, but broad cardiovascular endorsement of them in the high-triglyceride, low-HDL subgroup would also exceed the evidence. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/34332805/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/21052016/); [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMoa2210645); [NEJM Evidence](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2400179))
+Broad rejection of fibrates would therefore be too strong, but broad cardiovascular endorsement of them in the high-triglyceride, low-HDL subgroup would also exceed the evidence. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/34332805/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/21052016/); [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMoa2210645); [NEJM Evidence](https://doi.org/10.1056/EVIDoa2400179))
 
 ### 3. ApoB and remnant cholesterol should receive more attention than triglycerides alone
 
@@ -183,7 +183,7 @@ REDUCE-IT validates icosapent ethyl, not every triglyceride-lowering drug or ome
 
 - **STRENGTH:** EPA-plus-DHA lowered triglycerides but did not reduce cardiovascular events. ([PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC7667577/))
 
-- **LENS:** fenofibrate reduced progression of early diabetic retinopathy or maculopathy. ([NEJM Evidence](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2400179))
+- **LENS:** fenofibrate reduced progression of early diabetic retinopathy or maculopathy. ([NEJM Evidence](https://doi.org/10.1056/EVIDoa2400179))
 
 - **CORE-TIMI 72a and CORE2-TIMI 72b:** olezarsen reduced acute pancreatitis in severe hypertriglyceridemia and received FDA approval for that indication in June 2026. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41211918/); [U.S. Food and Drug Administration](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-shown-reduce-risk-acute-pancreatitis-adults-severe-hypertriglyceridemia))
 
@@ -200,7 +200,7 @@ REDUCE-IT validates icosapent ethyl, not every triglyceride-lowering drug or ome
 
 - Severe hypertriglyceridemia should be treated as a separate pancreatitis-prevention problem. Fibrates remain a practical triglyceride-lowering option, but the direct pancreatitis-outcome evidence for them is limited. Olezarsen now has randomized pancreatitis-outcome evidence and FDA approval for adults with severe hypertriglyceridemia. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/34332805/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/22910758/); [PubMed](https://pubmed.ncbi.nlm.nih.gov/41211918/); [U.S. Food and Drug Administration](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-shown-reduce-risk-acute-pancreatitis-adults-severe-hypertriglyceridemia))
 
-- Fenofibrate has randomized evidence for slowing progression of early diabetic retinopathy, a separate non-ASCVD role. ([NEJM Evidence](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2400179))
+- Fenofibrate has randomized evidence for slowing progression of early diabetic retinopathy, a separate non-ASCVD role. ([NEJM Evidence](https://doi.org/10.1056/EVIDoa2400179))
 
 - REDUCE-IT should be interpreted as evidence for prescription icosapent ethyl in the studied population, not as evidence for omega-3 supplements, EPA-plus-DHA formulations, or triglyceride lowering in general. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/30415628/); [PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC7667577/))
 
@@ -251,6 +251,6 @@ The fibrate story therefore does not falsify the causal importance of triglyceri
 
 - Marston NA, Bergmark BA, Alexander VJ, et al. Olezarsen for managing severe hypertriglyceridemia and pancreatitis risk. _N Engl J Med._ 2026;394:429-441. DOI: 10.1056/NEJMoa2512761. PMID: 41211918. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41211918/))
 
-- Preiss D, Logue J, Sammons E, et al. Effect of fenofibrate on progression of diabetic retinopathy. _NEJM Evid._ 2024;3:EVIDoa2400179. DOI: 10.1056/EVIDoa2400179. PMID: 38905569. ([NEJM Evidence](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2400179))
+- Preiss D, Logue J, Sammons E, et al. Effect of fenofibrate on progression of diabetic retinopathy. _NEJM Evid._ 2024;3:EVIDoa2400179. DOI: 10.1056/EVIDoa2400179. PMID: 38905569. ([NEJM Evidence](https://doi.org/10.1056/EVIDoa2400179))
 
 - U.S. Food and Drug Administration. FDA approves first treatment shown to reduce the risk of acute pancreatitis in adults with severe hypertriglyceridemia. June 24, 2026. ([U.S. Food and Drug Administration](https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-shown-reduce-risk-acute-pancreatitis-adults-severe-hypertriglyceridemia))

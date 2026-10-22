@@ -70,6 +70,8 @@ jobs:
             --exclude "^https://www\\.fda\\.gov/drugs/news-events-human-drugs/fda-approves-drug-reduce-triglycerides-adults-familial-chylomicronemia-syndrome$"
             --exclude "^https://www\\.fda\\.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-shown-reduce-risk-acute-pancreatitis-adults-severe-hypertriglyceridemia$"
             --exclude "^https://www\\.nice\\.org\\.uk/guidance/ng145/chapter/recommendations$"
+            --exclude "^https://www\\.nice\\.org\\.uk/guidance/indevelopment/gid-hte10082/documents$"
+            --exclude "^https://www\\.health\\.gov\\.au/topics/physical-activity-and-exercise/pregnancy$"
             --exclude "^https://www\\.germanjournalsportsmedicine\\.com/fileadmin/content/archiv2020/Heft_2/DtschZSportmed_Review_Seitz_Effects_on_Endurance_of_Live_Low-Train_High_2020-02\\.pdf$"
             --exclude "^https://www\\.anid\\.cl/"
             --exclude "^https://www\\.nifa\\.usda\\.gov/"

@@ -80,7 +80,7 @@ The case for emphasizing lifestyle first is strongest when baseline absolute ris
     
 - Smart NA, Downes D, van der Touw T, et al. The Effect of Exercise Training on Blood Lipids: A Systematic Review and Meta-analysis. Sports Med. 2025;55:67-78. DOI: [10.1007/s40279-024-02115-z](https://doi.org/10.1007/s40279-024-02115-z). [Springer Link](https://link.springer.com/article/10.1007/s40279-024-02115-z)
     
-- Cholesterol Treatment Trialists' (CTT) Collaborators. The effects of lowering LDL cholesterol with statin therapy in people at low risk of vascular disease: meta-analysis of individual data from 27 randomised trials. Lancet. 2012;380(9841):581-590. DOI: [10.1016/S0140-6736(12)60367-5](https://doi.org/10.1016/S0140-6736\(12\)60367-5). PMID: [22607822](https://pubmed.ncbi.nlm.nih.gov/22607822/). [CTT Collaboration](https://www.cttcollaboration.org/efficacy-web-page/people-at-low-risk-of-major-vascular-events)
+- Cholesterol Treatment Trialists' (CTT) Collaborators. The effects of lowering LDL cholesterol with statin therapy in people at low risk of vascular disease: meta-analysis of individual data from 27 randomised trials. Lancet. 2012;380(9841):581-590. DOI: [10.1016/S0140-6736(12)60367-5](https://doi.org/10.1016/S0140-6736\(12\)60367-5). PMID: [22607822](https://pubmed.ncbi.nlm.nih.gov/22607822/).
     
 - Byrne P, Demasi M, Jones M, et al. Evaluating the Association Between Low-Density Lipoprotein Cholesterol Reduction and Relative and Absolute Effects of Statin Treatment: A Systematic Review and Meta-analysis. JAMA Intern Med. 2022;182(5):474-481. DOI: [10.1001/jamainternmed.2022.0134](https://doi.org/10.1001/jamainternmed.2022.0134). PMID: [35285850](https://pubmed.ncbi.nlm.nih.gov/35285850/).
     
