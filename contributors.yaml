@@ -12,7 +12,7 @@ maintainers:
   - wearables
   - musculoskeletal-health
   - dermatology
-  last_active: 2026-08
+  last_active: 2026-10
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -946,8 +946,60 @@ maintainers:
     type: created
     citations_added: 12
     pr: 312
-  total_citations: 2788
-  commits: 347
+  - file: Womens-Health/Menstrual & Hormonal Health/38-why-endometriosis-can-take-7-to-10-years-to-diagnose.md
+    type: edit
+    citations_added: 1
+    pr: 318
+  - file: biomarkers/Hormones/is-tsh-alone-enough-to-assess-thyroid-function.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Hormones/total-testosterone-vs-free-testosterone.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Hormones/what-testosterone-levels-are-actually-low.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Interpreting Biomarkers/are-biomarker-dogmas-holding-back-interpretation.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Interpreting Biomarkers/normal-vs-optimal-should-you-aim-higher.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Lipids/fibrates-for-triglyceride-lowering.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Lipids/omega-3-for-cardiovascular-prevention.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Liver & Kidney Function/alt-thresholds-are-the-normal-limits-too-high.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: biomarkers/Liver & Kidney Function/how-to-tell-whether-elevated-enzymes-are-from-muscle-or-liver.md
+    type: major_edit
+    citations_added: 0
+    pr: 318
+  - file: exercise-physiology/cardiorespiratory-fitness/exercise-vs-medication.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/6-the-thoracolumbar-fascia.md
+    type: edit
+    citations_added: 2
+    pr: 318
+  - file: nutrition/Fiber & Gut Health/do-artificial-sweeteners-wreck-your-gut.md
+    type: edit
+    citations_added: 0
+    pr: 318
+  total_citations: 2791
+  commits: 348
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
