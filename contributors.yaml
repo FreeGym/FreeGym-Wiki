@@ -955,7 +955,7 @@ maintainers:
   - Womens-Health
   - biomarkers
   - endocrinology
-  last_active: 2026-08
+  last_active: 2026-10
   contributions:
   - file: Womens-Health/1-is-it-normal-to-have-irregular-periods.md
     type: created
@@ -1209,8 +1209,100 @@ maintainers:
     type: created
     citations_added: 48
     pr: 305
-  total_citations: 1403
-  commits: 13
+  - file: Womens-Health/Menstrual & Hormonal Health/36-progesterone-intolerance.md
+    type: created
+    citations_added: 32
+    pr: 316
+  - file: Womens-Health/Menstrual & Hormonal Health/38-why-endometriosis-can-take-7-to-10-years-to-diagnose.md
+    type: created
+    citations_added: 13
+    pr: 316
+  - file: Womens-Health/Menstrual & Hormonal Health/40-does-pcos-look-different-in-lean-vs-overweight-women.md
+    type: created
+    citations_added: 13
+    pr: 316
+  - file: Womens-Health/Menstrual & Hormonal Health/41-is-insulin-resistance-the-actual-engine-of-pmos-not-the-ovaries.md
+    type: created
+    citations_added: 13
+    pr: 316
+  - file: Womens-Health/Training & Recovery/33-do-hormonal-contraceptives-affect-strength-and-training-adaptations.md
+    type: major_edit
+    citations_added: 4
+    pr: 316
+  - file: Womens-Health/Training & Recovery/37-is-heavy-lifting-safe-during-pregnancy.md
+    type: created
+    citations_added: 22
+    pr: 316
+  - file: biomarkers/Blood Sugar & Metabolic Health/the-kraft-test.md
+    type: created
+    citations_added: 15
+    pr: 316
+  - file: biomarkers/Blood Sugar & Metabolic Health/what-is-homa-ir-and-should-you-care.md
+    type: created
+    citations_added: 17
+    pr: 316
+  - file: biomarkers/Hormones/is-male-testosterone-really-declining.md
+    type: created
+    citations_added: 22
+    pr: 316
+  - file: biomarkers/Hormones/is-tsh-alone-enough-to-assess-thyroid-function.md
+    type: created
+    citations_added: 19
+    pr: 316
+  - file: biomarkers/Hormones/total-testosterone-vs-free-testosterone.md
+    type: created
+    citations_added: 11
+    pr: 316
+  - file: biomarkers/Hormones/what-testosterone-levels-are-actually-low.md
+    type: created
+    citations_added: 16
+    pr: 316
+  - file: biomarkers/Interpreting Biomarkers/are-biomarker-dogmas-holding-back-interpretation.md
+    type: created
+    citations_added: 30
+    pr: 316
+  - file: biomarkers/Interpreting Biomarkers/normal-vs-optimal-should-you-aim-higher.md
+    type: created
+    citations_added: 23
+    pr: 316
+  - file: biomarkers/Interpreting Biomarkers/what-does-normal-range-actually-mean.md
+    type: created
+    citations_added: 20
+    pr: 316
+  - file: biomarkers/Lipids/can-a-low-carb-or-keto-fix-your-lipids-or-wreck-them.md
+    type: created
+    citations_added: 21
+    pr: 316
+  - file: biomarkers/Lipids/do-you-need-advanced-lipid-testing.md
+    type: created
+    citations_added: 18
+    pr: 316
+  - file: biomarkers/Lipids/fibrates-for-triglyceride-lowering.md
+    type: created
+    citations_added: 23
+    pr: 316
+  - file: biomarkers/Lipids/omega-3-for-cardiovascular-prevention.md
+    type: created
+    citations_added: 17
+    pr: 316
+  - file: biomarkers/Lipids/should-everyone-know-their-lp(a).md
+    type: created
+    citations_added: 21
+    pr: 316
+  - file: biomarkers/Liver & Kidney Function/alt-thresholds-are-the-normal-limits-too-high.md
+    type: created
+    citations_added: 15
+    pr: 316
+  - file: biomarkers/Liver & Kidney Function/how-to-tell-whether-elevated-enzymes-are-from-muscle-or-liver.md
+    type: created
+    citations_added: 15
+    pr: 316
+  - file: biomarkers/Liver & Kidney Function/why-are-your-liver-enzymes-elevated-after-training.md
+    type: created
+    citations_added: 12
+    pr: 316
+  total_citations: 1815
+  commits: 14
 trusted: []
 contributors:
 - github: FreeGym
