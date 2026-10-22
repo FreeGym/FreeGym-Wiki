@@ -1,0 +1,236 @@
+# Is Heavy Lifting Safe and Beneficial During Pregnancy?
+
+Resistance training during an uncomplicated pregnancy is generally beneficial. The narrower question - whether an experienced lifter can continue _heavy_ squats, deadlifts, presses, Olympic lifts, or similar training - is supported by a small but increasingly reassuring body of direct evidence, not by definitive safety or equivalence trials. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/); [Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/))
+
+The most defensible conclusion is neither "stop lifting heavy" nor "nothing needs to change." Selected experienced lifters with uncomplicated pregnancies may be able to continue familiar resistance training with individualized modifications. However, the evidence does not establish that near-maximal lifting carries "minimal risk," nor does it show that heavy lifting causes diastasis recti or pelvic organ prolapse. Those longer-term, load-specific outcomes remain largely unstudied. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+## What "heavy" means in this literature
+
+There is no consistent definition of heavy resistance training across the cited pregnancy studies. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+A 2023 survey recruited women who had trained at 80 percent or more of one-repetition maximum. A 2026 first-trimester survey included a training-log subgroup maintaining loads above 75 percent of estimated one-repetition maximum. One laboratory study used 70, 80, and 90 percent of participants' ten-repetition maximum, including sets performed with the Valsalva manoeuvre. Another used three sets of eight repetitions with approximately one repetition in reserve. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/))
+
+These protocols are not equivalent. Ninety percent of a ten-repetition maximum is a difficult submaximal set, not a maximal single at 90 percent of one-repetition maximum. One small laboratory study used a modified chest-press one-repetition maximum test capped at 50 lb. The cited prospective laboratory studies did not test repeated one- to three-repetition maximum attempts, competition lifting, failed repetitions, or frequent training to failure. ([Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+This matters because the available evidence is more accurately described as evidence about **hard, experienced, predominantly submaximal lifting** than evidence about maximal lifting. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/); [Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/))
+
+## Resistance training benefits are better established than heavy-lifting benefits
+
+A 2025 systematic review and meta-analysis included 50 studies and 47,619 participants. Programs containing resistance training were associated with lower odds of gestational hypertension (OR 0.42, 95% CI 0.27 to 0.66), gestational diabetes (OR 0.62, 95% CI 0.48 to 0.79), perinatal mood disorders (OR 0.48, 95% CI 0.32 to 0.73), and macrosomia (OR 0.67, 95% CI 0.50 to 0.88) compared with control conditions. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+Those numbers should not be interpreted as the isolated effect of lifting weights. Ninety percent of the included studies used multicomponent programs, usually combining resistance and aerobic exercise; resistance-training loads were generally low to moderate, and exercise selection, progression, and intensity were poorly reported. The authors therefore could not determine how much of the benefit came specifically from resistance training, much less from heavy resistance training. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+A separate 2025 systematic review of nine randomized trials involving 1,581 pregnant women found that strength-training programs were associated with improvements in mood, muscular strength, sleep, energy, psychological well-being, pain, and other aspects of health-related quality of life. However, the interventions and outcomes were heterogeneous, resistance training often could not be separated from other exercise, and first-trimester evidence was particularly sparse. ([Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/))
+
+In an earlier randomized trial, 92 healthy pregnant women were assigned to supervised moderate-to-vigorous resistance exercise twice weekly during gestational weeks 14 to 25 or to general exercise advice and a home program. Maternal health, blood pressure, quality of life, and perinatal outcomes were generally normal in both groups. This supports moderate-to-vigorous resistance training in healthy pregnancies, but it was not a study of high-load free-weight training in experienced strength athletes. ([Petrov Fieril et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25287282/))
+
+The cited evidence therefore supports **including resistance training**, but none of these studies compared heavier with moderate loads to determine whether heavier loads produce better pregnancy outcomes. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/); [Petrov Fieril et al., 2015](https://pubmed.ncbi.nlm.nih.gov/25287282/))
+
+## Direct evidence in experienced heavy lifters
+
+### The prospective controlled cohort
+
+The most directly relevant prospective cohort specifically addressing heavy resistance exercise was published in 2025. It enrolled 33 women who performed mainly heavy free-weight resistance training and 20 physically active controls, using eight questionnaires administered through pregnancy and up to 12 months postpartum. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010))
+
+The heavy-lifting group did not have higher reported rates of postpartum urinary or fecal incontinence, injury, infant health problems, or assisted delivery. Urinary incontinence during pregnancy and gas incontinence during and after pregnancy were more common in the physically active comparison group. Proteinuria, however, was more common in the heavy-lifting group in the authors' Bayesian analyses. Given the small sample and sparse outcomes, these model-based differences should be treated as hypothesis-generating rather than definitive evidence of benefit or harm. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010))
+
+This is reassuring, but it is not proof of equivalence or absence of risk. The study was small, non-randomized, recruited convenience samples through social media, and relied on custom questionnaires and largely self-reported symptoms and diagnoses. Eight participants were excluded from the reported results after dropping out, including one miscarriage in each group before the first measurement at week 24, so the cohort cannot meaningfully assess early-pregnancy or miscarriage risk. Many women also reduced training volume or intensity as pregnancy progressed. Women who can continue heavy training may differ from controls in health, training history, symptom tolerance, access to coaching, or pregnancy course. The study did not include objective pelvic organ prolapse examinations, ultrasound-based pelvic-floor assessment, or repeated measurements of diastasis recti. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010))
+
+The appropriate interpretation is that the study found **no obvious excess of reported adverse outcomes in a selected group of experienced lifters**, while leaving smaller risks, uncommon outcomes, early-pregnancy risk, and objective pelvic-floor outcomes unresolved. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010))
+
+### Acute high-intensity lifting studies
+
+In one 2025 laboratory study, ten healthy pregnant lifters at an average of approximately 26 weeks' gestation performed ten repetitions of squats, bench presses, and deadlifts at 70, 80, and 90 percent of ten-repetition maximum. They also performed the 90-percent sets with a Valsalva manoeuvre. Maternal heart rate rose with load, but fetal heart rate did not change significantly, fetal bradycardia was not observed, and umbilical blood-flow measurements remained within normal ranges. ([Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/))
+
+Another 2025 laboratory study involved 48 healthy pregnant athletes performing three sets of eight sumo deadlifts, bench presses, and incline bench presses with one repetition in reserve. Umbilical artery pulsatility did not worsen. There was one transient episode of fetal bradycardia after bench pressing that resolved after about three minutes, and one participant developed symptoms consistent with vena cava compression during supine exercise while fetal heart rate remained stable. Transient fetal heart-rate elevations also occurred after several sets, although none exceeded the study's pathological threshold. Fetal measurements were obtained before and promptly after each exercise rather than continuously during every repetition. ([Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/))
+
+A 2021 study in 22 healthy pregnant recreational athletes used a modified chest-press one-repetition maximum test while measuring placental vascular flow. The test was capped at 50 lb, the average load was 30 lb, and four participants reached the cap rather than a true maximum. Placental vascular-flow measurements did not decrease during the lift. This is useful acute evidence, but it does not establish the safety of unrestricted heavy barbell maximal attempts, repeated maximal efforts, failed repetitions, or months of training. ([Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+These studies provide useful evidence that a single session of demanding, predominantly submaximal lifting can be acutely tolerated by selected, healthy, experienced pregnant women. They do not establish the safety of months of training, repeated maximal efforts, all trimesters, pregnancies with complications, uncommon adverse events, or long-term pelvic-floor and abdominal-wall outcomes. ([Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+### Survey evidence
+
+A 2026 retrospective survey included 359 women who had resistance-trained before conception. Training frequency decreased from approximately 4.8 to 4.0 days per week during the first trimester, but many continued Olympic lifts and core exercises, and 62 percent of those answering the load question maintained or increased their loads. A training-log subgroup of 41 women maintained loads above 75 percent of estimated one-repetition maximum. ([Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/))
+
+The survey recorded ten miscarriages among respondents, but that number cannot estimate whether high-load training alters miscarriage risk. There was no non-lifting control group, recruitment was retrospective and self-selected, and participants entered the study before 20 weeks rather than at a uniform point immediately after conception. The study supports feasibility and reported tolerance among women who continued training, not a causal conclusion about miscarriage safety. ([Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/))
+
+In the 2023 survey of 679 women who had lifted at least 80 percent of one-repetition maximum during pregnancy, 66 percent reported no pregnancy or delivery complications. However, 57 percent of those answering the postpartum continence questions reported urinary incontinence. Olympic lifting, supine lifting, and use of the Valsalva manoeuvre were not associated with detected differences in pregnancy or delivery outcomes. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/))
+
+Because that study had no comparison group and relied on retrospective online reporting, the 57-percent figure cannot show that lifting caused incontinence. Conversely, it prevents a simplistic claim that heavy prenatal lifters rarely experience pelvic-floor symptoms. The observed association between continued training and fewer complications is also vulnerable to reverse causation because women with easier, healthier pregnancies may be more able to continue training. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/))
+
+## Pelvic-floor pressure, incontinence, and prolapse
+
+Heavy compound lifting can generate high intra-abdominal pressure. What remains uncertain is whether a particular pressure, load, breathing pattern, or frequency of exposure produces pelvic-floor injury. ([Dietze-Hermosa et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32574030/); [Skaug et al., 2024](https://pubmed.ncbi.nlm.nih.gov/37565457/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+Measurements in nonpregnant women show substantial variation in intra-abdominal pressure between individuals performing the same activity. This makes a single absolute pressure threshold a weak basis for deciding which exercises are safe or unsafe for every woman. ([Dietze-Hermosa et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32574030/))
+
+In a randomized crossover study of 47 nonpregnant, nulliparous, strength-trained women, four sets of four squats and deadlifts at 75 to 85 percent of one-repetition maximum produced no immediate deterioration in pelvic-floor resting pressure, strength, endurance, or resting muscle activity compared with rest. The study measured only the acute response in young women who had never given birth; it cannot answer what happens during pregnancy, after delivery, or after years of exposure. ([Skaug et al., 2024](https://pubmed.ncbi.nlm.nih.gov/37565457/))
+
+A broader narrative scoping review found a small and heterogeneous evidence base. Some experimental and prospective studies reported transient increases in vaginal descent, prolapse symptoms, or reduced pelvic-floor support after strenuous activity, while prevalence estimates varied widely and parity was the factor most consistently associated with prolapse. These findings do not establish that prenatal heavy lifting causes long-term prolapse, but they prevent the acute literature from being characterized as uniformly reassuring. ([Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+A 2026 experiment in 11 nonpregnant women found that deliberately contracting the pelvic floor during squats, deadlifts, leg presses, and curl-ups did not cause pelvic-floor pressure to exceed the simultaneous rise in intra-abdominal pressure. This does not mean pelvic-floor pre-contraction is useless, but it shows that the common cue to "engage the pelvic floor before every lift" has not been validated as a protective mechanism during heavy strength exercise. ([Bjurulf et al., 2026](https://link.springer.com/article/10.1007/s00192-026-06540-8))
+
+The current evidence therefore supports three distinctions:
+
+- **Intra-abdominal pressure is an exposure, not a diagnosed injury.** ([Dietze-Hermosa et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32574030/))
+
+- **An acute pelvic-floor response is not a long-term prolapse outcome.** ([Skaug et al., 2024](https://pubmed.ncbi.nlm.nih.gov/37565457/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+- **Urinary leakage or pelvic heaviness is clinically important, but it does not by itself prove permanent structural damage.** ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+
+The cited pregnancy resistance-training and prolapse reviews did not identify prospective, load-specific evidence linking prenatal heavy lifting with objectively diagnosed pelvic organ prolapse. Claiming that heavy prenatal lifting causes prolapse therefore goes beyond the available evidence. Claiming that it cannot affect prolapse risk would also go beyond the evidence. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+## Diastasis recti
+
+The available pregnancy resistance-training review and abdominal-exercise trial do not provide direct prospective comparisons of diastasis recti outcomes in women lifting at, for example, below 60 percent, 60 to 80 percent, or above 80 percent of one-repetition maximum. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Theodorsen et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38472049/))
+
+A 2024 randomized trial enrolled 96 pregnant women with an existing widened inter-recti distance at gestational week 24. A 12-week abdominal and pelvic-floor exercise program had a negligible effect on inter-recti distance compared with no intervention, both immediately after the program and six weeks postpartum. This is useful evidence against the idea that abdominal exercise automatically worsens diastasis recti. ([Theodorsen et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38472049/))
+
+The intervention was not a heavy barbell program. It therefore cannot determine whether high-load squats, deadlifts, Olympic lifts, intense bracing, or repeated Valsalva manoeuvres change diastasis severity. At present, the specific claim that heavy compound lifting worsens diastasis remains **mechanistically conceivable but clinically unproven**. ([Theodorsen et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38472049/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+## Postpartum recovery and the "just walk" alternative
+
+The cited pregnancy resistance-training and postpartum guideline reviews do not provide a randomized or well-controlled prospective comparison between experienced lifters who continue heavy resistance training and those instructed to reduce loads substantially or switch to walking. Consequently, those sources cannot show whether continued heavy training preserves more strength, accelerates return to sport, or improves objective pelvic-floor or diastasis outcomes postpartum. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/))
+
+In the 2023 heavy-lifting survey, 89 percent of respondents returned to resistance training, with an average reported return at approximately 3.2 months postpartum. Return was later among those resuming Olympic lifting or Valsalva-based training. These are descriptive averages from a self-selected survey, not medically validated clearance dates. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/))
+
+A 2026 systematic review of 18 postpartum physical-activity guidelines found broad agreement on resuming aerobic activity, strengthening, and pelvic-floor exercise, generally aiming for at least 120 to 150 minutes of moderate activity per week. The review also found that only seven guidelines met its threshold for satisfactory methodological quality and that stronger evidence was needed for specific exercise types and delivery-mode considerations. ([Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/))
+
+Replacing all resistance training with walking would remove an exercise modality with documented physical and psychological benefits. However, saying that walking-only advice demonstrably _harms postpartum recovery_ is stronger than the evidence permits. The cited reviews do not include a direct continuation-versus-restriction trial testing that claim. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/); [Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/))
+
+## What international guidelines actually say
+
+A 2023 scoping review identified 30 pregnancy physical-activity guidelines published in 11 languages. The guidelines were remarkably consistent in encouraging aerobic activity, muscle strengthening, pelvic-floor exercise, modification as needed, and cessation when warning signs occur. However, few provided specific advice for highly active women, athletes, or individual trimesters. ([Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/))
+
+The American College of Obstetricians and Gynecologists states that women who were physically active or habitually performed vigorous aerobic activity before pregnancy can usually continue during an uncomplicated pregnancy, with modifications for anatomical, physiological, and fetal considerations. Its guidance endorses strength conditioning but does not establish a heavy-lifting limit in kilograms, percentage of one-repetition maximum, or repetitions in reserve. ([ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period))
+
+The Canadian guideline similarly states that previously active women may continue physical activity while modifying it as pregnancy progresses. It explicitly notes that evidence was not identified regarding the additional benefits or safety of exercise performed at levels substantially above the general recommendations. ([Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/))
+
+Australian recommendations endorse regular physical activity and muscle strengthening during pregnancy, but current Australian Government guidance specifically advises avoiding activities that require heavy lifting. This is a precautionary recommendation; it does not constitute direct evidence that heavy lifting causes harm. ([Brown et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35418334/); [Australian Government Department of Health, Disability and Ageing](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy))
+
+The International Olympic Committee's athlete-focused work also emphasizes the limited evidence available for highly active and elite women rather than imposing an evidence-based universal load cutoff. ([Bø et al., 2018](https://pubmed.ncbi.nlm.nih.gov/29895607/))
+
+Across these groups, there is broad agreement on remaining physically active, including muscle strengthening, modifying exercise as needed, and stopping when warning signs occur. There is not a uniform international position on heavy lifting. ACOG and Canadian guidance do not provide validated load cutoffs, whereas current Australian Government guidance advises avoiding activities that require heavy lifting. None provides a validated rule such as "reduce all lifts by 50 percent," "never exceed a particular RPE," or "stop heavy lifting at a particular gestational week." ([Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Brown et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35418334/); [Australian Government Department of Health, Disability and Ageing](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy); [Bø et al., 2018](https://pubmed.ncbi.nlm.nih.gov/29895607/))
+
+## Assessment of the competing claims
+
+### 1. Experienced lifters can continue heavy resistance training with minimal risk if they monitor RPE, breath-holding, and pelvic-floor symptoms
+
+**Partly supported, with very low certainty for heavy-specific safety.**
+
+The prospective cohort, laboratory studies, and surveys are reassuring for selected women with prior lifting experience and uncomplicated pregnancies. However, "minimal risk" is too definitive given the small samples, observational designs, absence of objective long-term pelvic-floor assessment, and lack of repeated near-maximal lifting data. RPE, breathing strategy, and symptom monitoring may be used pragmatically to adjust training, but none of the cited studies validated them as hard safety thresholds. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/); [Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Prevett and Davenport, 2026](https://pubmed.ncbi.nlm.nih.gov/41630131/))
+
+### 2. Heavy compound lifts increase intra-abdominal pressure enough to worsen diastasis, prolapse risk, or postpartum pelvic-floor function
+
+**Mechanistically plausible, but not demonstrated by load-specific clinical outcome data.**
+
+Heavy lifting raises intra-abdominal pressure, but pressure varies substantially between women, and there is no validated injury threshold. The cited evidence does not show a longitudinal dose-response relationship between prenatal lifting intensity and objectively diagnosed prolapse or diastasis recti. Acute evidence is mixed and methodologically heterogeneous: one strength-trained crossover study found no immediate deterioration in measured pelvic-floor function, while a scoping review identified transient descent or symptoms in some other strenuous exercise contexts. These findings neither demonstrate cumulative injury nor establish long-term safety during pregnancy. ([Dietze-Hermosa et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32574030/); [Skaug et al., 2024](https://pubmed.ncbi.nlm.nih.gov/37565457/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/); [Theodorsen et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38472049/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+### 3. The default should be modality continuation rather than telling experienced lifters to "just walk"
+
+**Mostly supported, although the claimed harm from restriction is not directly proven.**
+
+Guidelines broadly favor continued physical activity with modification, and resistance training has demonstrated benefits for mood, quality of life, strength, pain, and several pregnancy outcomes. Guidance is not uniform about heavy lifting, but no cited guideline recommends replacing all resistance training with walking in every healthy experienced lifter. However, no controlled trial in the cited reviews shows that being told to walk instead of lift necessarily worsens postpartum strength or recovery. ([Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Australian Government Department of Health, Disability and Ageing](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/); [Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/))
+
+### 4. Risk-benefit varies by pregnancy stage, prior training, complications, and individual symptoms
+
+**This is the best-supported claim.**
+
+The direct high-load studies largely involved healthy women with prior lifting or athletic experience, while guidelines consistently call for modification as pregnancy progresses and different management when medical or obstetric contraindications are present. The absence of a universal intensity threshold further supports individualized decision-making. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Brown et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35418334/))
+
+## Practical interpretation
+
+For an experienced lifter with an uncomplicated pregnancy, the evidence supports a **continuation-first discussion**, not an automatic prohibition on barbells or compound exercises. Continuation does not necessarily mean keeping the program unchanged, and the evidence does not override individual contraindications or more precautionary national guidance. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Australian Government Department of Health, Disability and Ageing](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy))
+
+- The current evidence is more directly applicable to continuing familiar training than to beginning unfamiliar high-load training because the direct studies enrolled women with prior lifting or athletic experience. A small capped modified chest-press one-repetition maximum study found no reduction in placental blood flow, but current studies do not establish the safety of unrestricted barbell one-repetition maximum testing, repeated grinding repetitions, failed lifts, or competition-style peaks. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+- No cited guideline or study provides an evidence-based percentage by which all women must reduce their loads in each trimester. Potential modifications include load, set volume, exercise selection, stance, range of motion, balance demands, and training frequency, adjusted according to fatigue, nausea, pain, changing mechanics, recovery, and pregnancy course. ([Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+- Acute fetal and placental-flow data involving the Valsalva manoeuvre are reassuring under the limited conditions studied, while load-specific long-term pelvic-floor data remain limited. Maternal cardiovascular studies also show proportionate acute hemodynamic responses to light-to-moderate resistance exercise with and without Valsalva. Breath-holding is therefore not proven categorically dangerous, nor is a particular breathing cue proven protective. ([Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/); [Meah et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33394898/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/); [Bjurulf et al., 2026](https://link.springer.com/article/10.1007/s00192-026-06540-8))
+
+- As a precautionary clinical approach, new or increasing urinary leakage, pelvic heaviness, vaginal bulging, pelvic pain, difficulty controlling gas or stool, or persistent symptoms after training justify reducing the provoking exposure and obtaining an assessment from a clinician with pelvic-health expertise. These symptoms are useful clinical feedback, but they are not validated measures of structural injury. ([Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+- Supine exercise should be modified when it provokes dizziness, nausea, light-headedness, or other vena cava compression symptoms. The 2025 heavy-load study documented such symptoms in one participant despite stable fetal heart rate. ([Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period))
+
+- Exercise should be stopped and obstetric advice obtained when warning signs such as vaginal bleeding, fluid leakage, painful regular contractions, chest pain, shortness of breath before exertion, dizziness or faintness, severe headache, or calf pain or swelling occur. Complicated pregnancies require individualized medical guidance rather than extrapolation from studies of healthy participants. ([ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/))
+
+
+Postpartum return should likewise be progressive and symptom-informed. This is a precautionary interpretation consistent with postpartum guidance, while the average return times reported in surveys should not be treated as universal tissue-healing deadlines or clearance criteria. ([Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/); [Prevett et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36331580/))
+
+## What research is still needed
+
+The major unanswered questions identified across the reviews require studies designed around experienced lifters rather than general prenatal fitness classes. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/); [Lan et al., 2026](https://pubmed.ncbi.nlm.nih.gov/41746799/))
+
+- Multicenter prospective cohorts with matched controls and objective measures of prolapse, pelvic-floor morphology and function, urinary and anal incontinence, and diastasis recti.
+
+- Detailed recording of percentage of one-repetition maximum, repetitions in reserve, proximity to failure, Valsalva use, exercise selection, weekly volume, and trimester-specific changes.
+
+- Adequate adjustment for parity, previous delivery, pre-existing pelvic-floor symptoms, constipation, body mass, training history, pregnancy complications, and delivery mode.
+
+- Comparative postpartum studies measuring retained strength, return to training, injury, symptoms, and objective pelvic-floor and abdominal-wall outcomes after prenatal continuation versus substantial training restriction.
+
+
+The 2025 systematic review found that resistance-training dose and progression were poorly documented. This incomplete reporting limits the evidence available for developing precise heavy-lifting limits in guidelines. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Hayman et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36604155/))
+
+## Funding and conflicts of interest
+
+The controlled prospective heavy-lifting cohort reported no grant funding and no competing interests. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010))
+
+The 48-participant acute fetal study reported no conflicts of interest. GE Healthcare Norway supplied ultrasound devices without charge, but the authors stated that the company had no role in the protocol, analysis, interpretation, or publication decision. ([Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/))
+
+The 2025 quality-of-life review reported Spanish government and university support and no conflicts of interest. ([Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/))
+
+Among the central studies reviewed, the larger concern is therefore not obvious manufacturer sponsorship. It is methodological uncertainty arising from small samples, self-selection, self-reported outcomes, heterogeneous interventions, and incomplete reporting of resistance-training dose. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Redondo-Delgado et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40230063/); [Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+## Practical conclusion
+
+For healthy experienced lifters, available direct evidence does **not** establish a need for a blanket instruction to stop heavy resistance training or replace it with walking. Small prospective and acute studies suggest that demanding, predominantly submaximal lifting can be tolerated during uncomplicated pregnancy, including in some circumstances with the Valsalva manoeuvre. ([Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Moolyk et al., 2025](https://pubmed.ncbi.nlm.nih.gov/39694629/); [Dalhaug et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40909193/); [Gould et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33709855/); [Meah et al., 2021](https://pubmed.ncbi.nlm.nih.gov/33394898/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/))
+
+At the same time, the evidence does not justify declaring near-maximal lifting risk-free or equivalent to lighter training. Long-term prolapse, diastasis, and pelvic-floor outcomes have not been adequately studied by load or training volume, and uncommon harms cannot be excluded by the available sample sizes. For selected experienced lifters with uncomplicated pregnancies, an evidence-consistent approach is continued familiar resistance training with evolving, symptom-responsive modifications - not fear-based restriction, but not unconditional continuation either. ([Prevett et al., 2025](https://pubmed.ncbi.nlm.nih.gov/40610191/); [Mathisen et al., 2025](https://doi.org/10.1123/wspaj.2025-0010); [Bø et al., 2023](https://pubmed.ncbi.nlm.nih.gov/36692525/); [Theodorsen et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38472049/); [ACOG Committee Opinion No. 804](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period); [Mottola et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30297272/); [Australian Government Department of Health, Disability and Ageing](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy))
+
+## References
+
+- Prevett C, Gingerich J, Sivak A, Davenport MH. Resistance training in pregnancy: systematic review and meta-analysis of pregnancy, delivery, fetal and pelvic floor outcomes and call to action. _Br J Sports Med._ 2025;59:1173-1182. DOI: 10.1136/bjsports-2024-109123. PMID: 40610191. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/40610191/))
+
+- Mathisen TF, Hubin A, Mountjoy M, Sundgot-Borgen J. Safety of Heavy Resistance Exercise During Pregnancy and Postpartum: A Controlled, Prospective Cohort Study. _Women Sport Phys Act J._ 2025;33(1):Article wspaj.2025-0010. DOI: 10.1123/wspaj.2025-0010. ([DOI](https://doi.org/10.1123/wspaj.2025-0010))
+
+- Moolyk AN, Wilson MK, Matenchuk BA, et al. Maternal and fetal responses to acute high-intensity resistance exercise during pregnancy. _Br J Sports Med._ 2025;59:159-166. DOI: 10.1136/bjsports-2024-108804. PMID: 39694629. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/39694629/))
+
+- Dalhaug EM, Sanda B, Bø K, Brown WJ, Haakstad LAH. Pushing limits: the acute effects of a heavy-load resistance protocol and supine exercise on fetal well-being. _BMJ Open Sport Exerc Med._ 2025;11(3):e002639. DOI: 10.1136/bmjsem-2025-002639. PMID: 40909193. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/40909193/))
+
+- Gould S, Cawyer C, Dell'Italia L, Harper L, McGwin G, Bamman M. Resistance Training Does Not Decrease Placental Blood Flow During Valsalva Maneuver: A Novel Use of 3D Doppler Power Flow Ultrasonography. _Sports Health._ 2021;13:476-481. DOI: 10.1177/19417381211000717. PMID: 33709855. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/33709855/))
+
+- Prevett C, Davenport MH. High-Load Resistance Training in the First Trimester, a Retrospective Survey: Implications for Exercise Professionals and Obstetrical Providers. _Med Sci Sports Exerc._ 2026;58:1236-1245. DOI: 10.1249/MSS.0000000000003956. PMID: 41630131. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41630131/))
+
+- Prevett C, Kimber ML, Forner L, de Vivo M, Davenport MH. Impact of heavy resistance training on pregnancy and postpartum health outcomes. _Int Urogynecol J._ 2023;34:405-411. DOI: 10.1007/s00192-022-05393-1. PMID: 36331580. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36331580/))
+
+- Petrov Fieril K, Glantz A, Fagevik Olsen M. The efficacy of moderate-to-vigorous resistance exercise during pregnancy: a randomized controlled trial. _Acta Obstet Gynecol Scand._ 2015;94:35-42. DOI: 10.1111/aogs.12525. PMID: 25287282. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/25287282/))
+
+- Redondo-Delgado P, Blanco-Giménez P, López-Ortiz S, et al. Effects of strength training on quality of life in pregnant women: a systematic review. _Acta Obstet Gynecol Scand._ 2025;104:1231-1243. DOI: 10.1111/aogs.15122. PMID: 40230063. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/40230063/))
+
+- Skaug KL, Engh ME, Bø K. Acute Effect of Heavy Weightlifting on the Pelvic Floor Muscles in Strength-Trained Women: An Experimental Crossover Study. _Med Sci Sports Exerc._ 2024;56:37-43. DOI: 10.1249/MSS.0000000000003275. PMID: 37565457. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/37565457/))
+
+- Dietze-Hermosa M, Hitchcock R, Nygaard IE, Shaw JM. Intra-abdominal Pressure and Pelvic Floor Health: Should We Be Thinking About This Relationship Differently? _Female Pelvic Med Reconstr Surg._ 2020;26:409-414. DOI: 10.1097/SPV.0000000000000799. PMID: 32574030. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/32574030/))
+
+- Bjurulf C, Meng L, Budgett D, Kruger J, Bø K. Can Pre-Contraction of the Pelvic Floor Muscles Exceed Increases in Intra-Abdominal Pressure During Strength Exercises? _Int Urogynecol J._ 2026;37:1709-1720. DOI: 10.1007/s00192-026-06540-8. ([Springer Link](https://link.springer.com/article/10.1007/s00192-026-06540-8))
+
+- Bø K, Anglès-Acedo S, Batra A, et al. Strenuous physical activity, exercise, and pelvic organ prolapse: a narrative scoping review. _Int Urogynecol J._ 2023;34:1153-1164. DOI: 10.1007/s00192-023-05450-3. PMID: 36692525. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36692525/))
+
+- Theodorsen NM, Bø K, Fersum KV, Haukenes I, Moe-Nilssen R. Pregnant women may exercise both abdominal and pelvic floor muscles during pregnancy without increasing the diastasis recti abdominis: a randomised trial. _J Physiother._ 2024;70:142-148. DOI: 10.1016/j.jphys.2024.02.002. PMID: 38472049. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/38472049/))
+
+- Hayman M, Brown WJ, Brinson A, et al. Public health guidelines for physical activity during pregnancy from around the world: a scoping review. _Br J Sports Med._ 2023;57:940-947. DOI: 10.1136/bjsports-2022-105777. PMID: 36604155. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36604155/))
+
+- American College of Obstetricians and Gynecologists. Physical Activity and Exercise During Pregnancy and the Postpartum Period: ACOG Committee Opinion, Number 804. _Obstet Gynecol._ 2020;135(4):e178-e188. DOI: 10.1097/AOG.0000000000003772. PMID: 32217980. ([ACOG](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period))
+
+- Mottola MF, Davenport MH, Ruchat SM, et al. No. 367-2019 Canadian Guideline for Physical Activity throughout Pregnancy. _J Obstet Gynaecol Can._ 2018;40:1528-1537. DOI: 10.1016/j.jogc.2018.07.001. PMID: 30297272. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/30297272/))
+
+- Brown WJ, Hayman M, Haakstad LAH, et al. Australian guidelines for physical activity in pregnancy and postpartum. _J Sci Med Sport._ 2022;25:511-519. DOI: 10.1016/j.jsams.2022.03.008. PMID: 35418334. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/35418334/))
+
+- Australian Government Department of Health, Disability and Ageing. Recommendations for pregnancy. Updated March 13, 2026. ([Australian Government](https://www.health.gov.au/topics/physical-activity-and-exercise/pregnancy))
+
+- Bø K, Artal R, Barakat R, et al. Exercise and pregnancy in recreational and elite athletes: 2016/2017 evidence summary from the IOC expert group meeting, Lausanne. Part 5. Recommendations for health professionals and active women. _Br J Sports Med._ 2018;52:1080-1085. DOI: 10.1136/bjsports-2018-099351. PMID: 29895607. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29895607/))
+
+- Meah VL, Strynadka MC, Steinback CD, Davenport MH. Cardiac Responses to Prenatal Resistance Exercise with and without the Valsalva Maneuver. _Med Sci Sports Exerc._ 2021;53:1260-1269. DOI: 10.1249/MSS.0000000000002577. PMID: 33394898. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/33394898/))
+
+- Lan Q, Fu ACL, McKay MJ, et al. Physical activity postpartum: a systematic review and quality appraisal of clinical guidelines. _Womens Health (Lond)._ 2026;22:17455057261421734. DOI: 10.1177/17455057261421734. PMID: 41746799. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/41746799/))
