@@ -1,8 +1,8 @@
 # How to Tell Whether Elevated Enzymes Are From Muscle or Liver
 
-The proposed ALT/AST/GGT rule captures a real and clinically useful pattern, but it overstates what GGT can prove. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x), [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/), [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/), and the [BALLETS study](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) support a probabilistic rather than binary interpretation.
+The proposed ALT/AST/GGT rule captures a real and clinically useful pattern, but it overstates what GGT can prove. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x), [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/), [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/), and the [BALLETS study](https://doi.org/10.3310/hta17280) support a probabilistic rather than binary interpretation.
 
-A normal GGT alongside elevated AST, ALT, and creatine kinase supports skeletal-muscle injury as an important contributor, especially after strenuous exercise or in a known muscle disorder. In a compatible clinical setting, it may make muscle the leading explanation. It does **not**, however, establish that the liver is normal. Conversely, an elevated GGT raises concern for hepatobiliary involvement or another GGT-raising condition, but does not prove that the AST and ALT originated in the liver. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
+A normal GGT alongside elevated AST, ALT, and creatine kinase supports skeletal-muscle injury as an important contributor, especially after strenuous exercise or in a known muscle disorder. In a compatible clinical setting, it may make muscle the leading explanation. It does **not**, however, establish that the liver is normal. Conversely, an elevated GGT raises concern for hepatobiliary involvement or another GGT-raising condition, but does not prove that the AST and ALT originated in the liver. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
 The best-supported approach is therefore not "GGT decides the source." It is a combined assessment using CK, GGT, alkaline phosphatase, bilirubin, clinical context, and the trajectory of the abnormalities over time. [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
@@ -14,7 +14,7 @@ CK is a much more direct marker of muscle-cell injury. In someone with recent st
 
 GGT is best described as a **hepatobiliary-associated marker that generally remains unchanged in isolated skeletal-muscle injury**, not a literally liver-exclusive enzyme. GGT activity is present in several tissues, particularly the biliary system, kidney, intestine, and pancreas. In experimental weightlifting, Duchenne muscular dystrophy, and rhabdomyolysis cohorts, GGT did not rise in parallel with CK or aminotransferases. [Ndrepepa and Kastrati](https://atm.amegroups.org/article/view/12996/html) [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
 
-That makes GGT useful in this differential, but usefulness is not the same as diagnostic certainty. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
+That makes GGT useful in this differential, but usefulness is not the same as diagnostic certainty. [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
 
 ## What experimental exercise studies show
 
@@ -60,19 +60,19 @@ A review of severe rhabdomyolysis proposed that elevated bilirubin or GGT, an at
 
 ## Why normal GGT does not clear the liver
 
-The central problem with the proposed binary rule is that normal GGT cannot exclude all forms of liver disease. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
+The central problem with the proposed binary rule is that normal GGT cannot exclude all forms of liver disease. [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
 
-In the prospective BALLETS primary-care cohort, GGT was less sensitive than ALT for identifying chronic viral hepatitis. Several of the confirmed hepatitis B or C cases had normal GGT, including patients whose ALT was elevated. The investigators characterized GGT as highly nonspecific and found that adding it to ALT and alkaline phosphatase produced only a small marginal gain in sensitivity at the cost of a large loss of specificity. The viral-hepatitis subgroup included only 13 cases, so this finding is qualitative rather than a precise sensitivity estimate. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+In the prospective BALLETS primary-care cohort, GGT was less sensitive than ALT for identifying chronic viral hepatitis. Several of the confirmed hepatitis B or C cases had normal GGT, including patients whose ALT was elevated. The investigators characterized GGT as highly nonspecific and found that adding it to ALT and alkaline phosphatase produced only a small marginal gain in sensitivity at the cost of a large loss of specificity. The viral-hepatitis subgroup included only 13 cases, so this finding is qualitative rather than a precise sensitivity estimate. [BALLETS](https://doi.org/10.3310/hta17280)
 
 A single-center retrospective cohort of 1,048 patients with diagnosed nonalcoholic fatty liver disease found abnormal GGT in 637, or 60.7%, using a 50 U/L threshold for both sexes. In other words, 39.3% had GGT at or below that threshold despite having fatty liver. This does not mean that all had active steatohepatitis or clinically important fibrosis, but it directly demonstrates that normal or threshold-negative GGT cannot exclude fatty liver disease. [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
 
-Normal GGT is therefore evidence **against a common cholestatic or GGT-associated pattern of liver injury**, not evidence that all liver pathology has been excluded. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
+Normal GGT is therefore evidence **against a common cholestatic or GGT-associated pattern of liver injury**, not evidence that all liver pathology has been excluded. [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
-Elevated GGT has the opposite limitation: it is nonspecific. In BALLETS, GGT was sensitive to alcohol intake, was the most frequently abnormal analyte, and generated a high false-positive rate. Other literature describes associations between GGT and cardiometabolic conditions. An isolated GGT increase consequently does not prove that elevated AST or ALT originated in hepatocytes. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ndrepepa and Kastrati](https://atm.amegroups.org/article/view/12996/html)
+Elevated GGT has the opposite limitation: it is nonspecific. In BALLETS, GGT was sensitive to alcohol intake, was the most frequently abnormal analyte, and generated a high false-positive rate. Other literature describes associations between GGT and cardiometabolic conditions. An isolated GGT increase consequently does not prove that elevated AST or ALT originated in hepatocytes. [BALLETS](https://doi.org/10.3310/hta17280) [Ndrepepa and Kastrati](https://atm.amegroups.org/article/view/12996/html)
 
 ## GGT sensitivity and specificity: what is actually known
 
-A general sensitivity and specificity for using GGT to distinguish muscle-derived from liver-derived AST or ALT **cannot be estimated from the cited evidence**. The available studies examine selected exercise, muscular-dystrophy, rhabdomyolysis, liver-disease, or primary-care populations rather than a single representative diagnostic cohort. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+A general sensitivity and specificity for using GGT to distinguish muscle-derived from liver-derived AST or ALT **cannot be estimated from the cited evidence**. The available studies examine selected exercise, muscular-dystrophy, rhabdomyolysis, liver-disease, or primary-care populations rather than a single representative diagnostic cohort. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [BALLETS](https://doi.org/10.3310/hta17280)
 
 For the proposed use, a diagnostic-accuracy study would need:
 
@@ -98,15 +98,15 @@ One published numerical discriminator discussed in the rhabdomyolysis review is 
 
 **Evidence verdict: not established for the purpose proposed.**
 
-Different population-level studies reached different conclusions about default GGT testing, in part because they addressed different endpoints and populations. [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+Different population-level studies reached different conclusions about default GGT testing, in part because they addressed different endpoints and populations. [ALFIE](https://doi.org/10.3310/hta13250) [BALLETS](https://doi.org/10.3310/hta17280)
 
-The ALFIE record-linkage study followed 95,977 primary-care patients and recommended including GGT in the standard liver-test batch because GGT contributed to long-term liver-disease risk prediction. However, GGT had been measured in only 10.9% of the cohort, with missing values handled statistically. The study was not designed to distinguish muscle from liver as the immediate source of AST and ALT, and it did not test whether GGT reduced unnecessary investigations in athletes. [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250)
+The ALFIE record-linkage study followed 95,977 primary-care patients and recommended including GGT in the standard liver-test batch because GGT contributed to long-term liver-disease risk prediction. However, GGT had been measured in only 10.9% of the cohort, with missing values handled statistically. The study was not designed to distinguish muscle from liver as the immediate source of AST and ALT, and it did not test whether GGT reduced unnecessary investigations in athletes. [ALFIE](https://doi.org/10.3310/hta13250)
 
-BALLETS reached a different conclusion. In prospectively investigated primary-care patients with abnormal liver tests, most diagnostic information was captured by ALT and alkaline phosphatase; GGT produced only a small gain in sensitivity while substantially increasing false-positive results. [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+BALLETS reached a different conclusion. In prospectively investigated primary-care patients with abnormal liver tests, most diagnostic information was captured by ALT and alkaline phosphatase; GGT produced only a small gain in sensitivity while substantially increasing false-positive results. [BALLETS](https://doi.org/10.3310/hta17280)
 
-These findings are not directly contradictory. ALFIE emphasized long-term risk prediction, whereas BALLETS emphasized immediate diagnostic yield and false-positive results. [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+These findings are not directly contradictory. ALFIE emphasized long-term risk prediction, whereas BALLETS emphasized immediate diagnostic yield and false-positive results. [ALFIE](https://doi.org/10.3310/hta13250) [BALLETS](https://doi.org/10.3310/hta17280)
 
-The studies reviewed here did not test whether automatically adding GGT to every panel reduces imaging, specialist referrals, viral testing, or liver biopsy among physically active people. [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+The studies reviewed here did not test whether automatically adding GGT to every panel reduces imaging, specialist referrals, viral testing, or liver biopsy among physically active people. [ALFIE](https://doi.org/10.3310/hta13250) [BALLETS](https://doi.org/10.3310/hta17280)
 
 GGT is defensible as a **targeted** test when the source of aminotransferase elevation is uncertain. The stronger assertion, that omitting it from every routine panel constitutes an incomplete assessment, goes beyond the cited evidence. [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
@@ -116,7 +116,7 @@ GGT is defensible as a **targeted** test when the source of aminotransferase ele
 
 Normal GGT adds support to the muscle hypothesis when CK is elevated and bilirubin and alkaline phosphatase are normal. Experimental exercise, muscular dystrophy, and rhabdomyolysis studies consistently support that pattern. The magnitude of the resulting probability shift has not been quantified in a broad diagnostic population. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Weibrecht et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3550495/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
 
-But normal GGT occurs in fatty liver and chronic viral hepatitis, while elevated GGT has poor specificity. GGT therefore modifies diagnostic probability rather than providing a binary answer. [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+But normal GGT occurs in fatty liver and chronic viral hepatitis, while elevated GGT has poor specificity. GGT therefore modifies diagnostic probability rather than providing a binary answer. [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [BALLETS](https://doi.org/10.3310/hta17280)
 
 ### 3. CK should be checked whenever an active person has elevated AST or ALT
 
@@ -131,7 +131,7 @@ However:
 - **Both elevated** may represent concurrent muscle and liver processes, medication effects, alcohol exposure, metabolic liver disease, or severe systemic illness.
 - **Both normal** does not identify the source of an isolated or resolving aminotransferase elevation.
 
-[Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
+[Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
 None of the studies reviewed here prospectively validated a CK/ALT/AST/GGT algorithm in an athletic population. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
 
@@ -180,7 +180,7 @@ Muscle becomes a leading explanation when the following occur together:
 
 [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Weibrecht et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC3550495/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
-This combination can justify a muscle-first interpretation, but "muscle-first" is not the same as "liver disease excluded." [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
+This combination can justify a muscle-first interpretation, but "muscle-first" is not the same as "liver disease excluded." [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
 
 ### A pattern raising concern for liver or mixed injury
 
@@ -194,7 +194,7 @@ Further liver assessment becomes more important when there is:
 - Liver-specific symptoms or established liver risk factors.
 - Very high ALT that is unusual for the degree of muscle injury.
 
-[Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
+[Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [BALLETS](https://doi.org/10.3310/hta17280) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 
 In severe rhabdomyolysis literature, concurrent bilirubin or GGT elevation and ALT above roughly 800 U/L have been proposed as warning signs for an additional liver process, although these are not universally validated thresholds. [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/)
 
@@ -210,7 +210,7 @@ The available evidence is substantially thinner than the confidence implied by t
 
 - The cited studies do not provide broadly applicable sensitivity and specificity estimates for GGT as a muscle-versus-liver discriminator. [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
 - The cited studies do not prospectively validate a CK/ALT/AST/GGT algorithm in athletes. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/)
-- ALFIE and BALLETS did not evaluate whether routine GGT testing reduces unnecessary liver workups among physically active people. [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+- ALFIE and BALLETS did not evaluate whether routine GGT testing reduces unnecessary liver workups among physically active people. [ALFIE](https://doi.org/10.3310/hta13250) [BALLETS](https://doi.org/10.3310/hta17280)
 - The main clinician-awareness survey had only 84 respondents and a very low response rate. [Pertusi et al.](https://pubmed.ncbi.nlm.nih.gov/11476029/)
 - The direct exercise and bodybuilder studies included here are small, male-only or male-dominated, and several decades old. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/)
 - The cited studies largely examine selected muscle-injury or liver-disease groups without prospectively adjudicating simultaneous muscle damage and liver disease, leaving mixed injury poorly characterized. [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
@@ -221,7 +221,7 @@ The weightlifting study included researchers affiliated with AstraZeneca R&D and
 
 The 528-patient rhabdomyolysis study reported no conflicts of interest. [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
 
-[BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) and [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) were funded through the UK Health Technology Assessment programme.
+[BALLETS](https://doi.org/10.3310/hta17280) and [ALFIE](https://doi.org/10.3310/hta13250) were funded through the UK Health Technology Assessment programme.
 
 The accessible records for several older bodybuilder, muscular-dystrophy, and clinician-survey studies do not provide detailed funding and conflict disclosures. Absence of an accessible disclosure should not be interpreted as proof that no conflict existed. [Dickerman et al.](https://pubmed.ncbi.nlm.nih.gov/10336050/) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Pertusi et al.](https://pubmed.ncbi.nlm.nih.gov/11476029/)
 
@@ -230,12 +230,12 @@ The accessible records for several older bodybuilder, muscular-dystrophy, and cl
 The most defensible conclusion is:
 
 - **Normal GGT plus elevated CK supports skeletal muscle as an important contributor to elevated AST and ALT and may make it the leading explanation in a compatible clinical setting.** [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/)
-- **Normal GGT does not rule out liver disease.** [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
-- **Elevated GGT increases concern for liver or biliary involvement but is not specific enough to prove it.** [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280) [Ndrepepa and Kastrati](https://atm.amegroups.org/article/view/12996/html) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
+- **Normal GGT does not rule out liver disease.** [BALLETS](https://doi.org/10.3310/hta17280) [Ma et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC8112063/)
+- **Elevated GGT increases concern for liver or biliary involvement but is not specific enough to prove it.** [BALLETS](https://doi.org/10.3310/hta17280) [Ndrepepa and Kastrati](https://atm.amegroups.org/article/view/12996/html) [Guidelines on abnormal liver blood tests](https://pmc.ncbi.nlm.nih.gov/articles/PMC5754852/)
 - **CK and GGT are complementary tests, not a validated binary algorithm.** [Lim](https://pmc.ncbi.nlm.nih.gov/articles/PMC7081005/) [STARD 2015](https://www.bmj.com/content/351/bmj.h5527)
 - **Exercise history is essential, but the relevant window is often at least seven days rather than 48 hours.** [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x)
 
-Among the four competing claims, claim 2 has the strongest direct support in the cited studies. Claim 3 is clinically useful when applied selectively and probabilistically. Claim 4 is essential but should broaden the exercise window and cannot replace laboratory context. Claim 1, default GGT testing for everyone specifically to prevent muscle-related liver workups, remains unproven by the studies reviewed here. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [ALFIE](https://www.journalslibrary.nihr.ac.uk/hta/HTA13250) [BALLETS](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280)
+Among the four competing claims, claim 2 has the strongest direct support in the cited studies. Claim 3 is clinically useful when applied selectively and probabilistically. Claim 4 is essential but should broaden the exercise window and cannot replace laboratory context. Claim 1, default GGT testing for everyone specifically to prevent muscle-related liver workups, remains unproven by the studies reviewed here. [Pettersson et al.](https://bpspubs.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2125.2007.03001.x) [Rosales et al.](https://pubmed.ncbi.nlm.nih.gov/18354148/) [Lim et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7019809/) [ALFIE](https://doi.org/10.3310/hta13250) [BALLETS](https://doi.org/10.3310/hta17280)
 
 ## References
 
@@ -246,7 +246,7 @@ Among the four competing claims, claim 2 has the strongest direct support in the
 - [Weibrecht K, Dayno M, Darling C, Bird SB. Liver aminotransferases are elevated with rhabdomyolysis in the absence of significant liver injury.](https://doi.org/10.1007/s13181-010-0075-9) _J Med Toxicol._ 2010;6(3):294-300. DOI: [10.1007/s13181-010-0075-9](https://doi.org/10.1007/s13181-010-0075-9). PMID: [20407858](https://pubmed.ncbi.nlm.nih.gov/20407858/).
 - [Lim AKH, Arumugananthan C, Yim CLH, et al. A cross-sectional study of the relationship between serum creatine kinase and liver biochemistry in patients with rhabdomyolysis.](https://doi.org/10.3390/jcm9010081) _J Clin Med._ 2020;9(1):81. DOI: [10.3390/jcm9010081](https://doi.org/10.3390/jcm9010081). PMID: [31905634](https://pubmed.ncbi.nlm.nih.gov/31905634/).
 - [Lim AKH. Abnormal liver function tests associated with severe rhabdomyolysis.](https://doi.org/10.3748/wjg.v26.i10.1020) _World J Gastroenterol._ 2020;26(10):1020-1028. DOI: [10.3748/wjg.v26.i10.1020](https://doi.org/10.3748/wjg.v26.i10.1020). PMID: [32205993](https://pubmed.ncbi.nlm.nih.gov/32205993/).
-- [Lilford RJ, Bentham L, Girling A, et al. Birmingham and Lambeth Liver Evaluation Testing Strategies: a prospective cohort study.](https://doi.org/10.3310/hta17280) _Health Technol Assess._ 2013;17(28). DOI: [10.3310/hta17280](https://doi.org/10.3310/hta17280). [Full report](https://www.journalslibrary.nihr.ac.uk/hta/HTA17280).
+- [Lilford RJ, Bentham L, Girling A, et al. Birmingham and Lambeth Liver Evaluation Testing Strategies: a prospective cohort study.](https://doi.org/10.3310/hta17280) _Health Technol Assess._ 2013;17(28). DOI: [10.3310/hta17280](https://doi.org/10.3310/hta17280)..
 - [Donnan PT, McLernon D, Dillon JF, et al. Development of a decision support tool for primary-care management of patients with abnormal liver function tests without clinically apparent liver disease.](https://doi.org/10.3310/hta13250) _Health Technol Assess._ 2009;13(25). DOI: [10.3310/hta13250](https://doi.org/10.3310/hta13250). PMID: [19413926](https://pubmed.ncbi.nlm.nih.gov/19413926/).
 - [Ma Q, Liao X, Shao C, et al. Normalization of gamma-glutamyl transferase levels is associated with better metabolic control in individuals with nonalcoholic fatty liver disease.](https://doi.org/10.1186/s12876-021-01790-w) _BMC Gastroenterol._ 2021;21:215. DOI: [10.1186/s12876-021-01790-w](https://doi.org/10.1186/s12876-021-01790-w). PMID: [33971815](https://pubmed.ncbi.nlm.nih.gov/33971815/).
 - [Ndrepepa G, Kastrati A. Gamma-glutamyl transferase and cardiovascular disease.](https://doi.org/10.21037/atm.2016.12.27) _Ann Transl Med._ 2016;4(24):481. DOI: [10.21037/atm.2016.12.27](https://doi.org/10.21037/atm.2016.12.27). PMID: [28149843](https://pubmed.ncbi.nlm.nih.gov/28149843/).
