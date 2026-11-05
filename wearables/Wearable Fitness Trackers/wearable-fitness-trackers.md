@@ -318,6 +318,26 @@ Beyond body composition, several brands market age-related composite scores: WHO
 
 ---
 
+## Can a Wearable on Your Temple Track Brain Blood Flow?
+
+Temple is an adhesive optical wearable worn on the side of the head. Its multi-wavelength photoplethysmography (PPG) sensor provides a dimensionless BrainFlow index intended to track relative changes in cerebral circulation. The company also markets Entropy as a measure of how hard the body is working to shed heat. Temple's [terms of use](https://temple.com/terms-of-use) describe it as a general wellness device.
+
+The central dispute is anatomical. The skin at the temple is supplied by the superficial temporal artery, a branch of the external carotid, while the brain is supplied mainly by the internal carotid and vertebral arteries. [During graded exercise](https://pmc.ncbi.nlm.nih.gov/articles/PMC3112559/), external carotid flow can continue rising as internal carotid flow declines. [Experiments that restrict scalp blood flow](https://pmc.ncbi.nlm.nih.gov/articles/PMC7540337/) have shown how strongly superficial tissue can influence optical measurements aimed at the brain.
+
+Two preprints report comparisons with laboratory measures. In the [Doppler study](https://doi.org/10.64898/2026.09.02.26362022), 20 participants were analyzed per protocol, and BrainFlow correlated with transcranial Doppler velocity at about r = 0.8 during cycling and postural change. The [near-infrared spectroscopy study](https://doi.org/10.64898/2026.09.17.751664) reports 60 sessions from 44 young men. BrainFlow correlated more strongly with the modeled brain layer (r = 0.84–0.91) than with the scalp layer (r = 0.49–0.77), although the difference was not statistically significant in the stand-to-supine task. Temple designed, funded, and conducted that study. Its authors called for flow-sensitive reference measures and more complete systemic monitoring. The optical model estimates a deeper compartment indirectly, and Doppler measures the speed of blood through an artery.
+
+**Competing claims:**
+
+1. BrainFlow captures a real cerebral signal - the index tracked reference measures of cerebral hemodynamics in two studies, followed brain-related signals when heart rate moved the other way, and correlated more strongly with the modeled brain layer than with the scalp layer; for an early-stage technology, this is meaningful evidence that a temple-worn optical sensor can follow relative changes in brain blood flow
+2. BrainFlow is a scalp and systemic signal with a brain-based name - tilting, squatting, and exercising change blood pressure, heart rate, and scalp and brain circulation together, so high correlations can arise from shared timing rather than cerebral specificity; until the signal is tested with scalp flow occluded and with blood pressure and CO2 recorded, "brain flow" claims more than the data can show
+3. The evidence is too narrow to support consumer marketing - small samples of young healthy adults, company funding, standardized relative signals, brief lab maneuvers, and no peer-reviewed publication do not establish accuracy in daily life, women, older adults, or disease, or show that the signal responds to anything beyond the tested maneuvers; selling the device at this stage puts the commercial claim ahead of the validation
+4. Entropy may chiefly reflect exertion - the [company describes](https://temple.com/) heat dissipation as its target, but independent comparison with metabolic and thermal measurements would be needed to show what the score adds beyond heart rate and existing strain metrics
+5. Measuring a new signal is how new science begins - a continuous, wearable window into head circulation could generate useful data even before clinical applications are established, and relative tracking may have value if users understand its limits; the appropriate response is independent replication, not dismissal before those studies exist
+
+**Evidence needed:** Peer-reviewed publication of the existing validation studies, independent replication without company funding, scalp-occlusion or other tests that separate scalp from brain signal, comparison against volumetric cerebral blood flow measures such as phase-contrast MRI or arterial spin labeling, simultaneous blood pressure and end-tidal CO2 monitoring, testing during cognitive tasks, sleep, heat stress, and free-living conditions, validation in women, older adults, and clinical populations, test-retest reliability, published Entropy methods and independent validation against metabolic measurement, and outcome studies on whether BrainFlow or Entropy feedback improves any health behavior or result.
+
+---
+
 ## Only 11% of Wearables Have Been Validated - Should That Worry You?
 
 A living umbrella review of systematic reviews on wearable accuracy found that only about 11% of commercial devices had been validated for at least one health outcome in peer-reviewed literature. The other 89% market health features based on internal testing, proprietary benchmarks, or no publicly available evidence at all.
