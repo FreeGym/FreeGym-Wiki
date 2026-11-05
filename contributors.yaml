@@ -12,7 +12,7 @@ maintainers:
   - wearables
   - musculoskeletal-health
   - dermatology
-  last_active: 2026-08
+  last_active: 2026-11
   contributions:
   - file: nutrition/Protein/protein.md
     type: created
@@ -946,8 +946,44 @@ maintainers:
     type: created
     citations_added: 12
     pr: 312
-  total_citations: 2788
-  commits: 347
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/10-the-four-slings.md
+    type: created
+    citations_added: 41
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/11-the-inner-unit-diaphragm-pelvic-floor-tva-multifidus.md
+    type: created
+    citations_added: 34
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/12-ribcage-mechanics-and-breathing-patterns.md
+    type: created
+    citations_added: 31
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/13-intrabdominal-pressure-and-bracing.md
+    type: created
+    citations_added: 33
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/14-the-diurnal-disc.md
+    type: created
+    citations_added: 40
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/15-mechanotransduction.md
+    type: created
+    citations_added: 39
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/16-compression-vs-shear.md
+    type: created
+    citations_added: 33
+    pr: 322
+  - file: musculoskeletal-health/Biomechanics/Spine and Pelvic Girdle/17-squat-mechanics-and-the-lumbar-spine.md
+    type: created
+    citations_added: 40
+    pr: 322
+  - file: wearables/Wearable Fitness Trackers/wearable-fitness-trackers.md
+    type: major_edit
+    citations_added: 4
+    pr: 322
+  total_citations: 3083
+  commits: 353
 - github: Thestrongdoc
   name: Neha
   joined: 2026-03
